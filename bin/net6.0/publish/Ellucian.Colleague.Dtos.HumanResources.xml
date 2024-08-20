@@ -1,0 +1,3307 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ellucian.Colleague.Dtos.HumanResources</name>
+    </assembly>
+    <members>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.BeneficiaryCategory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BeneficiaryCategory.Code">
+            <summary>
+            Beneficiary Code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BeneficiaryCategory.Description">
+            <summary>
+            Beneficiary Description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BeneficiaryCategory.IsPrimary">
+            <summary>
+            Flag to indicate if beneficary code is Primary
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.HumanResources.BeneficiaryCategory.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor for BeneficiaryCategory
+            </summary>
+            <param name="code"></param>
+            <param name="description"></param>
+            <param name="processingCode"></param>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.HumanResources.BeneficiaryCategory.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.Benefit">
+            <summary>
+            Generic Benefit class to be inherited by different 
+            types of benefit classes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Benefit.BenefitId">
+            <summary>
+            Benefit Id - BENDED ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Benefit.BenefitDescription">
+            <summary>
+            Benefit Description
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentBenefitsQueryCriteria">
+            <summary>
+            Query criteria class for querying benefit enrollment benefits
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentBenefitsQueryCriteria.EnrollmentPeriodId">
+            <summary>
+            Enrollment period id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentBenefitsQueryCriteria.PackageId">
+            <summary>
+            Enrollment Period Benefit Package Id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentBenefitsQueryCriteria.BenefitTypeId">
+            <summary>
+            Benefit Type id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentBenefitsQueryCriteria.EnrollmentPeriodBenefitIds">
+            <summary>
+            Collection of benefit ids
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentCompletionCriteria">
+            <summary>
+            Class containing all input parameters for Benefit Enrollment Completion
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentCompletionCriteria.EmployeeId">
+            <summary>
+            Employee Id of the user
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentCompletionCriteria.EnrollmentPeriodId">
+            <summary>
+            Id of the current enrollment period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentCompletionCriteria.BenefitsPackageId">
+            <summary>
+            Id of the benefits package associated with the enrollment period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentCompletionCriteria.SubmitBenefitElections">
+            <summary>
+            Flag that indicates whether to submit or re-open the benefit elections.
+            True: Submit benefit elections
+            False: Reopen benefit elections
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentCompletionInfo">
+            <summary>
+            DTO Class for Benefit Enrollment Completion
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentCompletionInfo.EmployeeId">
+            <summary>
+            Employee Id of the user
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentCompletionInfo.EnrollmentPeriodId">
+            <summary>
+            Id of the current enrollment period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentCompletionInfo.EnrollmentConfirmationDate">
+            <summary>
+            Date when the user submits the benefits for completion
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitEnrollmentCompletionInfo.ErrorMessages">
+            <summary>
+            List of error messages from transaction
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement">
+            <summary>
+            Employee Benefits Enrollment Acknowledgement Information DTO
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.Index">
+            <summary>
+            Index to sort in report
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.BenefitType">
+            <summary>
+            Benefit Type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.BenefitTypeDescription">
+            <summary>
+            Benefit Type Description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.BenefitPlan">
+            <summary>
+            Benefit Plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.BenefitPlanDescription">
+            <summary>
+            Benefit Plan Description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.DependentsOrBeneficiaries">
+            <summary>
+            Dependents or Beneficiaries Information
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.HealthCareProviderInformation">
+            <summary>
+            Health Care Provider Information
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.CoverageOrParticipation">
+            <summary>
+            Coverage or Participation Information
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.#ctor(Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType,Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail)">
+            <summary>
+            Constructor to build acknowledgement information
+            </summary>
+            <param name="type"></param>
+            <param name="detail"></param>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.#ctor(Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType)">
+            <summary>
+            Constructor to build acknowledgement information
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.GetDependentsAndBeneficiaries(Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail)">
+            <summary>
+            Format depenents and beneficiaries
+            </summary>
+            <param name="detail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.GetHealthCareProviders(Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail)">
+            <summary>
+            Format health care provider information
+            </summary>
+            <param name="detail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentAknowledgement.GetCoverageOrParticipation(Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail)">
+            <summary>
+            Format coverage or participation
+            </summary>
+            <param name="detail"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentConfiguration">
+            <summary>
+            The benefits enrollment configuration contains settings used for benefits enrollment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentConfiguration.RelationshipTypes">
+            <summary>
+            List of relationship types to display
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.BenefitsEnrollmentConfiguration.IsBenefitsEnrollmentEnabled">
+            <summary>
+            If true - benefits enrollment is enabled in SS and not in Web Advisor
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.BenefitTypeAction">
+            <summary>
+            Possible benefit type actions Enroll, Keep and Cancel
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.BenefitTypeAction.Enroll">
+            <summary>
+            Benefit type enrolled
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.BenefitTypeAction.Keep">
+            <summary>
+            Benefit type keep
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.BenefitTypeAction.Cancel">
+            <summary>
+            Benefit type cancelled
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.CurrentBenefit">
+            <summary>
+            DTO class containing Current Benefits of employee.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.CurrentBenefit.BenefitDescription">
+            <summary>
+            Description of the current benefit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.CurrentBenefit.Coverage">
+            <summary>
+            Coverage info under the benefit (if any)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.CurrentBenefit.EmployeeCost">
+            <summary>
+            Total employee cost attached to the benefit (if any)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.CurrentBenefit.Dependents">
+            <summary>
+            List of dependent added to the benefit (if any)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.CurrentBenefit.HealthCareProviders">
+            <summary>
+            List of assigned health care provider for the dependent (if any)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.CurrentBenefit.Beneficiaries">
+            <summary>
+            List of beneficiaries for the benefits (if any)
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.DirectDeposits">
+            <summary>
+             This object is obsolete as of API 1.16 for security reasons
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.DirectDeposits.EmployeeId">
+            <summary>
+            The Id of the employee to whom this information belongs
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.DirectDeposits.PayrollDepositAccounts">
+            <summary>
+            The list of the employee's Bank Accounts used by the Payroll office in which paycheck money is deposited.
+            This includes past, active and future accounts. Not all bank accounts are active at the same time.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EarningsCategory">
+            <summary>
+            Categorize an earnings type into Regular, Overtime, Leave, Colleage Work Study, or Miscellaneous
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.EarningsCategory.Regular">
+            <summary>
+            Regular earnings category
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.EarningsCategory.Overtime">
+            <summary>
+            Overtime earnings category
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.EarningsCategory.Leave">
+            <summary>
+            Leave earnings category
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.EarningsCategory.CollegeWorkStudy">
+            <summary>
+            College Work Study earnings category
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.EarningsCategory.Miscellaneous">
+            <summary>
+            Miscellaneous earnings category
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EarningsMethod">
+            <summary>
+            Specify an earnings type as leave accrued, leave taken, or time not paid
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.EarningsMethod.None">
+            <summary>
+            Default earnings method
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.EarningsMethod.Accrued">
+            <summary>
+            Earnings method for leave accrued
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.EarningsMethod.Taken">
+            <summary>
+            Earnings method for leave taken
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.EarningsMethod.NoPay">
+            <summary>
+            Earnings method for time not paid
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EarningsType">
+            <summary>
+            Defines an earnings type for wages or leave associated with an employment position
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsType.Id">
+            <summary>
+            The database Id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsType.Description">
+            <summary>
+            The earnings type description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsType.Category">
+            <summary>
+            The category specifies whether earnings are regular, overtime, leave, college work study or miscellaneous
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsType.IsActive">
+            <summary>
+            Is this earnings type active or not?
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsType.Method">
+            <summary>
+            The method specifies whether the earnings are for leave accrued, leave taken, or time not paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsType.LeaveTypeCategory">
+            <summary>
+            A leave type associated to this earnings type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsType.Factor">
+            <summary>
+            A multipler that can be applied to base earnings for overtime and compensatory earnings. The default factor is 1 (no earnings multiplier).
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EarningsTypeGroup">
+            <summary>
+            Dto contains information about an earnings type group including the list of earningsTypes
+            included in the group. An EarningsType group can be applied to a PersonPositionWage to indicate
+            which earnings types that person can work on for that particular wage.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsTypeGroup.EarningsTypeGroupId">
+            <summary>
+            The ID of the EarningsTypeGroup
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsTypeGroup.Description">
+            <summary>
+            The earnings type group description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsTypeGroup.EarningsTypeGroupItems">
+            <summary>
+            The list of EarningsTypes contained in teh earningsTypeGroup
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsTypeGroup.IsEnabledForTimeManagement">
+            <summary>
+            Whether or not this earnings type group is enabled for use by Self Service Time Entry and Approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsTypeGroup.HolidayCalendarId">
+            <summary>
+            The Id of the Campus Calendar <see cref="!:CampusCalendar"/> on which Holidays are specified
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EarningsTypeGroupItem">
+            <summary>
+            An EarningsTypeGroupItem object contains information about an entry in an
+            earnings type group. An earnings type group contains one or more earnings types
+            and a description that can override the default earnings type description. An
+            earnings type group is associated to a position pay record.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsTypeGroupItem.EarningsTypeId">
+            <summary>
+            The id of the earnings type of this group entry
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsTypeGroupItem.Description">
+            <summary>
+            A custom description of this entry in the group
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EarningsTypeGroupItem.EarningsTypeGroupId">
+            <summary>
+            The id of the EarningsTypeGroup to which this entry belongs.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeBended">
+            <summary>
+            DTO class having Benefit-Deduction information associated with employee compensation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBended.BenededCode">
+            <summary>
+            Code(ID) of the benefit/deduction in which the employee is enrolled
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBended.BenededDescription">
+            <summary>
+             Description of the benefit or deduction code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBended.BenededEmployerAmount">
+            <summary>
+            Amount paid by employer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBended.BenededEmployeeAmount">
+            <summary>
+            Amount paid by employee
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefits">
+            <summary>
+            DTO class containing Employee Current Benefit list.    
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefits.PersonId">
+            <summary>
+            employee id of the user
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefits.AdditionalInformation">
+            <summary>
+            Additional Information
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefits.CurrentBenefits">
+            <summary>
+            List of Benefits 
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail">
+            <summary>
+            Employee Benefit Enrollment Detail DTO
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.Id">
+            <summary>
+            Unique ID of record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.BenefitTypeId">
+            <summary>
+            Benefit type id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.BenefitTypeEffectiveDate">
+            <summary>
+            Benefit type id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.PeriodBenefitId">
+            <summary>
+            Period benefit id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.BenefitId">
+            <summary>
+            Benefit code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.BenefitDescription">
+            <summary>
+            Benefit description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.CoverageLevels">
+            <summary>
+            Level of coverage
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.Action">
+            <summary>
+            Election action
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.ActionDescription">
+            <summary>
+            Description of election action
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.FlexBenefitRequired">
+            <summary>
+            Flexible benefit required indicator
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.DependentNames">
+            <summary>
+            Names of dependents
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.DependentIds">
+            <summary>
+            Work Ids of dependents associated to detail record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.DependentPoolIds">
+            <summary>
+            Pool Ids of dependents associated to detail record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.DependentProviderIds">
+            <summary>
+            Provider IDs for dependents
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.DependentProviderNames">
+            <summary>
+            Provider names for dependents
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.BeneficiaryNames">
+            <summary>
+            Names of beneficiaries
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.BeneficiaryIds">
+            <summary>
+            Work Ids of beneficiaries associated to detail record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.BeneficiaryPoolIds">
+            <summary>
+            Pool Ids of beneficiaries associated to detail record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.BeneficiaryTypes">
+            <summary>
+            Type associated to beneficiary
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.BeneficiaryPercent">
+            <summary>
+            Percent associated to beneficiary
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.BeneficiaryDisplayInformation">
+            <summary>
+            A list containing all information related to the beneficiaries for a given benefit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.Amount">
+            <summary>
+            The amount entered for an elected benefit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.Percent">
+            <summary>
+            The percent entered for an elected benefit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.InsuranceCoverageAmount">
+            <summary>
+             Insurance Coverage Amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.FlexibleBenefitAmount">
+            <summary>
+            Amount for flex benefit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.EmployeeProviderId">
+            <summary>
+            Ids of health care provider for employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentDetail.EmployeeProviderName">
+            <summary>
+            Names of health care provider for employee
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility">
+            <summary>
+            DTO class for EmployeeBenefitsEnrollmentEligibility
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.EmployeeId">
+            <summary>
+            Employee id of user
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.EligibilityPeriod">
+            <summary>
+            Enrollment period the employee is eligible for
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.StartDate">
+            <summary>
+            Start date of benefits enrollment period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.EndDate">
+            <summary>
+            End date of benefits enrollment period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.Description">
+            <summary>
+            Description of enrollment period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.IneligibleReason">
+            <summary>
+            Reason employee is not eligible for benefits enrollment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.EligibilityPackage">
+            <summary>
+            Package the employee is eligible for
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.EnrollmentConfirmationText">
+            <summary>
+            Enrollment Confirmation Text from BENP
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.ConfirmationCompleteText">
+            <summary>
+            Confirmation Complete Text from BENP
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.BenefitsPageCustomText">
+            <summary>
+            SS Benefits Page Text from BENP
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.BenefitsEnrollmentPageCustomText">
+            <summary>
+            SS Benefits Enrollment Page Text from BENP
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.ManageDepBenPageCustomText">
+            <summary> 
+            SS Manage Dep/Ben Page Text from BENP
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.IsEnrollmentInitiated">
+            <summary>
+            Flag indicating whether the employee has started their 
+            enrollment in the current period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentEligibility.IsPackageSubmitted">
+            <summary>
+            Flag indicating whether the enrollment package selections
+            have been submitted
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfo">
+            <summary>
+            Employee Benefit Enrollment Information DTO
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfo.Id">
+            <summary>
+            Unique ID of record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfo.EmployeeId">
+            <summary>
+            Employee's Id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfo.EnrollmentPeriodId">
+            <summary>
+            Benefit enrollment Period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfo.BenefitPackageId">
+            <summary>
+            Benefit enrollment package
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfo.ConfirmationDate">
+            <summary>
+            Benefit enrollment confirmation date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfo.OptOutBenefitTypes">
+            <summary>
+            Benefit types opted out
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfo.BenefitType">
+            <summary>
+            The benefit type of the benefit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfo.IsWaived">
+            <summary>
+            Indicates if the benefit type is waived or not
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfo.EmployeeBenefitEnrollmentDetails">
+            <summary>
+            List of benefit enrollment detail record associated to this enrollment
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfoQueryCriteria">
+            <summary>
+            Query criteria class for querying benefit enrollment information
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfoQueryCriteria.EmployeeId">
+            <summary>
+            Employee Id for benefits 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfoQueryCriteria.EnrollmentPeriodId">
+            <summary>
+            Enrollment period id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentInfoQueryCriteria.BenefitTypeId">
+            <summary>
+            Benefit Type id
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPackage">
+            <summary>
+            EmployeeBenefitsEnrollmentPackage holds benefits details 
+            available to the employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPackage.EmployeeId">
+            <summary>
+            Employee id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPackage.PackageId">
+            <summary>
+            Benefit Enrollment package id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPackage.PackageDescription">
+            <summary>
+            Package Description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPackage.BenefitsEnrollmentPeriodId">
+            <summary>
+            Benefits enrollment period id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPackage.EmployeeEligibleBenefitTypes">
+            <summary>
+            List of benefit types employee is eligible to enroll in
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem">
+            <summary>
+            DTO class for EmployeeBenefitsEnrollmentPoolItem
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.Id">
+            <summary>
+            Unique identifier for pool item
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.PersonId">
+            <summary>
+            Person id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.IsTrust">
+            <summary>
+            Inidcates if pool item is part of a trust
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.Prefix">
+            <summary>
+            Name prefix
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.PrefixDescription">
+            <summary>
+            Description of prefix
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.FirstName">
+            <summary>
+            First name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.MiddleName">
+            <summary>
+            Middle name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.LastName">
+            <summary>
+            Last name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.Suffix">
+            <summary>
+            Name suffix
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.SuffixDescription">
+            <summary>
+            Description of suffix
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.AddressLine1">
+            <summary>
+            Address line 1
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.AddressLine2">
+            <summary>
+            Address line 2
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.City">
+            <summary>
+            City for address
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.State">
+            <summary>
+            State for address
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.PostalCode">
+            <summary>
+            Postal code for address
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.Country">
+            <summary>
+            Country for address
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.Relationship">
+            <summary>
+            Relationship to benefits enrollment employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.BirthDate">
+            <summary>
+            Birthdate
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.GovernmentId">
+            <summary>
+            Social Security or similar Government Id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.Gender">
+            <summary>
+            Gender
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.MaritalStatus">
+            <summary>
+            Marital status
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.IsFullTimeStudent">
+            <summary>
+            Fulltime student indicator
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.OrganizationId">
+            <summary>
+            Organization id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.OrganizationName">
+            <summary>
+            Organization name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.IsBirthDateOnFile">
+            <summary>
+            Birthdate indicator
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitsEnrollmentPoolItem.IsGovernmentIdOnFile">
+            <summary>
+             SSN indicator
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType">
+            <summary>
+            Employee Benefit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType.BenefitType">
+            <summary>
+            Benefit type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType.BenefitTypeDescription">
+            <summary>
+            Benefit Description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType.MinBenefits">
+            <summary>
+            The minimum number of benefits required for enrollment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType.MaxBenefits">
+            <summary>
+            The maximum number of benefits required for enrollment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType.AllowOptOut">
+            <summary>
+            Allow Opt out
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType.BenefitOptOutText">
+            <summary>
+            Benefit opt out text
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType.BenefitTypeSpecialProcessingCode">
+            <summary>
+            Special processing code3 for benefit type icon
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType.EnrollmentPeriodBenefitIds">
+            <summary>
+            List of enrollment period benefit ids for the type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeBenefitType.BenefitsSelectionPageCustomText">
+            <summary>
+            SS Benefits Selection Page Text from BETD
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensation">
+            <summary>
+            DTO class containing Employee Compensation Information.
+            It includes Benefits-Deduction enrrolled by employee, associated tax benefits and stipend information
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensation.PersonId">
+            <summary>
+            Employee id of the user
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensation.OtherBenefits">
+            <summary>
+            Information about other benefits that institution provides at no cost.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensation.DisplayEmployeeCosts">
+            <summary>
+            Flag that decided if employee costs(contribution) information should be available (Configured in TCSP form)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensation.TotalCompensationPageHeader">
+            <summary>
+            Infomative message regarding Total compensation Page (Configured in TCSP form)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensation.SalaryAmount">
+            <summary>
+            estimated annual value of the total compensation provided by institution
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensation.Bended">
+            <summary>
+            List of Benefits-Deduction enrolled by an employee(if any)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensation.Taxes">
+            <summary>
+            List of Tax Benefits associated with an employee(if any)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensation.Stipends">
+            <summary>
+            List of stipends associated with an employee(if any)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensation.EmployeeCompensationError">
+            <summary>
+            Contains Error code and message returned by CTX
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensationError">
+            <summary>
+            Custom class containing Error details occured during Total Compensation Calculation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensationError.ErrorCode">
+            <summary>
+            Defines the type of error that occured in the CTX
+            Values are one of these -RestrictedbyRules, NoActiveEmploymentStatus,EmployeeTerminated,NoActiveWage,OtherMessage
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeCompensationError.ErrorMessage">
+            <summary>
+            Custom error message associated with error code
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan">
+            <summary>
+            The EmployeeLeavePlan is a leave plan assigned to a specific employee that's active for the date range.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.Id">
+            <summary>
+            The database Id of the Employee Leave Plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.EmployeeId">
+            <summary>
+            The Colleague PERSON id of the Employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.StartDate">
+            <summary>
+            The start date of this employee leave plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.EndDate">
+            <summary>
+            The end date of this employee leave plan. If null, leave plan has no end date.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.LeavePlanId">
+            <summary>
+            The database id of the LeavePlan definition
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.LeavePlanDescription">
+            <summary>
+            The description of the LeavePlan Definition
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.LeavePlanStartDate">
+            <summary>
+            The start date of the LeavePlan definition
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.LeavePlanEndDate">
+            <summary>
+            The end date of the LeavePlan definition. If null, leave plan definition has no end date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.LeavePlanType">
+            <summary>
+            The leave type associated with the LeavePlan definition
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.LeaveAllowedDate">
+            <summary>
+            The start date the employee may begin entering leave for this plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.AllowNegativeBalance">
+            <summary>
+            Indicates if this leave plan allows a negative balance
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.IsLeaveReportingPlan">
+            <summary>
+            Indicates if this is a leave reporting plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.LeavePlanTypeCategory">
+            <summary>
+            The category of the leave plan based on the leave plan definition's leave type. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.EarningsTypeId">
+            <summary>
+            The database Id of the EarningsType associated to this Leave Plan. When the employee takes this type of leave,
+            they track their leave hours to this earnings type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.EarningsTypeDescription">
+            <summary>
+            The description of the EarningsType identified by the EarningsTypeId. Also see the /earnings-types endpoint for more
+            details about Earnings Types.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.PriorPeriodLeaveBalance">
+            <summary>
+            The leave balance as of the last pay period, represented as hours
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.CurrentPlanYearStartingBalance">
+            <summary>
+            The starting balance for this leave plan of the current plan year (as of today).
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.CurrentPlanYearEarnedHours">
+            <summary>
+            The number of earned hours for this leave plan in the current plan year (as of today)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.CurrentPlanYearUsedHours">
+            <summary>
+            The number of used hours for this leave plan in the current plan year (as of today)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.CurrentPlanYearAdjustedHours">
+            <summary>
+            The number of adjusted hours for this leave plan in the current plan year (as of today)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.CurrentPlanYearBalance">
+            <summary>
+            The balance (Earned - Used + Adjusted) of this leave plan in the current plan year (as of today)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.CurrentPlanYearStartDate">
+            <summary>
+            The Leave Plans start date in the current year. Only the Month and Day should be used from this date.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.CurrentPlanYearEndDate">
+            <summary>
+            The Leave Plans end date.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.AccrualRate">
+            <summary>
+            Accrual Rate
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.AccrualLimit">
+            <summary>
+            Accrual Limit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.AccrualMaxCarryOver">
+            <summary>
+            Accrual Maximum Carry Over
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.AccrualMaxRollOver">
+            <summary>
+            Accrual Maximum Roll Over
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.AccrualMethod">
+            <summary>
+             Accrual Method
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.EarningTypeIDList">
+            <summary>
+            List of all Earning Type IDs associated with a Employee Leave Plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.IsPlanYearStartDateDefined">
+            <summary>
+            Indicates whether or not this leave plan has a plan year start date defined in LEAD form. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.EmployeeLeaveTransactions">
+            <summary>
+            List of all Leave Transactions associated with a Employee Leave Plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.RetroAvailableBalance">
+            <summary>
+            The Current Balance from the B record of the Current Plan Year, if it exists.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.PriorYearForwardingBalanceHours">
+            <summary>
+            PriorYearEndTrnsaction's forwarding balance hours.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlan.StartingBalanceTransaction">
+            <summary>
+            Attempts to get the "B" record on the PERLV.LATEST.START.BAL.UPDT (if set), returns null if not found
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlanQueryCriteria">
+            <summary>
+            Criteria for getting an EmployeeLeavePlan object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlanQueryCriteria.SupervisorId">
+            <summary>
+            Id of supervisor to get EmployeeLeavePlan objects for
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlanQueryCriteria.SuperviseeIds">
+            <summary>
+            Id(s) of supervisees to get EmployeeLeavePlan objects for
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeavePlanQueryCriteria.LookupStartDate">
+            <summary>
+            The lookup start date, all records with end date before this date will not be retrieved.
+            If none specified, the endpoint will retrieve all available information
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeaveTransaction">
+            <summary>
+            EmployeeLeaveTransaction DTO
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeaveTransaction.Id">
+            <summary>
+            The database Id of the transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeaveTransaction.TransactionHours">
+            <summary>
+            The amount of leave to be added or subtracted from the employee leave plan balance.
+            The amount entered may be either positive or negative. If positive, it is added to the total; if negative, it is subtracted from the total.
+            If the Type is Earned the amount is expected to be positive, but negative amounts are accepted.
+            If the Type is Used the amount is expected to be negative, but positive amounts are accepted.
+            If the Type is Adjusted, the amount may be either positive or negative.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeaveTransaction.Date">
+            <summary>
+            The date the transaction occurred, or will occur.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeaveTransaction.Type">
+            <summary>
+            The type of transation, Earned, Used, Adjusted. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeLeaveTransaction.ForwardingBalance">
+            <summary>
+            The balance of the employee leave plan after this transaction is applied - forwarding to the next transaction
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult">
+            <summary>
+            Information about the searched employee.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.Id">
+            <summary>
+             Unique system ID of this person
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.LastName">
+            <summary>
+            Person's last name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.FirstName">
+            <summary>
+            Person's first name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.MiddleName">
+            <summary>
+            Person's middle name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.BirthNameLast">
+            <summary>
+            Person's birth/maiden last name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.BirthNameFirst">
+            <summary>
+            Person's birth/maiden first name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.BirthNameMiddle">
+            <summary>
+            Person's birth/maiden middle name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.PreferredName">
+            <summary>
+            Calculated preferred name, based on this person's stated preference
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.Prefix">
+            <summary>
+            Prefixes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.Suffix">
+            <summary>
+            Suffixes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.Gender">
+            <summary>
+            Gender
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.PersonalPronounCode">
+            <summary>
+            Personal Pronoun Code indicating person's perferred manner of address
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSearchResult.PersonDisplayName">
+            <summary>
+            Name that should be used when displaying a person's name on reports and forms.
+            This property is based on a Name Address Hierarcy and will be null if none is provided.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeStipend">
+            <summary>
+            DTO Class having stipend information associated with employee compensation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeStipend.StipendDescription">
+            <summary>
+            Description of the stipend received by employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeStipend.StipendAmount">
+            <summary>
+            Stipend Amount received by employee
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeSummary">
+            <summary>
+            A summary of information related to a specific employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSummary.EmployeeId">
+            <summary>
+            ID of employee related to this summary
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSummary.PersonPositions">
+            <summary>
+            PersonPosition objects related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSummary.PersonPositionWages">
+            <summary>
+            PersonPositionWage objects related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSummary.PersonEmploymentStatuses">
+            <summary>
+            PersonEmploymentStatus objects related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSummary.PersonDemographics">
+            <summary>
+            HumanResourceDemographics object related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSummary.PersonSupervisorsDemographics">
+            <summary>
+            HumanResourceDemographics objects containing supervisors demographics data
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeSummaryQueryCriteria">
+            <summary>
+            Criteria for getting an EmployeeSummary object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSummaryQueryCriteria.EmployeeSupervisorId">
+            <summary>
+            The supervisor Id for an employee; when provided, all employees that are supervised by this supervisor will be returned
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSummaryQueryCriteria.EmployeeIds">
+            <summary>
+            A list of employee Ids to get EmployeeSummary objects for; if provided with a supervisor Id, all EmployeeIds must be supervised
+            by the provided EmployeeSupervisorId.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeSummaryQueryCriteria.LookupStartDate">
+            <summary>
+            The lookup start date, all records with end date before this date will not be retrieved.
+            If none specified, the endpoint will retrieve all available information
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmployeeTax">
+            <summary>
+            DTO class having Tax Benefits information associated with employee compensation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeTax.TaxCode">
+            <summary>
+            Code(ID) of the tax in associated with an employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeTax.TaxDescription">
+            <summary>
+            Description of the tax code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeTax.TaxEmployerAmount">
+            <summary>
+            Amount paid by employer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmployeeTax.TaxEmployeeAmount">
+            <summary>
+            Amount paid by employee
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EmploymentProficiencyLevel">
+            <summary>
+            Information about an Employment Proficiency Level
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmploymentProficiencyLevel.Code">
+            <summary>
+            Unique system Id for this Employment Proficiency Level
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EmploymentProficiencyLevel.Description">
+            <summary>
+            Description of the Employment Proficiency Level
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit">
+            <summary>
+            Benefit Type benefit class
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.EnrollmentPeriodBenefitId">
+            <summary>
+            Enrollment Period benefit id - different from BenefitId(BENDED ID)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.BenefitTypeId">
+            <summary>
+            Benefit Type Id this benefit is associated with
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.IsDependentRequired">
+            <summary>
+            Flag to check if dependents is required
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.IsBeneficiaryRequired">
+            <summary>
+            Flag to check if beneficiary is required
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.IsHealthCareProviderRequired">
+            <summary>
+            Flag to check if health care provider information is required
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.CostCalculationRequirement">
+            <summary>
+            The required information for calculating the benefit cost:
+            Amount - benefit amount is required
+            Insurance - insurance amount is required
+            Percentage - percentage for benefit is required
+            Flex - flex spending amount is required for benefit
+            None - no cost amount is required for benefit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.InsuranceMultiplier">
+            <summary>
+            If the insurance coverage is based on a multiple of the insured's salary, then this specifies the multiple for the employee's share
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.InsuranceRateDivisor">
+            <summary>
+            Specifies the units in which to purchase insurance
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.MinimumBenefitAmount">
+            <summary>
+            Minimum benefit amount to specify
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.MaximumBenefitAmount">
+            <summary>
+            Maximum benefit amount to specify
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.MaximumARBenefitAmount">
+            <summary>
+            Maximum benefit AR amount to specify
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.MaximumPayPeriodAmount">
+            <summary>
+            Maximum benefit amount for a pay period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.MaximumBenefitPercent">
+            <summary>
+            Maximum benefit percent
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.PlanHyperlink">
+            <summary>
+            Plan hyperlink associated to the plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.EnrollmentPeriodBenefit.RateHyperlink">
+            <summary>
+            Rate hyperlink associated to the plan
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.HourlySalaryIndicator">
+            <summary>
+            Indicates whether person is compensated by hour or by salary
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.HourlySalaryIndicator.Hourly">
+            <summary>
+            Hourly compensation
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.HourlySalaryIndicator.Salary">
+            <summary>
+            Salaried compensation
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.HumanResourceDemographics">
+            <summary>
+            The demographics of a person
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.HumanResourceDemographics.Id">
+            <summary>
+            The person's Id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.HumanResourceDemographics.FirstName">
+            <summary>
+            The person's first name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.HumanResourceDemographics.LastName">
+            <summary>
+            The person's last name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.HumanResourceDemographics.MiddleName">
+            <summary>
+            The person's middle name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.HumanResourceDemographics.PreferredName">
+            <summary>
+            The person's preferred name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.HumanResourceDemographics.PersonDisplayName">
+            <summary>
+            This property is based on a Name Address Hierarcy and will be null if none is provided.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.LeaveBalanceConfiguration">
+            <summary>
+            The leave balance configuration contains the settings necessary to determine whether a leave plan's details
+            should be displayed in SS leave balance page.
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.HumanResources.LeaveBalanceConfiguration.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveBalanceConfiguration.ExcludedLeavePlanIds">
+            <summary>
+            List of all excluded leave plans.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveBalanceConfiguration.LeaveRequestLookbackDays">
+            <summary>
+            Number of days to lookback for leave
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveBalanceConfiguration.LeaveRequestActionType">
+            <summary>
+            Unsubmit/Withdraw type for Leave Request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveBalanceConfiguration.AllowSupervisorToEditLeaveRequests">
+            <summary>
+            Allow the supervisor to create/edit leave requests
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest">
+            <summary>
+            DTO for employee leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.Id">
+            <summary>
+            Identifier of this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.PerLeaveId">
+            <summary>
+            PerLeaveId of this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.EmployeeId">
+            <summary>
+            Identifier of the employee who raised this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.EmployeeName">
+            <summary>
+            Name of the employee who raised this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.StartDate">
+            <summary>
+            Start date for this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.EndDate">
+            <summary>
+            End date for this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.ApproverId">
+            <summary>
+            Identifier of the actioner for this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.ApproverName">
+            <summary>
+            Name of the actioner for this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.IsWithdrawn">
+            <summary>
+            Flag which indicates whether this LR is Withdrawn or not.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.WithdrawOption">
+            <summary>
+            The value of HRSS.LR.UNSUBMIT.WDRW option in LVSS form when the Leave Request is Withdrawn.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.Status">
+            <summary>
+            Current status of this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.LeaveRequestDetails">
+            <summary>
+            List of all leave request detail object associated wih this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.LeaveRequestComments">
+            <summary>
+            List of all comments object associated wih this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.LeaveRequestDailyHoursErrorDetails">
+            <summary>
+            List of all dates with total leave requested hours for a day exceeding 24 hours 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.EnableDeleteForSupervisor">
+            <summary>
+            True when leave request is created by same supervisor user with submitted status
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.IsWithdrawPendingApproval">
+            <summary>
+            True when a withdraw request has pending supervisor approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.LeavePlanId">
+            <summary>
+            The database id of the LeavePlan definition
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.LeavePlanDescription">
+            <summary>
+            The description of the LeavePlan Definition
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.EarningsTypeId">
+            <summary>
+            The database Id of the EarningsType associated to this Leave Plan. When the employee takes this type of leave,
+            they track their leave hours to this earnings type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequest.EarningsTypeDescription">
+            <summary>
+            The description of the EarningsType identified by the EarningsTypeId. Also see the /earnings-types endpoint for more
+            details about Earnings Types.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestActionType">
+            <summary>
+            Records the Unsubmit/Withdraw types for Leave Request
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestActionType.R">
+            <summary>
+            Reject
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestActionType.U">
+            <summary>
+            Unsubmit before approval
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestActionType.W">
+            <summary>
+            Withdraw approved request requires no approval
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestActionType.A">
+            <summary>
+            Withdraw approved request requires approval
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestComment">
+            <summary>
+            DTO for leave request comment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestComment.Id">
+            <summary>
+            The database ID of the Comments object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestComment.LeaveRequestId">
+            <summary>
+            The ID of the leave request this Comment is associated to. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestComment.Comments">
+            <summary>
+            The actual Comment contents
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestComment.EmployeeId">
+            <summary>
+            the ID of the employee this Comment is associated to
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestComment.CommentAuthorName">
+            <summary>
+            The name of the person who created the comment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestComment.Timestamp">
+            <summary>
+            A timestamp of when this Comment object was created and changed in the database. Required if the Comment database record
+            this object represents already exists. Not required if this is a new Comment
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestDetail">
+            <summary>
+            DTO for leave request detail.
+            Each leave request record may contain many leave request detail records.
+            A leave request detail record contains the leave related details for one day.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestDetail.Id">
+            <summary>
+            DB id of this leave request detail object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestDetail.LeaveRequestId">
+            <summary>
+            Identifier of the leave request object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestDetail.LeaveDate">
+            <summary>
+            Date for which leave is requested
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestDetail.LeaveHours">
+            <summary>
+            Hours of leave requested
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestDetail.ProcessedInPayPeriod">
+            <summary>
+            Indicates if this detail record has been processed in a pay period by payroll
+            </summary>
+            
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestDetail.LeaveRequestDetailChgopr">
+            <summary>
+            Leave request detail change operator
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestLeaveTypes">
+            <summary>
+            DTO for employee leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestLeaveTypes.PerLeaveId">
+            <summary>
+             Leave Plan Id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestLeaveTypes.LeaveDescription">
+            <summary>
+             Leave Type Description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestLeaveTypes.BalanceLeaveHours">
+            <summary>
+            Leave Balance for the current Year
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestLeaveTypes.LeaveTypeUsedHours">
+            <summary>
+            LeaveTypeUsedHours
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestLeaveTypes.LeaveAllowedDate">
+            <summary>
+            Leave Allowed date for the Employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestLeaveTypes.PerLeaveStartDate">
+            <summary>
+            Per Leave Start date of the leave type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestLeaveTypes.PerLeaveEndDate">
+            <summary>
+            Per Leave End date of the leave type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestLeaveTypes.LeaveAccrualMethod">
+            <summary>
+            Leave Accrual Method
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestLeaveTypes.CurrentPlanYearStartDate">
+            <summary>
+            Current Plan Year Start Date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestLeaveTypes.CurrentPlanYearEndDate">
+            <summary>
+            Current Plan Year End Date
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestStatus">
+            <summary>
+            DTO for leave request status
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestStatus.Id">
+            <summary>
+            DB id of this leave request status object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestStatus.LeaveRequestId">
+            <summary>
+            Identifier of the leave request object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestStatus.ActionType">
+            <summary>
+            Status of this leave request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestStatus.ActionerId">
+            <summary>
+            Identifier of the actioner
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestStatus.ActionerName">
+            <summary>
+            Name of the actioner
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestStatus.Timestamp">
+            <summary>
+            Timestamp for record add and change
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestStatus.WithdrawOption">
+            <summary>
+            The value of HRSS.LR.UNSUBMIT.WDRW option in LVSS form when the Leave Request is Withdrawn.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.LeaveRequestStatus.LatestStatusAlreadyExists">
+            <summary>
+            Flag denotes whether the incoming action type of the associated leave request(in the case POST/PUT), is already the latest action in the database
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.LeaveStatusAction">
+            <summary>
+            Records the types of actions performed on a leave request.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveStatusAction.Draft">
+            <summary>
+            Indicates the leave request was saved
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveStatusAction.Submitted">
+            <summary>
+            Indicates the leave request was submitted for approval
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveStatusAction.Approved">
+            <summary>
+            Indicates the leave request was approved
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveStatusAction.Rejected">
+            <summary>
+            Indicates the leave request was rejected
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveStatusAction.Deleted">
+            <summary>
+            Indicates the leave request was deleted
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveStatusAction.Withdrawn">
+            <summary>
+            Indicates the leave request was deleted
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveStatusAction.RejectWithdraw">
+            <summary>
+            Indicates the withdraw request was rejected
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveStatusAction.ApproveWithdraw">
+            <summary>
+            Indicates the withdraw request was approved
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.LeaveTransactionType">
+            <summary>
+            Categories that can be assigned to types of leave. Sick, Hourly and Sick, Salary may be separate leave types, but they
+            both have the same category Sick
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTransactionType.Earned">
+            <summary>
+            Earned
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTransactionType.Used">
+            <summary>
+            Used
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTransactionType.Adjusted">
+            <summary>
+            Adjusted
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTransactionType.LeaveReporting">
+            <summary>
+            LeaveReporting
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTransactionType.StartingBalanceAdjustment">
+            <summary>
+            StartingBalanceAdjustment
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTransactionType.StartingBalance">
+            <summary>
+            StartingBalance
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTransactionType.MidYearBalanceAdjustment">
+            <summary>
+            MidYearBalanceAdjustment
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTransactionType.Rollover">
+            <summary>
+            Rollover
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.LeaveTypeCategory">
+            <summary>
+            Categories that can be assigned to types of leave. Sick, Hourly and Sick, Salary may be separate leave types, but they
+            both have the same category Sick
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTypeCategory.None">
+            <summary>
+            Default - this value must be the first one set here
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTypeCategory.Compensatory">
+            <summary>
+            Compensatory
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTypeCategory.Sick">
+            <summary>
+            Sick
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.LeaveTypeCategory.Vacation">
+            <summary>
+            Vacation
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee">
+            <summary>
+            Information about Organizational Chart.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee.PersonPositionId">
+            <summary>
+            The person position id of employee for the org chart node
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee.ParentPersonPositionId">
+            <summary>
+            The person position id of parent for the org chart node
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee.EmployeeId">
+            <summary>
+            The id of the employee in org chart
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee.ParentEmployeeId">
+            <summary>
+            The employee id of parent for the org chart node
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee.EmployeeName">
+            <summary>
+            The name of the employee in org chart
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee.DirectReportCount">
+            <summary>
+            Number of direct reports for this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee.PositionCode">
+            <summary>
+            The code for the position related to the employee in org chart
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee.PositionDescription">
+            <summary>
+            The description for the position related to the employee in org chart
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee.LocationCode">
+            <summary>
+            The location of the employee in org chart
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee.LocationDescription">
+            <summary>
+            The location description of the employee in org chart
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployee.ImageUrl">
+            <summary>
+            The URL to the image of the employee in org chart 
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployeeName">
+            <summary>
+            Employee name for org chart
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployeeName.FirstName">
+            <summary>
+            The person position id of employee for the org chart node
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployeeName.MiddleName">
+            <summary>
+            The person position id of parent for the org chart node
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployeeName.LastName">
+            <summary>
+            The id of the employee in org chart
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.OrgChartEmployeeName.FullName">
+            <summary>
+            The employee id of parent for the org chart node
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayCycle">
+            <summary>
+            Describes  a pay cycle and its pay period date ranges
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayCycle.Id">
+            <summary>
+            The database Id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayCycle.AnnualPayFrequency">
+            <summary>
+            The number of pay cycles in a year
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayCycle.WorkWeekStartDay">
+            <summary>
+            The day of the week on which the pay cycle starts
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayCycle.Description">
+            <summary>
+            The pay cycle description: default description 
+            if Self-Service description is not filled in on PCYL
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayCycle.PayClassIds">
+            <summary>
+            List of pay classes associated with the pay cycle
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayCycle.PayPeriods">
+            <summary>
+            List of pay period date ranges associated with the pay cycle
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayCycle.DisplayInSelfService">
+            <summary>
+            Flag indicating whether to display this pay cycle in Self-Service
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayPeriod">
+            <summary>
+             Describes the dates and status for a pay period within a pay cycle. The status is based on the pay control record associated to the pay period.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayPeriod.StartDate">
+            <summary>
+            The pay period start date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayPeriod.EndDate">
+            <summary>
+            The pay period end date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayPeriod.EmployeeTimecardCutoffDateTime">
+            <summary>
+            The employee deadline for submission
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayPeriod.SupervisorTimecardCutoffDateTime">
+            <summary>
+            The supervisor deadline for approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayPeriod.Status">
+            <summary>
+            The status of this pay period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayPeriod.PayCycle">
+            <summary>
+            The Id of the PayCycle to which this PayPeriod belongs
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayPeriodStatus">
+            <summary>
+            Records the types of pay period states. The pay period status is derived based on the pay control.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PayPeriodStatus.New">
+            <summary>
+            Pay period has been created for the paycycle, but is not yet prepared
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PayPeriodStatus.Prepared">
+            <summary>
+            Pay period has been prepared, but not yet generated
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PayPeriodStatus.Generated">
+            <summary>
+            Pay period has or is in the process of being generated
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PayPeriodStatus.Calculation">
+            <summary>
+            Pay period has completed payroll calculations (benefits/taxes)
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PayPeriodStatus.Print">
+            <summary>
+            Pay period has completed check/advice printing
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PayPeriodStatus.Posting">
+            <summary>
+            Pay period has completed summary registers/GL posting
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PayPeriodStatus.History">
+            <summary>
+            Pay period has completed employee history update
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PayPeriodStatus.Reversal">
+            <summary>
+            Pay period is in manual check or reversal
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayrollDeposit">
+            <summary>
+            This object is obsolete as of API 1.16 for security reasons
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayrollDeposit.Priority">
+            <summary>
+            The priority of this deposit. Multiple deposits are ordered by priority number
+            and money is deposited in this priority.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayrollDeposit.HistoricalBankName">
+            <summary>
+            The bank name used at the time this deposit was active. Only populated if this deposit has an end date and a 
+            prior bank description is found on or before the end date.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayrollDeposit.DepositAmount">
+            <summary>
+            The amount of the employee's paycheck to deposit. If null, the remainder of the paycheck
+            will be deposited into the account.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayrollDeposit.StartDate">
+            <summary>
+            The date this deposit should become active.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayrollDeposit.EndDate">
+            <summary>
+            The date this deposit should become inactive
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayrollDeposit.AddDateTime">
+            <summary>
+            The Date and Time this deposit was added. When updating PayrollDeposits, this property is used as part of the unique identifier. Changing it would
+            delete the PayrollDeposit that this object originated from, and create a new PayrollDeposit. It is recommend that the AddDateTime is not changed for
+            existing deposits in order to maintain proper traceability.
+            If the deposit is new, this will be determined automatically. 
+            Otherwise, this property should always be the original add date and time.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayrollDeposit.AddOperator">
+            <summary>
+            The user who added the deposit. If the deposit is new, this will be determined automatically. Otherwise,
+            this property is always the original add operator regardless of the value on input.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayrollDeposit.ChangeDateTime">
+            <summary>
+            The datetime this deposit was last changed. If the deposit is new or contains an update, this will be determined
+            automatically. Otherwise, this is always returned as the last change date and time regardless of the value on 
+            input. Updates will be rejected if this timestamp differs from the timestamp in the database - the Payroll Office likely made a change
+            to the resource.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayrollDeposit.ChangeOperator">
+            <summary>
+            The user who changed this deposit. If the deposit is new or contains an update, this will be determined
+            automatically. Otherwise, this is always returned as the last change operator regardless of the value on 
+            input.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayrollDepositAccount">
+            <summary>
+            This object is obsolete as of API 1.16 for security reasons
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayrollDepositAccount.PayrollDeposits">
+            <summary>
+            The list of directives indicating when and how to deposit money to this bank account. During adds or updates, accounts with 
+            no payroll deposit directives will be ignored.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayrollDepositAccount.IsVerified">
+            <summary>
+            Indicates whether this account has been verified by the payroll office. "Verified" may also known as "prenoted" in payroll parlance
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayStatementAddress">
+            <summary>
+            A PayStatementAddress is an object wrapper around a single line (string) of address text.
+            It should be used as a group with other PayStatementAddress objects, such as in a mailing label
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementAddress.AddressLine">
+            <summary>
+            A single address line in a group of address lines, such as a mailing label.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayStatementBankDeposit">
+            <summary>
+            Represents a bank deposit for the Pay Statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementBankDeposit.BankName">
+            <summary>
+            Name of bank for this deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementBankDeposit.BankAccountType">
+            <summary>
+            The type of bank account
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementBankDeposit.AccountIdLastFour">
+            <summary>
+            The last 4 of bank account number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementBankDeposit.DepositAmount">
+            <summary>
+            Amount for this deposit
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayStatementConfiguration">
+            <summary>
+            The paystatement configuration contains the settings necessary to display the number of pay statements (by year) and 
+            the days before or after the pay statements are viewable to the user.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementConfiguration.OffsetDaysCount">
+            <summary>
+            Days a pay statement becomes viewable to the users (relative to the pay statement pay date). If positive, the
+            pay statement is viewable OffsetDaysCount after the pay date. If negative, the pay statement is viewable
+            OffsetDaysCount before the pay date.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementConfiguration.PreviousYearsCount">
+            <summary>
+            Number of historical years before the current year to display available pay statements.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeduction">
+            <summary>
+            A deduction item for a tax, benefit, or other deduction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeduction.Code">
+            <summary>
+            The Deduction code.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeduction.Description">
+            <summary>
+            The description of the deduction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeduction.Type">
+            <summary>
+            The type of deduction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeduction.EmployeePeriodAmount">
+            <summary>
+            The amount deducted from the employee's earnings for this deduction line item for the period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeduction.EmployeeYearToDateAmount">
+            <summary>
+            The amount deducted from the employee's earnings for this deduction line item, year to date.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeduction.EmployerPeriodAmount">
+            <summary>
+            The amount the employer paid for this deduction line item for the period.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeduction.EmployerYearToDateAmount">
+            <summary>
+            The amount the employer paid for this deduction line item, year to date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeduction.ApplicableGrossPeriodAmount">
+            <summary>
+            The basis amount on which the deduction amount was calculated.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeduction.ApplicableGrossYearToDateAmount">
+            <summary>
+            The total basis amount on which the deduction amounts are calculated.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeductionType">
+            <summary>
+            Used to categorize line items on the PayStatement in the Taxes, Benefits, Other Deductions section.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeductionType.Tax">
+            <summary>
+             A Tax deduction.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeductionType.Benefit">
+            <summary>
+             A Benefit deduction.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PayStatementDeductionType.Deduction">
+            <summary>
+            Some other deduction
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayStatementEarnings">
+            <summary>
+            Represents an Earnings line item on the Pay Statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementEarnings.EarningsTypeId">
+            <summary>
+            The Id of the EarningsType
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementEarnings.EarningsTypeDescription">
+            <summary>
+            The description of the EarningsType
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementEarnings.UnitsWorked">
+            <summary>
+            The number of hours or units worked. If employee is salaried, this will be null
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementEarnings.Rate">
+            <summary>
+            The rate at which the employee is paid for this earnings type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementEarnings.PeriodPaymentAmount">
+            <summary>
+            The amount the employee was paid for this earnings type for this pay period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementEarnings.YearToDatePaymentAmount">
+            <summary>
+            The year to date amount the employee was paid for this earnings type
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayStatementInformation">
+            <summary>
+            Pay statement information
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementInformation.GrossAmount">
+            <summary>
+            The Gross Pay for the period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementInformation.DeductionAmount">
+            <summary>
+            The Net Pay for the period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementInformation.NetAmount">
+            <summary>
+            Total taxes for the period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementInformation.TaxAmount">
+            <summary>
+            Total benefits and deductions for the period
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayStatementLeave">
+            <summary>
+            Represents leave for a Pay Statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementLeave.LeaveTypeId">
+            <summary>
+            The id of the leave type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementLeave.Description">
+            <summary>
+            The type of leave
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementLeave.LeaveTaken">
+            <summary>
+            Amount of leave taken this period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementLeave.LeaveRemaining">
+            <summary>
+            Amount of leave remaining of this type
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport">
+            <summary>
+            DTO Representing all the data on a Pay Statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.Id">
+            <summary>
+            The Report Id. Used to request this report object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.EmployeeId">
+            <summary>
+            The EmployeeId
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.EmployeeName">
+            <summary>
+            The name of the employee to be printed on the report
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.EmployeeMailingLabel">
+            <summary>
+            The Employee's mailing label.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.EmployeeSSN">
+            <summary>
+            The Employee's SSN or SIN, potentially masked by any privacy 
+            restrictions set up by the Payroll office
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.PrimaryPosition">
+            <summary>
+            The title of the employee's primary position during the time period of this pay statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.StatementReferenceId">
+            <summary>
+            The Statement's Reference Id. Used by HR and Payroll offices.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.PaycheckReferenceId">
+            <summary>
+            The Reference Id for the Paycheck. Used by HR and Payroll offices.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.PeriodStartDate">
+            <summary>
+            The start date of the pay period for which this report applies
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.PeriodEndDate">
+            <summary>
+            The end date of the pay period for which this report applies.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.PayDate">
+            <summary>
+            The date the paycheck that this statement describes was issued
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.PeriodGrossPay">
+            <summary>
+            The Total Gross Pay for the Pay Period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.PeriodNetPay">
+            <summary>
+            The Total Net Pay for the Pay Period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.YearToDateGrossPay">
+            <summary>
+            The Total Gross Pay (Year to date, as of this statement date)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.YearToDateNetPay">
+            <summary>
+            The Total Net Pay (Year to date, as of this statement date)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.InstitutionName">
+            <summary>
+            The name of the institution to be printed along side the mailing label
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.InstitutionMailingLabel">
+            <summary>
+            The institution's mailing label.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.FederalWithholdingStatus">
+            <summary>
+            The employee's federal withholding status based on the filing status of their federal withholding type tax entry.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.StateWithholdingStatus">
+            <summary>
+            The employee's state withholding status based on the filing status of their first state withholding type tax entry.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.FederalExemptions">
+            <summary>
+            The number of exemptions taken on the federal withholding type tax entry
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.StateExemptions">
+            <summary>
+            The number of exemptions taken on the first state withholding type tax entry.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.AdditionalFederalWithholding">
+            <summary>
+            The amount of additional tax withheld for federal taxes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.AdditionalStateWithholding">
+            <summary>
+            The amount of additonal tax withheld for state taxes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.Earnings">
+            <summary>
+            A list of the Earnings Details for this Statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.Deductions">
+            <summary>
+            A list of the Deduction Details for this Statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.Deposits">
+            <summary>
+            A list of the Deposit Details for this Statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.Leave">
+            <summary>
+            A list of Leave Deatils for this Statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.TaxableBenefits">
+            <summary>
+            A list of Taxable Benefit Details for this Statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.Comments">
+            <summary>
+            Comments specified by the payroll office
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementReport.Apply2020W4Rules">
+            <summary>
+            Boolean to indicate if this record is using the 2020 W4 calculation rules.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayStatementSummary">
+            <summary>
+            Pay statement summary construct for use in data transfer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementSummary.Id">
+            <summary>
+            Pay Statement Id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementSummary.PayDate">
+            <summary>
+            The Date the employee was paid
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PayStatementTaxableBenefit">
+            <summary>
+            Object for PayStatementTaxableBenefit. A taxable benefit is a benefit which has a calculated taxable amount and that
+            amount is included in an employee's total taxable gross amount.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementTaxableBenefit.TaxableBenefitId">
+            <summary>
+            The id of the BenefitDeduction object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementTaxableBenefit.TaxableBenefitDescription">
+            <summary>
+            The description of the BenefitDeduction object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementTaxableBenefit.TaxableBenefitAmt">
+            <summary>
+            The amount for this benefit that is included in the taxable gross
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PayStatementTaxableBenefit.TaxableBenefitYtdAmt">
+            <summary>
+            The year to date amount for this taxable benefit
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PeriodBenefitCostCalculationRequirement">
+            <summary>
+            Specify the cost calculation requirements for a period benefit
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PeriodBenefitCostCalculationRequirement.None">
+            <summary>
+            No requirement
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PeriodBenefitCostCalculationRequirement.Amount">
+            <summary>
+            Amount required 
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PeriodBenefitCostCalculationRequirement.Percentage">
+            <summary>
+            Percentage required
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PeriodBenefitCostCalculationRequirement.Insurance">
+            <summary>
+            Insurance amount required
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.PeriodBenefitCostCalculationRequirement.Flex">
+            <summary>
+            Flexible spending required
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PersonAchievement">
+            <summary>
+            Information about an Person Achievement
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PersonEmploymentReference">
+            <summary>
+            Information about an Employment Reference
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonEmploymentReference.Code">
+            <summary>
+            Unique system Id for this Person Employment Reference
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonEmploymentReference.Description">
+            <summary>
+            Description of the Person Employment Reference
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PersonEmploymentStatus">
+            <summary>
+            Data transfer object for Person Employment Status.
+            This object contains information regarding an employees status between a start and end date,
+            and primary position information
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonEmploymentStatus.Id">
+            <summary>
+            The identifier of this record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonEmploymentStatus.PersonId">
+            <summary>
+            The identifier of the associated person
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonEmploymentStatus.PrimaryPositionId">
+            <summary>
+            The identifier of the associated position, which is primary
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonEmploymentStatus.StartDate">
+            <summary>
+            The start date of this person status record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonEmploymentStatus.PersonPositionId">
+            <summary>
+            The identifier of the associated position
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonEmploymentStatus.EndDate">
+            <summary>
+            The end date of this person status record
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PersonPosition">
+            <summary>
+            PersonPosition is an object that describes the assignment 
+            of a position to a person. Employees and non-employees can
+            hold a position. People can hold more than one position.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.Id">
+            <summary>
+            The database ID of the PersonPosition
+            The ID will be empty if this entity is a Non-Employee Position as noted by the NonEmployeePosition field
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.PersonId">
+            <summary>
+            The Person Id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.PositionId">
+            <summary>
+            The PositionId. <see cref="T:Ellucian.Colleague.Dtos.HumanResources.Position"/>
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.SupervisorId">
+            <summary>
+            The Id of the person's supervisor for this position
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.AlternateSupervisorId">
+            <summary>
+            The Id of the person's alternate supervisor for this position
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.PositionLevelSupervisorIds">
+            <summary>
+            Contains the list of supervisor Ids (if any) assigned to the supervisory position defined for this position
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.StartDate">
+            <summary>
+            The date this person begins in this position.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.EndDate">
+            <summary>
+            The date this person ends being in this position.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.MigrationDate">
+            <summary>
+            The date this person's position is migrated from WA to SS
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.LastWebTimeEntryPayPeriodEndDate">
+            <summary>
+            The end date of the last PayPeriod the employee entered time for in Web Advisor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.NonEmployeePosition">
+            <summary>
+            bool that states whether this PersonPosition is a Non-Employee Position
+            The Id of this entity will be empty because the Non-Employee Position record comes from HRPER and not PERPOS
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.WorkScheduleItems">
+            <summary>
+            Contains the list of work schedule items for this person's position. Each WorkScheduleItem represents a day
+            of the week with a corresponding unit (in hours) which together form a work schedule for this person's position.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPosition.FullTimeEquivalent">
+            <summary>
+            Decimal field that represents the full-time equivalent value of the employee in the position
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage">
+            <summary>
+            A PersonPositionWage object describes the parameters used to determine how a 
+            person is paid for their particular position.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.Id">
+            <summary>
+            The DB Id of the object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.PersonId">
+            <summary>
+            The Colleague PersonId of the object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.PositionId">
+            <summary>
+            The PositionId of the object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.PersonPositionId">
+            <summary>
+            The Id of the PersonPosition this wage object is attached to
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.PositionPayDefaultId">
+            <summary>
+            The Id of the PositionPayDefault object that contains the default parameters used to build
+            this object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.StartDate">
+            <summary>
+            The start date of when these wage parameters take effect
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.EndDate">
+            <summary>
+            The end date of when these wage parameters stop taking effect
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.PayClassId">
+            <summary>
+            The Id of the PayClass which describes when and how the employee is paid for the work done in the position.
+            PayCycles contain a list of PayClasses.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.PayCycleId">
+            <summary>
+            The Id of the Paycycle, which is the effective PayCycle based on the PayClassId, of this object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.RegularWorkEarningsTypeId">
+            <summary>
+            The Id of the EarningsType the person tracks time against for regular work for this position
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.IsPaySuspended">
+            <summary>
+            Indicates whether this person's pay is suspended for this position.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.FundingSources">
+            <summary>
+            List of PositionFundingSources
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonPositionWage.EarningsTypeGroupId">
+            <summary>
+            The Id of the earnings type group associated to the position pay record for this employee's wage
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PersonStipend">
+            <summary>
+            A PersonStipend object describes the parameters used to determine how stipend 
+            is paid to a person for their particular position.
+            PersonStipend is a subset of the PersonPositionWage record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.Id">
+            <summary>
+            The DB Id of the object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.PersonId">
+            <summary>
+            The Colleague PersonId of the object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.PositionId">
+            <summary>
+            The PositionId of the object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.StartDate">
+            <summary>
+            The start date of when these wage parameters take effect
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.EndDate">
+            <summary>
+            The end date of when these wage parameters stop taking effect
+            This is a nullable field
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.Description">
+            <summary>
+            The description of this PersonPositionWage object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.BaseAmount">
+            <summary>
+            The base amount of this PersonPositionWage object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.PayrollDesignation">
+            <summary>
+            The payroll designation of this PersonPositionWage object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.NumberOfPayments">
+            <summary>
+            The number of paychecks for this PersonPositionWage object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.NumberOfPaymentsTaken">
+            <summary>
+            The number of paychecks taken for this PersonPositionWage object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.CourseSectionAssignments">
+            <summary>
+            Course Section Assignments associated with this  PersonPositionWage object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.AdvisorAssignments">
+            <summary>
+            Org Advisor Assignments associated with this  PersonPositionWage object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PersonStipend.MembershipAssignments">
+            <summary>
+            Org Membership Assignments associated with this  PersonPositionWage object
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.Position">
+            <summary>
+            Defines an employement position at an institution.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.Id">
+            <summary>
+            The database Id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.Title">
+            <summary>
+            A long form title
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.ShortTitle">
+            <summary>
+            A shortened title
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.IsExempt">
+            <summary>
+            Whether this is an Exempt position or non-exempt position, meaning the position
+            is exempt or not exempt from the Fair Labor Standards Act overtime rules. Most
+            salaried positions are considered exempt. If true, the position is exempt.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.IsSalary">
+            <summary>
+            Whether this is a salaried or hourly position. If true, the position is salaried
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.SupervisorPositionId">
+            <summary>
+            The Id of the Position considered the supervising position of this position
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.AlternateSupervisorPositionId">
+            <summary>
+            The Id of the Position considered the alternate supervising position of this position
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.TimecardType">
+            <summary>
+            The type of a timecard associated to this position
+            See TimecardType attributes for further details
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.StartDate">
+            <summary>
+            The Date this position becomes active
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.EndDate">
+            <summary>
+            The Date this position becomes inactive. Can be null
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.PositionPayScheduleIds">
+            <summary>
+            A list of Ids of the Pay Schedules associated to this position
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.PositionDept">
+            <summary>
+            The department associated with this position
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.Position.PositionLocation">
+            <summary>
+            The location associated with this position
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.PositionFundingSource">
+            <summary>
+            PositionFundingSource object describes where money comes from to pay a position
+            or a person position
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PositionFundingSource.FundingSourceId">
+            <summary>
+            The Id of the FundingSource
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PositionFundingSource.FundingOrder">
+            <summary>
+            A sort order used to group funding sources.        
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.PositionFundingSource.ProjectId">
+            <summary>
+            The Id of the Project this funding source is assigned to. Could be null indicating there is no project
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.ProficiencyLicensingAuthority">
+            <summary>
+            Information about an Employment Proficiency Licensing Authority
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.ProficiencyLicensingAuthority.Code">
+            <summary>
+            Unique system Id for this Proficiency Licensing Authority
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.ProficiencyLicensingAuthority.Description">
+            <summary>
+            Description of the Proficiency Licensing Authority
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.TaxFormNotations">
+            <summary>
+            Additional information to convey for a tax form.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.TaxFormNotations.None">
+            <summary>
+            No additional information to convey.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.TaxFormNotations.Correction">
+            <summary>
+            A correction form has been issued.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.TaxFormNotations.MultipleForms">
+            <summary>
+            Multiple forms have been issued.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.TaxFormNotations.HasOverflowData">
+            <summary>
+            A second form is required to present all data.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.TaxFormNotations.IsOverflow">
+            <summary>
+            Represents the second form when overflow data is present.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.TaxFormNotations.NotAvailable">
+            <summary>
+            The tax form statement is not available.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.TaxFormStatement">
+            <summary>
+            Represents a tax form statement for which a user can obtain a pdf printout
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.TaxFormStatement.PdfRecordId">
+            <summary>
+            Record ID where the pdf data is stored
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.TaxFormStatement.PersonId">
+            <summary>
+            Person to whom this tax statement is associated.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.TaxFormStatement.TaxYear">
+            <summary>
+            Year of the tax form.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.TaxFormStatement.TaxForm">
+            <summary>
+            Type of tax form.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.TaxFormStatement.Notation">
+            <summary>
+            Is this statement available for printing, is it the original, a correction, etc
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.TimecardType">
+            <summary>
+            Time Card Type
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.TimecardType.None">
+            <summary>
+            No timecard type will be applied to the associated position
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.TimecardType.Summary">
+            <summary>
+            Summary hours
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.TimecardType.Detailed">
+            <summary>
+            Detailed time
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.HumanResources.TimecardType.Clock">
+            <summary>
+            Clock In/Clock Out
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.UserPermission">
+            <summary>
+            Various Permissions of a user
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.UserPermission.HasViewLeaveRequest">
+            <summary>
+            Permission to view leave request
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.HumanResources.WorkScheduleItem">
+            <summary>
+            Item containing the day of the week, units (hours), and project for a work schedule. A collection of
+            WorkScheduleItems creates the work schedule for a given person's position.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.WorkScheduleItem.ScheduleId">
+            <summary>
+            Id of work schedule used to create this item
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.WorkScheduleItem.DayOfWeek">
+            <summary>
+            Specific day of week these units apply to
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.WorkScheduleItem.WorkUnits">
+            <summary>
+            Units (in hours) for the scheduled time
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.HumanResources.WorkScheduleItem.ProjectId">
+            <summary>
+            Project (if any) thse work units apply to
+            </summary>
+        </member>
+    </members>
+</doc>

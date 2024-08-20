@@ -1,0 +1,1752 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ellucian.Colleague.Dtos.TimeManagement</name>
+    </assembly>
+    <members>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.AccrualDetail">
+            <summary>
+            Accrual detail 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.AccrualDetail.Id">
+            <summary>
+            Record key
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.AccrualDetail.CompTimeAccrualId">
+            <summary>
+            Reference Id to the CompTimeAccrual record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.AccrualDetail.DailyCompTimeId">
+            <summary>
+            Identifier for the DailyCompTimeId
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.AccrualDetail.WeeklyCompTimeId">
+            <summary>
+            Identifier for the WeeklyCompTimeId
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.AccrualDetail.Minutes">
+            <summary>
+            Amount of time, in minutes, taken as comp time
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.AccrualDetail.StartDate">
+            <summary>
+            Start date for the AccrualDetail
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.AccrualDetail.EndDate">
+            <summary>
+            End date for the AccrualDetail
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.CompTimeAccrual">
+            <summary>
+            Comp time accrual
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CompTimeAccrual.Id">
+            <summary>
+            Id for the CompTimeAccrual
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CompTimeAccrual.PayCycleId">
+            <summary>
+            Pay cycle Id for the CompTimeAccrual
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CompTimeAccrual.EmployeeId">
+            <summary>
+            Id of the employee in which the CompTimeAccrual is for
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CompTimeAccrual.PeriodEndDate">
+            <summary>
+            Pay period end date for the associated CompTimeAccrual
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CompTimeAccrual.AccrualDetails">
+            <summary>
+            List of accrualDetail records associated to the CompTimeAccrual
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.CompTimeAccrualQueryCriteria">
+            <summary>
+            CompTimeAccrual Query Criteria
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CompTimeAccrualQueryCriteria.Ids">
+            <summary>
+            List of ids for CompTimeAccrual records to retrieve
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.CreateTimecardRequest">
+            <summary>
+            This object can be used to create a timecard.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CreateTimecardRequest.RequestGuid">
+            <summary>
+            A GUID that identifies this request object from other request objects in the same
+            HTTP request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CreateTimecardRequest.Timecard">
+            <summary>
+            The Timecard object containing the data used to create the timecard resource.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.CreateTimecardResponse">
+            <summary>
+            This object is the response equivalent of the CreateTiemcardRequest. It
+            contains the information about the result of the request.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CreateTimecardResponse.Request">
+            <summary>
+            The Request associated with the response
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CreateTimecardResponse.TimecardId">
+            <summary>
+            The id of the timecard resources that was created by the request, or if the 
+            timecard already existed, the id of the existing timecard resource.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CreateTimecardResponse.ResourceLocation">
+            <summary>
+            A URL to the location of the newly created resource. Equivalent to the value in Location header
+            in a single Create Timecard HTTP request.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CreateTimecardResponse.IsSuccess">
+            <summary>
+            True if the timecard was created as expected. False if not. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CreateTimecardResponse.StatusCode">
+            <summary>
+            An HTTP Status Code that indiciates the status of the result of the request. When the status is 409 - Conflict - this indicates a timecard already exists for the attributes specified in the request. 
+            In this instance, the client can use the TimecardId attribute of this response to issue an PUT timecards/{id} request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.CreateTimecardResponse.StatusMessage">
+            <summary>
+            A message that accompanies the status code
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.DailyCompTimeThreshold">
+            <summary>
+            Daily Comp Time
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.DailyCompTimeThreshold.DailyOvertimeThresholdId">
+            <summary>
+            Daily Overtime threshold ids
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.DailyCompTimeThreshold.DailyOvertimeEarnTypeId">
+            <summary>
+            Daily Overtime earn type ids
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.DailyCompTimeThreshold.DailyOvertimeMinutes">
+            <summary>
+            Daily Overtime minutes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.DailyCompTimeThreshold.DailyCompTimeEarnTypeId">
+            <summary>
+            Daily comptime earn type ids
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.DailyCompTimeThreshold.DailyCompTimeMinutes">
+            <summary>
+            Daily comptime minutes
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.DailyOvertimeAllocation">
+            <summary>
+            Part of an OvertimeCalculationResult that indicates overtime
+            for a specific date when a daily overtime threshold has been reached.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.DailyOvertimeAllocation.Date">
+            <summary>
+            The date this overtime applies to
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.DailyOvertimeAllocation.Overtime">
+            <summary>
+            The amount of overtime
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.DeleteCompTimeAccrualResponse">
+            <summary>
+            Response on the delete comp time accrual endpoint
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.DeleteCompTimeAccrualResponse.DeleteExecuted">
+            <summary>
+            Boolean stating whether or not the request was valid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.DeleteCompTimeAccrualResponse.DeleteCompTimeErrorMessage">
+            <summary>
+            Message for why the delete did not work
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.EarningsFactor">
+            <summary>
+            Represents the multiplier and earnings type id that can be applied to overtime hours
+            above a specific threshold.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EarningsFactor.EarningsTypeId">
+            <summary>
+            The Id representing the EarningsType
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EarningsFactor.Factor">
+            <summary>
+            The factor associated with the EarningsType
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary">
+            <summary>
+            Information for a EmployeeTimeSummary object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary.EmployeeId">
+            <summary>
+            ID of employee related to this summary
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary.PersonPositions">
+            <summary>
+            PersonPosition objects related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary.PersonPositionWages">
+            <summary>
+            PersonPositionWage objects related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary.PersonEmploymentStatuses">
+            <summary>
+            PersonEmploymentStatus objects related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary.PersonDemographics">
+            <summary>
+            HumanResourceDemographics object related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary.PersonSupervisorsDemographics">
+            <summary>
+            HumanResourceDemographics objects containing supervisors demographics data
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary.Timecards">
+            <summary>
+            Timecard2 objects related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary.TimecardStatuses">
+            <summary>
+            TimecardStatus objects related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary.TimeEntryComments">
+            <summary>
+            TimeEntryComments objects related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary.TimecardHistories">
+            <summary>
+            TimecardHistory2 objects related to this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummary.TimeHistoryComments">
+            <summary>
+            TimeHistoryComments objects related to this employee
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummaryQueryCriteria">
+            <summary>
+            Selection criteria for EmployeeTimeSummary
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummaryQueryCriteria.SupervisorId">
+            <summary>
+            Id of supervisor to get EmployeeTimeSummary for
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummaryQueryCriteria.SuperviseeIds">
+            <summary>
+            Id(s) of supervisees to get EmployeeTimeSummary for
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummaryQueryCriteria.LookupStartDate">
+            <summary>
+            The lookup start date, all records with end date before this date will not be retrieved.
+            If none specified, the endpoint will retrieve all available information
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummaryQueryCriteria.PayCycleIds">
+            <summary>
+            A list of paycycle ids to filter which data to retrieve
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.EmployeeTimeSummaryQueryCriteria.PayPeriods">
+            <summary>
+            A list of pay periods to filter on
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.HoursThreshold">
+            <summary>
+            Represents A threshold above which an Earnings Factor is applied to time worked
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.HoursThreshold.Threshold">
+            <summary>
+            The number of hours associated with this threshold
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.HoursThreshold.DefaultEarningsType">
+            <summary>
+            The default EarningsFactor for overtime hours
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.HoursThreshold.AlternateEarningsType">
+            <summary>
+            The alternate EarningsFactor for overtime hours
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.IncludedEarningsType">
+            <summary>
+            An Earnings Type that's indcluded in Overtime Calculations
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.IncludedEarningsType.EarningsTypeId">
+            <summary>
+            The ID associated with the earnings type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.IncludedEarningsType.UseAlternate">
+            <summary>
+            Boolean that states whether to use the alternate earntype or not
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationDefinition">
+            <summary>
+            Represents the paramters used to calculate overtime.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationDefinition.Id">
+            <summary>
+            The Id associated with the OvertimeCalculationDefinition
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationDefinition.Description">
+            <summary>
+            The description of the OvertimeCalculationDefinition
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationDefinition.OvertimePayCalculationMethod">
+            <summary>
+            The method of calculating the overtime pay
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationDefinition.WeeklyHoursThreshold">
+            <summary>
+            The list of HoursThresholds for weekly overtime
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationDefinition.DailyHoursThreshold">
+            <summary>
+            The list of HoursThresholds for daily overtime
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationDefinition.IncludedEarningsTypes">
+            <summary>
+            The list of EarningsTypes to be included in the OvertimeCalculationDefinition
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationResult">
+            <summary>
+            The result of an overtime calculation.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationResult.PersonId">
+            <summary>
+            The Id of the person for whom this overtime result applies
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationResult.StartDate">
+            <summary>
+            The start of the date range for which this overtime result applies.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationResult.EndDate">
+            <summary>
+            The end of the date range for which the overtime result applies.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationResult.PayCycleId">
+            <summary>
+            The paycycle for which the overtime result applies.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationResult.ResultDateTime">
+            <summary>
+            The date and time this result was calculated.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationResult.Thresholds">
+            <summary>
+            A list of the overtime thresholds reached by the person for the given timeframe
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCalculationResult.ClientQueryId">
+            <summary>
+            A unique identifier taken from the client's query request which can be used to uniquely tie this 
+            overtime calculation result back to its query.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.Id">
+            <summary>
+            Record Key
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.WeeklyParmsId">
+            <summary>
+            Weekly allocation id - will be null if there is a Daily allocation id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.DailyParmsId">
+            <summary>
+            Daily allocation Id - will be null if there is a Weekly allocation id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.Overtime">
+            <summary>
+            Overtime amount in minutes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.CompTime">
+            <summary>
+            Comp time amount in minutes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.OvertimeEarningsType">
+            <summary>
+            Overtime earnings type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.OvertimeFactor">
+            <summary>
+            Overtime Factor amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.CompTimeEarningsType">
+            <summary>
+            Comp time earnings type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.CompTimeFactor">
+            <summary>
+            Comp time factor amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.WeekStartDate">
+            <summary>
+            Start date for the accrual record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.WeekEndDate">
+            <summary>
+            End date for the accrual record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocation.CompTimeAccrualId">
+            <summary>
+            Reference to the comp time accrual record
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocationCriteria">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocationCriteria.EmployeeId">
+            <summary>
+            Id of the Employee being requested
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocationCriteria.PayPeriodEndDate">
+            <summary>
+            End date of the pay period being requested
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeCompTimeThresholdAllocationCriteria.PayCycleId">
+            <summary>
+            Id of the Pay cycle being requested
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.OvertimePayCalculationMethod">
+            <summary>
+            Enum for each method of calculating overtime pay
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.TimeManagement.OvertimePayCalculationMethod.WeightedAverage">
+            <summary>
+            Value for depicting the WeightedAverage method of calculating overtime pay
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.TimeManagement.OvertimePayCalculationMethod.PositionRate">
+            <summary>
+            Value for depicting the PositionRate method of calculating overtime pay
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.OvertimeQueryCriteria">
+            <summary>
+            OvertimeQueryCriteria is the request object to be used 
+            with the qapi/overtime api. Most overtime is calculated for 
+            a date range of a week in length, but any date range may be supplied.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeQueryCriteria.PersonId">
+            <summary>
+            The Id of the Person for whom to calculate overtime. Required
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeQueryCriteria.StartDate">
+            <summary>
+            The start of the date range for which to calculate overtime. Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeQueryCriteria.EndDate">
+            <summary>
+            The end of the date range for which to calculate overtime. Required
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeQueryCriteria.PayCycleId">
+            <summary>
+            The Id of the pay cycle for which to calculate overtime. Required.
+            Overtime can only be calculated on a per-paycycle basis.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeQueryCriteria.ClientQueryId">
+            <summary>
+            A Guid set by the client which can be used to uniquely tie the 
+            overtime calculation result back to the query.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.OvertimeThresholdResult">
+            <summary>
+            Represents part of the overtime calculation result that indicates 
+            the earnings factor applied to overtime above a particular threshold.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeThresholdResult.TotalOvertime">
+            <summary>
+            The total overtime for the specified threshold
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeThresholdResult.EarningsTypeId">
+            <summary>
+            The Id representing the EarningsType
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeThresholdResult.Factor">
+            <summary>
+            The factor (pay multiplier) associated this threshold
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.OvertimeThresholdResult.DailyAllocations">
+            <summary>
+            A list of daily overtime allocations for daily thresholds.
+            If null or empty, the threshold is for the entire time frame
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.PayPeriodFilterCriteria">
+            <summary>
+            Contains information for a pay period for querying purposes;
+            used as part of EmployeeTimeSummaryQueryCriteria
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PayPeriodFilterCriteria.PayCycleId">
+            <summary>
+            Pay cycle id that this period belongs to
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PayPeriodFilterCriteria.EndDate">
+            <summary>
+            Pay period end date
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod">
+            <summary>
+            Pay period information for an active clock position for today 
+            </summary>    
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.EmployeeId">
+            <summary>
+            Employee Id of the logged in person performing clock-in/out.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.PositionId">
+            <summary>
+            Id of the position for which clock-in/out is being performed.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.PayCycleId">
+            <summary>
+            Id of the pay cycle for which clock-in/out is being performed.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.PeriodStartDate">
+            <summary>
+            Start date of the pay period in which clock-in/out is being performed.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.PeriodEndDate">
+            <summary>
+            End date of the pay period in which clock-in/out is being performed.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.WeekStartDates">
+            <summary>
+            Start dates of all the timecard work weeks in this pay period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.WeekEndDates">
+            <summary>
+            End dates of all the timecard work weeks in this pay period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.EarningsTypeId">
+            <summary>
+            Id of the associated earnings type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.EmployeeTimecardCutoffDateTime">
+            <summary>
+            Cut off date for the employee to enter time
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.SupervisorTimecardCutoffDateTime">
+            <summary>
+            Cut off date for the supervisor to enter time on behalf of a subordinate employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.TimecardStartDate">
+            <summary>
+            Start date of the timecard to be created for today
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.TimecardEndDate">
+            <summary>
+            End date of the timecard to be created for today
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.PositionTitle">
+            <summary>
+            Title of the position for which clock-in/out is being performed.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.PositionShortTitle">
+            <summary>
+            Short title of the position for which clock-in/out is being performed.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriod.IsPaySuspended">
+            <summary>
+            PWAG Suspend Pay value for this position.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriodsTimecards">
+            <summary>
+            PositionPayperiods and Timecards information needed to perform clock-in/out from the experience.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriodsTimecards.PositionPayPeriods">
+            <summary>
+            Pay period information for all active clock positions for today 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriodsTimecards.Timecards">
+            <summary>
+            Timecards associated with this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriodsTimecards.TimecardStatuses">
+            <summary>
+            Latest status of all the timecards associated with this employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.PositionPayPeriodsTimecards.ValidationErrors">
+            <summary>
+            List of all on load validation errors
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.StatusAction">
+            <summary>
+            Records they types of actions performed on a timecard. The status action is stored on the status record.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.TimeManagement.StatusAction.Unsubmitted">
+            <summary>
+            Indiciates the timecard was unsubmitted after previously being submitted
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.TimeManagement.StatusAction.Submitted">
+            <summary>
+            Indicates the timecard was submitted for approval
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.TimeManagement.StatusAction.Rejected">
+            <summary>
+            Indicates the timecard was rejected
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.TimeManagement.StatusAction.Approved">
+            <summary>
+            Indicates the timecard was approved
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.TimeManagement.StatusAction.Paid">
+            <summary>
+            Indicates the timecard was processed through payroll
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.Timecard">
+            <summary>
+            Timecard used to record time worked for an employee. Each time card is unique for each person's position and
+            is associated to a set of time entry objects.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard.Id">
+            <summary>
+            Unique identifier of this timecard. This id is not required on POST.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard.EmployeeId">
+            <summary>
+            Employee associated to this timecard
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard.PositionId">
+            <summary>
+            Position associated to this timecard
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard.PayCycleId">
+            <summary>
+            Pay cycle associated to this timecard
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard.PeriodStartDate">
+            <summary>
+            Start Date of the pay period. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard.PeriodEndDate">
+            <summary>
+            End date of the pay period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard.StartDate">
+            <summary>
+            Start date of the work week
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard.EndDate">
+            <summary>
+            End date of the work week
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard.TimeEntries">
+            <summary>
+            List of assoicated time entries
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard.Timestamp">
+            <summary>
+            Timestamp for record add and change (read only)
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.Timecard2">
+            <summary>
+            Timecard used to record time worked for an employee. Each time card is unique for each person's position and
+            is associated to a set of time entry objects.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.Id">
+            <summary>
+            Unique identifier of this timecard. This id is not required on POST.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.EmployeeId">
+            <summary>
+            Employee associated to this timecard
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.PositionId">
+            <summary>
+            Position associated to this timecard
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.PayCycleId">
+            <summary>
+            Pay cycle associated to this timecard
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.CompTimeAccrualId">
+            <summary>
+            Reference to CompTimeAccrual record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.PeriodStartDate">
+            <summary>
+            Start Date of the pay period. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.PeriodEndDate">
+            <summary>
+            End date of the pay period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.StartDate">
+            <summary>
+            Start date of the work week
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.EndDate">
+            <summary>
+            End date of the work week
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.OvertimeThresholdResults">
+            <summary>
+            Overtime results with earn types and associated minutes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.TimeEntries">
+            <summary>
+            List of associated time entries (as version TimeEntry2)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.LeaveRequestIds">
+            <summary>
+            A list of attached Leave Request Ids
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.Timecard2.Timestamp">
+            <summary>
+            Timestamp for record add and change (read only)
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory">
+            <summary>
+            Timecard history used to retain information about time worked for an employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory.Id">
+            <summary>
+            Unique identifier of this timecard history. This id is not required on POST.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory.EmployeeId">
+            <summary>
+            Employee associated to this timecard history
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory.PositionId">
+            <summary>
+            Position associated to this timecard history
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory.PayCycleId">
+            <summary>
+            Pay cycle associated to this timecard history
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory.PeriodStartDate">
+            <summary>
+            Start Date of the pay period. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory.PeriodEndDate">
+            <summary>
+            End date of the pay period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory.StartDate">
+            <summary>
+            Start date of the work week
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory.EndDate">
+            <summary>
+            End date of the work week
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory.TimeEntryHistories">
+            <summary>
+            List of assoicated time entries
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory.Timestamp">
+            <summary>
+            Timestamp for record add and change
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory.StatusAction">
+            <summary>
+            The StatusAction that created this history record
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2">
+            <summary>
+            Timecard history used to retain information about time worked for an employee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.Id">
+            <summary>
+            Unique identifier of this timecard history. This id is not required on POST.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.EmployeeId">
+            <summary>
+            Employee associated to this timecard history
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.PositionId">
+            <summary>
+            Position associated to this timecard history
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.PayCycleId">
+            <summary>
+            Pay cycle associated to this timecard history
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.PeriodStartDate">
+            <summary>
+            Start Date of the pay period. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.PeriodEndDate">
+            <summary>
+            End date of the pay period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.StartDate">
+            <summary>
+            Start date of the work week
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.EndDate">
+            <summary>
+            End date of the work week
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.TimeEntryHistories">
+            <summary>
+            List of associated time entry histories (as version TimeEntryHistory2)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.Timestamp">
+            <summary>
+            Timestamp for record add and change
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.StatusAction">
+            <summary>
+            The StatusAction that created this history record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.Source">
+            <summary>
+            The TimecardSource that created this history record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.OvertimeDetails">
+            <summary>
+            List of associated overtime details related to the historical timecard
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardHistory2.ShiftDifferentialDetails">
+            <summary>
+            List of associated shift differential details related to the historical timecard
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimeCardHistoryOvertimeDetails">
+            <summary>
+            Contains details for overtime related to a specific timecard history object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeCardHistoryOvertimeDetails.OvertimeEarnType">
+            <summary>
+            Contains the overtime earn type assocated with the overtime minutes for the week specific to this timecard history object.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeCardHistoryOvertimeDetails.OvertimeMinutes">
+            <summary>
+            Contains the overtime minutes calculated for the week specific to this timecard history object.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimeCardHistoryShiftDifferentialDetails">
+            <summary>
+            Contains details for shift differentials related to a specific timecard history object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeCardHistoryShiftDifferentialDetails.ShiftDifferentialCode">
+            <summary>
+            Contains the shift differntial code assocated with the minutes for the week specific to this timecard history object.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeCardHistoryShiftDifferentialDetails.ShiftDifferentialMinutes">
+            <summary>
+            Contains the shift differntial minutes calculated for the week specific to this timecard history object.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimecardSource">
+            <summary>
+            Records the source of the timecard record
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.TimeManagement.TimecardSource.Import">
+            <summary>
+            Indicates the timecard was sourced from the batch import process in Colleague UI
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.TimeManagement.TimecardSource.PayPeriodTimeEntry">
+            <summary>
+            Indicates the timecard was sourced from the Pay Period Time Entry (PPTE) form in Colleague UI
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.TimeManagement.TimecardSource.SelfService">
+            <summary>
+            Indicates the timecard was sourced from Self-Service
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.TimeManagement.TimecardSource.Converted">
+            <summary>
+            Indicates the timecard was sourced from the batch convert process in Colleague UI
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimecardStatus">
+            <summary>
+            A representation of a timecard status instance.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardStatus.Id">
+            <summary>
+            The identifier of this status.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardStatus.TimecardId">
+            <summary>
+            The timecard associated to this status.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardStatus.ActionerId">
+            <summary>
+            The person taking the action on the timecard represented by this status.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardStatus.ActionType">
+            <summary>
+            The type of action to be performed.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardStatus.HistoryId">
+            <summary>
+            Associated history record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimecardStatus.Timestamp">
+            <summary>
+            Timestamp for record add and change (read only)
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry">
+            <summary>
+            Time Entry object for use with data transfer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry.Id">
+            <summary>
+            Id of the time entry
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry.TimecardId">
+            <summary>
+            Id of the associated time card
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry.ProjectId">
+            <summary>
+            Id of the associated project
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry.EarningsTypeId">
+            <summary>
+            Id of the associated earnings type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry.PersonLeaveId">
+            <summary>
+            Id of the associated person leave plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry.InDateTime">
+            <summary>
+            DateTimeOffset of this time entry start, i.e. beginning of a person's unit of work
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry.OutDateTime">
+            <summary>
+            DateTimeOffset of this time entry end, i.e. end of a person's unit of work
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry.WorkedTime">
+            <summary>
+            Total time amount for this entry.
+            This may be entered directly, else it is derived from the InDateTime/OutDateTime.
+            This value will be null when the InDateTime is set but the OutDateTime is not set.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry.WorkedDate">
+            <summary>
+            Date associated with start of this time entry
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry.Timestamp">
+            <summary>
+            Timestamp of record creation and change (read only)
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2">
+            <summary>
+            Time Entry object for use with data transfer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.Id">
+            <summary>
+            Id of the time entry
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.TimecardId">
+            <summary>
+            Id of the associated time card (as version Timecard2)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.ProjectId">
+            <summary>
+            Id of the associated project
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.EarningsTypeId">
+            <summary>
+            Id of the associated earnings type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.PersonLeaveId">
+            <summary>
+            Id of the associated person leave plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.InDateTime">
+            <summary>
+            DateTime of this time entry start, i.e. beginning of a person's unit of work
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.InServerDateTime">
+            <summary>
+            DateTime of this time entry start, i.e. Clocked In Server Time of a person's unit of work
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.OutDateTime">
+            <summary>
+            DateTime of this time entry end, i.e. end of a person's unit of work
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.OutServerDateTime">
+            <summary>
+            DateTime of this time entry end, i.e. Clocked Out Server Time of a person's unit of work
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.OverriddenTimeEntryComments">
+            <summary>
+            A list of Overridden time entry comments associated to this time Entry
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.WorkedTime">
+            <summary>
+            Total time amount for this entry.
+            This may be entered directly, else it is derived from the InDateTime/OutDateTime.
+            This value will be null when the InDateTime is set but the OutDateTime is not set.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.WorkedDate">
+            <summary>
+            Date associated with start of this time entry
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.Timestamp">
+            <summary>
+            Timestamp of record creation and change (read only)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntry2.ShiftDifferentialHoursWorked">
+            <summary>
+            Amount of hours worked at the shift differential.
+            The value will be null if there is no shift differential code.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryComments">
+            <summary>
+            Comments associated to a timecard, timecard status, or an employee's position within a pay period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryComments.Id">
+            <summary>
+            The database ID of the Comments object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryComments.EmployeeId">
+            <summary>
+            the ID of the employee this Comment is associated to
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryComments.TimecardId">
+            <summary>
+            The ID of the timecard this Comment is associated to. Not required if the comment is assigned to
+            a timecardStatusId, or to a PositionId + PayCycleId + PayPeriodEndDate grouping
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryComments.TimecardStatusId">
+            <summary>
+            The ID of the timecardStatus this Comment is associated to. Not required if the comment is assigned to
+            a timecardId,  or to a PositionId + PayCycleId + PayPeriodEndDate grouping.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryComments.PayCycleId">
+            <summary>
+            The ID of the PayCycle this Comment is associated to. Required if the comment is assigned to a
+            PositionId + PayCycleId + PayPeriodEndDate grouping. Not Required if the comment is assigned to a TimecardId or
+            timecardStatusId
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryComments.PayPeriodEndDate">
+            <summary>
+            The end date of the pay period this Comment is associated to. Required if the comment is assigned to a
+            PositionId + PayCycleId + PayPeriodEndDate grouping. Not Required if the comment is assigned to a TimecardId or
+            timecardStatusId
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryComments.PositionId">
+            <summary>
+            The ID of the Position this Comment is associated to. Required if the comment is assigned to a
+            PositionId + PayCycleId + PayPeriodEndDate grouping. Not Required if the comment is assigned to a TimecardId or
+            timecardStatusId
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryComments.Comments">
+            <summary>
+            The actual Comment content
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryComments.CommentsTimestamp">
+            <summary>
+            A timestamp of when this Comment object was created and changed in the database. Required if the Comment database record
+            this object represents already exists. Not required if this is a new Comment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryComments.CommentAuthorName">
+            <summary>
+            The name of the person who created the comment
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory">
+            <summary>
+            Time Entry History object for use with data transfer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory.Id">
+            <summary>
+            The identifier of this time entry history
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory.TimecardHistoryId">
+            <summary>
+            This time entry's associated timecard history identifier
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory.ProjectId">
+            <summary>
+            This time entry history's associated project identifier
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory.EarningsTypeId">
+            <summary>
+            This time entry history's associated earn type identifier
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory.PersonLeaveId">
+            <summary>
+            This time entry history's associated person leave identifier
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory.InDateTime">
+            <summary>
+            The time of this entry history's commencement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory.OutDateTime">
+            <summary>
+            The time of this entry history's termination
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory.WorkedTime">
+            <summary>
+            The total time amount for this entry history
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory.WorkedDate">
+            <summary>
+            The date associated with commencement of this time entry
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory.Timestamp">
+            <summary>
+            The record timestamp
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2">
+            <summary>
+            Time Entry History object for use with data transfer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.Id">
+            <summary>
+            The identifier of this time entry history
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.TimecardHistoryId">
+            <summary>
+            This time entry's associated timecard history (as version TimecardHistory2) identifier
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.ProjectId">
+            <summary>
+            This time entry history's associated project identifier
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.EarningsTypeId">
+            <summary>
+            This time entry history's associated earn type identifier
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.PersonLeaveId">
+            <summary>
+            This time entry history's associated person leave identifier
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.InDateTime">
+            <summary>
+            The time of this entry history's commencement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.OutDateTime">
+            <summary>
+            The time of this entry history's termination
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.WorkedTime">
+            <summary>
+            The total time amount for this entry history
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.WorkedDate">
+            <summary>
+            The date associated with commencement of this time entry
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.Timestamp">
+            <summary>
+            The record timestamp
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.ShiftDiffDescription">
+            <summary>
+            The TCBS Source Shift Diff Code Description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.TCBSShiftDiffCode">
+            <summary>
+            The TCBS Source Shift Diff Code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.TCBSShiftDiffMins">
+            <summary>
+            The TCBS Source Shift Diff Mins
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.TEHShiftDiffCode">
+            <summary>
+            The TEH Source Shift Diff Code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.TEHShiftDiffMins">
+            <summary>
+            The TEH Source Shift Diff Mins
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.TEHThcvTimeinoutProcessed">
+            <summary>
+            Indicates whether the time in/out timestamps were processed while executing THCV utility
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.InServerDateTime">
+            <summary>
+            DateTime of this time entry start, i.e. Clocked In Server Time of a person's unit of work
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.OutServerDateTime">
+            <summary>
+            DateTime of this time entry end, i.e. Clocked Out Server Time of a person's unit of work
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistory2.OverriddenTimeEntryComments">
+            <summary>
+            A list of Overridden time entry history comments associated to this time Entry
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistoryOverridenTimeComment">
+            <summary>
+            A Time Entry Overriden Time Comment object for use with data transfer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistoryOverridenTimeComment.CommentAddDate">
+            <summary>
+            The original time which got overridden
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistoryOverridenTimeComment.CommentAuthorEmployeeId">
+            <summary>
+            the ID of the employee this Comment is associated to
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistoryOverridenTimeComment.CommentsTimestamp">
+            <summary>
+            A timestamp of when this Comment object was created and updated in the database. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistoryOverridenTimeComment.Comment">
+            <summary>
+            The actual Comment content
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistoryOverridenTimeComment.OriginalTime">
+            <summary>
+            The original time which got overridden
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistoryOverridenTimeComment.OverriddenTime">
+            <summary>
+            The Overridden time
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistoryOverridenTimeComment.OverriddenTimeType">
+            <summary>
+            The overridden Time Type IN or OUT
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryHistoryOverridenTimeComment.CommentAuthorEmployeeName">
+            <summary>
+            The name of the person who had overridden the Clock data and added the comment.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryOverridenTimeComment">
+            <summary>
+            A Time Entry Overriden Time Comment object for use with data transfer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryOverridenTimeComment.CommentAddDate">
+            <summary>
+            The original time which got overridden
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryOverridenTimeComment.CommentAuthorEmployeeId">
+            <summary>
+            the ID of the employee this Comment is associated to
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryOverridenTimeComment.CommentsTimestamp">
+            <summary>
+            A timestamp of when this Comment object was created and updated in the database. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryOverridenTimeComment.Comment">
+            <summary>
+            The actual Comment content
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryOverridenTimeComment.OriginalTime">
+            <summary>
+            The original time which got overridden
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryOverridenTimeComment.OverriddenTime">
+            <summary>
+            The Overridden time
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryOverridenTimeComment.OverriddenTimeType">
+            <summary>
+            The overridden Time Type IN or OUT
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeEntryOverridenTimeComment.CommentAuthorEmployeeName">
+            <summary>
+            The name of the person who had overridden the Clock data and added the comment.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimeHistoryComments">
+            <summary>
+            Comments associated to a timeHistory, timeHistory status, or an employee's position within a pay period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeHistoryComments.Id">
+            <summary>
+            The database ID of the Comments object
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeHistoryComments.TimeHistoryId">
+            <summary>
+            The ID of the timeHistory this Comment is associated to. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeHistoryComments.EmployeeId">
+            <summary>
+            The ID of employee this comment is related to.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeHistoryComments.PayCycleId">
+            <summary>
+            The ID of the PayCycle this Comment is associated to. Required if the comment is assigned to a
+            PositionId + PayCycleId + PayPeriodEndDate grouping. Not Required if the comment is assigned to a timeHistoryId 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeHistoryComments.PayPeriodEndDate">
+            <summary>
+            The end date of the pay period this Comment is associated to. Required if the comment is assigned to a
+            PositionId + PayCycleId + PayPeriodEndDate grouping. Not Required if the comment is assigned to a TimecardId 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeHistoryComments.PositionId">
+            <summary>
+            The ID of the Position this Comment is associated to. Required if the comment is assigned to a
+            PositionId + PayCycleId + PayPeriodEndDate grouping. Not Required if the comment is assigned to a TimecardId 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeHistoryComments.Comments">
+            <summary>
+            The actual Comment content
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeHistoryComments.CommentsHistoryTimestamp">
+            <summary>
+            A timestamp of when this Comment object was changed in the database. Required if the Comment database record
+            this object represents already exists. Not required if this is a new Comment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeHistoryComments.CommentAuthorName">
+            <summary>
+            The name of the person who created the comment
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.TimeManagementConfiguration">
+            <summary>
+            The time management configuration contains the settings necessary to determine if supervisors have the
+            ability to edit time for a timecard. Additionally, contains whether or not comp time has been enabled with time entry in self service.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeManagementConfiguration.AllowSupervisorToEditTime">
+            <summary>
+            Indicates if supervisors are allowed to modify employee time entries for timecards. This is a site
+            level parameter.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeManagementConfiguration.TimeHistoryPriorYears">
+            <summary>
+            Indicates the number of prior years for which employee wants to see their time history in self-service. 
+            This is a site level parameter.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeManagementConfiguration.CompTimeEnabled">
+            <summary>
+            Indicates whether or not an employee can select CompTime Taken earnings type in the Additional Time dropdown list in the SS time entry page.
+            This is a site level parameter.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeManagementConfiguration.WorkSchedulesEnabled">
+            <summary>
+            Indicates whether or not work schedules are enabled in Self Service. This is a site level parameter
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeManagementConfiguration.MaxPayPeriodCompTimeTaken">
+            <summary>
+            Indicates the amount of Comp Time that a person may take per pay period. This is a site level parameter.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeManagementConfiguration.EnableSalaryEmployees">
+            <summary>
+            Indicates the whether or not Salary Employees are visible in Self Service. This is a site level parameter.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeManagementConfiguration.EnableExempt">
+            <summary>
+            Indicates whether Exempt employees are to be included in Self-Service. This is a site level parameter
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeManagementConfiguration.AllowLeaveRequestsOnTimecards">
+            <summary>
+            Indicates whether leave requests are enabled to drop-in on timecards 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeManagementConfiguration.TimeManagementPriorMonthsLookback">
+            <summary>
+            The number of months to look back for time approval (as of 07/20/2020)
+            purposes
+            0 - this month only
+            null - no lookback limit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.TimeManagementConfiguration.DisplayNameHierarchy">
+            <summary>
+            Person Display Name Hierarchy
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.ValidateCompTimeCriteria">
+            <summary>
+            Criteria used to validate whether or not the employee can take comp time.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.ValidateCompTimeCriteria.EmployeeId">
+            <summary>
+            Id of the employee in which the CompTimeAccrual is for
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.ValidateCompTimeCriteria.PayCycleId">
+            <summary>
+            Pay cycle Id for the CompTimeAccrual
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.ValidateCompTimeCriteria.StartDate">
+            <summary>
+            Start date for the AccrualDetail
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.ValidateCompTimeCriteria.EndDate">
+            <summary>
+            End date for the AccrualDetail
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.ValidateCompTimeCriteria.PeriodEndDate">
+            <summary>
+            Pay period end date for the associated CompTimeAccrual
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.ValidateCompTimeCriteria.DailyCompTimeThresholds">
+            <summary>
+            Daily comptime thresholds
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.ValidateCompTimeCriteria.WeeklyCompTimeThresholds">
+            <summary>
+            Daily comptime thresholds
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.ValidateCompTimeResponse">
+            <summary>
+            Validation for a comp time request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.ValidateCompTimeResponse.CompTimeIsValid">
+            <summary>
+            Boolean stating whether or not the request was valid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.ValidateCompTimeResponse.CompTimeValidationMessage">
+            <summary>
+            Message for why the comp time is not valid
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.ValidationError">
+            <summary>
+            List of all the validations performed for today for experience clock-in/out.
+            Current Error Codes are:
+            1. E01 - No active clock positions found for the employee for today.
+            2. E02 - No wage records found for the active clock positions for the employee.
+            3. E03 - No prepared pay-periods found for any of the active clock positions for today.
+            4. E04 - Total hours worked in a single day cannot exceed 24 hours.
+            5. E05 - Time entered cannot overlap across detail and clock positions.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.ValidationError.ErrorCode">
+            <summary>
+            Error Code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.ValidationError.ErrorDescription">
+            <summary>
+            Error Description
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.TimeManagement.WeeklyCompTimeThreshold">
+            <summary>
+            Weekly comptime threshold
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.WeeklyCompTimeThreshold.WeeklyOvertimeThresholdId">
+            <summary>
+            Weekly Overtime threshold ids
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.WeeklyCompTimeThreshold.WeeklyOvertimeEarnTypeId">
+            <summary>
+            Weekly Overtime earn type ids
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.WeeklyCompTimeThreshold.WeeklyOvertimeMinutes">
+            <summary>
+            Weekly Overtime minutes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.WeeklyCompTimeThreshold.WeeklyCompTimeEarnTypeId">
+            <summary>
+            Weekly comptime earn type ids
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.TimeManagement.WeeklyCompTimeThreshold.WeeklyCompTimeMinutes">
+            <summary>
+            Weekly comptime minutes
+            </summary>
+        </member>
+    </members>
+</doc>

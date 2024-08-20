@@ -1,0 +1,36 @@
+﻿<fieldset>
+    <table class="APISettingstable">
+        <tr>
+            <td>
+                <label class="esg-form__label">Report Logo Path</label>
+            </td>
+            <td>
+                <div class="esg-form__group">
+                    <input class="esg-form__input" type="text" data-bind="value: ReportSettings.reportLogoPath" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img id="logo-test" onload="this.style.width = '100%'; this.style.maxWidth = '500px'; this.style.height = 'auto';" src="#" data-bind="attr: { 'src': ReportSettings.logoSrc }" onerror="this.style.width='50px';" />
+                <div style="font-style: italic;" data-bind="visible: ReportSettings.logoSrc().length == 0">No logo selected.</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">Unofficial Watermark Path</label>
+            </td>
+            <td>
+                <div class="esg-form__group">
+                    <input class="esg-form__input" type="text" data-bind="value: ReportSettings.unofficialWatermarkPath" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img id="watermark-test" onload="this.style.width = '100%'; this.style.maxWidth = '500px'; this.style.height = 'auto';" src="#" data-bind="attr: { 'src': ReportSettings.watermarkSrc }" onerror="this.style.width='50px';" />
+                <div style="font-style: italic;" data-bind="visible: ReportSettings.watermarkSrc().length == 0">No watermark selected.</div>
+            </td>
+        </tr>
+    </table>
+</fieldset>

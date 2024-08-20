@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="03/15/2023 11:53:37" ReportInfo.Modified="02/02/2024 12:03:30" ReportInfo.CreatorVersion="2023.1.12.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport
+{
+  public class ReportScript
+  {    
+
+    private void Picture1_BeforePrint(object sender, EventArgs e)
+    {
+         InstitutionLogo.ImageLocation = (string)Report.GetParameterValue(&quot;LogoPath&quot;);
+    }
+  }
+}
+</ScriptText>
+  <Dictionary>
+    <TableDataSource Name="PayStatementEarnings" ReferenceName="Data.PayStatementEarnings" DataType="System.Int32" Enabled="true">
+      <Column Name="EarningsTypeDescription" DataType="System.String"/>
+      <Column Name="EarningsTypeId" DataType="System.String"/>
+      <Column Name="PeriodPaymentAmount" DataType="System.Decimal"/>
+      <Column Name="Rate" DataType="System.Decimal"/>
+      <Column Name="UnitsWorked" DataType="System.Decimal"/>
+      <Column Name="YearToDatePaymentAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="PayStatementReport" ReferenceName="Data.PayStatementReport" DataType="System.Int32" Enabled="true">
+      <Column Name="AdditionalFederalWithholding" DataType="System.Decimal"/>
+      <Column Name="AdditionalStateWithholding" DataType="System.Decimal"/>
+      <Column Name="Comments" DataType="System.String"/>
+      <Column Name="EmployeeId" DataType="System.String"/>
+      <Column Name="EmployeeName" DataType="System.String"/>
+      <Column Name="EmployeeSSN" DataType="System.String"/>
+      <Column Name="FederalExemptions" DataType="System.Int32"/>
+      <Column Name="FederalWithholdingStatus" DataType="System.String"/>
+      <Column Name="Id" DataType="System.String"/>
+      <Column Name="InstitutionName" DataType="System.String"/>
+      <Column Name="Apply2020W4Rules" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="PaycheckReferenceId" DataType="System.String"/>
+      <Column Name="PayDate" DataType="System.DateTime"/>
+      <Column Name="PeriodEndDate" DataType="System.DateTime"/>
+      <Column Name="PeriodGrossPay" DataType="System.Decimal"/>
+      <Column Name="PeriodNetPay" DataType="System.Decimal"/>
+      <Column Name="PeriodStartDate" DataType="System.DateTime"/>
+      <Column Name="PrimaryPosition" DataType="System.String"/>
+      <Column Name="StateExemptions" DataType="System.Int32"/>
+      <Column Name="StatementReferenceId" DataType="System.String"/>
+      <Column Name="StateWithholdingStatus" DataType="System.String"/>
+      <Column Name="YearToDateGrossPay" DataType="System.Decimal"/>
+      <Column Name="YearToDateNetPay" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="PayStatementLeave" ReferenceName="Data.PayStatementLeave" DataType="System.Int32" Enabled="true">
+      <Column Name="LeaveRemaining" DataType="System.String"/>
+      <Column Name="LeaveTaken" DataType="System.Decimal"/>
+      <Column Name="LeaveTypeId" DataType="System.String"/>
+      <Column Name="Description" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="PayStatementDeduction" ReferenceName="Data.PayStatementDeduction" DataType="System.Int32" Enabled="true">
+      <Column Name="ApplicableGrossPeriodAmount" DataType="System.Decimal"/>
+      <Column Name="ApplicableGrossYearToDateAmount" DataType="System.Decimal"/>
+      <Column Name="Code" DataType="System.String"/>
+      <Column Name="Type" DataType="System.Int32"/>
+      <Column Name="Description" DataType="System.String"/>
+      <Column Name="EmployeePeriodAmount" DataType="System.Decimal"/>
+      <Column Name="EmployeeYearToDateAmount" DataType="System.Decimal"/>
+      <Column Name="EmployerPeriodAmount" DataType="System.Decimal"/>
+      <Column Name="EmployerYearToDateAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="PayStatementAddress" ReferenceName="Data.PayStatementAddress" DataType="System.Int32" Enabled="true">
+      <Column Name="AddressLine" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="PayStatementTaxableBenefit" ReferenceName="Data.PayStatementTaxableBenefit" DataType="System.Int32" Enabled="true">
+      <Column Name="TaxableBenefitAmt" DataType="System.Decimal"/>
+      <Column Name="TaxableBenefitDescription" DataType="System.String"/>
+      <Column Name="TaxableBenefitId" DataType="System.String"/>
+      <Column Name="TaxableBenefitYtdAmt" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="PayStatementBankDeposit" ReferenceName="Data.PayStatementBankDeposit" DataType="System.Int32" Enabled="true">
+      <Column Name="AccountIdLastFour" DataType="System.String"/>
+      <Column Name="BankName" DataType="System.String"/>
+      <Column Name="DepositAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="InstitutionMailingLabel" ReferenceName="Data.InstitutionMailingLabel" DataType="System.Int32" Enabled="true">
+      <Column Name="AddressLine" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="EmployeeMailingLabel" ReferenceName="Data.EmployeeMailingLabel" DataType="System.Int32" Enabled="true">
+      <Column Name="AddressLine" DataType="System.String"/>
+    </TableDataSource>
+    <Relation Name="EmployeeMailingLabel_PayStatementAddress" ParentDataSource="EmployeeMailingLabel" ChildDataSource="PayStatementAddress" ParentColumns="AddressLine" ChildColumns="AddressLine" Enabled="true"/>
+    <Parameter Name="ShouldDisplaySocialSecurityNumber" DataType="System.Boolean" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ShouldDisplayWithholdingStatus" DataType="System.Boolean" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LogoPath" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="HostCountry" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Total Name="TotalPeriodValue" Expression="[PayStatementEarnings.PeriodPaymentAmount]" Evaluator="Data4" PrintOn="DataFooter1"/>
+    <Total Name="TotalYTDValue" Expression="[PayStatementEarnings.YearToDatePaymentAmount]" Evaluator="Data4" PrintOn="DataFooter1" ResetAfterPrint="false"/>
+    <Total Name="TotalEmpPeriodAmt" Expression="[PayStatementDeduction.EmployeePeriodAmount]" Evaluator="Data7" PrintOn="DataFooter2"/>
+    <Total Name="TotalEmpYTDAmt" Expression="[PayStatementDeduction.EmployeeYearToDateAmount]" Evaluator="Data7" PrintOn="DataFooter2" ResetAfterPrint="false"/>
+    <Total Name="TotalEmployerAmt" Expression="[PayStatementDeduction.EmployerPeriodAmount]" Evaluator="Data7" PrintOn="DataFooter2"/>
+    <Total Name="TotalEmployerYTDAmt" Expression="[PayStatementDeduction.EmployerYearToDateAmount]" Evaluator="Data7" PrintOn="DataFooter2"/>
+  </Dictionary>
+  <ReportPage Name="Page1" LeftMargin="13.40612" TopMargin="13.40612" BottomMargin="12.7" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle3" Width="705.32" Height="24">
+      <TextObject Name="Textbox65" Left="453.6" Width="232.9" Height="24" CanGrow="true" Text="Earnings Statement" Padding="2, 2, 2, 2" Font="Arial, 12pt, style=Bold" TextFill.Color="DimGray"/>
+    </ReportTitleBand>
+    <DataBand Name="Data1" Top="26.61" Width="705.32" Height="264.6" DataSource="PayStatementReport">
+      <TableObject Name="NetPayTable" Left="452.85" Top="-0.35" Width="242.79" Height="72">
+        <TableColumn Name="Column21" Width="58.49"/>
+        <TableColumn Name="Column22" Width="104.74"/>
+        <TableColumn Name="Column23" Width="79.56"/>
+        <TableRow Name="Row18" Height="24">
+          <TableCell Name="Cell76" CanGrow="true" Padding="2, 2, 2, 2" Font="Arial, 10pt"/>
+          <TableCell Name="Cell77" CanGrow="true" Text="Amt. This Period" Padding="2, 2, 2, 2" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell78" CanGrow="true" Text="Year to Date" Padding="2, 2, 2, 2" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row19" Height="24" AutoSize="true">
+          <TableCell Name="Cell79" Fill.Color="Gray" CanGrow="true" Text="Net Pay" Padding="4, 2, 2, 2" Font="Arial, 9pt" TextFill.Color="White"/>
+          <TableCell Name="Cell80" Fill.Color="Gray" CanGrow="true" Text="[PayStatementReport.PeriodNetPay]" Padding="2, 2, 2, 2" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="White"/>
+          <TableCell Name="Cell81" Fill.Color="Gray" CanGrow="true" Text="[[TotalYTDValue] - [TotalEmpYTDAmt]]" Padding="2, 2, 2, 2" ProcessAt="ReportFinished" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="White"/>
+        </TableRow>
+        <TableRow Name="Row20" Height="24">
+          <TableCell Name="Cell82" CanGrow="true" Text="Advice #" Padding="4, 2, 2, 2" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell83" CanGrow="true" Text="[IIf([PayStatementReport.StatementReferenceId] == &quot;&quot;,[PayStatementReport.PaycheckReferenceId],[PayStatementReport.StatementReferenceId])]" Padding="2, 2, 2, 2" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell84" CanGrow="true" Padding="2, 2, 2, 2" Font="Arial, 10pt" TextFill.Color="DimGray"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table14" Top="85.05" Width="204.12" Height="39.69">
+        <TableColumn Name="Column86" Width="204.12"/>
+        <TableRow Name="Row43" MinHeight="18.9" AutoSize="true">
+          <TableCell Name="Cell242" Text="[PayStatementReport.InstitutionName]" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row44" MinHeight="20.79" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell247" Text="[InstitutionMailingLabel.AddressLine]" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table15" Left="207.9" Top="85.05" Width="228.69" Height="39.69" PrintOnParent="true">
+        <TableColumn Name="Column87" Width="77.49"/>
+        <TableColumn Name="Column88" Width="151.2" AutoSize="true"/>
+        <TableRow Name="Row45" MinHeight="18.9" AutoSize="true">
+          <TableCell Name="Cell248" Text="Employee:" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell249" Text="[PayStatementReport.EmployeeName]" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row46" MinHeight="20.79" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell253" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell254" Text="[EmployeeMailingLabel.AddressLine]" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table16" Top="160.65" Width="181.43" Height="62.37" PrintOnParent="true">
+        <TableColumn Name="Column89" Width="103"/>
+        <TableColumn Name="Column90" Width="78.43"/>
+        <TableRow Name="Row50" MinHeight="20.79" Height="20.79">
+          <TableCell Name="Cell270" VisibleExpression="[PayStatementReport.PeriodStartDate] != null" Text="Period Beginning:" Padding="0, 1, 2, 1" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell271" VisibleExpression="[PayStatementReport.PeriodStartDate] != null" Text="[FormatDateTime([PayStatementReport.PeriodStartDate])]" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row51" MinHeight="20.79" Height="20.79">
+          <TableCell Name="Cell275" Text="Period Ending:" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell276" Text="[FormatDateTime([PayStatementReport.PeriodEndDate])]" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row52" MinHeight="20.79" Height="20.79">
+          <TableCell Name="Cell280" Text="Pay Date:" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell281" Text="[FormatDateTime([PayStatementReport.PayDate])]" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table17" Left="207.9" Top="140.99" Width="228.69" Height="62.37">
+        <TableColumn Name="Column91" Width="77.49"/>
+        <TableColumn Name="Column92" Width="151.2"/>
+        <TableRow Name="Row54" MinHeight="20.79" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell287" VisibleExpression="[ShouldDisplaySocialSecurityNumber]" Text="[IIf([HostCountry] == &quot;USA&quot;,&quot;SSN:&quot;,&quot;SIN:&quot;)]" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell288" VisibleExpression="[ShouldDisplaySocialSecurityNumber]" Text="[PayStatementReport.EmployeeSSN]" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row55" MinHeight="20.79" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell292" Text="Employee ID:" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell293" Text="[PayStatementReport.EmployeeId]" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row56" MinHeight="20.79" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell297" Text="Position:" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell298" Text="[PayStatementReport.PrimaryPosition]" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table18" Left="440.75" Top="85.05" Width="255.9" Height="124.74" VisibleExpression="[ShouldDisplayWithholdingStatus]" PrintOnParent="true">
+        <TableColumn Name="Column93" Width="154.22"/>
+        <TableColumn Name="Column94" Width="101.68"/>
+        <TableRow Name="Row57" MinHeight="20.79" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell299" Text="Federal Withholding Status:" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell300" Text="[PayStatementReport.FederalWithholdingStatus]" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row58" MinHeight="20.79" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell304" Text="State Withholding Status:" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell305" Text="[PayStatementReport.StateWithholdingStatus]" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row59" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell309" Text="[IIf([PayStatementReport.Apply2020W4Rules],&quot;&quot;,&quot;Federal Exemptions:&quot;)]" Padding="2, 1, 2, 4" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell310" Text="[IIf([PayStatementReport.Apply2020W4Rules],&quot;&quot;,[PayStatementReport.FederalExemptions])]" Padding="2, 1, 2, 4" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row60" MinHeight="20.79" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell314" Text="State Exemptions:" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell315" Text="[PayStatementReport.StateExemptions]" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row61" MinHeight="20.79" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell319" Text="Add'l Federal Withholding:" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell320" Text="[PayStatementReport.AdditionalFederalWithholding]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+        <TableRow Name="Row62" MinHeight="20.79" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell321" Text="Add'l State Withholding:" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell322" Text="[PayStatementReport.AdditionalStateWithholding]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+      </TableObject>
+      <PictureObject Name="InstitutionLogo" Width="226.8" Height="75.6" VisibleExpression="[LogoPath] != &quot;&quot;" Hyperlink.Kind="DetailReport" BeforePrintEvent="Picture1_BeforePrint"/>
+      <TableObject Name="Table19" Top="223.4" Width="721.98" Height="20.79">
+        <TableColumn Name="Column95" Width="102.82"/>
+        <TableColumn Name="Column96" Width="619.16"/>
+        <TableRow Name="Row63" MinHeight="20.79" Height="20.79" AutoSize="true">
+          <TableCell Name="Cell323" VisibleExpression="[PayStatementReport.Comments] != &quot;&quot;" Text="Comments:" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell344" VisibleExpression="[PayStatementReport.Comments] != &quot;&quot;" Text="[PayStatementReport.Comments]" Font="Arial, 8pt" TextFill.Color="DimGray"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+    <DataBand Name="Data4" Top="343.69" Width="705.32" Height="23.44" Fill.Color="White" DataSource="PayStatementEarnings">
+      <TableObject Name="Table3" Width="721.2" Height="23.44" Fill.Color="White">
+        <TableColumn Name="Column37" Width="189.6"/>
+        <TableColumn Name="Column38" Width="132.9"/>
+        <TableColumn Name="Column39" Width="132.9"/>
+        <TableColumn Name="Column40" Width="142.35"/>
+        <TableColumn Name="Column41" Width="123.45"/>
+        <TableRow Name="Row27" MinHeight="23.44" Height="23.44" AutoSize="true">
+          <TableCell Name="Cell109" Border.Lines="Top" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementEarnings.EarningsTypeDescription]" Padding="2, 3, 2, 1" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell110" Border.Lines="Top" Border.Color="Gray" Border.Width="1.5" Text="[IIf([PayStatementEarnings.UnitsWorked] == 0,&quot;-&quot;,[PayStatementEarnings.UnitsWorked])]" Padding="2, 3, 2, 1" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell111" Border.Lines="Top" Border.Color="Gray" Border.Width="1.5" BeforePrintEvent="Cell111_BeforePrint" Text="[IIf([PayStatementEarnings.Rate] == 0,&quot;-&quot;,[PayStatementEarnings.Rate])]" Padding="2, 3, 2, 1" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="4" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell112" Border.Lines="Top" Border.Color="Gray" Border.Width="1.5" Text="[IIf([PayStatementEarnings.PeriodPaymentAmount] == 0,&quot;-&quot;,[PayStatementEarnings.PeriodPaymentAmount])]" Padding="2, 3, 2, 1" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell113" Border.Lines="Top" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementEarnings.YearToDatePaymentAmount]" Padding="2, 3, 2, 1" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+        </TableRow>
+      </TableObject>
+      <DataHeaderBand Name="DataHeader1" Top="293.83" Width="705.32" Height="47.25">
+        <TableObject Name="Table2" Width="722" Height="47.22" RepeatHeaders="false">
+          <TableColumn Name="Column32" Width="189.76"/>
+          <TableColumn Name="Column33" Width="133.06"/>
+          <TableColumn Name="Column34" Width="133.06"/>
+          <TableColumn Name="Column35" Width="142.51"/>
+          <TableColumn Name="Column36" Width="123.61"/>
+          <TableRow Name="Row25" Height="23.61">
+            <TableCell Name="Cell99" Border.Lines="Bottom" Border.Color="Gray" Text="Earnings" VertAlign="Center" Font="Arial, 11pt, style=Bold" TextFill.Color="DimGray" ColSpan="5"/>
+            <TableCell Name="Cell100" Border.Lines="Bottom" Border.Color="Gray" Font="Arial, 10pt"/>
+            <TableCell Name="Cell101" Border.Lines="Bottom" Border.Color="Gray" Font="Arial, 10pt"/>
+            <TableCell Name="Cell102" Border.Lines="Bottom" Border.Color="Gray" Font="Arial, 10pt"/>
+            <TableCell Name="Cell103" Border.Lines="Bottom" Border.Color="Gray" Font="Arial, 10pt"/>
+          </TableRow>
+          <TableRow Name="Row26" Height="23.61">
+            <TableCell Name="Cell104" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Earnings Type" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell105" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Hours" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell106" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Rate" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell107" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="This Period" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell108" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Year To Date" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          </TableRow>
+        </TableObject>
+      </DataHeaderBand>
+      <DataFooterBand Name="DataFooter1" Top="369.75" Width="705.32" Height="32.89">
+        <TableObject Name="Table4" Width="722" Height="23.44" Fill.Color="White">
+          <TableColumn Name="Column42" Width="189.76"/>
+          <TableColumn Name="Column43" Width="133.06"/>
+          <TableColumn Name="Column44" Width="133.06"/>
+          <TableColumn Name="Column45" Width="142.51"/>
+          <TableColumn Name="Column46" Width="123.61"/>
+          <TableRow Name="Row28" Height="23.44">
+            <TableCell Name="Cell114" Border.Lines="Right" Border.Color="Gray" Fill.Color="Gray" Font="Arial, 10pt"/>
+            <TableCell Name="Cell115" Border.Lines="Right" Border.Color="Gray" Fill.Color="Gray" Font="Arial, 10pt"/>
+            <TableCell Name="Cell116" Border.Lines="Right" Border.Color="Gray" Fill.Color="Gray" Text="Total Gross Pay" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+            <TableCell Name="Cell117" Border.Lines="Right" Border.Color="Gray" Fill.Color="Gray" Text="[TotalPeriodValue]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="White"/>
+            <TableCell Name="Cell118" Border.Lines="Right" Border.Color="Gray" Fill.Color="Gray" Text="[TotalYTDValue]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="2" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="White"/>
+          </TableRow>
+        </TableObject>
+      </DataFooterBand>
+    </DataBand>
+    <DataBand Name="Data2" Top="455.12" Width="705.32" Fill.Color="White" CanGrow="true" KeepTogether="true">
+      <DataHeaderBand Name="DataHeader5" Top="405.25" Width="705.32" Height="47.25" CanGrow="true">
+        <TableObject Name="Table11" Width="721.66" Height="47.24" VisibleExpression="[PayStatementDeduction.Description] != &quot;&quot;" Border.Color="Gray" Border.Width="2" Fill.Color="White">
+          <TableColumn Name="Column65" Width="170.1"/>
+          <TableColumn Name="Column66" Width="69.93"/>
+          <TableColumn Name="Column67" Width="91.59"/>
+          <TableColumn Name="Column68" Width="69.93"/>
+          <TableColumn Name="Column69" Width="88.56"/>
+          <TableColumn Name="Column70" Width="101.79"/>
+          <TableColumn Name="Column71" Width="129.76"/>
+          <TableRow Name="Row38" Height="23.62">
+            <TableCell Name="Cell152" Border.Lines="Bottom" Border.Color="Gray" Text="Taxes, Benefits, and Other Deductions" VertAlign="Center" Font="Arial, 11pt, style=Bold" TextFill.Color="DimGray" ColSpan="4"/>
+            <TableCell Name="Cell153" Border.Lines="Bottom" Border.Color="Gray" Font="Arial, 10pt"/>
+            <TableCell Name="Cell154" Border.Lines="Bottom" Border.Color="Gray" Font="Arial, 10pt"/>
+            <TableCell Name="Cell155" Border.Lines="Bottom" Border.Color="Gray" Font="Arial, 10pt"/>
+            <TableCell Name="Cell156" Border.Lines="Bottom" Border.Color="Gray" Font="Arial, 10pt"/>
+            <TableCell Name="Cell177" Border.Lines="Bottom" Border.Color="Gray" Font="Arial, 10pt"/>
+            <TableCell Name="Cell178" Border.Lines="Bottom" Border.Color="Gray" Font="Arial, 10pt"/>
+          </TableRow>
+          <TableRow Name="Row39" Height="23.62">
+            <TableCell Name="Cell179" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Font="Arial, 10pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell180" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Employee" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell181" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Employee YTD" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell182" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Employer" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell183" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Employer YTD" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell184" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Applicable Gross" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell185" Border.Lines="Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Applicable Gross YTD" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          </TableRow>
+        </TableObject>
+      </DataHeaderBand>
+      <GroupHeaderBand Name="GroupHeader1" Top="457.73" Width="705.32" Height="23.44" Condition="[PayStatementDeduction.Type]" SortOrder="None">
+        <TextObject Name="Text1" Width="141.75" Height="23.44" VisibleExpression="[PayStatementDeduction.Description] != &quot;&quot;" Border.Color="Gray" GrowToBottom="true" AfterPrintEvent="Text1_AfterPrint" AfterDataEvent="Text1_AfterData" Text="[IIf([PayStatementDeduction.Type]==0,&quot;Taxes&quot;,&quot;&quot;)][IIf([PayStatementDeduction.Type]==1,&quot;Benefits&quot;,&quot;&quot;)][IIf([PayStatementDeduction.Type]==2,&quot;Other Deductions&quot;,&quot;&quot;)]" Duplicates="Clear" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="DimGray"/>
+        <DataBand Name="Data7" Top="483.79" Width="705.32" Height="23.44" CanGrow="true" DataSource="PayStatementDeduction">
+          <TableObject Name="Table13" Width="721.66" Height="23.44" VisibleExpression="[PayStatementDeduction.Description] != &quot;&quot;" Border.Color="Gray" Border.Width="2" Fill.Color="White" PrintOnParent="true">
+            <TableColumn Name="Column79" Width="170.1"/>
+            <TableColumn Name="Column80" Width="69.93"/>
+            <TableColumn Name="Column81" Width="91.59"/>
+            <TableColumn Name="Column82" Width="69.93"/>
+            <TableColumn Name="Column83" Width="88.56"/>
+            <TableColumn Name="Column84" Width="101.79"/>
+            <TableColumn Name="Column85" Width="129.76"/>
+            <TableRow Name="Row42" MinHeight="23.44" Height="23.44" AutoSize="true">
+              <TableCell Name="Cell218" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementDeduction.Description]" Padding="11, 3, 2, 1" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+              <TableCell Name="Cell219" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[IIf([PayStatementDeduction.EmployeePeriodAmount] == 0,&quot;-&quot;,[PayStatementDeduction.EmployeePeriodAmount])]" Padding="2, 3, 2, 1" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+              <TableCell Name="Cell220" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[IIf([PayStatementDeduction.EmployeeYearToDateAmount]==0,&quot;-&quot;,[PayStatementDeduction.EmployeeYearToDateAmount])]" Padding="2, 3, 2, 1" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+              <TableCell Name="Cell221" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Fill.Color="LightGray" Text="[IIf([PayStatementDeduction.EmployerPeriodAmount]==0,&quot;-&quot;,[PayStatementDeduction.EmployerPeriodAmount])]" Padding="2, 3, 2, 1" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+              <TableCell Name="Cell222" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Fill.Color="LightGray" Text="[IIf([PayStatementDeduction.EmployerYearToDateAmount]==0,&quot;-&quot;,[PayStatementDeduction.EmployerYearToDateAmount])]" Padding="2, 3, 2, 1" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+              <TableCell Name="Cell240" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[IIf([PayStatementDeduction.ApplicableGrossPeriodAmount]==0,&quot;-&quot;,[PayStatementDeduction.ApplicableGrossPeriodAmount])]" Padding="2, 3, 2, 1" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+              <TableCell Name="Cell241" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[IIf([PayStatementDeduction.ApplicableGrossYearToDateAmount]==0,&quot;-&quot;,[PayStatementDeduction.ApplicableGrossYearToDateAmount])]" Padding="2, 3, 2, 1" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            </TableRow>
+          </TableObject>
+        </DataBand>
+      </GroupHeaderBand>
+      <DataFooterBand Name="DataFooter2" Top="509.84" Width="705.32" Height="23.44">
+        <TableObject Name="Table12" Width="721.66" Height="23.44" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="2" Fill.Color="Gray">
+          <TableColumn Name="Column72" Width="170.1"/>
+          <TableColumn Name="Column73" Width="69.93"/>
+          <TableColumn Name="Column74" Width="91.59"/>
+          <TableColumn Name="Column75" Width="69.93"/>
+          <TableColumn Name="Column76" Width="88.56"/>
+          <TableColumn Name="Column77" Width="101.79"/>
+          <TableColumn Name="Column78" Width="129.76"/>
+          <TableRow Name="Row40" Height="23.44" AutoSize="true">
+            <TableCell Name="Cell186" Border.Lines="Right" Border.Color="Gray" Fill.Color="Gray" Text="Totals" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+            <TableCell Name="Cell187" Border.Lines="Right" Border.Color="Gray" Fill.Color="Gray" Text="[TotalEmpPeriodAmt]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="White"/>
+            <TableCell Name="Cell188" Border.Lines="Right" Border.Color="Gray" Fill.Color="Gray" Text="[TotalEmpYTDAmt]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="White"/>
+            <TableCell Name="Cell189" Border.Lines="Right" Border.Color="Gray" Fill.Color="Gray" Text="[TotalEmployerAmt]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="White"/>
+            <TableCell Name="Cell190" Border.Lines="Right" Border.Color="Gray" Fill.Color="Gray" Text="[TotalEmployerYTDAmt]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="White"/>
+            <TableCell Name="Cell211" Border.Lines="Right" Border.Color="Gray" Fill.Color="Gray" Font="Arial, 10pt"/>
+            <TableCell Name="Cell212" Fill.Color="Gray" Font="Arial, 10pt"/>
+          </TableRow>
+        </TableObject>
+      </DataFooterBand>
+    </DataBand>
+    <DataBand Name="Data3" Top="604.65" Width="705.32" Height="23.62" VisibleExpression="[PayStatementBankDeposit.DepositAmount] != 0" Fill.Color="White" CanShrink="true" DataSource="PayStatementBankDeposit" KeepTogether="true">
+      <TableObject Name="Table6" Width="595.35" Height="23.62" VisibleExpression="[PayStatementBankDeposit.DepositAmount] != 0" Border.Color="Gray" Border.Width="2" Fill.Color="White" PrintOnParent="true">
+        <TableColumn Name="Column50" Width="355.95"/>
+        <TableColumn Name="Column51" Width="119.7"/>
+        <TableColumn Name="Column52" Width="119.7"/>
+        <TableRow Name="Row31" VisibleExpression="[PayStatementBankDeposit.DepositAmount] != 0" Height="23.62" AutoSize="true">
+          <TableCell Name="Cell127" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementBankDeposit.BankName]" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell128" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementBankDeposit.AccountIdLastFour]" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell129" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementBankDeposit.DepositAmount]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+        </TableRow>
+      </TableObject>
+      <DataHeaderBand Name="DataHeader2" Top="535.89" Width="705.32" Height="66.14" VisibleExpression="[PayStatementBankDeposit.DepositAmount] != 0" Fill.Color="White" CanShrink="true" KeepWithData="true">
+        <TableObject Name="Table5" Top="18.9" Width="595.35" Height="47.24" VisibleExpression="[PayStatementBankDeposit.DepositAmount] != 0" Fill.Color="White">
+          <TableColumn Name="Column47" Width="349.65"/>
+          <TableColumn Name="Column48" Width="122.85"/>
+          <TableColumn Name="Column49" Width="122.85"/>
+          <TableRow Name="Row29" VisibleExpression="[PayStatementBankDeposit.DepositAmount] != 0" Height="23.62" AutoSize="true">
+            <TableCell Name="Cell119" Text="Deposit Information" VertAlign="Center" Font="Arial, 11pt, style=Bold" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell120" Font="Arial, 10pt"/>
+            <TableCell Name="Cell121" Font="Arial, 10pt"/>
+          </TableRow>
+          <TableRow Name="Row30" VisibleExpression="[PayStatementBankDeposit.DepositAmount] != 0" Height="23.62" AutoSize="true">
+            <TableCell Name="Cell124" Border.Lines="Top, Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Bank" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell125" Border.Lines="Top, Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Account" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell126" Border.Lines="Top, Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Amount" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          </TableRow>
+        </TableObject>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data5" Top="699.64" Width="705.32" Height="23.44" VisibleExpression="[PayStatementLeave.LeaveTypeId]!=&quot;&quot;" Fill.Color="White" DataSource="PayStatementLeave" KeepTogether="true">
+      <TableObject Name="Table8" Width="453.6" Height="23.44" VisibleExpression="[PayStatementLeave.LeaveTypeId]!=&quot;&quot;" Border.Color="Gray" Border.Width="2" Fill.Color="White" PrintOnParent="true">
+        <TableColumn Name="Column56" Width="189"/>
+        <TableColumn Name="Column57" Width="141.75"/>
+        <TableColumn Name="Column58" Width="122.85"/>
+        <TableRow Name="Row34" MinHeight="23.44" Height="23.44" AutoSize="true">
+          <TableCell Name="Cell138" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementLeave.Description]" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell139" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementLeave.LeaveTaken]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell140" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementLeave.LeaveRemaining]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+        </TableRow>
+      </TableObject>
+      <DataHeaderBand Name="DataHeader3" Top="630.88" Width="705.32" Height="66.14" VisibleExpression="[PayStatementLeave.LeaveTypeId]!=&quot;&quot;" KeepWithData="true">
+        <TableObject Name="Table7" Top="18.9" Width="453.6" Height="47.24" VisibleExpression="[PayStatementLeave.LeaveTypeId]!=&quot;&quot;" Border.Color="Gray" Border.Width="2" Fill.Color="White">
+          <TableColumn Name="Column53" Width="189"/>
+          <TableColumn Name="Column54" Width="141.75"/>
+          <TableColumn Name="Column55" Width="122.85"/>
+          <TableRow Name="Row32" Height="23.62">
+            <TableCell Name="Cell130" Text="Leave Used (In Hours)" VertAlign="Center" Font="Arial, 11pt, style=Bold" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell131" Font="Arial, 10pt"/>
+            <TableCell Name="Cell132" Font="Arial, 10pt"/>
+          </TableRow>
+          <TableRow Name="Row33" Height="23.62">
+            <TableCell Name="Cell135" Border.Lines="Top, Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Type" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell136" Border.Lines="Top, Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="This Period" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell137" Border.Lines="Top, Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Remaining" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          </TableRow>
+        </TableObject>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data6" Top="794.45" Width="705.32" Height="23.44" VisibleExpression="[PayStatementTaxableBenefit.TaxableBenefitId] != &quot;&quot;" Fill.Color="White" DataSource="PayStatementTaxableBenefit" KeepTogether="true">
+      <TableObject Name="Table10" Width="453.6" Height="23.44" VisibleExpression="[PayStatementTaxableBenefit.TaxableBenefitId] != &quot;&quot;" Border.Color="Gray" Border.Width="2" Fill.Color="White" PrintOnParent="true">
+        <TableColumn Name="Column62" Width="192.15"/>
+        <TableColumn Name="Column63" Width="135.45"/>
+        <TableColumn Name="Column64" Width="126"/>
+        <TableRow Name="Row37" MinHeight="23.44" Height="23.44" AutoSize="true">
+          <TableCell Name="Cell149" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementTaxableBenefit.TaxableBenefitDescription]" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell150" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementTaxableBenefit.TaxableBenefitAmt]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          <TableCell Name="Cell151" Border.Lines="Top, Bottom" Border.Color="Gray" Border.Width="1.5" Text="[PayStatementTaxableBenefit.TaxableBenefitYtdAmt]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+        </TableRow>
+      </TableObject>
+      <DataHeaderBand Name="DataHeader4" Top="725.69" Width="705.32" Height="66.14" VisibleExpression="[PayStatementTaxableBenefit.TaxableBenefitId] != &quot;&quot;" KeepWithData="true">
+        <TableObject Name="Table9" Top="18.9" Width="453.6" Height="47.24" VisibleExpression="[PayStatementTaxableBenefit.TaxableBenefitId] != &quot;&quot;" Border.Color="Gray" Border.Width="2" Fill.Color="White" PrintOnParent="true">
+          <TableColumn Name="Column59" Width="189"/>
+          <TableColumn Name="Column60" Width="141.75"/>
+          <TableColumn Name="Column61" Width="122.85"/>
+          <TableRow Name="Row35" Height="23.62">
+            <TableCell Name="Cell141" Text="Taxable Fringe Benefits" VertAlign="Center" Font="Arial, 11pt, style=Bold" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell142" Font="Arial, 10pt"/>
+            <TableCell Name="Cell143" Font="Arial, 10pt"/>
+          </TableRow>
+          <TableRow Name="Row36" Height="23.62">
+            <TableCell Name="Cell146" Border.Lines="Top, Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Description" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell147" Border.Lines="Top, Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="Current" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+            <TableCell Name="Cell148" Border.Lines="Top, Bottom" Border.Color="Gray" Fill.Color="LightGray" Text="YTD" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+          </TableRow>
+        </TableObject>
+      </DataHeaderBand>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="820.5" Width="705.32" Height="24" PrintOn="FirstPage, LastPage, OddPages, EvenPages, RepeatedBand">
+      <TextObject Name="PageFooter" Left="540.54" Width="170.1" Height="24" CanGrow="true" Text="Page [Page#] of [TotalPages#]" Padding="2, 8, 2, 0" HorzAlign="Right" Font="Arial, 9pt" TextFill.Color="DimGray"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

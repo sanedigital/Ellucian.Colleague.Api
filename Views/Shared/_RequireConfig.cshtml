@@ -1,0 +1,12 @@
+﻿@*Copyright 2017 Ellucian Company L.P. and its affiliates.*@
+@*Use this partial for including RequireJS and its configuration when called for by Knockout components.*@
+
+@Html.Partial("_RequireConfigObjectOnly")
+
+
+<script src="~/scripts/require.js" asp-append-version="true"></script>
+
+<script>
+    @*Ellucian.requireConfig comes from the RequireConfigObjectOnly partial*@
+        require.config(Ellucian.requireConfig);
+</script>

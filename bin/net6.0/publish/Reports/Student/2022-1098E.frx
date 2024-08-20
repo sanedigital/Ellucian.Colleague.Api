@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/13/2023 12:14:24" ReportInfo.Modified="02/16/2023 15:33:46" ReportInfo.CreatorVersion="2023.1.12.0">
+  <Dictionary>
+    <Parameter Name="InstNameAddr1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr5" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Year2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="CorrectedForm" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box1Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="IsIntrstExcld" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstEIN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentSSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentName1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentName2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentAddress" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentCSZ" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentID" DataType="System.String" AsString="" Description="ReportParameter1"/>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" RawPaperSize="1" LeftMargin="13.97" TopMargin="10.16" RightMargin="3.81" BottomMargin="10.01" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data1" Width="748.89" Height="959.04">
+      <TextObject Name="Textbox27" Left="13.01" Top="764.88" Width="331.88" Height="14" Text="[InstNameAddr4]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Textbox28" Left="13.01" Top="750.17" Width="331.88" Height="14.5" Text="[InstNameAddr3]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Textbox29" Left="13.01" Top="735.53" Width="331.88" Height="14.67" Text="[InstNameAddr2]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Textbox30" Left="13.01" Top="719.89" Width="331.88" Height="15.83" Text="[InstNameAddr1]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Textbox2" Left="13.01" Top="896.6" Width="366.88" Height="25.5" Text="[StudentCSZ]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox24" Left="13.01" Top="880.6" Width="366.88" Height="20" Text="[StudentAddress]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox25" Left="13.01" Top="864.6" Width="366.88" Height="20.5" Text="[StudentName2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox26" Left="13.01" Top="847.72" Width="366.88" Height="21" Text="[StudentName1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <RichObject Name="Rich1" Left="25.54" Top="3.13" Width="340.29" Height="291.88" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\b\fs24\lang1033 Instructions for Borrower\par&#13;&#10;\fs18\par&#13;&#10;\b0 A person (including a financial institution, a governmental unit,\par&#13;&#10;and an educational institution) that receives interest payments\par&#13;&#10;of $600 or more during the year on one or more qualified\par&#13;&#10;student loans must furnish this statement to you.\par&#13;&#10;  You may be able to deduct student loan interest that you\par&#13;&#10;actually paid in 2023 on your income tax return. However, you\par&#13;&#10;may not be able to deduct the full amount of interest reported\par&#13;&#10;on this statement. Do not contact the recipient/lender for\par&#13;&#10;explanations of the requirements for (and how to figure) any\par&#13;&#10;allowable deduction for the interest paid. Instead, for more\par&#13;&#10;information, see Pub. 970, and the Student Loan Interest\par&#13;&#10;Deduction Worksheet in the Instructions for Form 1040.\par&#13;&#10;\b Borrower\rquote s taxpayer identification number (TIN). \b0 For your\par&#13;&#10;protection, this form may show only the last four digits of your\par&#13;&#10;TIN (social security number (SSN), individual taxpayer\par&#13;&#10;identification number (ITIN), adoption taxpayer identification\par&#13;&#10;number (ATIN), or employer identification number (EIN)).\par&#13;&#10;However, the issuer has reported your complete TIN to the\par&#13;&#10;IRS.\lang1033\par&#13;&#10;}&#13;&#10;"/>
+      <RichObject Name="Rich2" Left="381" Top="32.37" Width="358.09" Height="274.88" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\b\fs18 Account number. \b0 May show an account or other unique\par&#13;&#10;number the lender assigned to distinguish your account.\par&#13;&#10;\b Box 1. \b0 Shows the interest received by the lender during the\par&#13;&#10;year on one or more student loans made to you. For loans\par&#13;&#10;made on or after September 1, 2004, box 1 must include loan\par&#13;&#10;origination fees and capitalized interest received in 2023. If\par&#13;&#10;your loan was made before September 1, 2004, you may be\par&#13;&#10;able to deduct loan origination fees and capitalized interest\par&#13;&#10;not reported in box 1.\par&#13;&#10;\b Box 2. \b0 If checked, indicates that loan origination fees and/or\par&#13;&#10;capitalized interest are \b not \b0 included in box 1 for loans made\par&#13;&#10;before September 1, 2004. See Pub. 970 for how to figure any\par&#13;&#10;deductible loan origination fees or capitalized interest.\par&#13;&#10;\b Future developments. \b0 For the latest information about\par&#13;&#10;developments related to Form 1098-E and its instructions,\par&#13;&#10;such as legislation enacted after they were published, go to\par&#13;&#10;\i www.irs.gov/Form1098E.\i0\par&#13;&#10;\b Free File Program. \b0 Go to \i www.irs.gov/FreeFile \i0 to see if you\par&#13;&#10;qualify for no-cost online federal tax preparation, e-filing, and\par&#13;&#10;direct deposit or payment options\par&#13;&#10;}&#13;&#10;"/>
+      <ContainerObject Name="Container1" Top="330.4" Width="748.8" Height="339.2">
+        <TextObject Name="Text1" Left="20.77" Top="35.08" Width="323.64" Height="95.52" Border.Lines="All" Border.Width="1.5" Text="RECIPIENT'S/LENDER'S name, street address, city or town, state or&#13;&#10;province, country, ZIP or foreign postal code, and telephone number" Font="Arial, 7pt"/>
+        <TextObject Name="Text2" Left="20.86" Top="130.64" Width="161.52" Height="32.23" Border.Lines="All" Border.Width="1.5" Text="RECIPIENT'S TIN" Font="Arial, 7pt"/>
+        <TextObject Name="Text3" Left="182.42" Top="130.5" Width="161.9" Height="32.39" Border.Lines="All" Border.Width="1.5" Text="BORROWER'S TIN" Font="Arial, 7pt"/>
+        <TextObject Name="Text4" Left="344.38" Top="35.08" Width="133.45" Height="95.54" Border.Lines="All" Border.Width="1.5" Fill.Color="DimGray" Font="Arial, 10pt"/>
+        <TextObject Name="Text5" Left="477.69" Top="35.08" Width="96.19" Height="95.75" Border.Lines="All" Border.Width="1.5" Text="OMB No. 1545-1576" Font="Arial, 7pt"/>
+        <TextObject Name="Text6" Left="482.55" Top="114.32" Width="30.18" Height="10.85" Text="Form" Font="Arial, 7pt"/>
+        <TextObject Name="Text7" Left="505.1" Top="108.59" Width="62.55" Height="19.2" Text="1098-E" Font="Arial, 12pt, style=Bold"/>
+        <TextObject Name="Text8" Left="483.8" Top="66.89" Width="43.75" Height="25.56" Text="20" Font="Arial, 20pt, style=Bold"/>
+        <TextObject Name="Text9" Left="344.63" Top="130.74" Width="266.79" Height="32.1" Border.Lines="All" Border.Width="1.5" Font="Arial, 10pt"/>
+        <TextObject Name="Text10" Left="346.55" Top="132.6" Width="13.75" Height="9.95" Text="1" Font="Arial, 7pt, style=Bold"/>
+        <TextObject Name="Text11" Left="343.66" Top="143.02" Width="13.75" Height="15.2" Text="$" Font="Arial, 11pt"/>
+        <TextObject Name="Text12" Left="354.55" Top="132.82" Width="177.25" Height="10.2" Text="Student loan interest received by lender" Font="Arial, 7pt"/>
+        <TextObject Name="Text14" Left="661.3" Top="130.64" Width="59.75" Height="18.2" Text="Copy B" HorzAlign="Right" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text13" Left="624.8" Top="49.04" Width="96" Height="45.7" Text="Student&#13;&#10;Loan Interest&#13;&#10;Statement" HorzAlign="Right" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text15" Left="636.3" Top="148.14" Width="87.25" Height="13.45" Text="For Borrower" Font="Arial, 9pt, style=Bold"/>
+        <TextObject Name="Text16" Left="602.3" Top="168.14" Width="117.25" Height="125.45" Text="This is important tax&#13;&#10;information and is being&#13;&#10;furnished to the IRS. If&#13;&#10;you are required to file a&#13;&#10;return, a negligence&#13;&#10;penalty or other&#13;&#10;sanction may be&#13;&#10;imposed on you if the&#13;&#10;IRS determines that an&#13;&#10;underpayment of tax&#13;&#10;results because you&#13;&#10;overstated a deduction&#13;&#10;for student loan interest." HorzAlign="Right" Font="Arial, 6.2pt"/>
+        <TextObject Name="Text17" Left="20.74" Top="162.89" Width="323.8" Height="110.64" Border.Lines="All" Border.Width="1.5" Text="BORROWER'S name&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;Street address (including apt. no.)&#13;&#10;&#13;&#10;&#13;&#10;City or town, state or province, country, and ZIP or foreign" Font="Arial, 7pt"/>
+        <TextObject Name="Text18" Left="20.84" Top="273.49" Width="323.73" Height="32.26" Border.Lines="All" Border.Width="1.5" Text="Account number (see instructions)" Font="Arial, 7pt"/>
+        <TextObject Name="Text20" Left="346.53" Top="275.34" Width="12.31" Height="11.19" Text="2" Font="Arial, 7pt, style=Bold"/>
+        <TextObject Name="Text19" Left="611.47" Top="130.74" Width="105.24" Height="174.92" Border.Lines="Left, Top, Bottom" Border.Width="1.5" Font="Arial, 7pt"/>
+        <TextObject Name="Text21" Left="355.16" Top="275.33" Width="227.09" Height="34.31" Text="If checked, box 1 does not include loan origination&#13;&#10;fees and/or capitalized interest for loans made before&#13;&#10;September 1, 2004      .     .     .     .     .     .     .     .     ." Font="Arial, 6.7pt"/>
+        <TextObject Name="Text22" Left="18.5" Top="309.04" Width="30.18" Height="10.85" Text="Form" Font="Arial, 7pt"/>
+        <TextObject Name="Text23" Left="40.76" Top="305.5" Width="62.55" Height="19.2" Text="1098-E" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text24" Left="171.02" Top="308.09" Width="105.24" Height="10.89" Text="(keep for your records)" Font="Arial, 7pt"/>
+        <TextObject Name="Text25" Left="349.18" Top="308" Width="112.38" Height="10.89" Text="www.irs.gov/Form1098E" Font="Arial, 7pt"/>
+        <TextObject Name="Text26" Left="488.91" Top="307.6" Width="241.03" Height="10.89" Text="Department of the Treasury - Internal Revenue Service" Font="Arial, 7pt"/>
+        <TextObject Name="Text27" Left="293.27" Top="19.92" Width="173.28" Height="14.92" Text="CORRECTED (if checked)" Font="Arial, 10pt"/>
+        <TextObject Name="Text28" Left="344.63" Top="273.43" Width="266.86" Height="32.29" Border.Lines="All" Border.Width="1.5" Font="Arial, 10pt"/>
+        <TextObject Name="Textbox22" Left="23.77" Top="286.04" Width="316.31" Height="17.59" Text="[StudentID]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox21" Left="25.24" Top="252.64" Width="316.31" Height="16.78" Text="[StudentCSZ]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox20" Left="25.25" Top="219.15" Width="316.04" Height="16.66" Text="[StudentAddress]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox18" Left="25.24" Top="188.5" Width="316.04" Height="15.93" Text="[StudentName2]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox17" Left="25.15" Top="173.47" Width="315.87" Height="17.44" Text="[StudentName1]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox15" Left="24.36" Top="143.02" Width="154.69" Height="17.18" Text="[InstEIN]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox16" Left="184.87" Top="143.39" Width="154.69" Height="16.74" Text="[StudentSSN]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox13" Left="358.53" Top="144.74" Width="248.05" Height="15.27" Text="[Box1Amt]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox10" Left="517.55" Top="66.78" Width="48.01" Height="34.92" Text="[Year2]" Padding="0, 0, 0, 0" Font="Arial, 20pt"/>
+        <TextObject Name="Textbox3" Left="23.83" Top="57.25" Width="316.41" Height="14.54" Text="[InstNameAddr1]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox5" Left="24.09" Top="71.77" Width="316.41" Height="16.01" Text="[InstNameAddr2]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox7" Left="24.62" Top="85.05" Width="316.41" Height="13.33" Text="[InstNameAddr3]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox8" Left="24.08" Top="101.19" Width="316.41" Height="13" Text="[InstNameAddr4]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox9" Left="24.09" Top="114.51" Width="316.41" Height="14.58" Text="[InstNameAddr5]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox12" Left="278.39" Top="20.3" Width="13.18" Height="13.86" Border.Lines="All" Text="[CorrectedForm]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox14" Left="592.79" Top="291.52" Width="11.53" Height="11.3" Border.Lines="All" CanBreak="false" Text="[IsIntrstExcld]" Padding="0, 0, 0, 0" WordWrap="false" Font="Courier New, 8pt"/>
+      </ContainerObject>
+    </DataBand>
+  </ReportPage>
+</Report>

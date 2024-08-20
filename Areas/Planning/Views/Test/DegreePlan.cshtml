@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Degree Plan";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+    <a href="@Url.Action("", "Test")" class="esg-page-header__subtitle esg-page-header__subtitle--backlink">
+        <span class="esg-icon__container esg-page-header__icon" aria-hidden="true">
+            <svg class="esg-icon esg-icon--left">
+                <use xlink:href="#icon-arrow"></use>
+            </svg>
+        </span>Back to List
+    </a>
+</div>
+
+@using (Html.BeginForm("PostDegreePlan", "Test"))
+{<br />
+    <div class="base">
+        @*With v1.5.1 of the CDN, the "submit" buttons did not render properly; need to have a true button type redirect to the submit button action*@
+        <input type="submit" id="hiddenButton" value="Invisible" style="display:none" class="esg-button esg-button--primary" />
+        <input type="button" id="runButton" value="Run" class="esg-button esg-button--primary" />
+    </div><br />
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#runButton').click(function () {
+                $('#hiddenButton').trigger("click");
+            });
+        });
+    </script>
+}

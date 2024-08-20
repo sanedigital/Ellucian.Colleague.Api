@@ -1,0 +1,1095 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ellucian.Colleague.Dtos.Planning</name>
+    </assembly>
+    <members>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.Advisee">
+            <summary>
+            A student who is being advised
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisee.DegreePlanId">
+            <summary>
+            ID of student's degree plan (aka, course plan)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisee.ProgramIds">
+            <summary>
+            List of the student's enrolled programs
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisee.ApprovalRequested">
+            <summary>
+            Indicates whether student is awaiting advisor approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisee.IsAdvisee">
+            <summary>
+            This advisee is assigned to the current advisor using the system
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisee.PreferredEmailAddress">
+            <summary>
+            Preferred email address of Advisee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisee.EducationalGoal">
+            <summary>
+            Student's stated educational goal, useful for advising. Such as: BA degree, Certification, New Career (institutionally defined)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisee.AdvisorIds">
+            <summary>
+            The IDs of this advisee's advisors
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisee.PersonDisplayName">
+            <summary>
+            Name that should be used when displaying a advisee's name to advisors based on a client specified Name Address Hierarchy.
+            The hierarchy that is used in calculating this name is defined in the Student Display Name Hierarchy on the SPWP form in Colleague.  
+            If no hierarchy is provide on SPWP, this will be null.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisee.CompletedAdvisements">
+            <summary>
+            List of completed advisements for the student for a given date and time by a given advisor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisee.PhoneTypesHierarchy">
+            <summary>
+            Phonetypes hierarchy for student profile
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisee.EmailAddresses">
+            <summary>
+            All email address of advisee
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.AdviseePreferredEmailAddress">
+            <summary>
+            An advisee's Preferred Email Address
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdviseePreferredEmailAddress.AdviseeId">
+            <summary>
+            The unique id of the advisee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdviseePreferredEmailAddress.PreferredEmailAddress">
+            <summary>
+            The preferred email address of the advisee
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.AdviseeSearchCriteria">
+            <summary>
+            Contains INCOMING advisee search/filter request
+            Search criteria must either contain an AdviseeKeyword or an AdvisorKeyword value of at least 2 characters. It cannot contain both.
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Planning.AdviseeSearchCriteria.#ctor">
+            <summary>
+            Default parameter-less constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdviseeSearchCriteria.AdviseeKeyword">
+            <summary>
+            Used when requesting a search of advisees by name or Id. [last, first middle] or [first middle last] or [last] or [Id] expected.
+            Must contain at least 2 characters when provided.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdviseeSearchCriteria.AdvisorKeyword">
+            <summary>
+            Used when requesting a search of advisees by advisor name or Id. [last, first middle] or [first middle last] or [last] or [Id] expected.
+            Must contain at least 2 characters when provided.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdviseeSearchCriteria.IncludeActiveAdviseesOnly">
+            <summary>
+            Indicates that only the current, active advisees should be returned, excluding former advisees and advisees with future advisement start dates.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.AdvisingPermissions">
+            <summary>
+            Permissions that an advisor has with respect to advisees
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdvisingPermissions.CanViewAssignedAdvisees">
+            <summary>
+            Advisor can view their assigned advisees' degree plans
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdvisingPermissions.CanReviewAssignedAdvisees">
+            <summary>
+            Advisor can review their assigned advisees degree plans
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdvisingPermissions.CanUpdateAssignedAdvisees">
+            <summary>
+            Advisor can update their assigned advisees' data
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdvisingPermissions.HasFullAccessForAssignedAdvisees">
+            <summary>
+            Advisor can view, review, and update their assigned advisees' data, and can register assigned advisees for classes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdvisingPermissions.CanViewAnyAdvisee">
+            <summary>
+            Advisor can view any advisee's degree plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdvisingPermissions.CanReviewAnyAdvisee">
+            <summary>
+            Advisor can review any advisee's degree plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdvisingPermissions.CanUpdateAnyAdvisee">
+            <summary>
+            Advisor can update any advisee's degree plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdvisingPermissions.HasFullAccessForAnyAdvisee">
+            <summary>
+            Advisor can view, review, and update any advisee's degree plan, and can register any advisee for classes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdvisingPermissions.CanCreateStudentAcademicProgram">
+            <summary>
+            Advisor can create or update student academic programs
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.Advisor">
+            <summary>
+            A person who advises students
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisor.Id">
+            <summary>
+            Advisor's unique system ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisor.LastName">
+            <summary>
+            Advisor's last name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisor.FirstName">
+            <summary>
+            Advisor's first name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisor.MiddleName">
+            <summary>
+            Advisor's middle name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisor.EmailAddresses">
+            <summary>
+            Only those emails for this person that are designated as "faculty/advisor" type of emails.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.Advisor.PersonDisplayName">
+            <summary>
+            Information that should be used when displaying a Advisor's name.  
+            The hierarchy that is used in calculating this name is defined in the Advisor Display Name Hierarchy on the SPWP form in Colleague.  
+            If no hierarchy is provide on SPWP, PersonDisplayName will be null.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.AdvisorQueryCriteria">
+            <summary>
+            Query request for Advisors
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdvisorQueryCriteria.AdvisorIds">
+            <summary>
+            List of Advisor Ids to retrieve.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.AdvisorQueryCriteria.OnlyActiveAdvisees">
+            <summary>
+            If true, only return the IDs of currently active advisees
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.CatalogPolicy">
+            <summary>
+            Method to use in determining the catalog year to be used in program evaluation "what-if" scenarios and when selecting
+            sample degree plans for programs outside the student's current program.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Planning.CatalogPolicy.CurrentCatalogYear">
+            <summary>
+            The most recent catalog year on the program that does not start in the future
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Planning.CatalogPolicy.StudentCatalogYear">
+            <summary>
+            The catalog year on the first active StudentProgram for the student
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.CurriculumTrack">
+            <summary>
+            A curriculum track
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.CurriculumTrack.Code">
+            <summary>
+            Unique identifier of this curriculum track
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.CurriculumTrack.Description">
+            <summary>
+            Description of this curriculum track
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.CurriculumTrackQueryCriteria">
+            <summary>
+            Query request for CurriculumTrack
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.CurriculumTrackQueryCriteria.StudentId">
+            <summary>
+            Id of the student.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.CurriculumTrackQueryCriteria.ProgramCode">
+            <summary>
+            Program Code for the Curriculum Tracks to retrieve.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive">
+            <summary>
+            A DegreePlanArchive is a "snap-shot" of a student's degree plan at a point in time
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive.Id">
+            <summary>
+            The record key of the archive
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive.DegreePlanId">
+            <summary>
+            The record key of the degree plan from which this archive was generated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive.StudentId">
+            <summary>
+            The record key of the student to whom this archive belongs
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive.CreatedDate">
+            <summary>
+            The date/time the archive was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive.CreatedBy">
+            <summary>
+            The ID of the user who created the archive
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive.ReviewedBy">
+            <summary>
+            Record key for the last person to complete a review of the plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive.ReviewedDate">
+            <summary>
+            Timestamp for the last review of the plan
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive2">
+            <summary>
+            A DegreePlanArchive is a "snap-shot" of a student's degree plan at a point in time
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive2.Id">
+            <summary>
+            The record key of the archive
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive2.DegreePlanId">
+            <summary>
+            The record key of the degree plan from which this archive was generated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive2.StudentId">
+            <summary>
+            The record key of the student to whom this archive belongs
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive2.CreatedDate">
+            <summary>
+            The date/time the archive was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive2.CreatedBy">
+            <summary>
+            The ID of the user who created the archive
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive2.ReviewedBy">
+            <summary>
+            Record key for the last person to complete a review of the plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanArchive2.ReviewedDate">
+            <summary>
+            Timestamp for the last review of the plan
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview">
+            <summary>
+            Contains information related to previewing a sample degree plan against a student degree plan.
+            Both the limited preview of the plan and a merged student degree plan are included.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview.Preview">
+            <summary>
+            Limited degree plan containing only the courses from the sample plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview.MergedDegreePlan">
+            <summary>
+            Contains the student's degree plan merged with the sample degree plan - in a state that is ready to update.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview2">
+            <summary>
+            Contains information related to previewing a sample degree plan against a student degree plan.
+            Both the limited preview of the plan and a merged student degree plan are included.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview2.Preview">
+            <summary>
+            Limited degree plan containing only the courses from the sample plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview2.MergedDegreePlan">
+            <summary>
+            Contains the student's degree plan merged with the sample degree plan - in a state that is ready to update.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview3">
+            <summary>
+            Contains information related to previewing a sample degree plan against a student degree plan.
+            Both the limited preview of the plan and a merged student degree plan are included.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview3.Preview">
+            <summary>
+            Limited degree plan containing only the courses from the sample plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview3.MergedDegreePlan">
+            <summary>
+            Contains the student's degree plan merged with the sample degree plan - in a state that is ready to update.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview4">
+            <summary>
+            Contains information related to previewing a sample degree plan against a student degree plan.
+            Both the limited preview of the plan and a merged student degree plan are included.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview4.Preview">
+            <summary>
+            Limited degree plan containing only the courses from the sample plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview4.MergedDegreePlan">
+            <summary>
+            Contains the student's degree plan merged with the sample degree plan - in a state that is ready to update.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview4.AcademicHistory">
+            <summary>
+            Contains the student's academic history
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview5">
+            <summary>
+            Contains information related to previewing a sample degree plan against a student degree plan.
+            Both the limited preview of the plan and a merged student degree plan are included.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview5.Preview">
+            <summary>
+            Limited degree plan containing only the courses from the sample plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview5.MergedDegreePlan">
+            <summary>
+            Contains the student's degree plan merged with the sample degree plan - in a state that is ready to update.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview5.AcademicHistory">
+            <summary>
+            Contains the student's academic history
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview6">
+            <summary>
+            Contains information related to previewing a sample degree plan against a student degree plan.
+            Both the limited preview of the plan and a merged student degree plan are included.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview6.Preview">
+            <summary>
+            Limited degree plan containing only the courses from the sample plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview6.MergedDegreePlan">
+            <summary>
+            Contains the student's degree plan merged with the sample degree plan - in a state that is ready to update.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview6.AcademicHistory">
+            <summary>
+            Contains the student's academic history
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview7">
+            <summary>
+            Contains information related to previewing a sample degree plan against a student degree plan.
+            Both the limited preview of the plan and a merged student degree plan are included.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview7.Preview">
+            <summary>
+            Limited degree plan containing only the courses from the sample plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview7.MergedDegreePlan">
+            <summary>
+            Contains the student's degree plan merged with the sample degree plan - in a state that is ready to update.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreview7.DegreePlanPreviewCoursesEvaluation">
+            <summary>
+            This contains the list of all the courses listed in preview degree plan with its evaluation status for the program for which sample plan is loaded.
+            For example: A program has sample plan to load certain course in a term. After this program is evaluated the course  could have been applied or not applied or not applied due to min grade. 
+            This list have one to one correspondance with course in preview in order to identify its evaluation status.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanPreviewCourseEvaluationResult">
+            <summary>
+            This identifies the course displayed in preview degree plan along with its program evaluation status. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreviewCourseEvaluationResult.CourseId">
+            <summary>
+            Limited degree plan containing only the courses from the sample plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreviewCourseEvaluationResult.TermCode">
+            <summary>
+            Term in which the course is previewed.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreviewCourseEvaluationResult.IsEnrolled">
+            <summary>
+            This identifies if student is enrolled in course.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanPreviewCourseEvaluationResult.EvaluationStatus">
+            <summary>
+            Contains the status of the course in preview degree plan. For example: if the course was already applied or was not applied or was not applied due to Min grade failure when sample plan was loaded for particular program.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanPreviewCourseEvaluationStatusType">
+            <summary>
+            Used to determine the status of the course in preview degree plan.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Planning.DegreePlanPreviewCourseEvaluationStatusType.Applied">
+            <summary>
+            This status is set when the student has taken the course listed in preview degree plan and the course is applied in program's evaluation.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Planning.DegreePlanPreviewCourseEvaluationStatusType.NonApplied">
+            <summary>
+            This status is set when the student has not taken the course listed in preview degree plan or student took the course but is not applied in program's evaluation.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Planning.DegreePlanPreviewCourseEvaluationStatusType.MinGrade">
+            <summary>
+            This status is set when a course was taken but did not meet Minimum grade in program evaluation. 
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanRetrievalType">
+            <summary>
+            Used to determine degree plan query filter for open office
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Planning.DegreePlanRetrievalType.MyAssignedAdvisees">
+            <summary>
+            Degree plans assigned to for the current advisor
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Planning.DegreePlanRetrievalType.UnAssignedAdvisees">
+            <summary>
+            Degree plans which are not assigned to anyone
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Planning.DegreePlanRetrievalType.AssignedToOthers">
+            <summary>
+            Degree plans assigned to others
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Planning.DegreePlanRetrievalType.All">
+            <summary>
+            Retrieve all review request without filter
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlanReviewRequest">
+            <summary>
+            Degree plan review request
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanReviewRequest.Id">
+            <summary>
+            Degree plan id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanReviewRequest.PersonId">
+            <summary>
+            Review Requested Student Id(Advisee) 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanReviewRequest.ReviewRequestedDate">
+            <summary>
+            Review requested date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlanReviewRequest.AssignedReviewer">
+            <summary>
+            Assigned reviewer
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.DegreePlansSearchCriteria">
+            <summary>
+            Contains INCOMING degree plans search/filter request
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Planning.DegreePlansSearchCriteria.#ctor">
+            <summary>
+            Default parameter-less constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlansSearchCriteria.DegreePlanRetrievalType">
+            <summary>
+            Used when requesting a search of degree plans for open office
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.DegreePlansSearchCriteria.AdviseeKeyword">
+            <summary>
+            searching advisee Keyword
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.LoadDegreePlanRequest">
+            <summary>
+            Represents a request to load a sample degree plan.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.LoadDegreePlanRequest.StudentId">
+            <summary>
+            The ID of the student requesting a sample degree plan.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.LoadDegreePlanRequest.ProgramCode">
+            <summary>
+            The code of the program for which the sample plan is being requested.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.PlanningConfiguration">
+            <summary>
+            Student Planning configuration data
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.PlanningConfiguration.DefaultCurriculumTrack">
+            <summary>
+            Default curriculum track
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.PlanningConfiguration.DefaultCatalogPolicy">
+            <summary>
+            Default <see cref="T:Ellucian.Colleague.Dtos.Planning.CatalogPolicy">catalog policy</see>
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.PlanningConfiguration.ShowAdvisementCompleteWorkflow">
+            <summary>
+            Flag indicating whether or not to show the Advisement Complete workflow
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.PlanningConfiguration.AdviseByOfficeFlag">
+            <summary>
+            Flag to identify the Advising by office configuration.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.PlanningConfiguration.AdviseByAssignmentFlag">
+            <summary>
+            Flag to identify the Advising by Assignment configuration.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.PlanningConfiguration.OpenOfficeAdvisors">
+            <summary>
+            List of Open office advisors
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.PlanningStudentCriteria">
+            <summary>
+            DTO for incoming JSON formatted student planning query criteria.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.PlanningStudentCriteria.StudentIds">
+            <summary>
+            List of Student Ids for retrieval of multiple records.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation">
+            <summary>
+            Results of a program evaluation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.ProgramCode">
+            <summary>
+            The unique code of the program evaluated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.CatalogCode">
+            <summary>
+            The catalog, used with the program to get the list of requirements to evaluate
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.Credits">
+            <summary>
+            Total number of credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.InstitutionalCredits">
+            <summary>
+            Total number of institutional credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.InProgressCredits">
+            <summary>
+            Of the total credits, number of credits in progress
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.PlannedCredits">
+            <summary>
+            Of the total credits, number of credits planned
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.InstGpa">
+            <summary>
+            GPA based on institutional credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.CumGpa">
+            <summary>
+            GPA based on overall credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.OverallCreditsModificationMessage">
+            <summary>
+            Overall credits modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.InstitutionalCreditsModificationMessage">
+            <summary>
+            Institutional credits modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.OverallGpaModificationMessage">
+            <summary>
+            Overall GPA modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.InstitutionalGpaModificationMessage">
+            <summary>
+            Institutional GPA modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.RequirementResults">
+            <summary>
+            List of evaluation <see cref="T:Ellucian.Colleague.Dtos.Student.Requirements.RequirementResult">RequirementResult</see> items
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.ProgramRequirements">
+            <summary>
+            <see cref="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.ProgramRequirements">ProgramRequirements</see> that were evaluated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.OtherPlannedCredits">
+            <summary>
+            List of planned courses with no associated academic credit that were included in the evaluation 
+            but not applied to any requirement.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation.OtherAcademicCredits">
+            <summary>
+            List of academic credits that were included in the evaluation but not applied to any requirement.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2">
+            <summary>
+            Results of a program evaluation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.ProgramCode">
+            <summary>
+            The unique code of the program evaluated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.CatalogCode">
+            <summary>
+            The catalog, used with the program to get the list of requirements to evaluate
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.Credits">
+            <summary>
+            Total number of credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.InstitutionalCredits">
+            <summary>
+            Total number of institutional credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.InProgressCredits">
+            <summary>
+            Of the total credits, number of credits in progress
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.PlannedCredits">
+            <summary>
+            Of the total credits, number of credits planned
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.InstGpa">
+            <summary>
+            GPA based on institutional credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.CumGpa">
+            <summary>
+            GPA based on overall credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.OverallCreditsModificationMessage">
+            <summary>
+            Overall credits modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.InstitutionalCreditsModificationMessage">
+            <summary>
+            Institutional credits modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.OverallGpaModificationMessage">
+            <summary>
+            Overall GPA modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.InstitutionalGpaModificationMessage">
+            <summary>
+            Institutional GPA modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.RequirementResults">
+            <summary>
+            List of evaluation <see cref="T:Ellucian.Colleague.Dtos.Student.Requirements.RequirementResult2">RequirementResult</see> items
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.ProgramRequirements">
+            <summary>
+            <see cref="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.ProgramRequirements">ProgramRequirements</see> that were evaluated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.OtherPlannedCredits">
+            <summary>
+            List of planned courses with no associated academic credit that were included in the evaluation 
+            but not applied to any requirement.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation2.OtherAcademicCredits">
+            <summary>
+            List of academic credits that were included in the evaluation but not applied to any requirement.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3">
+            <summary>
+            Results of a program evaluation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.ProgramCode">
+            <summary>
+            The unique code of the program evaluated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.CatalogCode">
+            <summary>
+            The catalog, used with the program to get the list of requirements to evaluate
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.Credits">
+            <summary>
+            Total number of credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.InstitutionalCredits">
+            <summary>
+            Total number of institutional credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.InProgressCredits">
+            <summary>
+            Of the total credits, number of credits in progress
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.PlannedCredits">
+            <summary>
+            Of the total credits, number of credits planned
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.InstGpa">
+            <summary>
+            GPA based on institutional credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.CumGpa">
+            <summary>
+            GPA based on overall credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.OverallCreditsModificationMessage">
+            <summary>
+            Overall credits modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.InstitutionalCreditsModificationMessage">
+            <summary>
+            Institutional credits modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.OverallGpaModificationMessage">
+            <summary>
+            Overall GPA modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.InstitutionalGpaModificationMessage">
+            <summary>
+            Institutional GPA modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.RequirementResults">
+            <summary>
+            List of evaluation <see cref="T:Ellucian.Colleague.Dtos.Student.Requirements.RequirementResult3">RequirementResult</see> items
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.ProgramRequirements">
+            <summary>
+            <see cref="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.ProgramRequirements">ProgramRequirements</see> that were evaluated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.OtherPlannedCredits">
+            <summary>
+            List of planned courses with no associated academic credit that were included in the evaluation 
+            but not applied to any requirement.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.OtherAcademicCredits">
+            <summary>
+            List of academic credits Ids that were included in the evaluation but not applied to any requirement.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation3.AdditionalRequirements">
+            <summary>
+            <see cref="T:Ellucian.Colleague.Dtos.Student.Requirements.Requirement">Additional Requirements</see>that were evaluated for the student program. 
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4">
+            <summary>
+            Results of a program evaluation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.ProgramCode">
+            <summary>
+            The unique code of the program evaluated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.CatalogCode">
+            <summary>
+            The catalog, used with the program to get the list of requirements to evaluate
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.Credits">
+            <summary>
+            Total number of credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.InstitutionalCredits">
+            <summary>
+            Total number of institutional credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.InProgressCredits">
+            <summary>
+            Of the total credits, number of credits in progress
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.PlannedCredits">
+            <summary>
+            Of the total credits, number of credits planned
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.InstGpa">
+            <summary>
+            GPA based on institutional credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.CumGpa">
+            <summary>
+            GPA based on overall credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.OverallCreditsModificationMessage">
+            <summary>
+            Overall credits modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.InstitutionalCreditsModificationMessage">
+            <summary>
+            Institutional credits modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.OverallGpaModificationMessage">
+            <summary>
+            Overall GPA modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.InstitutionalGpaModificationMessage">
+            <summary>
+            Institutional GPA modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.RequirementResults">
+            <summary>
+            List of evaluation <see cref="T:Ellucian.Colleague.Dtos.Student.Requirements.RequirementResult3">RequirementResult</see> items
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.ProgramRequirements">
+            <summary>
+            <see cref="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.ProgramRequirements">ProgramRequirements</see> that were evaluated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.OtherPlannedCredits">
+            <summary>
+            List of planned courses with no associated academic credit that were included in the evaluation 
+            but not applied to any requirement.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.AdditionalRequirements">
+            <summary>
+            <see cref="T:Ellucian.Colleague.Dtos.Student.Requirements.Requirement">Additional Requirements</see>that were evaluated for the student program. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation4.OtherAcademicCredits">
+            <summary>
+            List of academic credits  that were included in the evaluation but not applied to any requirement. 
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5">
+            <summary>
+            Results of a program evaluation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.ProgramCode">
+            <summary>
+            The unique code of the program evaluated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.CatalogCode">
+            <summary>
+            The catalog, used with the program to get the list of requirements to evaluate
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.Credits">
+            <summary>
+            Total number of credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.InstitutionalCredits">
+            <summary>
+            Total number of institutional credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.InProgressCredits">
+            <summary>
+            Of the total credits, number of credits in progress
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.PlannedCredits">
+            <summary>
+            Of the total credits, number of credits planned
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.InstGpa">
+            <summary>
+            GPA based on institutional credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.CumGpa">
+            <summary>
+            GPA based on overall credits completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.OverallCreditsModificationMessage">
+            <summary>
+            Overall credits modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.InstitutionalCreditsModificationMessage">
+            <summary>
+            Institutional credits modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.OverallGpaModificationMessage">
+            <summary>
+            Overall GPA modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.InstitutionalGpaModificationMessage">
+            <summary>
+            Institutional GPA modification message
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.RequirementResults">
+            <summary>
+            List of evaluation <see cref="T:Ellucian.Colleague.Dtos.Student.Requirements.RequirementResult4">RequirementResult</see> items
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.ProgramRequirements">
+            <summary>
+            <see cref="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.ProgramRequirements">ProgramRequirements</see> that were evaluated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.OtherPlannedCredits">
+            <summary>
+            List of planned courses with no associated academic credit that were included in the evaluation 
+            but not applied to any requirement.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.AdditionalRequirements">
+            <summary>
+            <see cref="T:Ellucian.Colleague.Dtos.Student.Requirements.Requirement">Additional Requirements</see>that were evaluated for the student program. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Planning.ProgramEvaluation5.OtherAcademicCredits">
+            <summary>
+            List of academic credits  that were included in the evaluation but not applied to any requirement. 
+            </summary>
+        </member>
+    </members>
+</doc>

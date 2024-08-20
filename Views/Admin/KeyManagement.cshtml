@@ -1,0 +1,88 @@
+﻿@using Newtonsoft.Json;
+@model Ellucian.Colleague.Api.Models.KeyManagementViewModel
+@{
+    ViewBag.Title = "Key Management";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+</div>
+
+@* Field Set *@
+<div id="Loggingbody">
+    <section class="content-wrapper main-content clear-fix">
+        @using (Html.BeginForm())
+        {
+
+            <fieldset>
+                <table class="APISettingstable">
+                    @if (Model != null && !string.IsNullOrEmpty(Model.ErrorMessage))
+                    {
+                        <tr>
+                            <td class="esg-form__group esg-alert esg-alert--fluid esg-alert--error" role="alert">
+                                <div class="esg-alert__message">
+                                    @Model.ErrorMessage
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                     <tr data-bind="visible: savedComplete">
+                            <td class="esg-form__group esg-alert esg-alert--fluid esg-alert--success" role="alert">
+                                <div class="esg-alert__message">
+                                    Application restarting...
+                                </div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td>
+                            <label class="esg-form__label">Key Strategy</label>
+                        </td>
+                        <td>
+                            <div class="esg-form__group">
+                                <select class="esg-form__input"
+                                    data-bind="options: keyStrategies, value: keyStrategy"></select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="esg-form__label">Fixed Key</label>
+                        </td>
+                        <td>
+                            <div class="esg-form__group">
+                                <input class="esg-form__input" type="password" data-bind="value: fixedKey" placeholder="Enter the key you desire" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="esg-form__label">Key UNC Path</label>
+                        </td>
+                        <td>
+                            <div class="esg-form__group">
+                                <input class="esg-form__input" type="text" data-bind="value: keyPath" placeholder="Enter the path as a UNC path if more than one API server is deployed" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="esg-form__group base">
+                    <input type="button" value="Save" data-bind='click: $root.saveKeyManagement' class="esg-button esg-button--primary" />
+                    <input type="button" value="Cancel" data-bind='click: $root.cancelKeyManagement' class="esg-button esg-button--primary" />
+                </div>
+            </fieldset>
+        }
+    </section>
+</div>
+
+@section Scripts {
+    <script src="~/scripts/Admin.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        var jsonData = @Html.Raw(JsonConvert.SerializeObject(Model));
+        $(document).ready(function () {
+            var viewModel = new admin.configuration.KeyManagementViewModel(jsonData);
+            viewModel.cancelUrl = '@Url.Action("Index", "Admin")';
+            ko.applyBindings(viewModel);
+        });
+    </script>
+}

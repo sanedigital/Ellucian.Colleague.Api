@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="04/10/2023 16:09:14" ReportInfo.Modified="05/02/2023 14:50:57" ReportInfo.CreatorVersion="2023.1.12.0">
+  <Dictionary>
+    <Parameter Name="TaxYear" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ProgramName" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentIDNumber" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxATotal" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxBTotal" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxCTotal" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StuNameAddr1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StuNameAddr2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StuNameAddr3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StuNameAddr4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StuNameAddr5" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StuNameAddr6" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="FromYear1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="FromMonth1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ToYear1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ToMonth1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxAAmt1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxBAmt1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxCAmt1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="FromYear2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="FromMonth2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ToYear2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ToMonth2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxAAmt2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxBAmt2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxCAmt2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="FromYear3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="FromMonth3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ToYear3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ToMonth3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxAAmt3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxBAmt3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxCAmt3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="FromYear4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="FromMonth4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ToYear4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ToMonth4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxAAmt4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxBAmt4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="BoxCAmt4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" RawPaperSize="1" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0" FirstPageSource="15" OtherPagesSource="15" LastPageSource="15" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data1" Top="20" Width="816.1" Height="2070.55">
+      <TextObject Name="Text8" Left="624" Top="1248" Width="163.2" Height="28.8" Border.Lines="All" Border.Width="1.5" Text="Student number - Numéro d'étudiant" Padding="2, 1, 0, 0" Font="Arial, 5pt"/>
+      <TextObject Name="Text10" Left="28.8" Top="1276.8" Width="412.8" Height="201.6" Text="Name and address of student – Nom et adresse de l'étudiant" Padding="2, 1, 0, 0" Font="Arial, 5pt"/>
+      <TextObject Name="Text9" Left="441.6" Top="1430.4" Width="345.6" Height="57.6" Text="Name and address of educational institution – Nom et adresse de l'établissement d'enseignement" Padding="2, 1, 0, 0" Font="Arial, 5pt"/>
+      <TextObject Name="Text7" Left="28.8" Top="1248" Width="595.2" Height="28.8" Border.Lines="All" Border.Width="1.5" Text="Name of program or course - Nom du programme ou du cours" Padding="2, 1, 0, 0" Font="Arial, 5pt"/>
+      <TextObject Name="Text3" Left="624" Top="172.8" Width="163.2" Height="28.8" Border.Lines="All" Border.Width="1.5" CanBreak="false" Text="Student number - Numéro d'étudiant" Padding="2, 1, 0, 0" Font="Arial, 5pt"/>
+      <TextObject Name="Text2" Left="28.8" Top="172.8" Width="595.2" Height="28.8" Border.Lines="All" Border.Width="1.5" CanBreak="false" Text="Name of program or course - Nom du programme ou du cours" Padding="2, 1, 0, 0" Font="Arial, 5pt"/>
+      <TextObject Name="Textbox4" Left="64.78" Top="216.18" Width="365" Height="15.5" Text="[StuNameAddr1]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox5" Left="64.78" Top="231.68" Width="365" Height="15.5" Text="[StuNameAddr2]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox6" Left="64.78" Top="247.18" Width="365" Height="15.5" Text="[StuNameAddr3]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox7" Left="64.78" Top="262.68" Width="365" Height="15.5" Text="[StuNameAddr4]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox8" Left="64.78" Top="278.18" Width="365" Height="15.5" Text="[StuNameAddr5]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox9" Left="64.78" Top="293.68" Width="365" Height="15.5" Text="[StuNameAddr6]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox10" Left="446.4" Top="360.82" Width="336.3" Height="15.5" Text="[InstNameAddr1]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox11" Left="446.4" Top="376.32" Width="336.3" Height="15.5" Text="[InstNameAddr2]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox12" Left="446.4" Top="391.82" Width="336.3" Height="15.5" Text="[InstNameAddr3]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox14" Left="37.45" Top="184.32" Width="582.7" Height="14" Text="[ProgramName]" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox15" Left="626.82" Top="184.32" Width="143.2" Height="14" Text="[StudentIDNumber]" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox48" Left="32.65" Top="1259.48" Width="589.34" Height="14" Text="[ProgramName]" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox49" Left="630.54" Top="1259.48" Width="152.8" Height="14" Text="[StudentIDNumber]" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox50" Left="58.91" Top="1288.94" Width="365" Height="15.5" Text="[StuNameAddr1]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox51" Left="58.91" Top="1304.44" Width="365" Height="15.5" Text="[StuNameAddr2]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox52" Left="58.91" Top="1319.94" Width="365" Height="15.5" Text="[StuNameAddr3]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox53" Left="58.91" Top="1335.43" Width="365" Height="15.5" Text="[StuNameAddr4]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox54" Left="58.91" Top="1350.94" Width="365" Height="15.5" Text="[StuNameAddr5]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox55" Left="58.91" Top="1366.43" Width="365" Height="15.5" Text="[StuNameAddr6]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox56" Left="444.13" Top="1468.18" Width="336.3" Height="15.5" Text="[InstNameAddr3]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox57" Left="444.13" Top="1452.68" Width="336.3" Height="15.5" Text="[InstNameAddr2]" Font="Courier New, 10pt"/>
+      <TextObject Name="Textbox58" Left="444.13" Top="1437.18" Width="336.3" Height="15.5" Text="[InstNameAddr1]" Font="Courier New, 10pt"/>
+      <TextObject Name="Text1" Left="691.2" Top="19.2" Width="96" Height="19.2" CanBreak="false" Text="T2202A ([TaxYear])" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/>
+      <RichObject Name="Rich7" Left="931.2" Top="307.2" Width="19.2" Height="19.2" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Tahoma;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\qc\b\fs24 1\b0\f1\fs17\par&#13;&#10;}&#13;&#10;"/>
+      <TextObject Name="Text4" Left="28.8" Top="201.6" Width="412.8" Height="201.6" CanBreak="false" Text="Name and address of student – Nom et adresse de l'étudiant" Padding="2, 1, 0, 0" Font="Arial, 5pt"/>
+      <TableObject Name="Table1" Left="441.6" Top="201.6" Width="182.4" Height="151.2" Border.Lines="All">
+        <TableColumn Name="Column1" Width="45.6"/>
+        <TableColumn Name="Column2" Width="45.6"/>
+        <TableColumn Name="Column3" Width="45.6"/>
+        <TableColumn Name="Column4" Width="45.6"/>
+        <TableRow Name="Row1">
+          <TableCell Name="Cell1" Border.Lines="All" Text="Session periods, part-time and full-time&#13;&#10;Périodes d'études à temps partiel et à temps plein" HorzAlign="Center" Font="Arial, 5pt" ColSpan="4"/>
+          <TableCell Name="Cell2" Font="Arial, 10pt"/>
+          <TableCell Name="Cell3" Font="Arial, 10pt"/>
+          <TableCell Name="Cell4" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row2">
+          <TableCell Name="Cell6" Border.Lines="All" Text="From – De" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt" ColSpan="2"/>
+          <TableCell Name="Cell7" Font="Arial, 10pt"/>
+          <TableCell Name="Cell8" Border.Lines="All" Text="To – À" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt" ColSpan="2"/>
+          <TableCell Name="Cell9" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row3">
+          <TableCell Name="Cell11" Border.Lines="All" Text="Y – A" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/>
+          <TableCell Name="Cell12" Border.Lines="All" Text="M" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/>
+          <TableCell Name="Cell13" Border.Lines="All" Text="Y – A" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/>
+          <TableCell Name="Cell14" Border.Lines="All" Text="M" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/>
+        </TableRow>
+        <TableRow Name="Row4">
+          <TableCell Name="Cell16" Border.Lines="All" Text="[FromYear1]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell17" Border.Lines="All" Text="[FromMonth1]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell18" Border.Lines="All" Text="[ToYear1]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell19" Border.Lines="All" Text="[ToMonth1]" HorzAlign="Center" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row5">
+          <TableCell Name="Cell21" Border.Lines="All" Text="[FromYear2]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell22" Border.Lines="All" Text="[FromMonth2]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell23" Border.Lines="All" Text="[ToYear2]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell24" Border.Lines="All" Text="[ToMonth2]" HorzAlign="Center" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row6">
+          <TableCell Name="Cell25" Border.Lines="All" Text="[FromYear3]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell26" Border.Lines="All" Text="[FromMonth3]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell27" Border.Lines="All" Text="[ToYear3]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell28" Border.Lines="All" Text="[ToMonth3]" HorzAlign="Center" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row7">
+          <TableCell Name="Cell29" Border.Lines="All" Text="[FromYear4]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell30" Border.Lines="All" Text="[FromMonth4]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell31" Border.Lines="All" Text="[ToYear4]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell32" Border.Lines="All" Text="[ToMonth4]" HorzAlign="Center" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row8">
+          <TableCell Name="Cell33" Border.Lines="All" Text="Totals&#13;&#10;Totaux" HorzAlign="Right" VertAlign="Center" Font="Arial, 5pt" ColSpan="4"/>
+          <TableCell Name="Cell34" Font="Arial, 10pt"/>
+          <TableCell Name="Cell35" Font="Arial, 10pt"/>
+          <TableCell Name="Cell36" Font="Arial, 10pt"/>
+        </TableRow>
+      </TableObject>
+      <TextObject Name="Text5" Left="441.6" Top="355.2" Width="345.6" Height="57.6" Text="Name and address of educational institution – Nom et adresse de l'établissement d'enseignement" Padding="2, 1, 0, 0" Font="Arial, 5pt"/>
+      <PictureObject Name="Picture1" Left="28.8" Top="28.8" Width="38.4" Height="28.8" ImageFormat="Png" Image="iVBORw0KGgoAAAANSUhEUgAAADsAAAAeCAYAAACSRGY2AAAABGdBTUEAALGPC/xhBQAAAUBJREFUWEftkwEOgzAMA/kkn+STbEaylFUG3FAKaFg6TYOkza3dMH8zjmOK3lEzOEzTtPQvssMwpOgdNYMDhJf+I4tkwl85EzWDw2Wy8VrVRs3gcJks+rh5bcr9XbrJ4hR5kvhkbxR2TzvuXUNXWdVb4kT1OXSTRVRvJJ7yVlSvwytby1bifxCbqX7yOFnIRUG85yZ7suxjHRPXQ8o+l+ayWFBJ4RmGLp9H1t5zSEbVODSXxcB7UrXc9mTPkC2jahyay2JBoOqycEhG1Tg84mRve42ZVsKlKKLqHE6TRY5e5/L6MqrW4VRZJHvCa6KIqnc4XRapFVZXN0b1ONxSdutUEdXj0EUWmwBI89T4HeFzwNqtqBkcuO4r65JJlK2NmsHhla0lk1fWjJrB4TLZrCiiZnC4TPZI1AwOP7L/kXn+AHToIrFhIeSAAAAAAElFTkSuQmCC"/>
+      <LineObject Name="Line1" Left="28.8" Top="67.2" Width="758.4" Border.Width="2"/>
+      <LineObject Name="Line2" Left="28.8" Top="1132.8" Width="758.4" Border.Width="2"/>
+      <TableObject Name="Table2" Left="624" Top="201.6" Width="163.2" Height="151.2" Border.Lines="All" PrintOnParent="true">
+        <TableColumn Name="Column5" Width="86.4"/>
+        <TableColumn Name="Column6" Width="38.4"/>
+        <TableColumn Name="Column7" Width="38.4"/>
+        <TableRow Name="Row9">
+          <TableCell Name="Cell37" Border.Lines="All" Text="A&#13;&#10;Eligible tuition fees,&#13;&#10;part-time and full-time&#13;&#10;sessions&#13;&#10;&#13;&#10;Frais de scolarité&#13;&#10;admissibles pour études à&#13;&#10;temps partiel et à temps&#13;&#10;plein" HorzAlign="Center" Font="Arial, 4pt" RowSpan="3"/>
+          <TableCell Name="Cell38" Border.Lines="All" Text="Number of months for:&#13;&#10;Nombre de mois à :" HorzAlign="Center" Font="Arial, 5pt" ColSpan="2"/>
+          <TableCell Name="Cell39" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row10">
+          <TableCell Name="Cell42" Font="Arial, 10pt"/>
+          <TableCell Name="Cell43" Border.Lines="All" Text="B&#13;&#10;Part-time&#13;&#10;Temps&#13;&#10;partiel" HorzAlign="Center" Font="Arial, 5pt" RowSpan="2"/>
+          <TableCell Name="Cell44" Border.Lines="All" Text="C&#13;&#10;Full-time&#13;&#10;Temps&#13;&#10;plein" HorzAlign="Center" Font="Arial, 5pt" RowSpan="2"/>
+        </TableRow>
+        <TableRow Name="Row11">
+          <TableCell Name="Cell47" Font="Arial, 10pt"/>
+          <TableCell Name="Cell48" Font="Arial, 10pt"/>
+          <TableCell Name="Cell49" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row12">
+          <TableCell Name="Cell52" Border.Lines="All" Text="[BoxAAmt1]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell53" Border.Lines="All" Text="[BoxBAmt1]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell54" Border.Lines="All" Text="[BoxCAmt1]" HorzAlign="Right" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row13">
+          <TableCell Name="Cell57" Border.Lines="All" Text="[BoxAAmt2]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell58" Border.Lines="All" Text="[BoxBAmt2]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell59" Border.Lines="All" Text="[BoxCAmt2]" HorzAlign="Right" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row14">
+          <TableCell Name="Cell62" Border.Lines="All" Text="[BoxAAmt3]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell63" Border.Lines="All" Text="[BoxBAmt3]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell64" Border.Lines="All" Text="[BoxCAmt3]" HorzAlign="Right" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row15">
+          <TableCell Name="Cell67" Border.Lines="All" Text="[BoxAAmt4]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell68" Border.Lines="All" Text="[BoxBAmt4]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell69" Border.Lines="All" Text="[BoxCAmt4]" HorzAlign="Right" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row16">
+          <TableCell Name="Cell70" Border.Lines="All" Text="[BoxATotal]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell71" Border.Lines="All" Text="[BoxBTotal]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell72" Border.Lines="All" Text="[BoxCTotal]" HorzAlign="Right" Font="Arial, 6pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table3" Left="441.6" Top="1276.8" Width="182.4" Height="151.2" Border.Lines="All">
+        <TableColumn Name="Column8" Width="45.6"/>
+        <TableColumn Name="Column9" Width="45.6"/>
+        <TableColumn Name="Column10" Width="45.6"/>
+        <TableColumn Name="Column11" Width="45.6"/>
+        <TableRow Name="Row17">
+          <TableCell Name="Cell73" Border.Lines="All" Text="Session periods, part-time and full-time&#13;&#10;Périodes d'études à temps partiel et à temps plein" HorzAlign="Center" Font="Arial, 5pt" ColSpan="4"/>
+          <TableCell Name="Cell74" Font="Arial, 10pt"/>
+          <TableCell Name="Cell75" Font="Arial, 10pt"/>
+          <TableCell Name="Cell76" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row18">
+          <TableCell Name="Cell77" Border.Lines="All" Text="From – De" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt" ColSpan="2"/>
+          <TableCell Name="Cell78" Font="Arial, 10pt"/>
+          <TableCell Name="Cell79" Border.Lines="All" Text="To – À" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt" ColSpan="2"/>
+          <TableCell Name="Cell80" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row19">
+          <TableCell Name="Cell81" Border.Lines="All" Text="Y – A" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/>
+          <TableCell Name="Cell82" Border.Lines="All" Text="M" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/>
+          <TableCell Name="Cell83" Border.Lines="All" Text="Y – A" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/>
+          <TableCell Name="Cell84" Border.Lines="All" Text="M" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/>
+        </TableRow>
+        <TableRow Name="Row20">
+          <TableCell Name="Cell85" Border.Lines="All" Text="[FromYear1]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell86" Border.Lines="All" Text="[FromMonth1]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell87" Border.Lines="All" Text="[ToYear1]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell88" Border.Lines="All" Text="[ToMonth1]" HorzAlign="Center" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row21">
+          <TableCell Name="Cell89" Border.Lines="All" Text="[FromYear2]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell90" Border.Lines="All" Text="[FromMonth2]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell91" Border.Lines="All" Text="[ToYear2]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell92" Border.Lines="All" Text="[ToMonth2]" HorzAlign="Center" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row22">
+          <TableCell Name="Cell93" Border.Lines="All" Text="[FromYear3]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell94" Border.Lines="All" Text="[FromMonth3]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell95" Border.Lines="All" Text="[ToYear3]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell96" Border.Lines="All" Text="[ToMonth3]" HorzAlign="Center" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row23">
+          <TableCell Name="Cell97" Border.Lines="All" Text="[FromYear4]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell98" Border.Lines="All" Text="[FromMonth4]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell99" Border.Lines="All" Text="[ToYear4]" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TableCell Name="Cell100" Border.Lines="All" Text="[ToMonth4]" HorzAlign="Center" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row24">
+          <TableCell Name="Cell101" Border.Lines="All" Text="Totals&#13;&#10;Totaux" HorzAlign="Right" VertAlign="Center" Font="Arial, 5pt" ColSpan="4"/>
+          <TableCell Name="Cell102" Font="Arial, 10pt"/>
+          <TableCell Name="Cell103" Font="Arial, 10pt"/>
+          <TableCell Name="Cell104" Font="Arial, 10pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table4" Left="624" Top="1276.8" Width="163.2" Height="151.2" Border.Lines="All" PrintOnParent="true">
+        <TableColumn Name="Column12" Width="86.4"/>
+        <TableColumn Name="Column13" Width="38.4"/>
+        <TableColumn Name="Column14" Width="38.4"/>
+        <TableRow Name="Row25">
+          <TableCell Name="Cell105" Border.Lines="All" Text="A&#13;&#10;Eligible tuition fees,&#13;&#10;part-time and full-time&#13;&#10;sessions&#13;&#10;&#13;&#10;Frais de scolarité&#13;&#10;admissibles pour études à&#13;&#10;temps partiel et à temps&#13;&#10;plein" HorzAlign="Center" Font="Arial, 4pt" RowSpan="3"/>
+          <TableCell Name="Cell106" Border.Lines="All" Text="Number of months for:&#13;&#10;Nombre de mois à :" HorzAlign="Center" Font="Arial, 5pt" ColSpan="2"/>
+          <TableCell Name="Cell107" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row26">
+          <TableCell Name="Cell108" Font="Arial, 10pt"/>
+          <TableCell Name="Cell109" Border.Lines="All" Text="B&#13;&#10;Part-time&#13;&#10;Temps&#13;&#10;partiel" HorzAlign="Center" Font="Arial, 5pt" RowSpan="2"/>
+          <TableCell Name="Cell110" Border.Lines="All" Text="C&#13;&#10;Full-time&#13;&#10;Temps&#13;&#10;plein" HorzAlign="Center" Font="Arial, 5pt" RowSpan="2"/>
+        </TableRow>
+        <TableRow Name="Row27">
+          <TableCell Name="Cell111" Font="Arial, 10pt"/>
+          <TableCell Name="Cell112" Font="Arial, 10pt"/>
+          <TableCell Name="Cell113" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row28">
+          <TableCell Name="Cell114" Border.Lines="All" Text="[BoxAAmt1]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell115" Border.Lines="All" Text="[BoxBAmt1]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell116" Border.Lines="All" Text="[BoxCAmt1]" HorzAlign="Right" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row29">
+          <TableCell Name="Cell117" Border.Lines="All" Text="[BoxAAmt2]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell118" Border.Lines="All" Text="[BoxBAmt2]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell119" Border.Lines="All" Text="[BoxCAmt2]" HorzAlign="Right" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row30">
+          <TableCell Name="Cell120" Border.Lines="All" Text="[BoxAAmt3]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell121" Border.Lines="All" Text="[BoxBAmt3]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell122" Border.Lines="All" Text="[BoxCAmt3]" HorzAlign="Right" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row31">
+          <TableCell Name="Cell123" Border.Lines="All" Text="[BoxAAmt4]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell124" Border.Lines="All" Text="[BoxBAmt4]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell125" Border.Lines="All" Text="[BoxCAmt4]" HorzAlign="Right" Font="Arial, 6pt"/>
+        </TableRow>
+        <TableRow Name="Row32">
+          <TableCell Name="Cell126" Border.Lines="All" Text="[BoxATotal]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell127" Border.Lines="All" Text="[BoxBTotal]" HorzAlign="Right" Font="Arial, 6pt"/>
+          <TableCell Name="Cell128" Border.Lines="All" Text="[BoxCTotal]" HorzAlign="Right" Font="Arial, 6pt"/>
+        </TableRow>
+      </TableObject>
+      <TextObject Name="Text11" Left="28.8" Top="1881.6" Width="163.2" Height="28.8" Border.Lines="All" Text="Student's name (print) and signature" Padding="2, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text12" Left="192" Top="1881.6" Width="105.6" Height="28.8" Border.Lines="All" Text="Social insurance number" Padding="2, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text13" Left="297.6" Top="1881.6" Width="86.4" Height="28.8" Border.Lines="All" Text="Date (YYYYMMDD)" Padding="2, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text14" Left="393.6" Top="1881.6" Width="192" Height="28.8" Border.Lines="All" Text="Nom (lettres moulées) et signature de l'étudiant" Padding="2, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text15" Left="585.6" Top="1881.6" Width="124.8" Height="28.8" Border.Lines="All" Text="Numéro d'assurance sociale" Padding="2, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text16" Left="710.4" Top="1881.6" Width="76.8" Height="28.8" Border.Lines="All" Text="Date (AAAAMMJJ)" Padding="2, 1, 0, 0" Font="Arial, 5.25pt, style=Bold"/>
+      <TextObject Name="Text17" Left="288" Top="28.8" Width="230.4" Height="28.8" Text="Tuition and Enrolment Certificate&#13;&#10;Certificat pour frais de scolarité et d'inscription" HorzAlign="Center" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text18" Left="172.8" Top="28.8" Width="86.4" Height="28.8" Text="Agence du revenu du Canada" Padding="2, 1, 0, 0" Font="Arial, 7pt"/>
+      <TextObject Name="Text19" Left="76.8" Top="28.8" Width="86.4" Height="28.8" Text="Canada Revenue Agency" Padding="2, 1, 0, 0" Font="Arial, 7pt"/>
+      <TextObject Name="Text20" Left="537.6" Top="28.8" Width="153.6" Height="28.8" Text="Protected B / Protégé B&#13;&#10;when completed / une fois rempli" Padding="2, 1, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text21" Left="700.8" Top="38.4" Width="67.2" Height="19.2" Text="For student&#13;&#10;Pour étudiant" Padding="2, 1, 0, 0" HorzAlign="Right" Font="Arial, 6pt"/>
+      <TextObject Name="Text22" Left="768" Top="38.4" Width="19.2" Height="19.2" Text="1" Padding="2, 1, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 13pt, style=Bold"/>
+      <TextObject Name="Text26" Left="691.2" Top="1084.8" Width="96" Height="19.2" CanBreak="false" Text="T2202A ([TaxYear])" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/>
+      <PictureObject Name="Picture3" Left="28.8" Top="1094.4" Width="38.4" Height="28.8" ImageFormat="Png" Image="iVBORw0KGgoAAAANSUhEUgAAADsAAAAeCAYAAACSRGY2AAAABGdBTUEAALGPC/xhBQAAAUBJREFUWEftkwEOgzAMA/kkn+STbEaylFUG3FAKaFg6TYOkza3dMH8zjmOK3lEzOEzTtPQvssMwpOgdNYMDhJf+I4tkwl85EzWDw2Wy8VrVRs3gcJks+rh5bcr9XbrJ4hR5kvhkbxR2TzvuXUNXWdVb4kT1OXSTRVRvJJ7yVlSvwytby1bifxCbqX7yOFnIRUG85yZ7suxjHRPXQ8o+l+ayWFBJ4RmGLp9H1t5zSEbVODSXxcB7UrXc9mTPkC2jahyay2JBoOqycEhG1Tg84mRve42ZVsKlKKLqHE6TRY5e5/L6MqrW4VRZJHvCa6KIqnc4XRapFVZXN0b1ONxSdutUEdXj0EUWmwBI89T4HeFzwNqtqBkcuO4r65JJlK2NmsHhla0lk1fWjJrB4TLZrCiiZnC4TPZI1AwOP7L/kXn+AHToIrFhIeSAAAAAAElFTkSuQmCC"/>
+      <TextObject Name="Text27" Left="268.8" Top="1094.4" Width="230.4" Height="28.8" Text="Tuition and Enrolment Certificate&#13;&#10;Certificat pour frais de scolarité et d'inscription" HorzAlign="Center" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text28" Left="172.8" Top="1094.4" Width="86.4" Height="28.8" Text="Agence du revenu du Canada" Padding="2, 1, 0, 0" Font="Arial, 7pt"/>
+      <TextObject Name="Text29" Left="76.8" Top="1094.4" Width="86.4" Height="28.8" Text="Canada Revenue Agency" Padding="2, 1, 0, 0" Font="Arial, 7pt"/>
+      <TextObject Name="Text30" Left="508.8" Top="1094.4" Width="153.6" Height="28.8" Text="Protected B / Protégé B&#13;&#10;when completed / une fois rempli" Padding="2, 1, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text31" Left="662.4" Top="1104" Width="105.6" Height="19.2" Text="For designated individual&#13;&#10;Pour la personne designée" Padding="2, 1, 0, 0" HorzAlign="Right" Font="Arial, 6pt"/>
+      <TextObject Name="Text32" Left="768" Top="1104" Width="19.2" Height="19.2" Text="2" Padding="2, 1, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 13pt, style=Bold"/>
+      <TextObject Name="Text33" Left="28.8" Top="412.8" Width="153.6" Height="19.2" Text="Information for students:&#13;&#10;Renseignements pour les étudiants:&#13;&#10;" Padding="2, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text34" Left="182.4" Top="412.8" Width="499.2" Height="19.2" Text="See back of slip 1. If you want to transfer all or part of your tuition amount, complete the back of slip 2.&#13;&#10;Lisez le verso du feuillet 1. Si vous désirez transférer une partie ou la totalité de vos frais de scolarité, remplissez le verso du feuillet 2." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text35" Left="28.8" Top="1488" Width="153.6" Height="19.2" Text="Information for students:&#13;&#10;Renseignements pour les étudiants:&#13;&#10;" Padding="2, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text36" Left="182.4" Top="1488" Width="499.2" Height="19.2" Text="See back of slip 1. If you want to transfer all or part of your tuition amount, complete the back of slip 2.&#13;&#10;Lisez le verso du feuillet 1. Si vous désirez transférer une partie ou la totalité de vos frais de scolarité, remplissez le verso du feuillet 2." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text37" Left="28.8" Top="441.6" Width="355.2" Height="345.6" Text="⦁ Complete Schedule 11, Tuition, Education, and Textbook Amounts, to calculate the federal &#13;&#10;   amount you can claim on line 323 of Schedule 1, Federal Tax; the maximum amount you can&#13;&#10;   transfer to a designated individual; and the amount, if any, you can carry forward to a future&#13;&#10;   year.&#13;&#10;⦁ Also complete provincial or territorial Schedule (S11), if you resided in a province or territory &#13;&#10;   other than Quebec on December 31, to calculate the provincial or territorial amount you can &#13;&#10;   claim on line 5856 of Form 428; the maximum amount you can transfer to a designated&#13;&#10;   individual; and the amount, if any, you can carry forward to a future year.&#13;&#10;⦁ You can claim a full-time education amount if you were enrolled in a qualifying &#13;&#10;   educational program as a full-time student. Such a program lasts at least three consecutive &#13;&#10;   weeks and requires a minimum of 10 hours of course instruction or work each week in the&#13;&#10;   program (excluding study time). For more information on this and on the textbook amount,&#13;&#10;   see Pamphlet P105, Students and Income Tax, or go to www.cra.gc.ca/forms.&#13;&#10;⦁ You can claim a part-time education amount if you were enrolled in a specified educational&#13;&#10;   program. Such a program lasts at least three consecutive weeks and requires a minimum of &#13;&#10;   12 hours of instruction or work each month on courses in the program.&#13;&#10;⦁ You can claim a full-time education and textbook amount if you were enrolled as a part-time &#13;&#10;   student in a qualifying educational program and you qualify for the disability amount, or you &#13;&#10;   could not be enrolled full time in such a program because of a mental or physical impairment, &#13;&#10;   as certified by a medical doctor, optometrist, audiologist, occupational therapist, psychologist,&#13;&#10;   speech-language pathologist, or physiotherapist.&#13;&#10;   ⦁ If you qualified for the part-time education amount for 2017 and you still meet the &#13;&#10;      eligibility requirements in 2018, you do not need to send a new Form T2201, Disability &#13;&#10;      tax credit certificate, to claim the full-time education amount.&#13;&#10;   ⦁ If this is a new claim, you must submit a completed and certified Form T2201, Disability &#13;&#10;      tax credit certificate to claim the full-time education amount.&#13;&#10;   ⦁ If you could not be enrolled full-time in a qualifying educational program because of a&#13;&#10;      mental or physical impairment, you must submit a signed letter from a medical doctor,&#13;&#10;      optometrist, audiologist, occupational, therapist, psychologist, speech-language&#13;&#10;      pathologist, or physiotherapist, stating this.&#13;&#10;⦁ For information on the unused current-year tuition amounts you can transfer, see line 323&#13;&#10;   in your General Income Tax and Benefit Guide. If applicable, see line 5856 in the provincial or&#13;&#10;   territorial pages of your forms book for information on the unused current year's tuition,&#13;&#10;   education and textbook amounts you can transfer." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text38" Left="384" Top="441.6" Width="412.8" Height="345.6" Text="⦁ Remplissez l'annexe 11, Frais de scolarité, montant relatif aux études et montant pour manuels, pour calculer &#13;&#10;   le montant fédéral que vous pouvez demander à la ligne 323 de l'annexe 1, Impôt fédéral, le montant &#13;&#10;   maximum que vous pouvez transférer à une personne désignée et, s'il y a lieu, le montant que vous pouvez &#13;&#10;   reporter à une année future.&#13;&#10;⦁ Sauf si vous résidiez au Québec, remplissez aussi l'annexe provinciale ou territoriale (S11) de la province ou &#13;&#10;   du territoire où vous habitiez le 31 décembre pour calculer le montant provincial ou territorial que vous &#13;&#10;   pouvez demander à la ligne 5856 du formulaire 428, le montant maximum que vous pouvez transférer à une &#13;&#10;   personne désignée et, s'il y a lieu, le montant que vous pouvez reporter à une année future.&#13;&#10;⦁ Vous pouvez demander un montant relatif aux études à temps plein si vous étiez inscrit à un programme de &#13;&#10;   formation admissible comme étudiant à temps plein. Un tel programme doit durer au moins trois semaines &#13;&#10;   consécutives et exiger un minimum de 10 heures d'enseignement ou de travail chaque semaine sans &#13;&#10;   compter les heures d'étude. Pour en savoir plus sur ce sujet et à propos du montant pour manuels, consultez &#13;&#10;   la brochure P105, Les étudiants et l'impôt, à www.arc.gc.ca/formulaires.&#13;&#10;⦁ Vous pouvez demander un montant relatif aux études à temps partiel si vous étiez inscrit à un programme &#13;&#10;   de formation déterminé. Un tel programme doit durer au moins trois semaines consécutives et exiger un &#13;&#10;   minimum de 12 heures d'enseignement ou de travail chaque mois.&#13;&#10;⦁ Si vous étiez inscrit à temps partiel à un programme de formation admissible et que vous avez droit au &#13;&#10;   montant pour personnes handicapées, ou que vous ne pouviez pas être inscrit à temps plein à un tel &#13;&#10;   programme en raison d'une déficience mentale ou physique attestée par un médecin, un optométriste, un &#13;&#10;   audiologiste, un ergothérapeute, un psychologue, un orthophoniste, ou un physiothérapeute, vous pouvez &#13;&#10;   demander un montant relatif aux études à temps plein.&#13;&#10;⦁ Si vous qualifiez pour le montant relatif aux études à temps partiel pour l'année 2017 et que vous remplissez &#13;&#10;      toujours les conditions d'amissibilité en 2018 vous n'avez pas besoin d'envoyer un nouvveau formulaire &#13;&#10;      T2201, Certificat pour le crédit d'impôt pour personnes handicapées, pour demander le crédit du montant &#13;&#10;      relatif aux études à temps plein.&#13;&#10;⦁ S'il s'agit d'une nouvelle demande, vous devez soumettre un formulaire T2201, Certificat pour le crédit &#13;&#10;      d'impôt pour personnes handicapées dûment rempli et certifié pour demander le montant relatif aux études &#13;&#10;      à temps plein.&#13;&#10;⦁ Si vous ne pouvez pas être inscrit à temps plein dans un programme de formation admissible en raison d'une &#13;&#10;      déficience mentale ou physique, vous devez présenter une lettre signée par un médecin, un optométriste, &#13;&#10;      un audiologiste, un ergothérapeute, un ergothophoniste, un psychologue ou un physiothérapeute pour &#13;&#10;      attestant cette situation.&#13;&#10;⦁ Pour obtenir des précisions sur la partie inutilisée pour l'année courante de vos frais de scolarité que vous &#13;&#10;   pouvez transférer, lisez la ligne 323 de votre Guide général d'impôt et de prestations. S'il y a lieu, lisez la ligne &#13;&#10;   5856 des renseignements provinciaux ou territoriaux de votre &#13;&#10;   cahier de formulaires pour obtenir des précisions sur la partie inutilisée pour l'année courante de vos frais de &#13;&#10;   scolarité, de votre montant relatif aux études et de votre montant pour manuels." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text39" Left="28.8" Top="67.2" Width="364.8" Height="105.6" Text="⦁ Issue this certificate to a student who was enrolled during the calendar year in a qualifying &#13;&#10;   educational program or a specified educational program at a post-secondary institution, such as &#13;&#10;   a college or university, or at an institution certified by Employment and Social Development &#13;&#10;   Canada (ESDC).&#13;&#10;⦁ Tuition fees paid in respect of the calendar year to any one institution have to be more than &#13;&#10;   $100. Fees paid to an institution certified by ESDC or to a post-secondary educational &#13;&#10;   institution in Canada for courses that are not at a post-secondary school level, have to be for &#13;&#10;   courses taken to get or improve skills in an occupation, and the student has to be 16 years of &#13;&#10;   age or older before the end of the year.&#13;&#10;⦁ Students calculate their provincial or territorial education amounts (if applicable) &#13;&#10;   based on the number of months indicated in Box B or C below." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text40" Left="393.6" Top="67.2" Width="395.52" Height="105.6" Text="⦁ Délivrez ce certificat à un étudiant qui était inscrit, au cours de l'année civile, à un programme de &#13;&#10;   formation admissible ou à un programme de formation déterminé dans un établissement postsecondaire, &#13;&#10;   comme un collège ou une université, ou dans un établissement reconnu par Emploi et Développement &#13;&#10;   social Canada (EDSC).&#13;&#10;⦁ Les frais de scolarité payés à un établissement quelconque pour une année civile doivent dépasser 100$. &#13;&#10;   Les frais payés à un établissement reconnu par EDSC, ou à un établissement d’enseignement &#13;&#10;   postsecondaire au Canada pour des cours qui ne sont pas de niveau postsecondaire, doivent viser &#13;&#10;   des cours suivis en vue d'acquérir ou d'améliorer des compétences professionnelles et et l'étudiant &#13;&#10;   doit avoir 16 ans ou plus avant la fin de l'année.&#13;&#10;⦁ L'étudiants calculent leur montant relatif aux études provincial ou territorial (s’il y a lieu) selon le &#13;&#10;  nombre de mois indiqué à la case B ou C ci-dessous." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text41" Left="28.8" Top="806.4" Width="345.6" Height="28.8" Border.Lines="Left, Right, Bottom" Text="I was enrolled in the course(s) titled _____________________________ to get or improve skills in the occupation of _________________________________." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text42" Left="220.8" Top="835.2" Width="153.6" Height="9.6" Text="See the privacy notice on your return." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text43" Left="28.8" Top="787.2" Width="345.6" Height="19.2" Border.Lines="Left, Right, Top" Text="Complete this area if you were enrolled in an institution certified by Employment and Social Development Canada:" Padding="2, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text44" Left="556.8" Top="835.2" Width="220.8" Height="9.6" Text="Consultez l'avis de confidentialité dans votre déclaration." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text45" Left="384" Top="787.2" Width="393.6" Height="19.2" Border.Lines="Left, Right, Top" Text="Remplissez cette section si vous étiez inscrit à un établissement reconnu par Emploi et Développement social Canada :" Padding="2, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text46" Left="384" Top="806.4" Width="393.6" Height="28.8" Border.Lines="Left, Right, Bottom" Text="J'atteste que j'étais inscrit au(x) cours intitulé(s) ____________________________ en vue d'acquérir ou d'améliorer des compétences professionnelles pour exercer un emploi de _________________________." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text47" Left="28.8" Top="1132.8" Width="364.8" Height="105.6" Text="⦁ Issue this certificate to a student who was enrolled during the calendar year in a qualifying &#13;&#10;   educational program or a specified educational program at a post-secondary institution, such as &#13;&#10;   a college or university, or at an institution certified by Employment and Social Development &#13;&#10;   Canada (ESDC).&#13;&#10;⦁ Tuition fees paid in respect of the calendar year to any one institution have to be more than $100. &#13;&#10;   Fees paid to an institution certified by ESDC or to a post-secondary educational institution in &#13;&#10;   Canada for courses that are not at a post-secondary school level, have to be for courses taken &#13;&#10;   to get or improve skills in an occupation, and the student has to be 16 years of age or older &#13;&#10;   before the end of the year.&#13;&#10;⦁ Students calculate their provincial or territorial education amounts (if applicable) based on the &#13;&#10;   number of months indicated in Box B or C below." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text48" Left="393.6" Top="1132.8" Width="393.6" Height="105.6" Text="⦁ Délivrez ce certificat à un étudiant qui était inscrit, au cours de l'année civile, à un programme de &#13;&#10;   formation admissible ou à un programme de formation déterminé dans un établissement postsecondaire, &#13;&#10;   comme un collège ou une université, ou dans un établissement reconnu par Emploi et Développement &#13;&#10;   social Canada (EDSC).&#13;&#10;⦁ Les frais de scolarité payés à un établissement quelconque pour une année civile doivent dépasser &#13;&#10;   100$. Les frais payés à un établissement reconnu par EDSC, ou à un établissement d’enseignement &#13;&#10;   postsecondaire au Canada pour des cours qui ne sont pas de niveau postsecondaire, doivent viser des &#13;&#10;   cours suivis en vue d'acquérir ou d'améliorer des compétences professionnelles et et l'étudiant doit avoir &#13;&#10;   16 ans ou plus avant la fin de l'année.&#13;&#10;⦁ L'étudiants calculent leur montant relatif aux études provincial ou territorial (s’il y a lieu) selon le nombre &#13;&#10;   de mois indiqué à la case B ou C ci-dessous.&#13;&#10;" Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text49" Left="28.8" Top="1516.8" Width="364.8" Height="115.2" Text="⦁ You can transfer your unused current-year amounts to one designated individual. That individual &#13;&#10;   can be either your spouse or common-law partner, your parent or grandparent, or your spouse's &#13;&#10;   or common-law partner's parent or grandparent. You cannot transfer your unused current-year &#13;&#10;   amounts to your parent or grandparent, or your spouse's or common-law partner's parent or &#13;&#10;   grandparent, if your spouse or common-law partner claims the spouse or common-law partner &#13;&#10;   amount or amounts transferred from your spouse or common-law partner on their tax return.&#13;&#10;&#13;&#10;⦁ If you transfer unused current-year amounts to your spouse or common-law partner, they have to &#13;&#10;   complete federal Schedule 2, Federal amounts transferred from your spouse or common-law &#13;&#10;   partner, and, if applicable, provincial or territorial Schedule (S2), Provincial (or territorial) &#13;&#10;   amounts transferred from your spouse or common-law partner." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text50" Left="393.6" Top="1516.8" Width="393.6" Height="115.2" Text="⦁ Vous pouvez transférer la partie inutilisée du montant de l'année courante à une personne désignée, soit &#13;&#10;   votre époux ou votre conjoint de fait, soit l'un de vos parents ou de vos grands parents ou ceux de votre &#13;&#10;   époux ou de votre conjoint de fait. Cependant, vous ne pouvez pas transférer la partie inutilisée de &#13;&#10;   l'année courante à l'un de vos parents ou de vos grands-parents ou ceux de votre époux ou de votre &#13;&#10;   conjoint de fait, si votre époux ou votre conjoint de fait demande le montant pour époux ou conjoint &#13;&#10;   de fait ou s’il demande les montants transférés de l'époux ou du conjoint de fait dans sa déclaration de &#13;&#10;   revenus.&#13;&#10;⦁ Si vous transférez une partie inutilisée du montant de l'année courante de vos frais de scolarité à votre &#13;&#10;   époux ou conjoint de fait, il doit remplir l'annexe 2 fédérale, Montants fédéraux transférés de votre &#13;&#10;   époux ou conjoint de fait. S'il y a lieu, il doit aussi remplir l'annexe provinciale ou territoriale (S2), &#13;&#10;   Montants provinciaux (ou territoriaux) transférés de votre époux ou conjoint de fait." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text51" Left="230.4" Top="1910.4" Width="153.6" Height="9.6" Text="See the privacy notice on your return." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text52" Left="537.6" Top="1910.4" Width="220.8" Height="9.6" Text="Consultez l'avis de confidentialité dans votre déclaration." Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text53" Left="28.8" Top="1632" Width="355.2" Height="28.8" Border.Lines="All" Border.Width="1.5" Text="Designation for the transfer of an amount to a spouse or common-law partner, parent, or grandparent" Padding="2, 1, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text54" Left="393.6" Top="1632" Width="374.4" Height="28.8" Border.Lines="All" Border.Width="1.5" Text="Désignation pour le transfert d'un montant à un époux ou conjoint de fait, ou à un des parents ou grand-parents" Padding="2, 1, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text55" Left="28.8" Top="1670.4" Width="355.2" Height="105.6" Text="I designate _______________________________, my _______________________________, &#13;&#10;                                    (Individual's name)                                       (Relationship to you)&#13;&#10;to claim:&#13;&#10;(1) $ ________________________ on line 324 of their federal Schedule 1, or on line 360 of&#13;&#10;             Federal tuition amount       their federal Schedule 2, as applicable;&#13;&#10;&#13;&#10;(2) $ ________________________ on line 5860 of their provincial or territorial Form 428, or&#13;&#10;                  Provincial or                on line 5909 of their provincial or territorial Schedule (S2), &#13;&#10;              Territorial amount             as applicable.&#13;&#10;        " Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text56" Left="28.8" Top="1776" Width="38.4" Height="105.6" Text="Note 1:&#13;&#10;&#13;&#10;Note 2:&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;Note 3:" Padding="2, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text57" Left="67.2" Top="1776" Width="316.8" Height="105.6" Text="Line (1) above cannot be more than line 16 of your federal Schedule 11.&#13;&#10;&#13;&#10;Line (2) above cannot be more than line 19 (line 16 for the Yukon and line &#13;&#10;23 Nunavut) of your provincial or territorial Schedule (S11). If you &#13;&#10;resided in New Brunswick, Quebec, Ontario or Saskatchewan on &#13;&#10;December 31, you are not required to fill out line (2) above.&#13;&#10;&#13;&#10;If you did not reside in the same province or territory as the designated &#13;&#10;individual on December 31, special rules may apply. For more details, &#13;&#10;call 1-800-959-8281.&#13;&#10;&#13;&#10;&#13;&#10;" Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text58" Left="393.6" Top="1670.4" Width="374.4" Height="105.6" Text="Je désigne _____________________________,  mon (ma) _____________________________,&#13;&#10;                                (Nom de la personne)                                           (Lien de parenté)&#13;&#10;comme personne pouvant demander :&#13;&#10;(1)  ________________________$ à la ligne 324 de son annexe 1 fédérale ou à la ligne 360 de son&#13;&#10;      Montant frais de scolarité fédéral   annexe 2 fédérale, selon le cas.&#13;&#10;&#13;&#10;(2)  ________________________$ à la ligne 5860 de son formulaire 428 provincial ou territorial ou&#13;&#10;              Montant provincial            à la ligne 5909 de son annexe provinciale ou territoriale (S2),&#13;&#10;                 ou territorial                  selon le cas.	&#13;&#10;     &#13;&#10;" Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+      <TextObject Name="Text59" Left="393.6" Top="1776" Width="57.6" Height="105.6" Text="Remarque 1:&#13;&#10;&#13;&#10;&#13;&#10;Remarque 2:&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;Remarque 3:" Padding="2, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text60" Left="451.2" Top="1776" Width="336" Height="105.6" Text="Le montant indiqué à la ligne 1 ci-dessus ne peut pas dépasser &#13;&#10;le montant de la ligne 16 de votre annexe 11 fédérale.&#13;&#10;&#13;&#10;Le montant indiqué à la ligne 2 ci-dessus ne peut pas dépasser celui de la ligne 19 &#13;&#10;(ligne 16 pour le Yukon et ligne 23 pour le Nunavut) de votre annexe provinciale ou &#13;&#10;territoriale (S11). Si vous résidiez au Nouveau-Brunswick, Québec, Ontario ou au &#13;&#10;Saskatchewan le 31 décembre, vous n'avez pas à remplir la ligne 2 ci-dessus.&#13;&#10;&#13;&#10;Si, le 31 décembre, vous ne résidiez pas dans la même province ou le même territoire &#13;&#10;que la personne désignée, des règles spéciales peuvent s'appliquer. Pour en savoir plus&#13;&#10;composez le 1-800-959-7383.&#13;&#10;&#13;&#10;" Padding="2, 1, 0, 0" Font="Arial, 6pt"/>
+    </DataBand>
+  </ReportPage>
+</Report>

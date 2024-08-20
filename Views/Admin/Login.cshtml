@@ -1,0 +1,107 @@
+﻿@model Ellucian.Colleague.Api.Models.TestLogin
+
+@{
+    ViewBag.Title = "Login";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+</div>
+
+@* Field Set *@
+<div id="Loginbody">
+    <section>
+        @using (Html.BeginForm("Login", "Admin", (ViewBag.RouteValues != null ? (object)ViewBag.RouteValues : new { }), FormMethod.Post, antiforgery: true, new { autocomplete = "off" }))
+        {
+            <div class="column-nine">
+                @if (!Html.ViewData.ModelState.IsValid)
+                {
+                    <div class=" esg-alert esg-alert--fluid esg-alert--error" role="alert">
+                        <span class="esg-alert__icon-wrapper">
+                            <span class="esg-alert__icon esg-icon__container" aria-hidden="True">
+                                <svg class="esg-icon esg-icon--error-dark">
+                                    <use xlink:href="#icon-error"></use>
+                                </svg>
+                            </span>
+                        </span>
+
+                        <div class="esg-alert__message">
+                            @Html.ValidationSummary(true, "", new { @class = "validation-summary-errors" })
+                        </div>
+                    </div><br />
+                }
+
+                <fieldset>
+                    <br />
+                    <div class="base">
+                        @{var stateUserID = ViewData.ModelState["UserId"];}
+                        <div id="divUserID" class="esg-form__group esg-has-feedback @((stateUserID != null && stateUserID.Errors.Count > 0) ? "esg-has-error" : "")">
+                            @Html.LabelFor(model => model.UserId, new { htmlAttributes = new { @class = "esg-form__label" } })
+                            <div class="esg-form__input-group">
+                                @Html.EditorFor(model => model.UserId, new { htmlAttributes = new { @class = "esg-form__input" }, id = "UserID" })
+                                @if (stateUserID != null && stateUserID.Errors.Count > 0)
+                                {
+                                    <div class="esg-form__feedback-icon esg-icon__container">
+                                        <svg class="esg-icon esg-icon--error">
+                                            <use xlink:href="#icon-error"></use>
+                                        </svg>
+                                    </div>
+                                }
+                                @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "esg-form__feedback-text" })
+                            </div>
+                        </div>
+
+                        @{var statePassword = ViewData.ModelState["Password"];}
+                        <div class="esg-form__group esg-has-feedback @((statePassword != null && statePassword.Errors.Count > 0) ? "esg-has-error" : "")">
+                            @Html.LabelFor(model => model.Password, new { htmlAttributes = new { @class = "esg-form__label" } })
+                            <div class="esg-form__input-group">
+                                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "esg-form__input" } })
+                                @if (statePassword != null && statePassword.Errors.Count > 0)
+                                {
+                                    <div class="esg-form__feedback-icon esg-icon__container">
+                                        <svg class="esg-icon esg-icon--error">
+                                            <use xlink:href="#icon-error"></use>
+                                        </svg>
+                                    </div>
+                                }
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "esg-form__feedback-text" })
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <p class="base">
+                        Notice: Only use the Colleague Web API Base URL field when using the Colleague Web API Utilities.
+                        When this field is specified the login and all API calls will use the Colleague Web API specified by this address.
+                        You will NOT be able to maintain the API Settings when logged into a remote API.
+                    </p><br />
+                    <p class="base"> Leave this field blank to use this Colleague Web API.</p><br />
+                    <div class="base">
+                        @{var stateBaseUrl = ViewData.ModelState["BaseUrl"];}
+                        <div class="esg-form__group esg-has-feedback @((stateBaseUrl != null && stateBaseUrl.Errors.Count > 0) ? "esg-has-error" : "")">
+                            @Html.LabelFor(model => model.BaseUrl, new { htmlAttributes = new { @class = "esg-form__label" } })
+                            @Html.EditorFor(model => model.BaseUrl, new { htmlAttributes = new { @class = "esg-form__input" } })
+                            @Html.ValidationMessageFor(model => model.BaseUrl)
+                        </div>
+                        <div class="esg-form__group">
+                            <br />
+                            @*With v1.5.1 of the CDN, the "submit" buttons did not render properly; need to have a true button type redirect to the submit button action*@
+                            <input type="submit" id="hiddenButton" value="Invisible" style="display:none" class="esg-button esg-button--primary" />
+                            <input type="button" id="submitButton" value="Submit" class="esg-button esg-button--primary" />
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        }
+    </section>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#submitButton').click(function () {
+                $('#hiddenButton').trigger("click");
+            });
+        });
+    </script>
+}

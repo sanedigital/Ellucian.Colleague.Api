@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Clear API Cache";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+</div>
+
+<div id="ClearCachebody" class="base">
+    <section class="content-wrapper main-content clear-fix">
+        <br /><p>API cache has been cleared successfully</p><br />
+        @Html.ActionLink("Return to Colleague Web Utilities", "Index", "Utilities")
+    </section>
+</div>

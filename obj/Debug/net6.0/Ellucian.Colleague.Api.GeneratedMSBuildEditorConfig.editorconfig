@@ -1,0 +1,223 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Ellucian.Colleague.Api
+build_property.RootNamespace = Ellucian.Colleague.Api
+build_property.ProjectDir = C:\Colleague Solutions\Colleague Web API\2.3.1.9\Ellucian.Colleague.Api\Ellucian.Colleague.Api\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Colleague Solutions\Colleague Web API\2.3.1.9\Ellucian.Colleague.Api\Ellucian.Colleague.Api
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Planning/Views/LocalTest/Evaluation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5pbmdcVmlld3NcTG9jYWxUZXN0XEV2YWx1YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Planning/Views/LocalTest/EvaluationResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5pbmdcVmlld3NcTG9jYWxUZXN0XEV2YWx1YXRpb25SZXN1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Planning/Views/LocalTest/ScanRules.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5pbmdcVmlld3NcTG9jYWxUZXN0XFNjYW5SdWxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Planning/Views/Test/Advisees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5pbmdcVmlld3NcVGVzdFxBZHZpc2Vlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Planning/Views/Test/DegreePlan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5pbmdcVmlld3NcVGVzdFxEZWdyZWVQbGFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Planning/Views/Test/Done.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5pbmdcVmlld3NcVGVzdFxEb25lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Planning/Views/Test/Evaluation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5pbmdcVmlld3NcVGVzdFxFdmFsdWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Planning/Views/Test/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5pbmdcVmlld3NcVGVzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Planning/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5pbmdcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Planning/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGxhbm5pbmdcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/Test/Courses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xUZXN0XENvdXJzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/Test/CourseSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xUZXN0XENvdXJzZVNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/Test/CourseSearchParallel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xUZXN0XENvdXJzZVNlYXJjaFBhcmFsbGVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/Test/Credits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xUZXN0XENyZWRpdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/Test/Done.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xUZXN0XERvbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/Test/Faculty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xUZXN0XEZhY3VsdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/Test/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xUZXN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/Test/Sections.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xUZXN0XFNlY3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/Test/SectionsForCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xUZXN0XFNlY3Rpb25zRm9yQ291cnNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/Test/Subjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xUZXN0XFN1YmplY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Areas/Student/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/ApiSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXBpU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/ApiSettingsProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXBpU2V0dGluZ3NQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/ConnectionSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29ubmVjdGlvblNldHRpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/Culture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3VsdHVyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/KeyManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS2V5TWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/Logging.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9nZ2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/OauthSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT2F1dGhTZXR0aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/SettingsConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2V0dGluZ3NDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/_CacheSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX0NhY2hlU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/_PhotoSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1Bob3RvU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Admin/_ReportSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1JlcG9ydFNldHRpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Home/_WebApiMethodDescriptionList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfV2ViQXBpTWV0aG9kRGVzY3JpcHRpb25MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/ResourceFileEditor/ResourceFileEditor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb3VyY2VGaWxlRWRpdG9yXFJlc291cmNlRmlsZUVkaXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Shared/_EllucianDesignSystem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbGx1Y2lhbkRlc2lnblN5c3RlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Shared/_LoginControl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkNvbnRyb2wuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Shared/_RequireConfig.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXF1aXJlQ29uZmlnLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Shared/_RequireConfigObjectOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXF1aXJlQ29uZmlnT2JqZWN0T25seS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Utilities/BackupConfig.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXEJhY2t1cENvbmZpZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Utilities/CacheManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXENhY2hlTWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Utilities/ClearCache.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXENsZWFyQ2FjaGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Utilities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/Utilities/RestoreConfig.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXFJlc3RvcmVDb25maWcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Colleague Solutions/Colleague Web API/2.3.1.9/Ellucian.Colleague.Api/Ellucian.Colleague.Api/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

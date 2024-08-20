@@ -1,0 +1,640 @@
+﻿[
+    {
+        "name": "This file should not be modified.   The deprecatedResource file is used by the resources API to display deprecated resources and associated dates."
+    },
+    {
+        "name": "academic-periods",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2018-09-30",
+                    "sunsetOn": "2020-10-01",
+                    "description": "v16.0.0 adds functionality to indicate the year in which a term occurs."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v8+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2018-09-30",
+                    "sunsetOn": "2020-10-01",
+                    "description": "v16.0.0 adds functionality to indicate the year in which a term occurs."
+                }
+            }
+        ]
+    },
+    {
+        "name": "academic-period-enrollment-statuses",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-06-30",
+                    "sunsetOn": "2021-07-01",
+                    "description": "Replaced with student-academic-period-statuses to better represent status information."
+                }
+            }
+        ]
+    },
+    {
+        "name": "account-funds-available_transactions",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.afa_transactions.v8+json",
+                "methods": [
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "Replaced by account-funds-available-transactions as account-funds-available_transactions did not adhere to Ellucian Ethos API standards in responding with account-funds-available."
+                }
+            }
+        ]
+    },
+    {
+        "name": "admission-applications",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-12-31",
+                    "sunsetOn": "2021-12-31",
+                    "description": "V16.0.0 moves program, level and school properties to student-academic-programs, moves POST/PUT functionality to admission-applications-submissions, updates withdrawnOn from date-time to date format, and replaces source property with applicationSource to provide more robust support for admission applications."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v11+json",
+                "methods": [
+                    "get",
+                    "put",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-12-31",
+                    "sunsetOn": "2021-12-31",
+                    "description": "V16.0.0 moves program, level and school properties to student-academic-programs, moves POST/PUT functionality to admission-applications-submissions, updates withdrawnOn from date-time to date format, and replaces source property with applicationSource to provide more robust support for admission applications."
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "courses",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get",
+                    "post",
+                    "put"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2018-09-30",
+                    "sunsetOn": "2020-10-01",
+                    "description": "v16.0.0 enhances support for POST/PUT."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v8+json",
+                "methods": [
+                    "get",
+                    "post",
+                    "put"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2018-09-30",
+                    "sunsetOn": "2020-10-01",
+                    "description": "v16.0.0 enhances support for POST/PUT."
+                }
+            }
+        ]
+    },
+    {
+        "name": "external-education",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-12-31",
+                    "sunsetOn": "2021-12-31",
+                    "description": "V1.0.0 of person-external-education replaces external-education which better represents external education a person has received."
+                }
+            }
+        ]
+    },
+    {
+        "name": "housing-assignments",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v10.1.0+json",
+                "methods": [
+                    "get",
+                    "put",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "V16.0.0 updates the roomRates object to an array to accommodate multiple rates per housing assignment."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v10+json",
+                "methods": [
+                    "get",
+                    "put",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "V16.0.0 updates the roomRates object to an array to accommodate multiple rates per housing assignment."
+                }
+            }
+        ]
+    },
+
+    {
+        "name": "meal-plan-assignments",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v10.1.0+json",
+                "methods": [
+                    "get",
+                    "put",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "V16.0.0 updates the assignedRates object to an array to accommodate multiple rates per meal plan assignment."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v10+json",
+                "methods": [
+                    "get",
+                    "put",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "V16.0.0 updates the assignedRates object to an array to accommodate multiple rates per meal plan assignment."
+                }
+            }
+        ]
+    },
+    {
+        "name": "personal-relationships",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "V16.0.0 updates structure to provide more flexibility for representing relationships between persons."
+                }
+            }
+        ]
+    },
+    {
+        "name": "person-contacts",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v7+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "Replaced by person-emergency-contacts v1.0.0."
+                }
+            }
+        ]
+    },
+    {
+        "name": "person-guardians",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v7+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "Merged with personal-relationships v16.0.0."
+                }
+            }
+        ]
+    },
+    {
+        "name": "personal-relationship-initiation-process",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v1.0.0+json",
+                "methods": [
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2020-06-03",
+                    "description": "V1.0.0 is being released for Beta testing."
+                }
+            }
+        ]
+    },
+    {
+        "name": "personal-relationship-statuses",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "Replaced by relationship-statuses v1.0.0."
+                }
+            }
+        ]
+    },
+    {
+        "name": "personal-relationship-types",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "Replaced by relationship-types v1.0.0."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v7+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "Replaced by relationship-types v1.0.0."
+                }
+            }
+        ]
+    },
+    {
+        "name": "prospect-opportunities",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.prospect-opportunities-submissions.v1.0.0+json",
+                "methods": [
+                    "put",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "description": "V1.0.0 is being released for Beta testing."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v16.0.0+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "description": "V16.0.0 is being released for Beta testing."
+                }
+            }
+        ]
+    },
+    {
+        "name": "prospect-opportunity-sources",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v1.0.0+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "description": "V1.0.0 is being released for Beta testing."
+                }
+            }
+        ]
+    },
+    {
+        "name": "sections",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get",
+                    "post",
+                    "put"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2018-09-30",
+                    "sunsetOn": "2020-10-01",
+                    "description": "v16.0.0 enhances support for POST/PUT."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v8+json",
+                "methods": [
+                    "get",
+                    "post",
+                    "put"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2018-09-30",
+                    "sunsetOn": "2020-10-01",
+                    "description": "v16.0.0 enhances support for POST/PUT."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v11+json",
+                "methods": [
+                    "get",
+                    "post",
+                    "put"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2018-09-30",
+                    "sunsetOn": "2020-10-01",
+                    "description": "v16.0.0 enhances support for POST/PUT."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.maximum.v6+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-03-30",
+                    "sunsetOn": "2021-04-01",
+                    "description": "v16.0.0 aligns with v16.0.0 sections."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.maximum.v8+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-03-30",
+                    "sunsetOn": "2021-04-01",
+                    "description": "v16.0.0 aligns with v16.0.0 sections."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.maximum.v11+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-03-30",
+                    "sunsetOn": "2021-04-01",
+                    "description": "v16.0.0 aligns with v16.0.0 sections."
+                }
+            }
+        ]
+    },
+    {
+        "name": "section-registrations",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v7+json",
+                "methods": [
+                    "get",
+                    "post",
+                    "put"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-03-30",
+                    "sunsetOn": "2021-04-01",
+                    "description": "v16.0.0 removes grade-related information. This information is now available in student-grade-point-averages, student-transcript-grades, and student-unverified-grades and can be updated using student-transcript-grades-adjustments and student-unverified-grades-submissions."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get",
+                    "post",
+                    "put"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-03-30",
+                    "sunsetOn": "2021-04-01",
+                    "description": "v16.0.0 removes grade-related information. This information is now available in student-grade-point-averages, student-transcript-grades, and student-unverified-grades and can be updated using student-transcript-grades-adjustments and student-unverified-grades-submissions."
+                }
+            }
+        ]
+    },
+    {
+        "name": "student-academic-period-profiles",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v11+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-06-30",
+                    "sunsetOn": "2021-07-01",
+                    "description": "Replaced with student-academic-periods which provides greater flexibility to associate statuses and loads with academic levels."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v7+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-06-30",
+                    "sunsetOn": "2021-07-01",
+                    "description": "Replaced with student-academic-periods which provides greater flexibility to associate statuses and loads with academic levels."
+                }
+            }
+        ]
+    },
+    {
+        "name": "student-academic-programs",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v16.0.0+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "Replaced by V17.0.0 which removes properties that are attributes of awarded credentials. Those properties are now available in student-academic-credentials."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v11+json",
+                "methods": [
+                    "get",
+                    "post",
+                    "put"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "Replaced by V16.0.0 which removes performance measure and credit information that are now contained in student-grade-point-averages, replaces subdisciplines with parentDiscipline to better represent data, replaces admissionClassification object with admissionCategory (link to admission-populations), and adds recruited and applied enumerations to curriculumObjective."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get",
+                    "post",
+                    "put"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "Replaced by V16.0.0 which removes performance measure and credit information that are now contained in student-grade-point-averages, replaces subdisciplines with parentDiscipline to better represent data, replaces admissionClassification object with admissionCategory (link to admission-populations), and adds recruited and applied enumerations to curriculumObjective."
+                }
+            }
+        ]
+    },
+    {
+        "name": "student-aptitude-assessments",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v11+json",
+                "methods": [
+                    "get",
+                    "put",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "V16.0.0 updates assessedOn from date-time to date format."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v9+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-09-30",
+                    "sunsetOn": "2021-10-01",
+                    "description": "V16.0.0 updates assessedOn from date-time to date format."
+                }
+            }
+        ]
+    },
+    {
+        "name": "student-charges",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2020-03-31",
+                    "sunsetOn": "2022-03-31",
+                    "description": "Version 16.0.0 replaces this version of student-charges and removes the chargeType property, updates the academicPeriod property to required, and adds functionality for tax reporting."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v11+json",
+                "methods": [
+                    "get",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2020-03-31",
+                    "sunsetOn": "2022-03-31",
+                    "description": "Version 16.0.0 replaces this version of student-charges and removes the chargeType property, updates the academicPeriod property to required, and adds functionality for tax reporting."
+                }
+            }
+        ]
+    },
+    {
+        "name": "student-payments",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v6+json",
+                "methods": [
+                    "get",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2020-03-31",
+                    "sunsetOn": "2022-03-31",
+                    "description": "Version 16.0.0 replaces this version of student-payments and updates the academicPeriod property to required and adds functionality for tax reporting."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v11+json",
+                "methods": [
+                    "get",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2020-03-31",
+                    "sunsetOn": "2022-03-31",
+                    "description": "Version 16.0.0 replaces this version of student-payments and updates the academicPeriod property to required and adds functionality for tax reporting."
+                }
+            },
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v11.1.0+json",
+                "methods": [
+                    "get",
+                    "post"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2020-03-31",
+                    "sunsetOn": "2022-03-31",
+                    "description": "Version 16.0.0 replaces this version of student-payments and updates the academicPeriod property to required and adds functionality for tax reporting."
+                }
+            }
+        ]
+    },
+    {
+        "name": "students",
+        "representations": [
+            {
+                "X-Media-Type": "application/vnd.hedtech.integration.v7+json",
+                "methods": [
+                    "get"
+                ],
+                "deprecationNotice": {
+                    "deprecatedOn": "2019-06-30",
+                    "sunsetOn": "2021-07-01",
+                    "description": "V16.0.0 removes the measures object, which is now reflected in student-grade-point-averages, updates the type object to an array (renamed as types), updates the residency object to an array (renamed as residencies), and the cohort and tag objects in students were moved to student-cohort-assignments and student-tag-assignments respectfully so subscribers are able to associate changes specifically to a cohort or tag (attribute) assignment."
+                }
+            }
+        ]
+    }
+]

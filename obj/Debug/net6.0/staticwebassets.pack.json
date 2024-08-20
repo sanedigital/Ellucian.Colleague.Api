@@ -1,0 +1,257 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\Site.css",
+      "PackagePath": "staticwebassets\\Site.css"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\content\\icons\\ellucian-icon-sprite.svg",
+      "PackagePath": "staticwebassets\\content\\icons\\ellucian-icon-sprite.svg"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\images\\accent.png",
+      "PackagePath": "staticwebassets\\images\\accent.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\images\\bullet.png",
+      "PackagePath": "staticwebassets\\images\\bullet.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\images\\ellucian-logo.png",
+      "PackagePath": "staticwebassets\\images\\ellucian-logo.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\images\\heroAccent.png",
+      "PackagePath": "staticwebassets\\images\\heroAccent.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\images\\orderedListOne.png",
+      "PackagePath": "staticwebassets\\images\\orderedListOne.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\images\\orderedListThree.png",
+      "PackagePath": "staticwebassets\\images\\orderedListThree.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\images\\orderedListTwo.png",
+      "PackagePath": "staticwebassets\\images\\orderedListTwo.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\images\\report-logo.png",
+      "PackagePath": "staticwebassets\\images\\report-logo.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\images\\unofficial-watermark.png",
+      "PackagePath": "staticwebassets\\images\\unofficial-watermark.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\Admin.js",
+      "PackagePath": "staticwebassets\\scripts\\Admin.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\CacheManagement.js",
+      "PackagePath": "staticwebassets\\scripts\\CacheManagement.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\Components\\Icon\\_Icon.html",
+      "PackagePath": "staticwebassets\\scripts\\Components\\Icon\\_Icon.html"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\Components\\Icon\\_Icon.js",
+      "PackagePath": "staticwebassets\\scripts\\Components\\Icon\\_Icon.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\Components\\ModalSpinner\\_ModalSpinner.html",
+      "PackagePath": "staticwebassets\\scripts\\Components\\ModalSpinner\\_ModalSpinner.html"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\Components\\ModalSpinner\\_ModalSpinner.js",
+      "PackagePath": "staticwebassets\\scripts\\Components\\ModalSpinner\\_ModalSpinner.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\ResourceFileEditor.js",
+      "PackagePath": "staticwebassets\\scripts\\ResourceFileEditor.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\_references.js",
+      "PackagePath": "staticwebassets\\scripts\\_references.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\global.js",
+      "PackagePath": "staticwebassets\\scripts\\global.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\jquery-3.7.1.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery-3.7.1.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\jquery-3.7.1.min.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery-3.7.1.min.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\jquery-3.7.1.min.map",
+      "PackagePath": "staticwebassets\\scripts\\jquery-3.7.1.min.map"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\jquery-ui-1.32.2.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery-ui-1.32.2.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\jquery-ui-1.32.2.min.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery-ui-1.32.2.min.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\jquery.ui.plugin_responsive-table.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.ui.plugin_responsive-table.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\jquery.validate-vsdoc.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.validate-vsdoc.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\knockout-3.4.0.debug.js",
+      "PackagePath": "staticwebassets\\scripts\\knockout-3.4.0.debug.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\knockout-3.4.0.js",
+      "PackagePath": "staticwebassets\\scripts\\knockout-3.4.0.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\knockout.validation.debug.js",
+      "PackagePath": "staticwebassets\\scripts\\knockout.validation.debug.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\knockout.validation.js",
+      "PackagePath": "staticwebassets\\scripts\\knockout.validation.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\modernizr-2.5.3.js",
+      "PackagePath": "staticwebassets\\scripts\\modernizr-2.5.3.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\require.js",
+      "PackagePath": "staticwebassets\\scripts\\require.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\scripts\\text.js",
+      "PackagePath": "staticwebassets\\scripts\\text.js"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\Site.css",
+      "PackagePath": "staticwebassets\\themes\\base\\Site.css"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\ellucianStyle.css",
+      "PackagePath": "staticwebassets\\themes\\base\\ellucianStyle.css"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-bg_flat_0_aaaaaa_40x100.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_flat_0_aaaaaa_40x100.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-bg_flat_75_ffffff_40x100.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_flat_75_ffffff_40x100.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-bg_glass_55_fbf9ee_1x400.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_glass_55_fbf9ee_1x400.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-bg_glass_65_ffffff_1x400.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_glass_65_ffffff_1x400.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-bg_glass_75_dadada_1x400.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_glass_75_dadada_1x400.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-bg_glass_75_e6e6e6_1x400.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_glass_75_e6e6e6_1x400.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-bg_glass_95_fef1ec_1x400.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_glass_95_fef1ec_1x400.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-bg_highlight-soft_75_cccccc_1x100.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-bg_highlight-soft_75_cccccc_1x100.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-icons_555555_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_555555_256x240.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-icons_777620_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_777620_256x240.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-icons_777777_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_777777_256x240.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-icons_cc0000_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_cc0000_256x240.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\images\\ui-icons_ffffff_256x240.png",
+      "PackagePath": "staticwebassets\\themes\\base\\images\\ui-icons_ffffff_256x240.png"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\themes\\base\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\themes\\base\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\jquery-ui.structure.css",
+      "PackagePath": "staticwebassets\\themes\\base\\jquery-ui.structure.css"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\jquery-ui.structure.min.css",
+      "PackagePath": "staticwebassets\\themes\\base\\jquery-ui.structure.min.css"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\jquery-ui.theme.css",
+      "PackagePath": "staticwebassets\\themes\\base\\jquery-ui.theme.css"
+    },
+    {
+      "Id": "C:\\Colleague Solutions\\Colleague Web API\\2.3.1.9\\Ellucian.Colleague.Api\\Ellucian.Colleague.Api\\wwwroot\\themes\\base\\jquery-ui.theme.min.css",
+      "PackagePath": "staticwebassets\\themes\\base\\jquery-ui.theme.min.css"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Ellucian.Colleague.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Ellucian.Colleague.Api.props",
+      "PackagePath": "build\\Ellucian.Colleague.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Ellucian.Colleague.Api.props",
+      "PackagePath": "buildMultiTargeting\\Ellucian.Colleague.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Ellucian.Colleague.Api.props",
+      "PackagePath": "buildTransitive\\Ellucian.Colleague.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

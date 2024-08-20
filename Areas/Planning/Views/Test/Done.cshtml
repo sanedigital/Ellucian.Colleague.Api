@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Done";
+    long elapsed = ViewBag.Elapsed;
+    string exceptionMessage = ViewBag.ExceptionMessage;
+    string log = ViewBag.Log;
+    string result = ViewBag.Result;
+}
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">Test Complete</h2>
+    <a href="@Url.Action("", "Test")" class="esg-page-header__subtitle esg-page-header__subtitle--backlink">
+        <span class="esg-icon__container esg-page-header__icon" aria-hidden="true">
+            <svg class="esg-icon esg-icon--left">
+                <use xlink:href="#icon-arrow"></use>
+            </svg>
+        </span>Back to List
+    </a>
+</div>
+<div class="base">
+    <p>
+        Result: @result
+    </p>
+    <p>
+        Time Elapsed: @elapsed ms
+    </p>
+
+    @if (!string.IsNullOrEmpty(exceptionMessage))
+    {
+        <h2>API Client Exception:</h2>
+        <p>@exceptionMessage</p>
+        <p></p>
+        <h2>API Client Log:</h2>
+        <p>@log</p>
+    }
+
+</div>
+

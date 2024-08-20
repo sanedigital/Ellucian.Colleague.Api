@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/17/2023 20:16:10" ReportInfo.Modified="02/20/2023 11:22:57" ReportInfo.CreatorVersion="2023.1.12.0">
+  <Dictionary>
+    <Parameter Name="Year2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="CorrectedForm" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstNameAddr5" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="InstEIN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentSSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentName1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentName2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentAddress" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentCSZ" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentID" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box1Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box2Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box4Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box5Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box6Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="AtLeastHalfTime" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ChgRptgMethod" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="GraduateStudent" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="First3Months" DataType="System.String" AsString="" Description="ReportParameter1"/>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" RawPaperSize="1" LeftMargin="10.01" TopMargin="10.01" RightMargin="10.01" BottomMargin="10.01" FirstPageSource="15" OtherPagesSource="15" LastPageSource="15" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data1" Width="740.43" Height="963.84">
+      <ContainerObject Name="Container1" Left="6.72" Top="412.8" Width="717.12" Height="344.64">
+        <TextObject Name="Text115" Left="480" Top="280.32" Width="14.4" Height="9.95" Text="10" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text102" Left="480.19" Top="278.4" Width="127.68" Height="29.76" Border.Lines="Right, Bottom" Border.Width="1.5" Text="Ins. contract reimb./refund" Padding="12, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text95" Left="346.11" Top="278.4" Width="133.44" Height="29.76" Border.Lines="Right, Bottom" Border.Width="1.5" Text="Checked if a graduate &#13;&#10;student" Padding="10, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text92" Left="346.11" Top="212.16" Width="133.44" Height="66.24" Border.Lines="Right, Bottom" Border.Width="1.5" Text="Adjustments to &#13;&#10;scholarships or grants &#13;&#10;for a prior year" Padding="10, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text101" Left="480.19" Top="211.2" Width="127.68" Height="67.2" Border.Lines="Right, Bottom" Border.Width="1.5" Text="Checked if the amount&#13;&#10;in box 1 includes&#13;&#10;amounts for an&#13;&#10;academic period&#13;&#10;beginning January–&#13;&#10;March 2021" Padding="10, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text89" Left="479.23" Top="165.12" Width="128.64" Height="46.08" Border.Lines="Right, Bottom" Border.Width="1.5" Text="Scholarships or grants" Padding="10, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text87" Left="346.11" Top="165.12" Width="133.44" Height="46.08" Border.Lines="Right, Bottom" Border.Width="1.5" Text="Adjustments made for a prior year" Padding="10, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text85" Left="346.11" Top="80.64" Width="133.44" Height="52.8" Border.Lines="Top" Border.Width="1.5" Padding="2, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text81" Left="346.11" Top="25.92" Width="133.44" Height="53.76" Border.Lines="Top" Border.Width="1.5" Text="Payments received for qualified tuition and related expenses" Padding="10, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text5" Left="480" Top="25.92" Width="96.19" Height="108.23" Border.Lines="Left, Right, Top" Border.Width="1.5" Text="OMB No. 1545-1574" Padding="2, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text86" Left="346.75" Top="134.4" Width="261.12" Height="29.76" Border.Lines="Right, Top, Bottom" Border.Width="1.5" Padding="2, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text78" Left="220.8" Top="278.4" Width="124.8" Height="29.76" Border.Lines="Right, Bottom" Border.Width="1.5" Text="Checked if at least &#13;&#10;half-time student" Padding="10, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text72" Left="13.44" Top="25.92" Width="332.16" Height="108.48" Border.Lines="All" Border.Width="1.5" Text="FILER’S name, street address, city or town, state or province, country, ZIP or foreign postal code, and telephone number" Padding="2, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Textbox3" Left="304.32" Top="9.6" Width="13.99" Height="13.99" Border.Lines="All" Border.Width="1.5" Text="[CorrectedForm]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Courier New, 10pt, style=Bold"/>
+        <TextObject Name="Text2" Left="319.53" Top="8.64" Width="94.5" Height="15.12" Text="CORRECTED" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Textbox4" Left="15.52" Top="57.6" Width="322.43" Height="14.36" Text="[InstNameAddr1]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox8" Left="15.52" Top="73.52" Width="322.43" Height="14.36" Text="[InstNameAddr2]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox7" Left="15.52" Top="87.93" Width="322.43" Height="14.36" Text="[InstNameAddr3]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox6" Left="15.52" Top="103.25" Width="322.43" Height="14.36" Text="[InstNameAddr4]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox5" Left="15.52" Top="118.57" Width="322.43" Height="14.36" Text="[InstNameAddr5]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Text107" Left="608.64" Top="134.4" Width="95.04" Height="173.76" Border.Lines="Top, Bottom" Border.Width="1.5" Padding="2, 2, 2, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text79" Left="13.44" Top="278.4" Width="207.36" Height="29.76" Border.Lines="Left, Right, Bottom" Border.Width="1.5" Text="Service Provider/Acct. No. (see instr.)" Padding="2, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text77" Left="13.44" Top="244.8" Width="332.16" Height="33.6" Border.Lines="All" Border.Width="1.5" Text="City or town, state or province, country, and ZIP or foreign postal code" Padding="2, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text76" Left="13.44" Top="211.2" Width="332.16" Height="33.6" Border.Lines="All" Border.Width="1.5" Text="Street address (including apt. no.)" Padding="2, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text75" Left="13.44" Top="164.16" Width="332.16" Height="47.04" Border.Lines="All" Border.Width="1.5" Text="STUDENT'S name" Padding="2, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text74" Left="179.52" Top="134.4" Width="166.08" Height="29.76" Border.Lines="Right, Top, Bottom" Border.Width="1.5" Text="STUDENT'S TIN" Padding="2, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text73" Left="13.44" Top="134.4" Width="166.27" Height="29.76" Border.Lines="All" Border.Width="1.5" Text="FILER’S employer identification no." Padding="2, 2, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text17" Left="609.18" Top="52.86" Width="94.5" Height="37.8" Text="Tuition&#13;&#10;Statement" HorzAlign="Right" Font="Arial, 11pt, style=Bold"/>
+        <TextObject Name="Text63" Left="495.54" Top="315.06" Width="208.26" Height="15.12" Text="Department of the Treasury - Internal Revenue Service" HorzAlign="Right" Font="Arial, 6pt"/>
+        <TextObject Name="Text71" Left="27.3" Top="312.18" Width="66.15" Height="18.9" Text="1098-T" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+        <TextObject Name="Text70" Left="13.44" Top="315.06" Width="30.24" Height="15.12" Text="Form" HorzAlign="Right" Font="Arial, 6pt"/>
+        <TextObject Name="Textbox14" Left="15.52" Top="292.62" Width="196.18" Height="14.36" Text="[StudentID]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Text61" Left="166.41" Top="315.06" Width="90.36" Height="15.12" Text="(keep for your records)" Font="Arial, 6pt"/>
+        <TextObject Name="Text62" Left="344.94" Top="315.06" Width="96.12" Height="15.12" Text="www.irs.gov/Form1098T" Font="Arial, 6pt"/>
+        <TextObject Name="Textbox15" Left="321.88" Top="290.96" Width="12.85" Height="12.85" Border.Lines="All" Border.Width="1.5" Text="[AtLeastHalfTime]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Courier New, 10pt, style=Bold"/>
+        <TextObject Name="Textbox13" Left="15.52" Top="261.32" Width="323.57" Height="14.36" Text="[StudentCSZ]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox10" Left="15.52" Top="179.72" Width="323.57" Height="14.36" Text="[StudentName1]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox9" Left="181.69" Top="148.96" Width="157.25" Height="14.36" Text="[StudentSSN]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox23" Left="15.52" Top="148.96" Width="156.87" Height="14.36" Text="[InstEIN]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox12" Left="15.52" Top="226.72" Width="323.57" Height="14.36" Text="[StudentAddress]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Text6" Left="483.9" Top="116.68" Width="30.18" Height="10.85" Text="Form" Font="Arial, 7pt"/>
+        <TextObject Name="Text7" Left="506.45" Top="110.95" Width="62.55" Height="19.2" Text="1098-T" Font="Arial, 12pt, style=Bold"/>
+        <TextObject Name="Text8" Left="483.23" Top="60.61" Width="88.87" Height="25.56" Text="20[Year2]" HorzAlign="Center" Font="Arial, 20pt, style=Bold"/>
+        <TextObject Name="Text96" Left="455.32" Top="290.96" Width="12.85" Height="12.85" Border.Lines="All" Border.Width="1.5" Text="[GraduateStudent]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Courier New, 10pt, style=Bold"/>
+        <TextObject Name="Text65" Left="609.65" Top="174.83" Width="91.62" Height="130.41" Text="This is important tax information and is being furnished to the IRS. This form must be used to complete Form 8863 to claim education credits. Give it to the tax preparer or use it to prepare the tax return.&#13;&#10;" HorzAlign="Right" Font="Arial, 7pt"/>
+        <TextObject Name="Text67" Left="616.22" Top="155.57" Width="85.05" Height="18.9" Text="For Student" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+        <TextObject Name="Text66" Left="616.19" Top="137.43" Width="85.08" Height="16.32" Text="Copy B&#13;&#10;&#13;&#10;" HorzAlign="Right" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Textbox22" Left="589.44" Top="253.44" Width="11.34" Height="13.23" Border.Lines="All" Border.Width="1.5" Text="[First3Months]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Courier New, 10pt, style=Bold"/>
+        <TextObject Name="Text108" Left="15.52" Top="194.88" Width="323.57" Height="14.36" Text="[StudentName2]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Text10" Left="222.72" Top="280.32" Width="9.6" Height="9.95" Text="8" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text109" Left="347.52" Top="27.84" Width="9.6" Height="9.95" Text="1" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text110" Left="347.52" Top="82.56" Width="9.6" Height="9.95" Text="2" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text111" Left="347.52" Top="136.32" Width="9.6" Height="9.95" Text="3" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text112" Left="347.52" Top="167.04" Width="9.6" Height="9.95" Text="4" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text113" Left="347.52" Top="215.04" Width="9.6" Height="9.95" Text="6" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text114" Left="347.52" Top="280.32" Width="9.6" Height="9.95" Text="9" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text116" Left="480.96" Top="213.12" Width="9.6" Height="9.95" Text="7" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text117" Left="480.96" Top="167.04" Width="9.6" Height="9.95" Text="5" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text126" Left="347.52" Top="65.28" Width="13.44" Height="14.4" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text130" Left="480.96" Top="291.84" Width="13.44" Height="15.36" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text131" Left="360.96" Top="65.28" Width="117.12" Height="14.4" Text="[Box1Amt]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Text132" Left="347.52" Top="194.88" Width="13.44" Height="14.4" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text133" Left="360.96" Top="194.88" Width="117.12" Height="14.4" Text="[Box4Amt]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Text134" Left="480.96" Top="194.88" Width="13.44" Height="14.4" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text135" Left="494.4" Top="194.88" Width="112.32" Height="14.4" Text="[Box5Amt]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Text136" Left="347.52" Top="262.08" Width="13.44" Height="14.4" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text137" Left="360.96" Top="262.08" Width="117.12" Height="14.4" Text="[Box6Amt]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+      </ContainerObject>
+      <RichObject Name="Rich1" Left="19.2" Top="8.64" Width="227.52" Height="21.12" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Arial;}{\f1\fnil Tahoma;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\b\f0\fs28 Instructions for Student\b0\f1\fs17\par&#13;&#10;}&#13;&#10;" Padding="2, 2, 2, 2"/>
+      <RichObject Name="Rich2" Left="19.2" Top="31.68" Width="340.8" Height="360" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}{\f2\fnil Tahoma;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\fs14\lang1033 You, or the person who can claim you as a dependent, may be able to claim an education credit on Form 1040 or 1040-SR. This statement has been furnished to you by an eligible educational institution in which you are enrolled, or by an insurer who makes reimbursements or refunds of qualified tuition and related expenses to you. This statement is required to support any claim for an education credit. Retain this statement for your records. To see if you qualify for a credit, and for help in calculating the amount of your credit, see Pub. 970, Form 8863, and the Instructions for Forms 1040 and 1040-SR. \par&#13;&#10;   Your institution must include its name, address, and information contact telephone number on this statement. It may also include contact information for a service provider. Although the filer or the service provider may be able to answer certain questions about the statement, do not contact the filer or the service provider for explanations of the requirements for (and how to figure) any education credit that you may claim.\par&#13;&#10;\b Student\f1\rquote\f0 s taxpayer identification number (TIN).\b0  For your protection, this form \par&#13;&#10;may show only the last four digits of your TIN (SSN, ITIN, ATIN, or EIN). However, the issuer has reported your complete TIN to the IRS. \b Caution: \b0 If your TIN is not shown in this box, your school was not able to provide it. Contact your school if you have questions.\par&#13;&#10;\b Account number. \b0 May show an account or other unique number the filer assigned to distinguish your account.\par&#13;&#10;\b Box 1. \b0 Shows the total payments received by an eligible educational institution in 2020 from any source for qualified tuition and related expenses less any reimbursements or refunds made during 2020 that relate to those payments received during 2020.\par&#13;&#10;\b Box 2. \b0 Reserved for future use.\par&#13;&#10;\b Box 3. \b0 Reserved for future use.\par&#13;&#10;\b Box 4. \b0 Shows any adjustment made by an eligible educational institution for a prior year for qualified tuition and related expenses that were reported on a prior year Form 1098-T. This amount may reduce any allowable education credit that you claimed for the prior year (may result in an increase in tax liability for the \f2\fs17\lang1033\par&#13;&#10;}&#13;&#10;" Padding="2, 2, 2, 2"/>
+      <RichObject Name="Rich3" Left="376.32" Top="31.68" Width="340.8" Height="360" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}{\f2\fnil Tahoma;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\fs14\lang1033 year of the refund). See \f1\ldblquote\f0 recapture\f1\rdblquote\f0  in the index to Pub. 970 to report a reduction in your education credit or tuition and fees deduction.\f2\fs17\lang1033\par&#13;&#10;\b\f0\fs14\lang1033 Box 5. \b0 Shows the total of all scholarships or grants administered and processed by the eligible educational institution. The amount of scholarships or grants for the calendar year (including those not reported by the institution) may reduce the amount of the education credit you claim for the year.\par&#13;&#10;\b TIP: \b0 You may be able to increase the combined value of an education credit and certain educational assistance (including Pell Grants) if the student includes some or all of the educational assistance in income in the year it is received. For details, see Pub. 970. \par&#13;&#10;\b Box 6. \b0 Shows adjustments to scholarships or grants for a prior year. This amount may affect the amount of any allowable tuition and fees deduction or education credit that you claimed for the prior year. You may have to file an amended income tax return (Form 1040-X) for the prior year.\par&#13;&#10;\b Box 7. \b0 Shows whether the amount in box 1 includes amounts for an academic period beginning January\f1\endash\f0 March 2021. See Pub. 970 for how to report these amounts.\par&#13;&#10;\b Box 8. \b0 Shows whether you are considered to be carrying at least one-half the normal full-time workload for your course of study at the reporting institution.\par&#13;&#10;\b Box 9. \b0 Shows whether you are considered to be enrolled in a program leading to a graduate degree, graduate-level certificate, or other recognized graduate-level educational credential.\par&#13;&#10;\b Box 10. \b0 Shows the total amount of reimbursements or refunds of qualified tuition and related expenses made by an insurer. The amount of reimbursements or refunds for the calendar year may reduce the amount of any education credit you can claim for the year (may result in an increase in tax liability for the year of the refund).\par&#13;&#10;\b Future developments\b0 . For the latest information about developments related to Form 1098-T and its instructions, such as legislation enacted after they were published, go to\i  www.irs.gov/Form1098T.\i0\par&#13;&#10;\f2\fs17\lang1033\par&#13;&#10;}&#13;&#10;" Padding="2, 2, 2, 2"/>
+      <TextObject Name="Text118" Left="15.52" Top="940.8" Width="366.72" Height="13.44" Text="[StudentCSZ]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text119" Left="15.52" Top="926.4" Width="366.72" Height="13.44" Text="[StudentAddress]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text120" Left="15.52" Top="912" Width="366.72" Height="13.44" Text="[StudentName2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text121" Left="15.52" Top="897.6" Width="366.72" Height="13.44" Text="[StudentName1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text122" Left="15.52" Top="793.92" Width="332.16" Height="14.4" Text="[InstNameAddr1]" Font="Courier New, 6pt"/>
+      <TextObject Name="Text123" Left="15.52" Top="809.28" Width="332.16" Height="14.4" Text="[InstNameAddr2]" Font="Courier New, 6pt"/>
+      <TextObject Name="Text124" Left="15.52" Top="824.64" Width="332.16" Height="14.4" Text="[InstNameAddr3]" Font="Courier New, 6pt"/>
+      <TextObject Name="Text125" Left="15.52" Top="840" Width="332.16" Height="14.4" Text="[InstNameAddr4]" Font="Courier New, 6pt"/>
+    </DataBand>
+  </ReportPage>
+</Report>

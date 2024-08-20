@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ellucian.Colleague.Dtos.ProjectsAccounting</name>
+    </assembly>
+    <members>
+        <member name="T:Ellucian.Colleague.Dtos.ProjectsAccounting.ProjectType">
+            <summary>
+            Type of the project
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ProjectsAccounting.ProjectType.Code">
+            <summary>
+            Project type code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ProjectsAccounting.ProjectType.Description">
+            <summary>
+            Project type description
+            </summary>
+        </member>
+    </members>
+</doc>

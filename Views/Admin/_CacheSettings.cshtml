@@ -1,0 +1,45 @@
+﻿<fieldset>
+    <legend>Cache Settings</legend>
+    <table>
+        <tr>
+            <td>
+                <div class="editor-label">
+                    @* Escaped space characters added deliberately to allow the only always-visible field on the cache settings tab to "own" the left-hand alignment of the input fields on the page *@
+                    <label>Cache Provider&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                 </div>
+            </td>
+            <td>
+                <div class="editor-field">
+                    <select data-bind="options: CacheSettings.supportedCacheProviders, optionsText: 'Key', value: CacheSettings.selectedCacheProvider"></select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="editor-label" data-bind="visible: CacheSettings.showDistributedOptions">
+                    <label>Cache Host</label>
+                </div>
+            </td>
+            <td>
+                <div class="editor-field" data-bind="visible: CacheSettings.showDistributedOptions">
+                    <input style="width: 500px;" type="text" data-bind="value: CacheSettings.cacheHost"/>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="editor-label" data-bind="visible: CacheSettings.showDistributedOptions">
+                    <label>Cache Port</label>
+                </div>
+            </td>
+            <td>
+                <div class="editor-field" data-bind="visible: CacheSettings.showDistributedOptions">
+                    <input style="width: 100px;" type="text" data-bind="value: CacheSettings.cachePort"/>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <p>
+        <input type="button" value="Test Cache Connectivity" data-bind="visible: CacheSettings.showDistributedOptions, click: $root.testCacheConnection" />
+    </p>
+</fieldset>

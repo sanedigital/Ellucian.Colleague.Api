@@ -1,0 +1,128 @@
+﻿@{
+	ViewBag.Title = "Resource File Editor";
+}
+<!DOCTYPE html>
+
+<!-- Header/Title -->
+<div class="esg-page-header">
+	<h1 class="esg-page-header__title header-margin">@ViewBag.Title</h1>
+</div>
+<!-- Field Set -->
+<!--BEGIN-->
+<!-- Resource File Editor -->
+<div id="resource-file-editor" class="column-nine">
+	<br />
+	<section class="section-wrapper section-wrapper-top-border content-wrapper main-content clear-fix">
+		<!-- Add resx -->
+		<div class="section-contents primary-contents">
+			<div class="clear-group mb-1">
+				<div class="column-two">
+					<label class="esg-form__label" for="resource-culture-dropdown">Resource Culture</label>
+					<select id="resource-culture-dropdown" class="esg-form__input" data-bind="options: ResourceCulturesAvailable(), optionsText: 'Key', optionsValue: 'Value', value: SelectedResourceCulture"></select>
+				</div>
+			</div>
+			<div class="clear-group mb-1">
+				<div class="esg-form__group column-three  mr-1">
+					<label class="esg-form__label" for="resource-file-dropdown">Resource Files</label>
+					<select id="resource-file-dropdown" class="esg-form__input"
+							data-bind="options: ResourceFilesAvailable(), optionsText: 'Key', optionsValue:'Value', optionsCaption: 'Please select a file', value: SelectedFilePath"></select>
+				</div>
+				<div class="esg-form__group column-one mt-1-75" data-bind="visible: SelectedFilePath">
+					<input type="button" value="Save" data-bind='click: saveResxFile' class="esg-button esg-button--primary esg-button--small" />
+				</div>
+			</div>
+			<div class="clear-group mb-1">
+				<div class="esg-form__group column-six" data-bind="visible: SelectedFilePath">
+					<label class="esg-form__label">Selected File Path:</label>
+					<span class="resource-file-path__text" data-bind="text:  SelectedResourceFile()!=undefined ? RelativeFilePath : ''"></span>
+				</div>
+			</div>
+			<!-- Resource File Contents -->
+			<div id="selected-resource-file-content" data-bind="with:SelectedResourceFile">
+				<div id="ResourceItems" data-bind="visible: ResourceFileEntries().length>0" style="overflow-y: scroll; height:475px;">
+					<fieldset>
+						<legend class="offScreen">none</legend>
+						<table id="resource-file-entries" class="esg-table--table-layout-fixed">
+							<thead>
+								<tr class="text-align-left">
+									<th class="resource-file-entries__key">Key</th>
+									<th class="resource-file-entries__value">Value</th>
+									<th class="resource-file-entries__restore esg-table-head__th--no-border"><span class="offScreen"></span></th>
+									<th class="resource-file-entries__ellucian-value">Ellucian Value</th>
+									<th class="resource-file-entries__comment">Comment</th>
+								</tr>
+							</thead>
+							<tbody data-bind="foreach:ResourceFileEntries">
+								<tr>
+									<td><label class="resource-file-key__label" data-bind="text: Key, attr: { for: Key() + '-input' }" /></td>
+									<td>
+										<div data-bind="css: hasChanged() ? 'esg-has-feedback esg-has-hint' : ''">
+											<input class="esg-form__input" data-bind="value: Value, style :{ fontWeight: hasChanged() ? 'bold': 'normal' }, attr: { id: Key() + '-input' }" />
+										</div>
+									</td>
+									<td>
+										<button class="esg-button esg-button--secondary esg-button--small" data-bind="visible: hasChanged(), click: restoreOriginalValue, attr: { id: 'restore-' + Key() }">
+											<icon params="isVisible: true, icon:'refresh', container: 'dark', size: 'xsmall'"></icon>
+											Restore
+										</button>
+									</td>
+									<td><span data-bind="text: OriginalValue" /></td>
+									<td><span data-bind="text: Comment" /></td>
+								</tr>
+							</tbody>
+						</table>
+					</fieldset>
+				</div>
+				<modal-spinner id="updating" params="isVisible: $root.isUpdating, message: 'Saving Changes...'"></modal-spinner>
+			</div>
+			<modal-spinner id="loading" params="isVisible: isLoading, message: 'Loading Resource File Information...'"></modal-spinner>
+		</div>
+	</section>
+</div>
+
+@*Dialog to prompt user for unsaved data*@
+<input id="showDialog" type="hidden" value="false" data-bind="value: showDialog" />
+<div id="dialog-form" class="esg-modal-dialog" data-bind="visible: showDialog">
+	<div class="esg-modal-dialog__header">
+		<button class="esg-modal-dialog__close esg-icon__container" type="button" data-dismiss="modal" aria-hidden="true" data-bind='click: $root.cancelBtnClick'>
+			<svg class="esg-icon esg-icon--large esg-icon--neutral">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<h4 class="esg-modal-dialog__title">Unsaved Data</h4>
+	</div>
+	<div class="esg-modal-dialog__body">
+		<p>You have modified data that has not been saved. Do you want to save?</p>
+	</div>
+
+	<div class="esg-modal-dialog__action-section esg-button-group esg-button-group--fluid" role="group" aria-label="button group">
+
+		<div class="esg-button-group__item" role="group">
+			<button class="esg-button esg-button--secondary esg-modal-dialog__button" data-dismiss="modal" type="button"
+					data-bind='click: $root.cancelBtnClick'>
+				Discard
+			</button>
+		</div>
+		<div class="esg-button-group__item" role="group">
+			<button class="esg-button esg-button--primary esg-modal-dialog__button" type="button" data-bind='click: $root.saveUnsavedData'>Save </button>
+		</div>
+	</div>
+
+</div>
+@*<div class="esg-modal-overlay"></div>*@
+
+<!-- END -->
+@section Scripts {
+
+	<script src="~/scripts/ResourceFileEditor.js" asp-append-version="true"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var viewmodel = new resourcefileeditor.ViewModel();
+			viewmodel.cancelUrl = '@Url.Action("Index", "Admin")';
+			ko.applyBindings(viewmodel);
+		});
+	</script>
+}
+

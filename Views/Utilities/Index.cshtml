@@ -1,0 +1,52 @@
+﻿@{
+	ViewBag.Title = "Colleague Web API Utilities";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+	<h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+</div>
+@* FieldSet *@
+<div id="Utilitiesbody">
+	<section class="content-wrapper main-content clear-fix">
+		<br />
+		<h3 class="base">Module Utilities</h3>
+		<table class="APISettingstable">
+			@if (ViewBag.EnableStudentTests)
+			{
+				<tr>
+					<td>@Html.ActionLink("Student Utility Tests", "Index", "Test", new {area = "Student"})</td>
+				</tr>
+			}
+			@if (ViewBag.EnablePlanningTests)
+			{
+				<tr>
+					<td>@Html.ActionLink("Planning Utility Tests", "Index", "Test", new {area = "Planning"})</td>
+				</tr>
+			}
+		</table>
+
+		<h3 class="base">Global Utilities</h3>
+		<table class="APISettingstable">
+			<tr>
+				<td>@Html.ActionLink("Manage API Cache", "CacheManagement", "Utilities")</td>
+			</tr>
+			<tr>
+				<td>@Html.ActionLink("Clear API Cache", "ClearCache", "Utilities", null, null)</td>
+			</tr>
+			<tr>
+				<td>
+					@Html.ActionLink("Backup API configuration", "BackupConfig", "Utilities", null, null)
+					<br />Note: The backup action requires the role permission "CREATE.API.BACKUP.CONFIGURATION".
+				</td>
+			</tr>
+			<tr>
+				<td>
+					@Html.ActionLink("Restore API configuration", "RestoreConfig", "Utilities", null, null) using the latest backup data.
+					<br />Note: The resource files will be restored/merged ONLY for new API instances that do not have modified Resource files.
+					<br /> The restore action requires the role permission "RESTORE.API.CONFIGURATION".
+				</td>
+			</tr>
+		</table>
+	</section>
+</div>

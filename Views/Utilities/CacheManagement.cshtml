@@ -1,0 +1,123 @@
+﻿@using Newtonsoft.Json;
+@model Ellucian.Colleague.Api.Models.CacheManagementViewModel
+@{
+    ViewBag.Title = "Cache Management";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+    <a href="@Url.Action("Index", new { Area = "", Controller = "Utilities" })" class="esg-page-header__subtitle esg-page-header__subtitle--backlink">
+        <span class="esg-icon__container esg-page-header__icon" aria-hidden="true">
+            <svg class="esg-icon esg-icon--left">
+                <use xlink:href="#icon-arrow"></use>
+            </svg>
+        </span>Back to Utilities List
+    </a>
+</div>
+
+@* Field Set *@
+<div id="Loggingbody">
+    <section class="content-wrapper main-content clear-fix">
+        @using (Html.BeginForm())
+        {
+            <fieldset>
+                <table class="APISettingstable">
+                    <thead>
+                        @if (Model != null && !string.IsNullOrEmpty(Model.ErrorMessage))
+                        {
+                            <tr>
+                                <td class="esg-alert esg-alert--fluid esg-alert--error" role="alert">
+                                    <div class="esg-alert__message">
+                                        @Model.ErrorMessage
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                        <tr data-bind="visible: processing">
+                            <td colspan="2">
+                                <div class="esg-form__group esg-alert esg-alert--fluid esg-alert--info" role="alert">
+                                    <span class="esg-alert__icon-wrapper">
+                                        <span class="esg-alert__icon esg-icon__container" aria-hidden="True">
+                                            &nbsp;
+                                        </span>
+                                    </span>
+                                    <span class="esg-alert__message">
+                                        Processing request...
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-bind="visible: cacheClearedComplete">
+                            <td colspan="2">
+                                <div class="esg-form__group esg-alert esg-alert--fluid esg-alert--success" role="alert">
+                                    <span class="esg-alert__icon-wrapper">
+                                        <span class="esg-alert__icon esg-icon__container" aria-hidden="True">
+                                            &nbsp;
+                                        </span>
+                                    </span>
+                                    <span class="esg-alert__message">
+                                        Cache item(s) cleared...
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label class="esg-form__label">Cache Keys:</label> Total <span data-bind="text: cacheKeys().length"></span>, Filtered <span data-bind="text: filteredCacheKeys().length"></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label class="esg-form__label" for="filter">Filter</label> <input id="filter" data-bind="textInput: filterText" class="esg-form__input" placeholder="Enter text to filter displayed keys">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="esg-form__input" id="selectAll" onclick="$('input:checkbox').not(this).prop('checked', this.checked);">
+                                <label class="esg-form__label" for="selectAll">Select all</label>
+                            </td>
+                            <td>
+                                <input type="button" class="esg-button esg-button--primary" id="clearAll" data-bind="click: $root.clearCacheKeys($('.cachedKeyBox:checkbox:checked').map(function(i, el) { return $(el).attr('id'); }).get());" value="Clear all selected">
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: filteredCacheKeys">
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="esg-form__input cachedKeyBox" data-bind="attr:{id: $data}">
+                                <label class="esg-form__label" data-bind="text: $data, attr:{for: $data}"></label>
+                            </td>
+                            <td>
+                                <input type="button" value="View" data-bind='click: $root.viewCacheContents' class="esg-button esg-button--secondary" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <pre class="pre-cacheSetting" data-bind="text: $root.loadedKeysForView()[$data], visible=$root.loadedKeysForView()[$data]"></pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="esg-form__group base">
+                    <input type="button" value="Cancel" data-bind='click: $root.cancelKeyManagement' class="esg-button esg-button--primary" />
+                </div>
+            </fieldset>
+        }
+    </section>
+</div>
+
+@section Scripts {
+    <script src="~/scripts/CacheManagement.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        var jsonData = @Html.Raw(JsonConvert.SerializeObject(Model));
+        $(document).ready(function () {
+            var viewModel = new cacheManagement.configuration.CacheManagementViewModel(jsonData);
+            viewModel.cancelUrl = '@Url.Action("CacheManagement", "Utilities")';
+            viewModel.viewCacheUrl = '@Url.Action("GetSanitizedCacheValue", "Utilities")';
+            viewModel.clearCacheUrl = '@Url.Action("RemoveCacheValue", "Utilities")';
+            ko.applyBindings(viewModel);
+        });
+    </script>
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Defines parameter values that can be passed during a web deploy (or Import application in IIS). -->
+<parameters >
+  <parameter name="Account" description=" Colleague Environment (_rt) name" defaultValue="environmentName_rt">
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/accountName/text()" />
+  </parameter>
+  
+  <parameter name="IP Address" description="DMI Listener IP address" defaultValue="">
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/ipAddress/text()" />
+  </parameter>
+  
+  <parameter name="Port" description="DMI Listener port" defaultValue="">
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/port/text()" />
+  </parameter>
+  
+  <parameter name="Certificate Override" description="Enter the host name override" defaultValue="">
+    <parameterValidation kind="allowempty"/>
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/certificateHostnameOverride/text()" />
+  </parameter>
+  
+  <parameter name="Secure" description="Connect to the DMI Listener securely" defaultValue="False">
+    <parameterValidation kind="boolean"/>
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/secure/text()" />
+  </parameter>
+  
+  <parameter name="Connection Pool Size" description="Enter the connection pool size" defaultValue="1">
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/connectionPoolSize/text()" />
+  </parameter>
+  
+  <!-- Used internally at Ellucian. If used, the machine key must be manually configured for the target web site! -->
+  <parameter tags="Hidden" name="Shared Secret" description="This is only supplied in the Web Deploy parameters file for automated deploys. If you are viewing this in IIS (while attempting to import an app) leave this field empty and use the Web API config page to enter the shared secret." defaultValue="">
+    <parameterValidation kind="allowempty"/>
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/sharedSecret/text()" />
+  </parameter>
+
+  <parameter name="DAS Environment" description=" DAS Environment name" defaultValue="environmentName">
+    <parameterValidation kind="allowempty"/>
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/dasEnvironment/text()" />
+  </parameter>
+
+  <parameter name="DAS IP Address" description="DAS Listener IP address" defaultValue="">
+    <parameterValidation kind="allowempty"/>
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/dasAddress/text()" />
+  </parameter>
+
+  <parameter name="DAS Port" description="DAS Listener port" defaultValue="">
+    <parameterValidation kind="allowempty"/>
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/dasPort/text()" />
+  </parameter>
+
+  <parameter name="DAS Certificate Override" description="Enter the host name override for secure DAS connections" defaultValue="">
+    <parameterValidation kind="allowempty"/>
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/dasCertificateHostnameOverride/text()" />
+  </parameter>
+
+  <parameter name="DAS Secure" description="Connect to the DAS Listener securely" defaultValue="False">
+    <parameterValidation kind="boolean"/>
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/dasSecure/text()" />
+  </parameter>
+
+  <parameter name="DAS Connection Pool Size" description="Enter the connection pool size for DAS connections" defaultValue="1">
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/dasConnectionPoolSize/text()" />
+  </parameter>
+
+  <!-- Used internally at Ellucian. If used, the machine key must be manually configured for the target web site! -->
+  <parameter tags="Hidden" name="DAS Username" description="This is only supplied in the Web Deploy parameters file for automated deploys. If you are viewing this in IIS (while attempting to import an app) leave this field empty and use the Web API config page to enter the DAS username." defaultValue="">
+    <parameterValidation kind="allowempty"/>
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/dasLogin/text()" />
+  </parameter>
+
+  <!-- Used internally at Ellucian. If used, the machine key must be manually configured for the target web site! -->
+  <parameter tags="Hidden" name="DAS Password" description="This is only supplied in the Web Deploy parameters file for automated deploys. If you are viewing this in IIS (while attempting to import an app) leave this field empty and use the Web API config page to enter the DAS password." defaultValue="">
+    <parameterValidation kind="allowempty"/>
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/dasPassword/text()" />
+  </parameter>
+
+  <parameter name="Use DAS" description="Allow data read operations to use the DAS" defaultValue="False">
+    <parameterValidation kind="boolean"/>
+    <parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/useDasDatareader/text()" />
+  </parameter>
+
+	<parameter name="Oauth Issuer Url" description="Oauth Issuer URL" defaultValue="">
+		<parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/oauthIssuerUrl/text()" />
+	</parameter>
+
+	<!-- Used internally at Ellucian. If used, the machine key must be manually configured for the target web site! -->
+	<parameter tags="Hidden" name="Oauth Proxy Username" description="This is only supplied in the Web Deploy parameters file for automated deploys. If you are viewing this in IIS (while attempting to import an app) leave this field empty and use the Web API config page to enter the DAS username." defaultValue="">
+		<parameterValidation kind="allowempty"/>
+		<parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/oauthProxyLogin/text()" />
+	</parameter>
+
+	<!-- Used internally at Ellucian. If used, the machine key must be manually configured for the target web site! -->
+	<parameter tags="Hidden" name="Oauth Proxy Password" description="This is only supplied in the Web Deploy parameters file for automated deploys. If you are viewing this in IIS (while attempting to import an app) leave this field empty and use the Web API config page to enter the DAS password." defaultValue="">
+		<parameterValidation kind="allowempty"/>
+		<parameterEntry kind="XmlFile" scope="App_Data\\settings.config$" match="//settings/colleague/oauthProxyPassword/text()" />
+	</parameter>
+	
+  <!-- In addition to the above parameters, the IIS Web Application Name is also included (from the Ellucian.Colleage.Api Package/Publish Web properties page) so the destination website and application can be changed. The default value is the value on the Package/Publish Web properties page -->
+</parameters>

@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "API Settings";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+</div>
+
+<div id="APISettingsbody">
+    <section class="content-wrapper main-content clear-fix">
+            <div class="base">
+                <div><br/>
+                    <span>Configuration Profile: </span>
+                    <span data-bind="text: profileName"></span>
+                    @Html.ActionLink("Change", "ApiSettingsProfile")
+                    <br />
+                    <br />
+                </div>
+                <div id="tabsMenu" class="esg-tab" style="width:1200px;">
+                    <ul class="esg-tab__menu" role="tablist" data-tabs="tabs">
+                        <li class="esg-tab__menu-item esg-is-active" role="presentation"
+                            data-bind="click:function(){TabSelected(1);}, css:TabSelected()==1?'esg-is-active':''">
+                            <a class="esg-tab__link" href="#tabs-photos" data-toggle="tab">Photos</a>
+                        </li>
+                        <li class="esg-tab__menu-item" role="presentation"
+                            data-bind="click:function(){TabSelected(2);}, css:TabSelected()==2?'esg-is-active':''">
+                            <a class="esg-tab__link" href="#tabs-reports" data-toggle="tab">Reports</a>
+                        </li>
+                        @*<li class="esg-tab__menu-item" role="presentation"
+                data-bind="click:function(){TabSelected(3);}, css:TabSelected()==3?'esg-is-active':''">
+                <a class="esg-tab__link" href="#tabs-cache" data-toggle="tab">Caching</a></li>*@
+                    </ul>
+                    <div class="esg-tab__content" style="width:1200px;">
+                        <div class="esg-tab__panel esg-is-active" id="tabs-photos"
+                             data-bind="css:TabSelected()==1?'esg-is-active':''">
+                            <h3>Photo Settings</h3>
+                            @Html.Partial("_PhotoSettings")
+                        </div>
+                        <div class="esg-tab__panel" id="tabs-reports"
+                             data-bind="css:TabSelected()==2?'esg-is-active':''">
+                            <h3>Report Settings</h3>
+                            @Html.Partial("_ReportSettings")
+                        </div>
+                        @*<div class="esg-tab__panel" id="tabs-cache"
+                     data-bind="css:TabSelected()==3?'esg-is-active':''">
+                    <h3>Tab 3 Content</h3>
+                    @Html.Partial("_CacheSettings")
+                </div>*@
+                    </div>
+                </div>
+                <fieldset><br/>
+                    <p>
+                        <input type="button" value="Save" data-bind='click: $root.saveApiSettings' class="esg-button esg-button--primary" />
+                        <input type="button" value="Cancel" data-bind='click: $root.cancelApiSettings' class="esg-button esg-button--primary" />
+                    </p>
+                </fieldset><br/>
+            </div>
+    </section>
+</div>
+
+@section Scripts {
+    <script src="~/scripts/Admin.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        var jsonData = @Html.Raw(ViewBag.json);
+        $(document).ready(function () {
+            $("#tabs").tabs();
+            var viewModel = new admin.configuration.ApiSettingsViewModel(jsonData);
+            viewModel.cancelUrl = '@Url.Action("Index", "Admin")';
+            ko.applyBindings(viewModel);
+        });
+    </script>
+}

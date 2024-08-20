@@ -1,0 +1,14 @@
+﻿@*@using Ellucian.Web.Infrastructure.Service.Api
+@model IEnumerable<WebApiMethodDescription>
+
+<ul class="methodList">
+@foreach (WebApiMethodDescription methodDescription in Model)
+{
+<li>
+<p>@methodDescription.Method @methodDescription.Url</p>
+<p>Description: @methodDescription.Description</p>
+<p>Return Type: @methodDescription.ReturnType</p>
+<p>Example Output: @methodDescription.ExampleOutput</p>
+</li>
+}
+</ul>*@

@@ -1,0 +1,384 @@
+﻿@{
+    ViewBag.Title = "Colleague Connection Settings";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+</div>
+@* Validation Summary *@
+<div data-bind="visible: showValidationSummary" class="column-nine">
+    <div class=" esg-alert esg-alert--fluid esg-alert--error" role="alert">
+        <span class="esg-alert__icon-wrapper">
+            <span class="esg-alert__icon esg-icon__container" aria-hidden="True">
+                <svg class="esg-icon esg-icon--error-dark">
+                    <use xlink:href="#icon-error"></use>
+                </svg>
+            </span>
+        </span>
+        <div class="esg-alert__message error-message-format" data-bind="html: validationSummary" style="text-align:left;"></div>
+    </div><br />
+</div>
+@* Field Set *@
+<fieldset>
+    <br />
+    <table class="APISettingstable" style="border:none;">
+        <tr>
+            <td>
+                <label class="esg-form__label">Account DMI Registry Name</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': !accountName.isValid()}">
+                    <input class="esg-form__input" type="text" data-bind="value: accountName" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: !accountName.isValid()">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">DMI Application Listener IP Address</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': !ipAddress.isValid()}">
+                    <input class="esg-form__input" type="text" data-bind="value: ipAddress" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: !ipAddress.isValid()">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">DMI Application Listener Port</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': !port.isValid()}">
+                    <input class="esg-form__input" type="text" data-bind="value: port" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: !port.isValid()">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">Connect to Application Listener Securely</label>
+            </td>
+            <td>
+                <div class="esg-form__group">
+                    <div class="esg-checkbox">
+                        <input id="chkSecure" type="checkbox" data-bind="checked: secure">
+                        <label for="chkSecure">
+                            <span class="esg-sr-only"></span>
+                        </label>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">Certificate Host Name Override</label>
+            </td>
+            <td>
+                <div class="esg-form__group">
+                    <input class="esg-form__input" type="text" data-bind="value: hostNameOverride" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">Connection Pool Size</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': !connectionPoolSize.isValid()}">
+                    <input class="esg-form__input" type="text" data-bind="value: connectionPoolSize" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: !connectionPoolSize.isValid()">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <table class="APISettingstable">
+        <tr>
+            <td>
+                <label class="esg-form__label">Use DAS Data Reader</label>
+            </td>
+            <td>
+                <div class="esg-form__group">
+                    <div class="esg-checkbox">
+                        <input id="chkUseDasDatareader" type="checkbox" data-bind="checked: useDasDatareader">
+                        <label for="chkUseDasDatareader">
+                            <span class="esg-sr-only"></span>
+                        </label>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">DAS Registry Name</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': (!dasAccountName.isValid() && useDasDatareader)}">
+                    <input class="esg-form__input" type="text" data-bind="value: dasAccountName, enable: useDasDatareader" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: (!dasAccountName.isValid() && useDasDatareader)">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">DAS Listener IP Address</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': (!dasIpAddress.isValid() && useDasDatareader)}">
+                    <input class="esg-form__input" type="text" data-bind="value: dasIpAddress, enable: useDasDatareader" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: (!dasIpAddress.isValid() && useDasDatareader)">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">DAS Listener Port</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': (!dasPort.isValid() && useDasDatareader)}">
+                    <input class="esg-form__input" type="text" data-bind="value: dasPort, enable: useDasDatareader" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: (!dasPort.isValid() && useDasDatareader)">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">Connect to DAS Listener Securely</label>
+            </td>
+            <td>
+                <div class="esg-form__group">
+                    <div class="esg-checkbox">
+                        <input id="chkDasSecure" type="checkbox" data-bind="checked: dasSecure, enable: useDasDatareader">
+                        <label for="chkDasSecure">
+                            <span class="esg-sr-only"></span>
+                        </label>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">DAS Certificate Host Name Override</label>
+            </td>
+            <td>
+                <div class="esg-form__group">
+                    <input class="esg-form__input" type="text" data-bind="value: dasHostNameOverride, enable: useDasDatareader" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">DAS Connection Pool Size</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': (!dasConnectionPoolSize.isValid() && useDasDatareader)}">
+                    <input class="esg-form__input" type="text" data-bind="value: dasConnectionPoolSize, enable: useDasDatareader" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: (!dasConnectionPoolSize.isValid() && useDasDatareader)">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">DAS Username</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': (!dasUsername.isValid() && useDasDatareader)}">
+                    <input class="esg-form__input" type="text" data-bind="value: dasUsername, enable: useDasDatareader" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: (!dasUsername.isValid() && useDasDatareader)">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">DAS Password</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': (!dasPassword.isValid() && useDasDatareader)}">
+                    <input class="esg-form__input" type="password" data-bind="value: dasPassword, enable: useDasDatareader" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: (!dasPassword.isValid() && useDasDatareader)">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <br />
+    <table class="APISettingstable">
+        <tr>
+            <td>
+                <label class="esg-form__label">Shared Secret</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': !sharedSecret1.isValid()}">
+                    <input class="esg-form__input" type="password" data-bind="value: sharedSecret1" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: !sharedSecret1.isValid()">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">Confirm Shared Secret</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': !sharedSecret2.isValid()}">
+                    <input class="esg-form__input" type="password" data-bind="value: sharedSecret2" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: !sharedSecret2.isValid()">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br />
+
+    <div class="esg-alert esg-alert--fluid esg-alert--error" role="alert" data-bind="visible: showSharedSecretDecryptionError">
+        <span class="esg-alert__icon-wrapper">
+            <span class="esg-alert__icon esg-icon__container" aria-hidden="True">
+                <svg class="esg-icon esg-icon--error-dark">
+                    <use xlink:href="#icon-error"></use>
+                </svg>
+            </span>
+        </span>
+        <div class="esg-alert__message" > ERROR: The stored shared secret could not be decrypted. This is likely due to improperly configured Machine Key settings or an active change of the Machine Key settings.
+        Please refer to the "Setting Up Colleague Web API" manual, section "Generate Machine Keys for Security", and verify that the Machine Key setup is correct.
+        After ensuring proper setup, re-enter the shared secret on this form.</div>
+    </div>
+
+    <div class="esg-alert esg-alert--fluid esg-alert--error" role="alert" data-bind="visible: showMachineKeySettingError">
+        <span class="esg-alert__icon-wrapper">
+            <span class="esg-alert__icon esg-icon__container" aria-hidden="True">
+                <svg class="esg-icon esg-icon--error-dark">
+                    <use xlink:href="#icon-error"></use>
+                </svg>
+            </span>
+        </span>
+        <div class="esg-alert__message" data-bind="text: machineKeySettingError"></div>
+    </div>
+
+    <div class="esg-alert esg-alert--fluid esg-alert--warning" role="alert" data-bind="visible: showMachineKeySettingWarning">
+        <span class="esg-alert__icon-wrapper">
+            <span class="esg-alert__icon esg-icon__container" aria-hidden="True">
+                <svg class="esg-icon esg-icon--warning-dark">
+                    <use xlink:href="#icon-warning"></use>
+                </svg>
+            </span>
+        </span>
+        <div class="esg-alert__message" data-bind="text: machineKeySettingWarning">
+        </div>
+    </div>
+
+
+        <br />
+        <div class="esg-form__group widerBase">
+            <input type="button" value="Test App Listener Connection" data-bind='click: $root.testAppConnection' class="esg-button esg-button--primary" />
+            <input type="button" value="Test DAS Listener Connection" data-bind='click: $root.testDASConnection, enable: useDasDatareader' class="esg-button esg-button--primary" />
+            <input type="button" value="Save" data-bind="click: $root.saveLocalSettings.bind($data, true)" class="esg-button esg-button--primary" />
+            <input type="button" value="Cancel" data-bind='click: $root.cancelLocalSettings' class="esg-button esg-button--primary" />
+        </div><br />
+</fieldset>
+
+<modal-spinner id="updating" params="isVisible: isUpdating, message: 'Saving Changes...'"></modal-spinner>
+<input id="isUpdating" type="hidden" value="false" data-bind="value: isUpdating" />
+
+<input id="hideDialog" type="hidden" value="false" data-bind="value: hideDialog" />
+<div id="dialog-form" class="esg-modal-dialog" data-bind="visible: hideDialog">
+    <div class="esg-modal-dialog__header">
+        <button class="esg-modal-dialog__close esg-icon__container" type="button" data-dismiss="modal" aria-hidden="true" data-bind='click: $root.testAppConnection_CancelBtnClick'>
+            <svg class="esg-icon esg-icon--large esg-icon--neutral">
+                <use xlink:href="#icon-close"></use>
+            </svg>
+        </button>
+        <h3 class="esg-modal-dialog__title">Test App Listener Connection</h3>
+    </div>
+    <div class="esg-modal-dialog__body">
+        <form>
+            <fieldset>
+                <div class="base">
+                    <div class="widerbase">
+                        <div>
+                            <label for="UserId" class="esg-form__label">User name </label>
+                            <input type="text" name="UserId" id="UserId"/>
+                        </div><br/>
+                        <div>
+                            <label for="password" class="esg-form__label">Password&nbsp;</label>
+                            <input type="password" name="Password" id="Password" value="" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="esg-modal-dialog__action-section esg-button-group esg-button-group--fluid" role="group" aria-label="button group">
+        <div class="esg-button-group__item" role="group">
+            <button class="esg-button esg-button--primary esg-modal-dialog__button" type="button" data-bind='click: $root.testAppConnection_TestBtnClick'>Test </button>
+        </div>
+        <div class="esg-button-group__item" role="group">
+            <button class="esg-button esg-button--secondary esg-modal-dialog__button" data-dismiss="modal" type="button"
+                    data-bind='click: $root.testAppConnection_CancelBtnClick'>
+                Cancel
+            </button>
+        </div>
+    </div>
+
+</div>
+<div class="esg-modal-overlay"></div>
+@* Script *@
+@section Scripts {
+    <script src="~/scripts/Admin.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        var jsonData = @Html.Raw(ViewBag.json);
+        $(document).ready(function () {
+            var viewModel = new admin.configuration.LocalSettingsViewModel(jsonData);
+            viewModel.cancelUrl = '@Url.Action("Index", "Admin")';
+            ko.applyBindings(viewModel);
+        });
+    </script>
+}

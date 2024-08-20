@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Colleague Web API Administration";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+</div>
+
+@* Field Set *@
+<section>
+    <div class="base">
+        <br />
+        <p>
+            @Html.ActionLink("Key Management", "KeyManagement", "Admin", null, new { @class = "noDecorationLink" })
+        </p><br />
+        <p>
+            @Html.ActionLink("Culture", "Culture", "Admin", null, new { @class = "noDecorationLink" })
+        </p><br />
+        <p>
+            @Html.ActionLink("Connection Settings", "ConnectionSettings", "Admin", null, new { @class = "noDecorationLink" })
+        </p><br />
+        <p>
+            @Html.ActionLink("Logging", "Logging", "Admin", null, new { @class = "noDecorationLink" })
+        </p><br />
+        <p>
+            @Html.ActionLink("API Settings", "ApiSettings", "Admin", null, new { @class = "noDecorationLink" })
+        </p><br />
+        <p>
+            @Html.ActionLink("Oauth Settings", "OAuthSettings", "Admin", null, new { @class = "noDecorationLink" })
+        </p><br />
+        <p>
+            @Html.ActionLink("Resource File Editor", "ResourceFileEditor", "ResourceFileEditor", null, new { style = " text-decoration: none;" })
+        </p><br />
+    </div>
+    <hr />
+    <div class="base">
+        <br />
+        @if (ViewBag.ApiVersionNumber != null)
+        {
+            <section class="content-wrapper">
+                <span>Version @ViewBag.ApiVersionNumber</span>
+            </section>
+        }
+    </div>
+</section>

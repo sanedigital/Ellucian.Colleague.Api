@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/13/2023 13:03:03" ReportInfo.Modified="03/23/2023 18:08:16" ReportInfo.CreatorVersion="2023.1.12.0">
+  <Dictionary>
+    <Parameter Name="TranscriptText" DataType="System.String" AsString="" Description="ReportParameter1" />
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="210.01" PaperHeight="565.05" LeftMargin="25.4" TopMargin="25.4" RightMargin="25.4" BottomMargin="101.6" FirstPageSource="15" OtherPagesSource="15" LastPageSource="15" Watermark.Enabled="true" Watermark.Image="" Watermark.ImageSize="Tile" Watermark.Font="null" Watermark.ShowTextOnTop="false">
+    <DataBand Name="Data1" Width="601.81" Height="144" CanGrow="true" CanShrink="true" CanBreak="true" StartNewPage="true" KeepTogether="true" KeepDetail="true">
+      <TextObject Name="Transcript" Width="719" Height="28" CanGrow="true" Text="[TranscriptText]" Font="Courier New, 9pt" />
+    </DataBand>
+  </ReportPage>
+</Report>

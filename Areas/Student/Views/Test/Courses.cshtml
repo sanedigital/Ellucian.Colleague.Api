@@ -1,0 +1,76 @@
+﻿@model Ellucian.Colleague.Api.Areas.Student.Models.Tests.TestCourses
+
+@{
+    ViewBag.Title = "Courses";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+    <a href="@Url.Action("", "Test")" class="esg-page-header__subtitle esg-page-header__subtitle--backlink">
+        <span class="esg-icon__container esg-page-header__icon" aria-hidden="true">
+            <svg class="esg-icon esg-icon--left">
+                <use xlink:href="#icon-arrow"></use>
+            </svg>
+        </span>Back to List
+    </a>
+</div>
+
+
+@using (Html.BeginForm())
+{
+    <div class="base">
+        @if (!Html.ViewData.ModelState.IsValid)
+        {
+            <div class=" esg-alert esg-alert--fluid esg-alert--error" role="alert">
+                <span class="esg-alert__icon-wrapper">
+                    <span class="esg-alert__icon esg-icon__container" aria-hidden="True">
+                        <svg class="esg-icon esg-icon--error-dark">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </span>
+                </span>
+
+                <div class="esg-alert__message">
+                    @Html.ValidationSummary(true, "", new { @class = "validation-summary-errors" })
+                </div>
+            </div><br />
+        }
+
+        <fieldset>
+            <legend>Test Courses</legend>
+            <div>
+                <label class="esg-form__label">@Html.LabelFor(model => model.CourseIds)</label>
+            </div>
+            <div class="esg-form__input-group">
+                @Html.EditorFor(model => model.CourseIds, new { htmlAttributes = new { @class = "esg-form__input" }, id = "CourseIds" })
+                @if (ViewData.ModelState["CourseIds"] != null && ViewData.ModelState["CourseIds"].Errors.Count > 0)
+                {
+                    <div class="esg-form__feedback-icon esg-icon__container">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                }
+                @Html.ValidationMessageFor(model => model.CourseIds, "", new { @class = "esg-form__feedback-text" })
+            </div>
+            <p>
+                @*With v1.5.1 of the CDN, the "submit" buttons did not render properly; need to have a true button type redirect to the submit button action*@
+                <input type="submit" id="hiddenButton" value="Invisible" style="display:none" class="esg-button esg-button--primary" />
+                <input type="button" id="runButton" value="Run" class="esg-button esg-button--primary" />
+            </p>
+        </fieldset>
+    </div>
+}
+
+@section Scripts {
+    <script src="~/bundles/jqueryval"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#runButton').click(function () {
+                $('#hiddenButton').trigger("click");
+            });
+        });
+    </script>
+}

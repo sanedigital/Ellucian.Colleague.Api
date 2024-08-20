@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="01/18/2023 11:51:05" ReportInfo.Modified="06/16/2023 16:31:44" ReportInfo.CreatorVersion="2023.1.12.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+
+    private void Table1_ManualBuild(object sender, EventArgs e)
+    {
+      
+    }
+
+    private void Logo_BeforePrint(object sender, EventArgs e)
+    {
+      Logo.ImageLocation = (string)Report.GetParameterValue(&quot;LogoPath&quot;);
+    }
+    
+  }
+}
+</ScriptText>
+  <Styles>
+    <Style Name="EvenRows" Border.Color="White" Fill.Color="WhiteSmoke" Font="Arial, 8pt" ApplyBorder="false" ApplyTextFill="false" ApplyFont="false"/>
+    <Style Name="OddRows" Font="Arial, 10pt" ApplyBorder="false" ApplyTextFill="false" ApplyFont="false"/>
+  </Styles>
+  <Dictionary>
+    <TableDataSource Name="ArchivedCourses" ReferenceName="Data.ArchivedCourses" DataType="System.Int32" Enabled="true">
+      <Column Name="CourseId" DataType="System.String"/>
+      <Column Name="SectionId" DataType="System.String"/>
+      <Column Name="Credits" DataType="System.Decimal"/>
+      <Column Name="Name" DataType="System.String"/>
+      <Column Name="ApprovedBy" DataType="System.String"/>
+      <Column Name="TermCode" DataType="System.String"/>
+      <Column Name="TermDescription" DataType="System.String"/>
+      <Column Name="FormattedCredits" DataType="System.String"/>
+      <Column Name="Title" DataType="System.String"/>
+      <Column Name="ApprovalStatus" DataType="System.String"/>
+      <Column Name="ApprovalDate" DataType="System.String"/>
+      <Column Name="TermReportingYear" DataType="System.Int32"/>
+      <Column Name="TermSequence" DataType="System.Int32"/>
+      <Column Name="ContinuingEducationUnits" DataType="System.Decimal"/>
+      <Column Name="FormattedCeus" DataType="System.String"/>
+      <Column Name="AddedBy" DataType="System.String"/>
+      <Column Name="AddedDate" DataType="System.String"/>
+      <Column Name="RegistrationStatus" DataType="System.String"/>
+      <Column Name="CoursePlaceholderId" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="ArchivedNotes" ReferenceName="Data.ArchivedNotes" DataType="System.Int32" Enabled="true">
+      <Column Name="PersonName" DataType="System.String"/>
+      <Column Name="Text" DataType="System.String"/>
+      <Column Name="Id" DataType="System.Int32"/>
+      <Column Name="Date" DataType="System.String"/>
+    </TableDataSource>
+    <Parameter Name="StudentName" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentId" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Label_StudentName" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Label_StudentId" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="StudentPrograms" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Label_StudentPrograms" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LastReviewed" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Label_LastReviewed" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Label_Notes" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ArchivedBy" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Label_ArchivedBy" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LogoPath" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ReportTitle" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Total Name="TotalCredits" Expression="[ArchivedCourses.Credits]" Evaluator="ArchivedCoursesDataSourceBand" PrintOn="GroupFooterTermCodeBand" ResetOnReprint="true"/>
+    <Total Name="TotalCEUs" Expression="[ArchivedCourses.ContinuingEducationUnits]" Evaluator="ArchivedCoursesDataSourceBand" PrintOn="GroupFooterTermCodeBand" ResetOnReprint="true"/>
+    <Total Name="GrandTotalCredits" Expression="[ArchivedCourses.Credits]" Evaluator="ArchivedCoursesDataSourceBand"/>
+    <Total Name="GrandTotalCEUs" Expression="[ArchivedCourses.ContinuingEducationUnits]" Evaluator="ArchivedCoursesDataSourceBand"/>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="279.4" PaperHeight="215.9" LeftMargin="25.4" TopMargin="25.4" RightMargin="25.4" BottomMargin="25.4" Watermark.Font="Arial, 60pt">
+    <DataBand Name="ReportLogoBand" Width="864.11" Height="49.92" Indent="0">
+      <PictureObject Name="Logo" Width="328.32" Height="49.92" VisibleExpression="[LogoPath] != &quot;&quot;" CanGrow="true" CanShrink="true" BeforePrintEvent="Logo_BeforePrint" ImageAlign="Top_Left"/>
+    </DataBand>
+    <DataBand Name="StudentDataBand" Top="53.92" Width="864.11" Height="219.3" Border.Lines="Bottom">
+      <TextObject Name="ReportTitle" Left="-0.6" Top="13.82" Width="334.5" Height="18.9" CanGrow="true" CanShrink="true" Text="[ReportTitle]" Padding="2, 2, 2, 2" Font="Arial, 12pt"/>
+      <TextObject Name="Label_StudentName" Left="-0.45" Top="46.35" Width="144" Height="18.9" CanGrow="true" Text="[Label_StudentName]" Padding="2, 2, 2, 2" Font="Arial, 8.25pt, style=Bold"/>
+      <TextObject Name="StudentName" Left="192" Top="46.35" Width="288" Height="18.9" CanGrow="true" Text="[StudentName]" Padding="2, 2, 2, 2" Font="Arial, 8.25pt"/>
+      <TextObject Name="Label_StudentId" Top="67.2" Width="144" Height="19.2" CanGrow="true" Text="[Label_StudentId]" Padding="2, 2, 2, 2" Font="Arial, 8.25pt, style=Bold"/>
+      <TextObject Name="StudentId" Left="192" Top="67.2" Width="288" Height="19.2" CanGrow="true" Text="[StudentId]" Font="Arial, 8.25pt"/>
+      <TextObject Name="Label_StudentPrograms" Top="96" Width="144" Height="19.2" CanGrow="true" Text="[Label_StudentPrograms]" Padding="2, 2, 2, 2" Font="Arial, 8.25pt, style=Bold"/>
+      <TextObject Name="Label_LastReviewed" Top="115.2" Width="144" Height="19.2" CanGrow="true" Text="[Label_LastReviewed]" Padding="2, 2, 2, 2" Font="Arial, 8.25pt, style=Bold"/>
+      <TextObject Name="LastReviewed" Left="192" Top="115.2" Width="288" Height="19.2" CanGrow="true" Text="[LastReviewed]" Padding="2, 2, 2, 2" Font="Arial, 8.25pt"/>
+      <TextObject Name="Label_ArchivedBy" Top="134.4" Width="144" Height="19.2" CanGrow="true" Text="[Label_ArchivedBy]" Padding="2, 2, 2, 2" Font="Arial, 8.25pt, style=Bold"/>
+      <TextObject Name="ArchivedBy" Left="192" Top="134.4" Width="288" Height="19.2" CanGrow="true" Text="[ArchivedBy]" Padding="2, 2, 2, 2" Font="Arial, 8.25pt"/>
+      <TextObject Name="StudentPrograms" Left="192" Top="96" Width="288" Height="19.2" CanGrow="true" Text="[StudentPrograms]" Padding="2, 2, 2, 2" Font="Arial, 8.25pt"/>
+      <TableObject Name="Table2" Left="1027.2" Top="124.8" Width="330.75" Height="94.5">
+        <TableColumn Name="Column8"/>
+        <TableColumn Name="Column9"/>
+        <TableColumn Name="Column10"/>
+        <TableColumn Name="Column11"/>
+        <TableColumn Name="Column12"/>
+        <TableRow Name="Row4">
+          <TableCell Name="Cell22" Font="Arial, 10pt"/>
+          <TableCell Name="Cell23" Font="Arial, 10pt"/>
+          <TableCell Name="Cell24" Font="Arial, 10pt"/>
+          <TableCell Name="Cell25" Font="Arial, 10pt"/>
+          <TableCell Name="Cell26" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row5">
+          <TableCell Name="Cell27" Font="Arial, 10pt"/>
+          <TableCell Name="Cell28" Font="Arial, 10pt"/>
+          <TableCell Name="Cell29" Font="Arial, 10pt"/>
+          <TableCell Name="Cell30" Font="Arial, 10pt"/>
+          <TableCell Name="Cell31" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row6">
+          <TableCell Name="Cell32" Font="Arial, 10pt"/>
+          <TableCell Name="Cell33" Font="Arial, 10pt"/>
+          <TableCell Name="Cell34" Font="Arial, 10pt"/>
+          <TableCell Name="Cell35" Font="Arial, 10pt"/>
+          <TableCell Name="Cell36" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row7">
+          <TableCell Name="Cell37" Font="Arial, 10pt"/>
+          <TableCell Name="Cell38" Font="Arial, 10pt"/>
+          <TableCell Name="Cell39" Font="Arial, 10pt"/>
+          <TableCell Name="Cell40" Font="Arial, 10pt"/>
+          <TableCell Name="Cell41" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row8">
+          <TableCell Name="Cell42" Font="Arial, 10pt"/>
+          <TableCell Name="Cell43" Font="Arial, 10pt"/>
+          <TableCell Name="Cell44" Font="Arial, 10pt"/>
+          <TableCell Name="Cell45" Font="Arial, 10pt"/>
+          <TableCell Name="Cell46" Font="Arial, 10pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+    <GroupHeaderBand Name="GroupHeaderTermCodeBand" Top="277.22" Width="864.11" Height="48.6" KeepChild="true" Guides="48,28.8,48,28.8,28.8,0,38.4,38.4,38.4,48" KeepWithData="true" Condition="[ArchivedCourses.TermCode]" SortOrder="None" KeepTogether="true">
+      <TextObject Name="TermDescription" Left="9.6" Top="9.6" Width="201.6" Height="19.2" Text="[ArchivedCourses.TermDescription]" Padding="2, 2, 2, 2" Font="Arial, 8.25pt, style=Bold"/>
+      <TableObject Name="Table3" Top="29.1" Width="866.17" Height="18.9" PrintOnParent="true">
+        <TableColumn Name="Column13" Width="115.51"/>
+        <TableColumn Name="Column14" Width="105.91"/>
+        <TableColumn Name="Column15" Width="201.91"/>
+        <TableColumn Name="Column16" Width="57.91"/>
+        <TableColumn Name="Column17" Width="67.51"/>
+        <TableColumn Name="Column18" Width="163.51"/>
+        <TableColumn Name="Column19" Width="153.91"/>
+        <TableRow Name="Row9">
+          <TableCell Name="Cell47" Fill.Color="DimGray" Text="Status" Font="Arial, 8.25pt" TextFill.Color="White"/>
+          <TableCell Name="Cell48" Fill.Color="DimGray" Text="Registered" Font="Arial, 8.25pt" TextFill.Color="White"/>
+          <TableCell Name="Cell49" Fill.Color="DimGray" Text="Courses/Sections" Font="Arial, 8.25pt" TextFill.Color="White"/>
+          <TableCell Name="Cell50" Fill.Color="DimGray" Text="Credits" Font="Arial, 8.25pt" TextFill.Color="White"/>
+          <TableCell Name="Cell51" Fill.Color="DimGray" Text="CEUs" Font="Arial, 8.25pt" TextFill.Color="White"/>
+          <TableCell Name="Cell52" Fill.Color="DimGray" Text="Added to Plan By" Font="Arial, 8.25pt" TextFill.Color="White"/>
+          <TableCell Name="Cell53" Fill.Color="DimGray" Text="Approved/Denied By" Font="Arial, 8.25pt" TextFill.Color="White"/>
+        </TableRow>
+      </TableObject>
+      <LineObject Name="Line3" Width="864.11" Border.Color="DarkGray"/>
+      <DataBand Name="ArchivedCoursesDataSourceBand" Top="329.82" Width="864.11" Height="27.9" Border.ShadowColor="White" Border.Color="White" Border.Width="0" Fill.Color="WhiteSmoke" CanGrow="true" CanShrink="true" Style="EvenRows" EvenStyle="OddRows" Guides="56.7,95.1,57.6,57.6,57.6,57.6,9.6,38.4,9.6,19.2,9.6,0,0,9.6,9.6,9.6,9.6,9.6,9.6,0,28.8,28.8,19.2,9.6,9.6,0,9.6" DataSource="ArchivedCourses" KeepTogether="true" KeepDetail="true" Indent="19.2">
+        <TableObject Name="Table1" Top="-0.6" Width="866.17" Height="28.5" VisibleExpression="[ArchivedCourses.CoursePlaceholderId]==&quot;&quot;" CanBreak="false" RepeatHeaders="false">
+          <TableColumn Name="Column1" Width="115.51"/>
+          <TableColumn Name="Column2" Width="105.91"/>
+          <TableColumn Name="Column3" Width="201.91"/>
+          <TableColumn Name="Column4" Width="57.91"/>
+          <TableColumn Name="Column5" Width="67.51"/>
+          <TableColumn Name="Column6" Width="163.51"/>
+          <TableColumn Name="Column7" Width="153.91"/>
+          <TableRow Name="Row2" Height="28.5">
+            <TableCell Name="Cell6" Border.Lines="Right" Border.RightLine.Color="DarkGray" Text="[ArchivedCourses.ApprovalStatus]" Padding="0, 2, 0, 0" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+            <TableCell Name="Cell7" Border.Lines="Right" Border.RightLine.Color="DarkGray" Text="[ArchivedCourses.RegistrationStatus]" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+            <TableCell Name="Cell8" Border.Lines="Right" Border.RightLine.Color="DarkGray" Text="[ArchivedCourses.Name] [ArchivedCourses.Title]" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+            <TableCell Name="Cell9" Border.Lines="Right" Border.RightLine.Color="DarkGray" BeforePrintEvent="Cell9_BeforePrint" Text="[ArchivedCourses.FormattedCredits]" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+            <TableCell Name="Cell10" Border.Lines="Right" Border.RightLine.Color="DarkGray" Text="[ArchivedCourses.FormattedCeus]" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+            <TableCell Name="Cell18" Border.Lines="Right" Border.RightLine.Color="DarkGray" Text="[ArchivedCourses.AddedBy] [ArchivedCourses.AddedDate]" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+            <TableCell Name="Cell19" Text="[ArchivedCourses.ApprovedBy] [ArchivedCourses.ApprovalDate]" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+          </TableRow>
+        </TableObject>
+        <TableObject Name="Table6" Top="-0.6" Width="866.17" Height="28.5" VisibleExpression="[ArchivedCourses.CoursePlaceholderId]!=&quot;&quot;" CanBreak="false" RepeatHeaders="false">
+          <TableColumn Name="Column1" Width="115.51"/>
+          <TableColumn Name="Column2" Width="105.91"/>
+          <TableColumn Name="Column3" Width="201.91"/>
+          <TableColumn Name="Column4" Width="57.91"/>
+          <TableColumn Name="Column5" Width="67.51"/>
+          <TableColumn Name="Column6" Width="163.51"/>
+          <TableColumn Name="Column7" Width="153.91"/>
+          <TableRow Name="Row2" Height="28.5">
+            <TableCell Name="Cell6" Border.Lines="Right" Border.RightLine.Color="DarkGray" Text="[ArchivedCourses.ApprovalStatus]" Padding="0, 2, 0, 0" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+            <TableCell Name="Cell7" Border.Lines="Right" Border.RightLine.Color="DarkGray" Text="[ArchivedCourses.RegistrationStatus]" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+            <TableCell Name="Cell8" Border.Lines="Right" Border.RightLine.Color="DarkGray" Text="[ArchivedCourses.Name] [ArchivedCourses.Title]" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+            <TableCell Name="Cell9" Border.Lines="Right" Border.RightLine.Color="DarkGray" Text="[ArchivedCourses.FormattedCredits]" AutoShrink="FontSize" Font="Arial, 8.25pt" ColSpan="2"/>
+            <TableCell Name="Cell10" Border.Lines="Right" Border.RightLine.Color="DarkGray" Text="[ArchivedCourses.FormattedCeus]" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+            <TableCell Name="Cell18" Border.Lines="Right" Border.RightLine.Color="DarkGray" Text="[ArchivedCourses.AddedBy] [ArchivedCourses.AddedDate]" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+            <TableCell Name="Cell19" Text="[ArchivedCourses.ApprovedBy] [ArchivedCourses.ApprovalDate]" AutoShrink="FontSize" Font="Arial, 8.25pt"/>
+          </TableRow>
+        </TableObject>
+      </DataBand>
+      <GroupFooterBand Name="GroupFooterTermCodeBand" Top="361.72" Width="864.11" Height="19.2" Border.ShadowColor="White" Border.Color="Red" KeepChild="true" Guides="9.6" KeepWithData="true">
+        <TextObject Name="Text3" Left="480" Width="57.6" Height="19.2" Border.Color="DarkGray" Text="[TotalCEUs]" Padding="2, 2, 2, 0" Format="Number" Format.UseLocale="true" Format.DecimalDigits="2" Font="Arial, 8.25pt"/>
+        <LineObject Name="Line1" Width="864.11" Border.Color="DarkGray"/>
+        <TextObject Name="Text1" Left="220.8" Width="192" Height="19.2" Border.Color="DarkGray" Text="Completed and Planned Credits" Padding="2, 2, 2, 0" Font="Arial, 9.75pt"/>
+        <TextObject Name="Text2" Left="422.4" Width="48" Height="19.2" Border.Color="DarkGray" Text="[TotalCredits]" Padding="2, 2, 2, 0" Format="Number" Format.UseLocale="true" Format.DecimalDigits="2" Font="Arial, 8.25pt"/>
+      </GroupFooterBand>
+    </GroupHeaderBand>
+    <DataBand Name="GrandTotalsBand" Top="384.92" Width="864.11" Height="28.8" Guides="0">
+      <TextObject Name="Text4" Left="220.8" Width="86.4" Height="19.2" Text="Grand Totals" Padding="2, 2, 2, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text5" Left="422.4" Width="48" Height="19.2" Text="[GrandTotalCredits]" Padding="2, 2, 2, 0" Format="Number" Format.UseLocale="true" Format.DecimalDigits="2" Font="Arial, 8.25pt"/>
+      <TextObject Name="Text6" Left="480" Width="57.6" Height="19.2" Text="[GrandTotalCEUs]" Padding="2, 2, 2, 0" Format="Number" Format.UseLocale="true" Format.DecimalDigits="2" Font="Arial, 8.25pt"/>
+      <LineObject Name="Line2" Left="-9.6" Width="873.71" Border.Color="DarkGray"/>
+    </DataBand>
+    <DataBand Name="ArchivedNotesDataSourceBand" Top="440.92" Width="864.11" Height="47.4" CanGrow="true" CanShrink="true" DataSource="ArchivedNotes">
+      <TableObject Name="Table4" Top="9.6" Width="862.95" Height="37.8" Border.Lines="Bottom" Border.BottomLine.Color="DimGray" PrintOnParent="true" RepeatHeaders="false">
+        <TableColumn Name="Column20" Width="862.95"/>
+        <TableRow Name="Row13">
+          <TableCell Name="Cell61" Text="[ArchivedNotes.Text]" Font="Arial, 8.25pt"/>
+        </TableRow>
+        <TableRow Name="Row11">
+          <TableCell Name="Cell59" Text="[ArchivedNotes.PersonName]  [ArchivedNotes.Date]" Padding="2, 2, 2, 2" Font="Arial, 9.75pt, style=Italic" TextFill.Color="Gray"/>
+        </TableRow>
+      </TableObject>
+      <DataHeaderBand Name="ArchiveNotesHeaderBand" Top="417.72" Width="864.11" Height="19.2" Border.Lines="Bottom" Border.BottomLine.Color="DimGray" StartNewPage="true">
+        <TextObject Name="Text7" Left="9.6" Width="96" Height="19.2" Text="[Label_Notes]" Font="Arial, 8.25pt, style=Bold"/>
+      </DataHeaderBand>
+    </DataBand>
+  </ReportPage>
+</Report>

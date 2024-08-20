@@ -1,0 +1,17 @@
+﻿@*Copyright 2016-2017 Ellucian Company L.P. and its affiliates.*@
+@*Use this partial for generating the site-wide RequireJS configuration object for use in
+    applications that are AMD top-down. Use the _RequireConfig partial to inject the configuration
+    and the requireJS script into pages that use knockout components*@
+
+
+<script>
+    var Ellucian = Ellucian || {};
+    Ellucian.requireConfig = Ellucian.requireConfig || {
+        baseUrl: "@Url.Content("~/scripts/")", 
+        paths: {
+            text: "text",
+            ModalSpinner: "Components/ModalSpinner",
+            Icon: "Components/Icon"
+        }
+    };
+</script>

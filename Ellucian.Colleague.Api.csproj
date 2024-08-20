@@ -1,0 +1,200 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <EnableCodeInspectionOnBuild>false</EnableCodeInspectionOnBuild>
+    <EnableCodeAnalysisOnBuild>false</EnableCodeAnalysisOnBuild>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DeployIisAppPath>ColleagueApi_Dev/ColleagueApi</DeployIisAppPath>
+    <DocumentationFile>bin\Ellucian.Colleague.Api.xml</DocumentationFile>
+    <WarningsAsErrors>1570,1571,1572,1573,1591</WarningsAsErrors>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>bin\Ellucian.Colleague.Api.xml</DocumentationFile>
+    <WarningsAsErrors>1570,1571,1572,1573,1591</WarningsAsErrors>
+    <NoWarn>1701;1702,1998</NoWarn>
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Update="App_Data\settings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Update="App_Data\deprecatedResources.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ellucian.Colleague.Api.Client\Ellucian.Colleague.Api.Client.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Coordination.Base\Ellucian.Colleague.Coordination.Base.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Coordination.BudgetManagement\Ellucian.Colleague.Coordination.BudgetManagement.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Coordination.ColleagueFinance\Ellucian.Colleague.Coordination.ColleagueFinance.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Coordination.Finance\Ellucian.Colleague.Coordination.Finance.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Coordination.FinancialAid\Ellucian.Colleague.Coordination.FinancialAid.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Coordination.HumanResources\Ellucian.Colleague.Coordination.HumanResources.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Coordination.Planning\Ellucian.Colleague.Coordination.Planning.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Coordination.ProjectsAccounting\Ellucian.Colleague.Coordination.ProjectsAccounting.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Coordination.ResidenceLife\Ellucian.Colleague.Coordination.ResidenceLife.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Coordination.Student\Ellucian.Colleague.Coordination.Student.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Coordination.TimeManagement\Ellucian.Colleague.Coordination.TimeManagement.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Data.Base\Ellucian.Colleague.Data.Base.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Data.BudgetManagement\Ellucian.Colleague.Data.BudgetManagement.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Data.ColleagueFinance\Ellucian.Colleague.Data.ColleagueFinance.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Data.Finance\Ellucian.Colleague.Data.Finance.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Data.FinancialAid\Ellucian.Colleague.Data.FinancialAid.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Data.HumanResources\Ellucian.Colleague.Data.HumanResources.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Data.Planning\Ellucian.Colleague.Data.Planning.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Data.ProjectsAccounting\Ellucian.Colleague.Data.ProjectsAccounting.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Data.ResidenceLife\Ellucian.Colleague.Data.ResidenceLife.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Data.Student\Ellucian.Colleague.Data.Student.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Data.TimeManagement\Ellucian.Colleague.Data.TimeManagement.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Domain.Base\Ellucian.Colleague.Domain.Base.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Domain.BudgetManagement\Ellucian.Colleague.Domain.BudgetManagement.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Domain.ColleagueFinance\Ellucian.Colleague.Domain.ColleagueFinance.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Domain.Finance\Ellucian.Colleague.Domain.Finance.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Domain.FinancialAid\Ellucian.Colleague.Domain.FinancialAid.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Domain.HumanResources\Ellucian.Colleague.Domain.HumanResources.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Domain.Planning\Ellucian.Colleague.Domain.Planning.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Domain.ResidenceLife\Ellucian.Colleague.Domain.ResidenceLife.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Domain.Student\Ellucian.Colleague.Domain.Student.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Domain.TimeManagement\Ellucian.Colleague.Domain.TimeManagement.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos.Base\Ellucian.Colleague.Dtos.Base.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos.BudgetManagement\Ellucian.Colleague.Dtos.BudgetManagement.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos.ColleagueFinance\Ellucian.Colleague.Dtos.ColleagueFinance.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos.Finance\Ellucian.Colleague.Dtos.Finance.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos.FinancialAid\Ellucian.Colleague.Dtos.FinancialAid.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos.HumanResources\Ellucian.Colleague.Dtos.HumanResources.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos.Planning\Ellucian.Colleague.Dtos.Planning.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos.ProjectsAccounting\Ellucian.Colleague.Dtos.ProjectsAccounting.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos.ResidenceLife\Ellucian.Colleague.Dtos.ResidenceLife.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos.Student\Ellucian.Colleague.Dtos.Student.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos.TimeManagement\Ellucian.Colleague.Dtos.TimeManagement.csproj" />
+    <ProjectReference Include="..\Ellucian.Colleague.Dtos\Ellucian.Colleague.Dtos.csproj" />
+    <ProjectReference Include="..\Ellucian.Web.Http.Configuration\Ellucian.Web.Http.Configuration.csproj" />
+    <ProjectReference Include="..\Ellucian.Web.Http\Ellucian.Web.Http.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Amazon.AspNetCore.DataProtection.SSM" Version="3.1.1" />
+    <PackageReference Include="Ellucian.App.Config.Storage.Service.Client" Version="1.5.7" />
+    <PackageReference Include="Ellucian.Logging" Version="2.0.0.22" />
+    <PackageReference Include="Ellucian.Web.Security" Version="2.0.0.22" />
+    <PackageReference Include="EllucianColleagueDataAPI" Version="1.29.0.18" />
+    <PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" Version="2.8.2.3" />
+    <PackageReference Include="LigerShark.WebOptimizer.Core" Version="3.0.380" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.2" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="6.26.0" />
+    <PackageReference Include="Microsoft.OpenApi" Version="1.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.9" />
+    <PackageReference Include="Moq" Version="4.18.2" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+    <PackageReference Include="Serilog.Enrichers.ClientInfo" Version="2.0.3" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.88.6" />
+    <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.3" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="appsettings.Development.json" />
+    <Content Remove="App_Data\settings.Debug.config" />
+    <Content Remove="App_Data\settings.Release.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\BuildServerProfile.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="appsettings.Development.json">
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\settings.Debug.config">
+      <DependentUpon>settings.config</DependentUpon>
+    </None>
+    <None Include="App_Data\settings.Release.config">
+      <DependentUpon>settings.config</DependentUpon>
+    </None>
+    <None Include="wwwroot\images\accent.png" />
+    <None Include="wwwroot\images\bullet.png" />
+    <None Include="wwwroot\images\heroAccent.png" />
+    <None Include="wwwroot\images\orderedListOne.png" />
+    <None Include="wwwroot\images\orderedListThree.png" />
+    <None Include="wwwroot\images\orderedListTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="App_Data\ellucian.license">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\**\*.frx" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\Logs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <SlowCheetahTargets Condition=" '$(SlowCheetahTargets)'=='' ">$(MSBuildProjectDirectory)\..\Dependencies\SlowCheetah.Transforms.targets</SlowCheetahTargets>
+  </PropertyGroup>
+  <PropertyGroup>
+    <CopyAllFilesToSingleFolderForPackageDependsOn>
+			$(CopyAllFilesToSingleFolderForPackageDependsOn);
+		</CopyAllFilesToSingleFolderForPackageDependsOn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702,1998</NoWarn>
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
+    <AspNetCoreModuleName>AspNetCoreModuleV2</AspNetCoreModuleName>
+    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+    <RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <ViewFiles Include="$(ProjectDir)\Areas\**\Views\Test\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Reports\HumanResources\2023-W2-AS.frx" />
+    <None Remove="Reports\HumanResources\2023-W2-Guam.frx" />
+    <None Remove="Reports\HumanResources\2023-W2-W2ST.frx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="WarmUpResources\WarmUp.ps1" />
+    <None Remove="WarmUpResources\WarmUp.py" />
+    <None Remove="WarmUpResources\WarmUpEndpoints.csv" />
+    <None Remove="WarmUpResources\WarmUpEthosEndpoints.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Resources\AdminResources.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WarmUpResources\WarmUp.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WarmUpResources\WarmUp.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WarmUpResources\WarmUpEndpoints.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WarmUpResources\WarmUpEthosEndpoints.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Target Name="CopyViewFilesAfterPublish" AfterTargets="Publish">
+    <Copy SourceFiles="@(ViewFiles)" DestinationFolder="$(PublishDir)\Areas\%(RecursiveDir)" />
+  </Target>
+  <Target Name="ContentsBeforeBuild" AfterTargets="BeforeBuild">
+    <Copy SourceFiles="@(ViewFiles)" DestinationFolder="$(PublishDir)\Areas\%(RecursiveDir)" />
+  </Target>
+</Project>

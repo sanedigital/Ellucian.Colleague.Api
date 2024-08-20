@@ -1,0 +1,34 @@
+﻿@model Ellucian.Colleague.Api.Models.ApiStatusModel
+@{string style = Model.UnSuccessfulLoginCounter > 0 ? "color:Red; font-weight:bold;" : null;}
+
+<div id="body">
+    <section class="content-wrapper main-content clear-fix">
+        @if (this.Context.Request.IsLocal())
+        {
+            <fieldset>
+                @if (Model.UseDasDataReader)
+            {
+                    @* Header/Title *@
+                    <div class="esg-page-header">
+                        <h2 class="esg-page-header__title header-margin">API Health Status</h2>
+                    </div>
+
+                    @* Field Set *@
+                    <table class="APISettingstable">
+                        <tr>
+                            <td>
+                                <label class="esg-form__label">Number of Unsuccessful DAS Logins: </label>
+                                <label class="esg-form__label" style="@style">
+                                    @Html.DisplayTextFor(model => model.UnSuccessfulLoginCounter)
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+            }
+            </fieldset><br />
+            <div class="base">
+                <span>Please see the API Catalog under Developer Resources in <a href="http://resources.elluciancloud.com">resources.elluciancloud.com</a> for Colleague OpenAPI documentation.</span>
+            </div>
+        }
+    </section>
+</div>

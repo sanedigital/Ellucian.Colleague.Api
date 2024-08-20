@@ -1,0 +1,91 @@
+﻿<fieldset>
+    <table class="APISettingstable2">
+        <tr>
+            <td>
+                <label class="esg-form__label">Image Server Base URL</label>
+            </td>
+            <td>
+                <div class="esg-form__group">
+                    <input class="esg-form__input" type="text" data-bind="value: PhotoSettings.basePhotoUrl" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">Image Type</label>
+            </td>
+            <td>
+                <select class="esg-form__input"
+                        data-bind="options: PhotoSettings.imageTypes, optionsText: 'Key', value: PhotoSettings.selectedImageType"></select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">Image Extension</label>
+            </td>
+            <td>
+                <div class="esg-form__group">
+                    <input class="esg-form__input" type="text" data-bind="value: PhotoSettings.imageExtension" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">Url Preview</label>
+
+            </td>
+            <td>
+                <div class="editor-field">
+                    <span data-bind="text: PhotoSettings.urlPreview"></span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td></td>
+        </tr>
+        <tr>
+    </table>
+    <table class="APISettingstable2">
+        <tr>
+            <td>
+                <label class="esg-form__label">Custom Headers</label>
+            </td>
+            <td>
+                <table data-bind="visible:PhotoSettings.customHeaders().length > 0" class="APISettingstable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Value</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: PhotoSettings.customHeaders">
+                        <tr>
+                            <td>
+                                <div class="esg-form__group">
+                                    <input class="esg-form__input" type="text" data-bind='value: Key' />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="esg-form__group">
+                                    <input class="esg-form__input" type="text" data-bind='value: Value' />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="esg-form__group">
+                                    <a href='#' data-bind='click: $root.PhotoSettings.removeCustomHeaders'>Remove</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href='#' data-bind='click: $root.PhotoSettings.addCustomHeader' style="text-align:center">Add</a>
+            </td>
+        </tr>
+    </table>
+</fieldset>

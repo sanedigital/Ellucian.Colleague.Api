@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Logging";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+</div>
+
+@* Field Set *@
+<div id="Loggingbody">
+    <section class="content-wrapper main-content clear-fix">
+        <fieldset>
+            <table class="APISettingstable">
+                <tr>
+                    <td>
+                            <label class="esg-form__label">Log Level</label>
+                    </td>
+                    <td>
+                        <div class="esg-form__group">
+                            <select data-bind="options: logLevels, optionsText: 'Text', value: logLevel"></select>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="esg-form__group base">
+                <input type="button" value="Save" data-bind="click: $root.saveLocalSettings.bind($data, false)" class="esg-button esg-button--primary" />
+                <input type="button" value="Cancel" data-bind='click: $root.cancelLocalSettings' class="esg-button esg-button--primary" />
+            </div>
+        </fieldset>
+    </section>
+</div>
+
+@section Scripts {
+    <script src="~/scripts/Admin.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        var jsonData = @Html.Raw(ViewBag.json);
+        $(document).ready(function () {
+            var viewModel = new admin.configuration.LocalSettingsViewModel(jsonData);
+            viewModel.cancelUrl = '@Url.Action("Index", "Admin")';
+            ko.applyBindings(viewModel);
+        });
+    </script>
+}

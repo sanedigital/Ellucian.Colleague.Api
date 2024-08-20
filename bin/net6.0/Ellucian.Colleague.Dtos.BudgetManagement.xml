@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ellucian.Colleague.Dtos.BudgetManagement</name>
+    </assembly>
+    <members>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.BudgetComparable">
+            <summary>
+            Contains the comparable information for a budget line item for a working budget.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetComparable.ComparableNumber">
+            <summary>
+            The budget comparable number.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetComparable.ComparableAmount">
+            <summary>
+            The comparable amount.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.BudgetConfiguration">
+            <summary>
+            Contains configuration information for Budget Development.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetConfiguration.BudgetId">
+            <summary>
+            The working budget ID.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetConfiguration.BudgetTitle">
+            <summary>
+            The working budget title.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetConfiguration.BudgetYear">
+            <summary>
+            The working budget year.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetConfiguration.BudgetStatus">
+            <summary>
+            The working budget status.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetConfiguration.BudgetConfigurationComparables">
+            <summary>
+            List of budget comparables used in budget generation.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.BudgetConfigurationComparable">
+            <summary>
+            Contains configuration information for each of comparables used in generating the budget.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetConfigurationComparable.SequenceNumber">
+            <summary>
+            The budget comparable order.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetConfigurationComparable.ComparableId">
+            <summary>
+            The budget comparable ID.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetConfigurationComparable.ComparableYear">
+            <summary>
+            The budget comparable year.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetConfigurationComparable.ComparableHeader">
+            <summary>
+            The budget comparable header.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.BudgetLineItem">
+            <summary>
+            Contains the budget line item information for a working budget.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetLineItem.BudgetAccountId">
+            <summary>
+            The budget line item GL account ID.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetLineItem.FormattedBudgetAccountId">
+            <summary>
+            The formatted budget line item GL account.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetLineItem.GlClass">
+            <summary>
+            The General Ledger class for the budget account.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetLineItem.BudgetAccountDescription">
+            <summary>
+            The budget line item GL account description.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetLineItem.BudgetOfficer">
+            <summary>
+            Information for the budget officer assigned to this budget account.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetLineItem.BudgetReportingUnit">
+            <summary>
+            Information for the budget reporting unit this budget account belongs to.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetLineItem.BaseBudgetAmount">
+            <summary>
+            Budget amount from the base budget.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetLineItem.WorkingAmount">
+            <summary>
+            Working budget amount.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetLineItem.JustificationNotes">
+            <summary>
+            Justification notes.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetLineItem.BudgetComparables">
+            <summary>
+            List of budget comparables containing comparable amounts.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.BudgetOfficer">
+            <summary>
+            Contains information for a budget officer.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetOfficer.BudgetOfficerId">
+            <summary>
+            The budget officer ID.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetOfficer.BudgetOfficerName">
+            <summary>
+            The budget officer name.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.BudgetReportingUnit">
+            <summary>
+            Contains information for a budget reporting unit.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetReportingUnit.ReportingUnitId">
+            <summary>
+            The reporting unit ID.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetReportingUnit.Description">
+            <summary>
+            The reporting unit description.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetReportingUnit.AuthorizationDate">
+            <summary>
+            The reporting unit authorization date.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.BudgetReportingUnit.HasAuthorizationDatePassed">
+            <summary>
+            Boolean indicator of whether the authorization date has passed.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.BudgetStatus">
+            <summary>
+            This enumeration contains all of the status values that are available for a budget.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.BudgetManagement.BudgetStatus.New">
+            <summary>
+            This is a new budget that has never been generated.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.BudgetManagement.BudgetStatus.Generated">
+            <summary>
+            This is a budget that was in the generation process but did not complete.
+            Some error happened and the generation process aborted before completion.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.BudgetManagement.BudgetStatus.Posted">
+            <summary>
+            This is a budget that has been posted to the General Ledger.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.BudgetManagement.BudgetStatus.Working">
+            <summary>
+            This is a budget that is in the development process. It may be generated
+            more times before it is posted.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.ComponentQueryCriteria">
+            <summary>
+            Component query filter criteria.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.ComponentQueryCriteria.ComponentName">
+            <summary>
+            Component name.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.ComponentQueryCriteria.IndividualComponentValues">
+            <summary>
+            A list of individual component filter values.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.ComponentQueryCriteria.RangeComponentValues">
+            <summary>
+            A list of component filter range objects.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.ComponentRangeQueryCriteria">
+            <summary>
+            Component range filter criteria.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.ComponentRangeQueryCriteria.StartValue">
+            <summary>
+            Component range start value.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.ComponentRangeQueryCriteria.EndValue">
+            <summary>
+            Component range end value.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.LineItem">
+            <summary>
+            Contains either a Budget line item or a subtotal but not both.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.LineItem.SequenceNumber">
+            <summary>
+            The sequence number for this line item within the working budget.
+            It goes from 1 to the number of returned items which will be the 
+            number of requested budget line items for the page plus, if the user
+            requested any subtotals, any number of subtotals to be displayed on the page. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.LineItem.BudgetLineItem">
+            <summary>
+            A budget line item for the working budget.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.LineItem.SubtotalLineItem">
+            <summary>
+            A subtotal line item for the working budget.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.SortSubtotalComponentQueryCriteria">
+            <summary>
+            Sort and Subtotal Component query filter criteria.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SortSubtotalComponentQueryCriteria.SubtotalName">
+            <summary>
+            The subtotal name.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SortSubtotalComponentQueryCriteria.SubtotalType">
+            <summary>
+            Contains BO for budget officer or a GL for an account component/subcomponent.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SortSubtotalComponentQueryCriteria.Order">
+            <summary>
+            Order of the Component.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SortSubtotalComponentQueryCriteria.IsDisplaySubTotal">
+            <summary>
+            Flag to determine whether subtotalling is also required/displayed for this sort component.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.SubtotalLineItem">
+            <summary>
+            Contains a subtotal line item information for a working budget.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SubtotalLineItem.SubtotalType">
+            <summary>
+            Contains BO for budget officer or a GL for an account component/subcomponent.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SubtotalLineItem.SubtotalOrder">
+            <summary>
+            The order of the subtotal.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SubtotalLineItem.SubtotalName">
+            <summary>
+            If a GL type subtotal, the name of the GL component or,
+            if a BO type "Budget Officer".
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SubtotalLineItem.SubtotalValue">
+            <summary>
+            The value of the GL component/subcomponent or the budget officer ID.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SubtotalLineItem.SubtotalDescription">
+            <summary>
+            If the subtotal type is BO, the name of the budget officer.
+            If the subtotal type is GL, the component or subcomponent description.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SubtotalLineItem.SubtotalBaseBudgetAmount">
+            <summary>
+            Base budget amount for the subtotal line item.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SubtotalLineItem.SubtotalWorkingAmount">
+            <summary>
+            Working amount for the subtotal line item.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.SubtotalLineItem.SubtotalBudgetComparables">
+            <summary>
+            List of subtotal budget comparables amounts for the subtotal line item.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudget">
+            <summary>
+            Contains the working budget information for a budget officer.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudget.BudgetLineItems">
+            <summary>
+            The working budget ID.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudget.TotalLineItems">
+            <summary>
+            Total number of budget line items for working budget.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudget2">
+            <summary>
+            Contains the working budget information for the user.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudget2.TotalLineItems">
+            <summary>
+            Total number of budget line items for working budget.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudget2.LineItems">
+            <summary>
+            List of line items for the working budget.
+            It contains as many budget line items as requested per page plus
+            as many subtotals are present in that page.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudgetQueryCriteria">
+            <summary>
+            Filter criteria for the working budget.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudgetQueryCriteria.Ids">
+            <summary>
+            List of IDs. Only 0 or 1 IDs will be accepted.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudgetQueryCriteria.StartLineItem">
+            <summary>
+            Start position of the line items to return.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudgetQueryCriteria.LineItemCount">
+            <summary>
+            Total number of budget line items in the working budget.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudgetQueryCriteria.BudgetOfficerIds">
+            <summary>
+            List of budget officer IDs to filter the results.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudgetQueryCriteria.BudgetReportingUnitIds">
+            <summary>
+            List of budget reporting unit IDs to filter the results.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudgetQueryCriteria.IncludeBudgetReportingUnitsChildren">
+            <summary>
+            Whether to also include any descendants for the selected reporting units.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudgetQueryCriteria.ComponentCriteria">
+            <summary>
+            A list of component filter criteria.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.BudgetManagement.WorkingBudgetQueryCriteria.SortSubtotalComponentQueryCriteria">
+            <summary>
+            A list of sort/subtotal component filter criteria.
+            </summary>
+        </member>
+    </members>
+</doc>

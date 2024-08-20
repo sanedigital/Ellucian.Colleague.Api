@@ -1,0 +1,459 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ellucian.Colleague.Dtos.ResidenceLife</name>
+    </assembly>
+    <members>
+        <member name="T:Ellucian.Colleague.Dtos.ResidenceLife.Deposit">
+            <summary>
+            A deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.Deposit.PayerId">
+            <summary>
+            Payer of the deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.Deposit.PayerName">
+            <summary>
+            Name of the payer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.Deposit.PersonId">
+            <summary>
+            ID of the deposit recipient
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.Deposit.Date">
+            <summary>
+            Date on which the deposit payment was made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.Deposit.PaymentMethod">
+            <summary>
+            Payment method for the deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.Deposit.Amount">
+            <summary>
+            Deposit amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.Deposit.DepositType">
+            <summary>
+            Type of deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.Deposit.TermId">
+            <summary>
+            Term of the deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.Deposit.ExternalIdentifier">
+            <summary>
+            External identifier
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.ResidenceLife.HousingAdditionalChargeOrCredit">
+            <summary>
+            An additional charge or credit against a housing assignment, in addition to the charge based 
+            on the room rate.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAdditionalChargeOrCredit.ArCode">
+            <summary>
+            The charge code of the additional charge or credit. Must be a valid AR code in the target system.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAdditionalChargeOrCredit.Description">
+            <summary>
+            A description of the additional charge or credit. 
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAdditionalChargeOrCredit.Amount">
+            <summary>
+            The amount of the charge or credit. A positive number is a charge. A negative number is a credit.
+            Required.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment">
+            <summary>
+            A housing assignment.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.Id">
+            <summary>
+            The unique identifier of the housing assignment in the target system. 
+            This must be blank or not supplied when creating a new housing assignment.
+            This or an External Id must be specified when updating an existing housing assignment.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.ExternalIds">
+            <summary>
+            One or more unique External Ids for the housing assignment.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.PersonId">
+            <summary>
+            The identifier in the target system of the person assigned to the housing.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.StartDate">
+            <summary>
+            The start date of the housing assignment.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.EndDate">
+            <summary>
+            The end date of the housing assignment.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.CurrentStatus">
+            <summary>
+            The current status of the housing assignment. Must be a valid housing assignment
+            status code in the target system.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.CurrentStatusDate">
+            <summary>
+            The effective date of the current status of the housing assignment.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.Building">
+            <summary>
+            The identifier in the target system of the building of the housing assignment.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.Room">
+            <summary>
+            The identifier in the target system of the room of the housing assignment.
+            If the identifier of the room in the target system is a combination of the building
+            and room identifiers, include only the room part of the identifier.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.TermId">
+            <summary>
+            The term id of the housing assignment. Must be a valid term id in the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.RoomRateTable">
+            <summary>
+            The room rate table of the housing assignment. Must be a valid room rate table code in
+            the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.RoomRatePeriod">
+            <summary>
+            The rate period of the room rate table. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.OverrideRate">
+            <summary>
+            An override rate that replaces the rate derived from the room rate table. The override rate is per
+            rate period. For instance if the rate period is weekly, the override rate will be
+            multiplied times the number of weeks. 
+            A room rate table must be specified if an override rate is specified.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.OverrideRateReason">
+            <summary>
+            A reason code for an override rate. Must be a valid override reason code in the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.OverrideChargeCode">
+            <summary>
+            An override AR code for the room assignment rate. Only used if billing is performed by the target system, in
+            which case it replaces the value that would otherwise be assigned by the target system.
+            Must be a valid AR code in the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.OverrideReceivableType">
+            <summary>
+            An override AR type code for the room assignment rate. Only used if billing is performed by the target system, in
+            which case it replaces the value that would otherwise be assigned by the target system.
+            Must be a valid AR type in the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.OverrideRefundFormula">
+            <summary>
+            An override refund formula code for the room assignment. Only used if billing is performed by the target system, in
+            which case it replaces the value that would otherwise be assigned by the target system.
+            Must be a valid refund formula code in the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.AdditionalChargesOrCredits">
+            <summary>
+            A list of additional charges against the housing assignment.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.Contract">
+            <summary>
+            A unique contract number associated with the housing assignment.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.Comments">
+            <summary>
+            Comments about the housing assignment.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.ResidentStaffIndicator">
+            <summary>
+            A code that identifies the type of staff member the room resident is, if applicable. Must be a valid resident
+            staff indicator code in the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.HousingAssignment.AddressBoxNumber">
+            <summary>
+            The box number of the address associated with this housing assignment. 
+            Passing this attribute as null or blank will not produce a blank box number in Colleague. The removeBoxNumber query parameter must passed 
+            as true to erase an existing box number, or to create a new housing assignment with no box number.
+            Colleague may be configured to automatically assign a box number when a housing assignment is created or updated. When this 
+            argument is passed as null or blank and removeBoxNumber is not true, Colleague will automatically assign a box number as configured.
+            If Colleague does not automatically assign a box number, any existing box number will remain on the address when this argument is passed 
+            as null or blank and removeBoxNumber is not true.
+            When a box number is supplied in this attribute, it supersedes any box number that Colleague would automatically create.
+            This attribute can only be supplied when Colleague is configured to maintain addresses with housing assignments.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment">
+            <summary>
+            A meal plan assignment.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.Id">
+            <summary>
+            The unique identifier of the meal plan assignment in the target system. 
+            This must be blank or not supplied when creating a new meal plan assignment.
+            This or an External Id must be specified when updating an existing meal plan assignment.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.ExternalIds">
+            <summary>
+            One or more unique External Ids for the meal plan assignment.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.PersonId">
+            <summary>
+            The identifier in the target system of the person assigned to the meal plan.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.MealPlanId">
+            <summary>
+            The identifier in the target system of the meal plan to which the person is assigned.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.NumberOfRatePeriods">
+            <summary>
+            Number of Rate Periods of the meal plan assignment. The particular rate period, Term, Weekly, etc., is specified
+            in the Meal Plan in the target system specified by the MealPlanId property.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.StartDate">
+            <summary>
+            The start date of the meal plan assignment.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.EndDate">
+            <summary>
+            The end date of the meal plan assignment.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.CurrentStatusCode">
+            <summary>
+            The current status of the meal plan assignment. Must be a valid meal plan assignment
+            status code in the target system.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.CurrentStatusDate">
+            <summary>
+            The effective date of the current status of the meal plan assignment.
+            Required.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.TermId">
+            <summary>
+            The term id of the meal plan assignment. Must be a valid term id in the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.UsedRatePeriods">
+            <summary>
+            Number of Rate Periods Used of the meal plan assignment. If billing is performed by the target system, this
+            optional value is only applied when the Current Status Code represents an early termination status. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.UsedPercent">
+            <summary>
+            Percentage of the meal plan used. If billing is performed by the target system, this
+            optional value is only applied when the Current Status Code represents an early termination status. 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.CardNumber">
+            <summary>
+            The card number associated with the meal plan assignment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.OverrideRate">
+            <summary>
+            An override rate that replaces the rate specified with the Meal Plan in the target system. The override rate is per units used.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.OverrideRateReason">
+            <summary>
+            A reason code for an override rate.  Must be a valid override reason code in the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.OverrideChargeCode">
+            <summary>
+            An override AR code for the meal plan assignment charge. Only used if billing is performed by the target system, in
+            which case it replaces the value that would otherwise be assigned by the target system.
+            Must be a valid AR code in the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.OverrideReceivableType">
+            <summary>
+            An override AR type code for the meal plan assignment charge. Only used if billing is performed by the target system, in
+            which case it replaces the value that would otherwise be assigned by the target system.
+            Must be a valid AR type code in the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.OverrideRefundFormula">
+            <summary>
+            An override refund formula code for the meal plan assignment. Only used if billing is performed by the target system, in
+            which case it replaces the value that would otherwise be assigned by the target system.
+            Must be a valid refund formula code in the target system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.MealPlanAssignment.Comments">
+            <summary>
+            Comments about the meal plan assignment.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableCharge">
+            <summary>
+            A charge against a receivable account
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableCharge.Code">
+            <summary>
+            Charge code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableCharge.Description">
+            <summary>
+            Charge description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableCharge.BaseAmount">
+            <summary>
+            Base amount of charge (pre-tax amount)
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableInvoice">
+            <summary>
+            A receivable invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableInvoice.DueDate">
+            <summary>
+            Invoice due date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableInvoice.Description">
+            <summary>
+            Invoice description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableInvoice.Charges">
+            <summary>
+            List of charges on this invoice
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableTransaction">
+            <summary>
+            A generic receivables transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableTransaction.ExternalIdentifier">
+            <summary>
+            The identifier of the transaction in the external system
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableTransaction.PersonId">
+            <summary>
+            ID of the person for whom the transaction was made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableTransaction.TermId">
+            <summary>
+            ID of the term for which the transaction was made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableTransaction.Date">
+            <summary>
+            Date the transaction was made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ReceivableTransaction.Location">
+            <summary>
+            ID of the location the transaction was made
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.ResidenceLife.ResidenceLifeExternalId">
+            <summary>
+            An ID/Source pair that comprise a unique external ID for a residence life entity
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ResidenceLifeExternalId.ExternalId">
+            <summary>
+            The unique identifier of the entity in the external system.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.ResidenceLife.ResidenceLifeExternalId.ExternalIdSource">
+            <summary>
+            The source of ExternalId. Must be a valid source code in the target system.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.ResidenceLife.RoomRatePeriods">
+            <summary>
+            Room rate periods for a housing assignment.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.ResidenceLife.RoomRatePeriods.Daily">
+            <summary>
+            Rate applied per day
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.ResidenceLife.RoomRatePeriods.Weekly">
+            <summary>
+            Rate applied per week
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.ResidenceLife.RoomRatePeriods.Monthly">
+            <summary>
+            Rate applied per month
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.ResidenceLife.RoomRatePeriods.Yearly">
+            <summary>
+            Rate applied per year
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.ResidenceLife.RoomRatePeriods.Term">
+            <summary>
+            Rate applied per term
+            </summary>
+        </member>
+    </members>
+</doc>

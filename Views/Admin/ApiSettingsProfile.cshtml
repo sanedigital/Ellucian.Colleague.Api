@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "API Settings Profile";
+}
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+    <a href="@Url.Action("ApiSettings", "Admin")" class="esg-page-header__subtitle esg-page-header__subtitle--backlink">
+        <span class="esg-icon__container esg-page-header__icon" aria-hidden="true">
+            <svg class="esg-icon esg-icon--left">
+                <use xlink:href="#icon-arrow"></use>
+            </svg>
+        </span>Back to API Settings
+    </a>
+</div>
+
+@* Validation Summary *@
+@if (!string.IsNullOrEmpty(ViewBag.error))
+{
+    <div class="column-nine">
+        <div class=" esg-alert esg-alert--fluid esg-alert--error" role="alert">
+            <span class="esg-alert__icon-wrapper">
+                <span class="esg-alert__icon esg-icon__container" aria-hidden="True">
+                    <svg class="esg-icon esg-icon--error-dark">
+                        <use xlink:href="#icon-error"></use>
+                    </svg>
+                </span>
+            </span>
+            <div class="esg-alert__message error-message-format" style="text-align:left;">@ViewBag.error</div>
+        </div><br />
+    </div>
+}
+    @*Field Set *@
+    <div id="ApiSettingsProfilebody">
+        <section class="content-wrapper main-content clear-fix">
+            <fieldset>
+                <table class="APISettingstable">
+                    <tr>
+                        <td>
+                            <label class="esg-form__label">Current Profile</label>
+                        </td>
+                        <td>
+                            <div class="esg-form__group">
+                                <span data-bind="text: currentProfileName"></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editor-label">
+                                <label class="esg-form__label">Change Profile To</label>
+                            </div>
+                        </td>
+                        <td>
+                            <select class="esg-form__input"
+                                    data-bind="options: existingProfileNames, optionsText: 'Text', value: selectedExistingProfileName"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="esg-form__label">-------- Or --------</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="esg-form__label">Create a New Profile</label>
+                        </td>
+                        <td>
+                            <div class="esg-form__group">
+                                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': !newProfileName.isValid()}">
+                                    <input class="esg-form__input" type="text" data-bind="value: newProfileName" />
+                                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: !newProfileName.isValid()">
+                                        <svg class="esg-icon esg-icon--error">
+                                            <use xlink:href="#icon-error"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <p class="base">
+                    <input type="button" value="Save" data-bind='click: $root.saveApiSettingsProfile' class="esg-button esg-button--primary" />
+                    <input type="button" value="Cancel" data-bind='click: $root.cancelApiSettingsProfile' class="esg-button esg-button--primary" />
+                </p>
+            </fieldset><br />
+        </section>
+    </div>
+
+    @section Scripts {
+    <script src="~/scripts/Admin.js" asp-append-version="true"></script>
+        <script type="text/javascript">
+            var jsonData = @Html.Raw(ViewBag.json);
+            $(document).ready(function () {
+                var viewModel = new admin.configuration.ApiSettingsProfileViewModel(jsonData);
+                viewModel.cancelUrl = '@Url.Action("Index", "Admin")';
+                ko.applyBindings(viewModel);
+            });
+        </script>
+    }

@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/21/2023 03:09:06" ReportInfo.Modified="04/04/2024 14:57:30" ReportInfo.CreatorVersion="2023.1.12.0">
+  <Dictionary>
+    <TableDataSource Name="OfficeAddresses" ReferenceName="Data.OfficeAddresses" DataType="System.Int32" Enabled="true">
+      <Column Name="AddressLine" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="StudentAddresses" ReferenceName="Data.StudentAddresses" DataType="System.Int32" Enabled="true">
+      <Column Name="AddressLine" DataType="System.String"/>
+      <Column Name="Label" DataType="System.String"/>
+      <Column Name="StuInfo" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="DirectCosts" ReferenceName="Data.DirectCosts" DataType="System.Int32" Enabled="true">
+      <Column Name="DirectDescription" DataType="System.String"/>
+      <Column Name="DirectAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="IndirectCosts" ReferenceName="Data.IndirectCosts" DataType="System.Int32" Enabled="true">
+      <Column Name="IndirectDescription" DataType="System.String"/>
+      <Column Name="IndirectAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="HousingStatuses" ReferenceName="Data.HousingStatuses" DataType="System.Int32" Enabled="true">
+      <Column Name="TermName" DataType="System.String"/>
+      <Column Name="HousingStatus" DataType="System.String"/>
+      <Column Name="EnrollmentStatus" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="GroupOneAwards" ReferenceName="Data.GroupOneAwards" DataType="System.Int32" Enabled="true">
+      <Column Name="AwardName" DataType="System.String"/>
+      <Column Name="AwpdOneAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdTwoAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdThreeAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdFourAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdFiveAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdSixAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdSevenAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="GroupTwoAwards" ReferenceName="Data.GroupTwoAwards" DataType="System.Int32" Enabled="true">
+      <Column Name="AwardName" DataType="System.String"/>
+      <Column Name="AwpdOneAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdTwoAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdThreeAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdFourAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdFiveAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdSixAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdSevenAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="GroupThreeAwards" ReferenceName="Data.GroupThreeAwards" DataType="System.Int32" Enabled="true">
+      <Column Name="AwardName" DataType="System.String"/>
+      <Column Name="AwpdOneAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdTwoAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdThreeAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdFourAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdFiveAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdSixAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdSevenAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="GroupFourAwards" ReferenceName="Data.GroupFourAwards" DataType="System.Int32" Enabled="true">
+      <Column Name="AwardName" DataType="System.String"/>
+      <Column Name="AwpdOneAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdTwoAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdThreeAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdFourAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdFiveAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdSixAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="GroupFiveAwards" ReferenceName="Data.GroupFiveAwards" DataType="System.Int32" Enabled="true">
+      <Column Name="AwardName" DataType="System.String"/>
+      <Column Name="AwpdOneAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdTwoAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdThreeAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdFourAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdFiveAmount" DataType="System.Decimal"/>
+      <Column Name="AwpdSixAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="RenewableAwards" ReferenceName="Data.RenewableAwards" DataType="System.Int32" Enabled="true">
+      <Column Name="AwardDescription" DataType="System.String"/>
+      <Column Name="RenewableText" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="ReportLogo" ReferenceName="Data.ReportLogo" DataType="System.Int32" Enabled="true">
+      <Column Name="ImageLocation" DataType="System.Byte[]" BindableControl="Picture"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <DataBand Name="LogoBand" Width="718.2" Height="5.67" DataSource="ReportLogo">
+      <PictureObject Name="Logo" Width="226.8" Height="28.35" CanGrow="true" CanShrink="true" PrintOn="FirstPage" DataColumn="ReportLogo.ImageLocation" ShowErrorImage="true"/>
+    </DataBand>
+    <DataBand Name="OfficeHeaderBand" Top="8.87" Width="718.2" Height="18.9" DataSource="OfficeAddresses">
+      <TextObject Name="AddrLine" Left="245.7" Width="226.8" Height="18.9" Text="[OfficeAddresses.AddressLine]" HorzAlign="Center" Font="Arial, 10pt"/>
+    </DataBand>
+    <DataBand Name="LineBreakBand" Top="30.97" Width="718.2" Height="18.9"/>
+    <DataBand Name="StudentInfoBand" Top="53.07" Width="718.2" Height="18.9" CanGrow="true" DataSource="StudentAddresses">
+      <TextObject Name="StuAddressLines" Width="245.7" Height="18.9" CanGrow="true" Text="[StudentAddresses.AddressLine]" Font="Arial, 10pt"/>
+      <TextObject Name="StuAddressInfo" Left="538.65" Width="179.55" Height="18.9" CanGrow="true" Text="[StudentAddresses.StuInfo]" Font="Arial, 10pt"/>
+      <TextObject Name="StuAddressLabels" Left="444.15" Width="94.5" Height="18.9" CanGrow="true" Text="[StudentAddresses.Label]" Font="Arial, 10pt, style=Bold"/>
+    </DataBand>
+    <DataBand Name="GreetingOpeningBand" Top="75.17" Width="718.2" Height="75.6" CanGrow="true">
+      <TextObject Name="Greeting" Top="28.35" Width="255.15" Height="18.9" Text="[Greeting]" Font="Arial, 10pt"/>
+      <TextObject Name="OpeningParagraph" Top="56.7" Width="718.2" Height="18.9" CanGrow="true" Text="[OpeningParagraph]" Font="Arial, 10pt" TextRenderType="HtmlParagraph"/>
+    </DataBand>
+    <DataBand Name="BudgetEfcNeedBand" Top="153.97" Width="718.2" Height="47.25" VisibleExpression="[IIf([IsBudgetBandActive],true,false)]">
+      <TextObject Name="EFCAmount" Left="245.7" Top="18.9" Width="94.5" Height="18.9" Text="[IIf([IsEFCActive],[EFCAmount],&quot;&quot;)]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="0" Font="Arial, 10pt"/>
+      <TextObject Name="BudgetLabel" Left="18.9" Top="18.9" Width="94.5" Height="18.9" Text="[IIf([IsBudgetActive],[BudgetLabel],&quot;&quot;)]&#13;&#10;&#13;&#10;" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="EFCLabel" Left="207.9" Top="18.9" Width="94.5" Height="18.9" Text="[IIf([IsEFCActive],[EFCLabel],&quot;&quot;)]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="NeedLabel" Left="378" Top="18.9" Width="94.5" Height="18.9" Text="[IIf([IsNeedActive],[NeedLabel],&quot;&quot;)]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="BudgetAmount" Left="75.6" Top="18.9" Width="94.5" Height="18.9" Text="[IIf([IsBudgetActive],[BudgetAmount],&quot;&quot;)]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="0" Font="Arial, 10pt"/>
+      <TextObject Name="NeedAmount" Left="425.25" Top="18.9" Width="94.5" Height="18.9" Text="[IIf([IsNeedActive],[NeedAmount],&quot;&quot;)]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="0" Font="Arial, 10pt"/>
+      <TextObject Name="Text6" Left="557.55" Top="18.9" Width="94.5" Height="18.9" Text="[IIf([IsHousingActive],[HousingLabel],&quot;&quot;)]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text7" Left="623.7" Top="18.9" Width="94.5" Height="18.9" Text="[IIf([IsHousingActive],[HousingValue],&quot;&quot;)]" Font="Arial, 10pt"/>
+    </DataBand>
+    <DataBand Name="AwardsTableHeaderBand" Top="204.42" Width="718.2" Height="22.68" Fill.Color="LightGray" CanGrow="true">
+      <TextObject Name="AwardsTableLabel" Width="151.2" Height="18.9" CanGrow="true" Text="[AwardsLabel]" Padding="2, 2, 2, 0" Font="Arial, 11pt, style=Bold"/>
+      <TextObject Name="AwardsCol2Header" Left="264.6" Width="75.6" Height="18.9" CanGrow="true" Text="[AwpdTwoLabel]" Padding="2, 2, 2, 0" RightToLeft="true" Font="Arial, 11pt, style=Bold"/>
+      <TextObject Name="AwardsCol3Header" Left="340.2" Width="75.6" Height="18.9" CanGrow="true" Text="[AwpdThreeLabel]" Padding="2, 2, 2, 0" RightToLeft="true" Font="Arial, 11pt, style=Bold"/>
+      <TextObject Name="AwardsCol4Header" Left="415.8" Width="75.6" Height="18.9" CanGrow="true" Text="[AwpdFourLabel]" Padding="2, 2, 2, 0" RightToLeft="true" Font="Arial, 11pt, style=Bold"/>
+      <TextObject Name="AwardsCol5Header" Left="491.4" Width="75.6" Height="18.9" CanGrow="true" Text="[AwpdFiveLabel]" Padding="2, 2, 2, 0" RightToLeft="true" Font="Arial, 11pt, style=Bold"/>
+      <TextObject Name="AwardsCol6Header" Left="567" Width="75.6" Height="18.9" CanGrow="true" Text="[AwpdSixLabel]" Padding="2, 2, 2, 0" RightToLeft="true" Font="Arial, 11pt, style=Bold"/>
+      <TextObject Name="AwardsCol1Header" Left="189" Width="75.6" Height="18.9" CanGrow="true" Text="[AwpdOneLabel]" Padding="2, 2, 2, 0" RightToLeft="true" Font="Arial, 11pt, style=Bold"/>
+      <TextObject Name="Text1" Left="642.6" Width="75.6" Height="18.9" CanGrow="true" Text="[AwpdSevenLabel]" Padding="2, 2, 2, 0" RightToLeft="true" Font="Arial, 11pt, style=Bold"/>
+    </DataBand>
+    <DataBand Name="GroupOneBand" Top="256.18" Width="718.2" Height="22.68" VisibleExpression="IIf(Length([GroupOneLabel]) &gt; 0, true, false)" CanGrow="true" DataSource="GroupOneAwards">
+      <TextObject Name="GroupOneAwardDesc" Width="151.2" Height="18.9" CanGrow="true" Text="[GroupOneAwards.AwardName]" Padding="2, 2, 2, 0" Font="Arial, 10pt"/>
+      <TextObject Name="GroupOneColOne" Left="189" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupOneAwards.AwpdOneAmount] &gt;= 0, true,false)" Text="[GroupOneAwards.AwpdOneAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupOneColTwo" Left="264.6" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupOneAwards.AwpdTwoAmount] &gt;= 0, true,false)" Text="[GroupOneAwards.AwpdTwoAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupOneColThree" Left="340.2" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupOneAwards.AwpdThreeAmount] &gt;= 0, true,false)" Text="[GroupOneAwards.AwpdThreeAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupOneColFour" Left="415.8" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupOneAwards.AwpdFourAmount] &gt;= 0, true,false)" Text="[GroupOneAwards.AwpdFourAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupOneColFive" Left="491.4" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupOneAwards.AwpdFiveAmount] &gt;= 0, true,false)" Text="[GroupOneAwards.AwpdFiveAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupOneColSix" Left="567" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupOneAwards.AwpdSixAmount] &gt;= 0, true,false)" Text="[GroupOneAwards.AwpdSixAmount]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10.25pt"/>
+      <TextObject Name="Text2" Left="642.6" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupOneAwards.AwpdSevenAmount] &gt;= 0, true,false)" Text="[GroupOneAwards.AwpdSevenAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10.25pt"/>
+      <DataHeaderBand Name="GroupOneHeader" Top="230.3" Width="718.2" Height="22.68" VisibleExpression="IIf(Length([GroupOneLabel]) &gt; 0, true, false)" Fill.Color="DimGray" CanGrow="true">
+        <TextObject Name="GroupOneLabel" Width="604.8" Height="18.9" CanGrow="true" Text="[GroupOneLabel]" Padding="2, 2, 2, 0" Font="Arial, 11pt" TextFill.Color="WhiteSmoke"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="GroupTwoBand" Top="307.94" Width="718.2" Height="22.68" VisibleExpression="IIf(Length([GroupTwoLabel]) &gt; 0, true, false)" CanGrow="true" DataSource="GroupTwoAwards">
+      <TextObject Name="GroupTwoAwardDesc" Width="151.2" Height="18.9" CanGrow="true" Text="[GroupTwoAwards.AwardName]" Font="Arial, 10pt"/>
+      <TextObject Name="GroupTwoColOne" Left="189" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupTwoAwards.AwpdOneAmount] &gt;= 0, true,false)" Text="[GroupTwoAwards.AwpdOneAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupTwoColTwo" Left="264.6" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupTwoAwards.AwpdTwoAmount] &gt;= 0, true,false)" Text="[GroupTwoAwards.AwpdTwoAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupTwoColThree" Left="340.2" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupTwoAwards.AwpdThreeAmount] &gt;= 0, true,false)" Text="[GroupTwoAwards.AwpdThreeAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupTwoColFour" Left="415.8" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupTwoAwards.AwpdFourAmount] &gt;= 0, true,false)" Text="[GroupTwoAwards.AwpdFourAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupTwoColFive" Left="491.4" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupTwoAwards.AwpdFiveAmount] &gt;= 0, true,false)" Text="[GroupTwoAwards.AwpdFiveAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupTwoColSix" Left="567" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupTwoAwards.AwpdSixAmount] &gt;= 0, true,false)" Text="[GroupTwoAwards.AwpdSixAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="Text3" Left="642.6" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupTwoAwards.AwpdSevenAmount] &gt;= 0, true,false)" Text="[GroupTwoAwards.AwpdSevenAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <DataHeaderBand Name="GroupTwoHeader" Top="282.06" Width="718.2" Height="22.68" VisibleExpression="IIf(Length([GroupTwoLabel]) &gt; 0, true, false)" Fill.Color="DimGray" CanGrow="true">
+        <TextObject Name="GroupTwoLabel" Width="604.8" Height="18.9" CanGrow="true" Text="[GroupTwoLabel]" Padding="2, 2, 2, 0" Font="Arial, 11pt" TextFill.Color="WhiteSmoke"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="GroupThreeBand" Top="359.7" Width="718.2" Height="22.68" VisibleExpression="IIf(Length([GroupThreeLabel]) &gt; 0, true, false)" CanGrow="true" DataSource="GroupThreeAwards">
+      <TextObject Name="GroupThreeAwardDesc" Width="151.2" Height="18.9" CanGrow="true" Text="[GroupThreeAwards.AwardName]" Font="Arial, 10pt"/>
+      <TextObject Name="GroupThreeColOne" Left="189" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupThreeAwards.AwpdOneAmount] &gt;= 0, true,false)" Text="[GroupThreeAwards.AwpdOneAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupThreeColTwo" Left="264.6" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupThreeAwards.AwpdTwoAmount] &gt;= 0, true,false)" Text="[GroupThreeAwards.AwpdTwoAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupThreeColThree" Left="340.2" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupThreeAwards.AwpdThreeAmount] &gt;= 0, true,false)" Text="[GroupThreeAwards.AwpdThreeAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupThreeColFour" Left="415.8" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupThreeAwards.AwpdFourAmount] &gt;= 0, true,false)" Text="[GroupThreeAwards.AwpdFourAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupThreeColFive" Left="491.4" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupThreeAwards.AwpdFiveAmount] &gt;= 0, true,false)" Text="[GroupThreeAwards.AwpdFiveAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="GroupThreeColSix" Left="567" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupThreeAwards.AwpdSixAmount] &gt;= 0, true,false)" Text="[GroupThreeAwards.AwpdSixAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="Text4" Left="642.6" Width="75.6" Height="18.9" VisibleExpression="IIf([GroupThreeAwards.AwpdSevenAmount] &gt;= 0, true,false)" Text="[GroupThreeAwards.AwpdSevenAmount]" Padding="2, 2, 2, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <DataHeaderBand Name="GroupThreeHeader" Top="333.82" Width="718.2" Height="22.68" VisibleExpression="IIf(Length([GroupThreeLabel]) &gt; 0, true, false)" Fill.Color="DimGray" CanGrow="true">
+        <TextObject Name="GroupThreeLabel" Width="614.25" Height="18.9" CanGrow="true" Text="[GroupThreeLabel]" Padding="2, 2, 2, 0" Font="Arial, 11pt" TextFill.Color="WhiteSmoke"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="AwardsTotalsBar" Top="385.58" Width="718.2" Height="47.25" CanGrow="true">
+      <TextObject Name="AwardsTotalDarkBar" Width="718.2" Height="22.68" Fill.Color="DimGray" Font="Arial, 10pt"/>
+      <TextObject Name="AwardsTotalLabel" Top="28.35" Width="94.5" Height="18.9" Text="[AwardsTotalLabel]" Font="Arial, 10pt"/>
+      <TextObject Name="AwardsTotalColOne" Left="189" Top="28.35" Width="75.6" Height="18.9" VisibleExpression="IIf([AwpdColumnOneTotal] &gt;= 0, true, false)" Text="[AwpdColumnOneTotal]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="AwardsTotalColTwo" Left="264.6" Top="28.35" Width="75.6" Height="18.9" VisibleExpression="IIf([AwpdColumnTwoTotal] &gt;= 0, true, false)" Text="[AwpdColumnTwoTotal]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="AwardsTotalColThree" Left="340.2" Top="28.35" Width="75.6" Height="18.9" VisibleExpression="IIf([AwpdColumnThreeTotal] &gt;= 0, true, false)" Text="[AwpdColumnThreeTotal]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="AwardsTotalColFour" Left="415.8" Top="28.35" Width="75.6" Height="18.9" VisibleExpression="IIf([AwpdColumnFourTotal] &gt;= 0, true, false)" Text="[AwpdColumnFourTotal]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="AwardsTotalColFive" Left="491.4" Top="28.35" Width="75.6" Height="18.9" VisibleExpression="IIf([AwpdColumnFiveTotal] &gt;= 0, true, false)" Text="[AwpdColumnFiveTotal]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="AwardsTotalColSix" Left="567" Top="28.35" Width="75.6" Height="18.9" VisibleExpression="IIf([AwpdColumnSixTotal] &gt;= 0, true, false)" Text="[AwpdColumnSixTotal]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="Text5" Left="642.6" Top="28.35" Width="75.6" Height="18.9" VisibleExpression="IIf([AwpdColumnSevenTotal] &gt;= 0, true, false)" Text="[AwpdColumnSevenTotal]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+    </DataBand>
+    <DataBand Name="NetPriceBand" Top="436.03" Width="718.2" Height="41.58" VisibleExpression="[IIf([IsNetPriceActive],true,false)]" Fill.Color="White">
+      <TextObject Name="Text8" Top="9.45" Width="718.2" Height="32.13" Fill.Color="LightGray" Font="Arial, 10pt"/>
+      <TextObject Name="NetPriceLabel" Top="9.45" Width="113.4" Height="22.68" Text="[NetPriceLabel]" Font="Arial, 10pt"/>
+      <TextObject Name="NetPriceAmount" Left="576.45" Top="9.45" Width="141.75" Height="22.68" Text="[NetPriceAmount]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" RightToLeft="true" Font="Arial, 10pt"/>
+      <TextObject Name="NetPriceExplanation" Top="22.68" Width="548.1" Height="18.9" Text="[NetPriceExplanation]" Padding="2, 4, 2, 0" Font="Arial, 9pt"/>
+    </DataBand>
+    <DataBand Name="ClosingTextBand" Top="480.81" Width="718.2" Height="56.7" VisibleExpression="IIf(Length([ClosingText]) &gt; 0, true, false)" CanGrow="true">
+      <TextObject Name="ClosingText" Top="18.9" Width="718.2" Height="18.9" CanGrow="true" Text="[ClosingText]" Font="Arial, 10pt" TextRenderType="HtmlParagraph"/>
+    </DataBand>
+  </ReportPage>
+</Report>

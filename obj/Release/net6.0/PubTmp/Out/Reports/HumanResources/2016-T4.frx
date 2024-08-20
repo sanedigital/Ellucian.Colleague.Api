@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="04/05/2023 16:47:41" ReportInfo.Modified="04/28/2023 11:06:55" ReportInfo.CreatorVersion="2023.1.12.0">
+  <Dictionary>
+    <Parameter Name="SocialInsuranceNumber" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmploymentIncome" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeesCPPContributions" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeesQPPContributions" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeesEIPremiums" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="RPPContributions" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="IncomeTaxDeducted" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EIInsurableEarnings" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="CPPQPPPensionableEarnings" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="UnionDues" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="CharitableDonations" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="RPPorDPSPRegistrationNumber" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="PensionAdjustment" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeesPPIPPremiums" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="PPIPInsurableEarnings" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox1Code" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox2Code" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox3Code" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox4Code" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox5Code" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox6Code" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox1Amount" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox2Amount" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox3Amount" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox4Amount" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox5Amount" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OtherBox6Amount" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeFirstName" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeMiddleName" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeLastName" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeAddressLine1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeAddressLine2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeAddressLine3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeAddressLine4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ProvinceOfEmployment" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ExemptCPPQPP" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ExemptEI" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ExemptPPIP" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerAddressLine1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerAddressLine2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerAddressLine3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerAddressLine4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerAddressLine5" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmploymentCode" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Amended" DataType="System.String" AsString="" Description="ReportParameter1"/>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" RawPaperSize="1" LeftMargin="10.01" TopMargin="10.01" RightMargin="10.01" BottomMargin="10.01" FirstPageSource="15" OtherPagesSource="15" LastPageSource="15" Guides="746.55,700.8,700.8,700.8,700.8,739.2,700.8,700.8,700.8,700.8,700.8,739.2" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data1" Top="20" Width="740.43" Height="976.32" Guides="566.4">
+      <ContainerObject Name="Container1" Left="1" Top="1" Width="736.32" Height="489.6" Border.Lines="Bottom" Border.Style="Dash" Border.Width="2">
+        <TextObject Name="Text23" Left="594.88" Top="307.2" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text52" Left="40.4" Top="233" Width="336.96" Height="22.08" Border.Lines="All" Border.Width="2" Font="Arial, 7pt, style=Bold"/>
+        <TextObject Name="Text44" Left="291.6" Top="153.6" Width="19.2" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text45" Left="235" Top="153.6" Width="19.2" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Textbox88" Left="235.56" Top="157.89" Width="12" Height="13.5" Text="[ExemptCPPQPP]" Font="Courier New, 8pt"/>
+        <ShapeObject Name="Shape40" Left="476.28" Top="446.6" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape39" Left="476.28" Top="399.6" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape38" Left="263.68" Top="446.6" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape37" Left="263.68" Top="399.6" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape23" Left="688.96" Top="446.6" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <TextObject Name="Text62" Left="581.44" Top="446.6" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text49" Left="22" Top="384" Width="713.28" Height="92.16" Border.Lines="All" Border.Width="2" Font="Arial, 7pt, style=Bold"/>
+        <TextObject Name="Text61" Left="581.44" Top="399.6" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <ShapeObject Name="Shape15" Left="688.96" Top="399.6" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape14" Left="688.96" Top="353.2" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape12" Left="688.96" Top="259.2" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape11" Left="688.96" Top="212.84" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape10" Left="688.96" Top="166.8" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape9" Left="688.96" Top="118.2" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <TextObject Name="Text13" Left="580.8" Top="71.2" Width="150.72" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <ShapeObject Name="Shape8" Left="689.28" Top="71.2" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape7" Left="516.4" Top="353.2" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape6" Left="516.4" Top="307.2" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape5" Left="516.4" Top="259.2" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape4" Left="516.4" Top="212.84" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape3" Left="516.4" Top="166.8" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <ShapeObject Name="Shape2" Left="516.4" Top="118.2" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <TextObject Name="Text256" Left="389.6" Top="71.2" Width="168" Height="24.96" Border.Lines="All" Font="Arial, 10pt"/>
+        <ShapeObject Name="Shape1" Left="516.4" Top="71.2" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+        <TextObject Name="Textbox17" Left="459.35" Top="79.39" Width="79.68" Height="13.5" Anchor="Top, Right" CanBreak="false" Text="[EmploymentIncome]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Text48" Left="22" Top="201.6" Width="372.48" Height="174.72" Border.Lines="All" Border.Width="2" Text="Employee's name and address – Nom et adresse de l'employé" Padding="7, 1, 0, 0" Font="Arial, 7pt, style=Bold"/>
+        <TextObject Name="Text1" Left="22" Top="3.6" Width="275.52" Height="91.2" Border.Lines="All" Text="Employer's name – Nom de l'employeur" Padding="7, 0, 0, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Textbox1" Left="22.11" Top="19.14" Width="280" Height="13.5" Text="[EmployerAddressLine1]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox10" Left="27.11" Top="300.64" Width="370.9" Height="13.5" Text="[EmployeeAddressLine3]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox2" Left="22.11" Top="33.23" Width="280" Height="13.5" Text="[EmployerAddressLine2]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox3" Left="22.11" Top="50.13" Width="280" Height="13.5" Text="[EmployerAddressLine3]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox4" Left="22.11" Top="64.23" Width="280" Height="13.5" Text="[EmployerAddressLine4]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox5" Left="22.11" Top="80.13" Width="280" Height="13.5" Text="[EmployerAddressLine5]" Font="Courier New, 8pt"/>
+        <TextObject Name="Text2" Left="40.24" Top="99" Width="257.28" Height="30.72" Border.Lines="All" Fill.Color="Gainsboro" Text="Employer's account number / Numéro de compte de l'employeur" Font="Arial, 6pt"/>
+        <TextObject Name="Text3" Left="22" Top="99" Width="18.24" Height="18.24" Border.Lines="All" Text="54" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text4" Left="302.2" Top="20.2" Width="38.4" Height="24" Text="Year&#13;&#10;Année" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+        <TextObject Name="Text5" Left="347.2" Width="72" Height="19.2" Text="Canada Revenue&#13;&#10;Agency" Padding="1, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+        <PictureObject Name="Picture2" Left="307.2" Width="28.8" Height="19.2" ImageFormat="Png" Image="iVBORw0KGgoAAAANSUhEUgAAADsAAAAeCAYAAACSRGY2AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAScQAAEnEB89x6jgAAAUBJREFUWEftkwEOgzAMA/kkn+STbEaylFUG3FAKaFg6TYOkza3dMH8zjmOK3lEzOEzTtPQvssMwpOgdNYMDhJf+I4tkwl85EzWDw2Wy8VrVRs3gcJks+rh5bcr9XbrJ4hR5kvhkbxR2TzvuXUNXWdVb4kT1OXSTRVRvJJ7yVlSvwytby1bifxCbqX7yOFnIRUG85yZ7suxjHRPXQ8o+l+ayWFBJ4RmGLp9H1t5zSEbVODSXxcB7UrXc9mTPkC2jahyay2JBoOqycEhG1Tg84mRve42ZVsKlKKLqHE6TRY5e5/L6MqrW4VRZJHvCa6KIqnc4XRapFVZXN0b1ONxSdutUEdXj0EUWmwBI89T4HeFzwNqtqBkcuO4r65JJlK2NmsHhla0lk1fWjJrB4TLZrCiiZnC4TPZI1AwOP7L/kXn+AHToIrFhIeSAAAAAAElFTkSuQmCC"/>
+        <TextObject Name="Text6" Left="424.6" Width="76.8" Height="19.2" Text="Agence du revenu &#13;&#10;du Canada" Padding="1, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text7" Left="346.6" Top="22.8" Width="75.84" Height="21.12" Border.Lines="All" Padding="4, 4, 4, 4" HorzAlign="Center" Font="Arial, 9pt"/>
+        <TextObject Name="Textbox91" Left="435.54" Top="30.03" Width="69" Height="13.5" Text="[Amended]" Font="Courier New, 8pt"/>
+        <TextObject Name="Text8" Left="500.2" Top="21.6" Width="220.8" Height="30.72" Text="Statement of Remuneration Paid &#13;&#10;État de la rémunération payée " Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 9pt, style=Bold"/>
+        <TextObject Name="Text10" Left="40.24" Top="153.6" Width="158.4" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Textbox6" Left="41.23" Top="160.49" Width="157.5" Height="13.5" Text="[SocialInsuranceNumber]" Font="Courier New, 8pt"/>
+        <TextObject Name="Text11" Left="22" Top="153.6" Width="18.24" Height="18.24" Border.Lines="All" Text="12" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text14" Left="421.28" Top="118.2" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text15" Left="594.88" Top="118.2" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text16" Left="421.28" Top="166.8" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text17" Left="594.88" Top="166.8" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text18" Left="421.28" Top="212.84" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text19" Left="594.88" Top="212.84" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text20" Left="421.28" Top="259.2" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text21" Left="594.88" Top="259.2" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text22" Left="421.28" Top="307.2" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text24" Left="421.28" Top="353.2" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text25" Left="594.88" Top="353.2" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text26" Left="216.96" Top="153.6" Width="18.24" Height="18.24" Border.Lines="All" Text="28" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text27" Left="371.4" Top="71.2" Width="18.24" Height="18.24" Border.Lines="All" Text="14" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text28" Left="562.4" Top="71.2" Width="18.24" Height="18.24" Border.Lines="All" Text="22" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Textbox30" Left="631.68" Top="79.39" Width="79.68" Height="13.5" Text="[IncomeTaxDeducted]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Text29" Left="324.4" Top="119.2" Width="18.24" Height="18.24" Border.Lines="All" Text="10" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text30" Left="324.4" Top="165.2" Width="18.24" Height="18.24" Border.Lines="All" Text="29" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text31" Left="403.16" Top="118.2" Width="18.24" Height="18.24" Border.Lines="All" Text="16" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text32" Left="577" Top="118.2" Width="18.24" Height="18.24" Border.Lines="All" Text="24" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text33" Left="403.16" Top="166.8" Width="18.24" Height="18.24" Border.Lines="All" Text="17" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text34" Left="577" Top="166.8" Width="18.24" Height="18.24" Border.Lines="All" Text="26" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text35" Left="403.16" Top="212.84" Width="18.24" Height="18.24" Border.Lines="All" Text="18" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text36" Left="577" Top="212.84" Width="18.24" Height="18.24" Border.Lines="All" Text="44" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text37" Left="403.16" Top="259.2" Width="18.24" Height="18.24" Border.Lines="All" Text="20" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text38" Left="577" Top="259.2" Width="18.24" Height="18.24" Border.Lines="All" Text="46" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text39" Left="403.16" Top="307.2" Width="18.24" Height="18.24" Border.Lines="All" Text="52" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text40" Left="577" Top="307.2" Width="18.24" Height="18.24" Border.Lines="All" Text="50" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text41" Left="403.16" Top="353.2" Width="18.24" Height="18.24" Border.Lines="All" Text="55" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text42" Left="577" Top="353.2" Width="18.24" Height="18.24" Border.Lines="All" Text="56" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Textbox25" Left="631.68" Top="312.64" Width="79.68" Height="13.5" Text="[RPPorDPSPRegistrationNumber]" HorzAlign="Center" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox27" Left="631.68" Top="219.34" Width="79.68" Height="13.5" Text="[UnionDues]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox22" Left="459.35" Top="359.14" Width="79.68" Height="13.5" Text="[EmployeesPPIPPremiums]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox23" Left="459.35" Top="312.64" Width="79.68" Height="13.5" Text="[PensionAdjustment]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox20" Left="459.35" Top="265.84" Width="79.68" Height="13.5" Text="[RPPContributions]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox21" Left="459.35" Top="219.34" Width="79.68" Height="13.5" Text="[EmployeesEIPremiums]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox19" Left="459.35" Top="171.59" Width="79.68" Height="13.5" Text="[EmployeesQPPContributions]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox18" Left="459.35" Top="125.49" Width="79.68" Height="13.5" Text="[EmployeesCPPContributions]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox29" Left="631.68" Top="125.49" Width="79.68" Height="13.5" Text="[EIInsurableEarnings]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox28" Left="631.68" Top="171.59" Width="79.68" Height="13.5" Text="[CPPQPPPensionableEarnings]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox24" Left="631.68" Top="359.14" Width="79.68" Height="13.5" Text="[PPIPInsurableEarnings]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox26" Left="631.68" Top="265.84" Width="79.68" Height="13.5" Text="[CharitableDonations]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Text43" Left="262.2" Top="153.6" Width="19.2" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Textbox8" Left="27.11" Top="268.64" Width="351.7" Height="13.5" Text="[EmployeeAddressLine1]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox9" Left="27.11" Top="284.04" Width="351.7" Height="24.9" Text="[EmployeeAddressLine2]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox11" Left="27.11" Top="320.74" Width="351.7" Height="13.5" Text="[EmployeeAddressLine4]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox89" Left="266.14" Top="157.89" Width="12" Height="13.5" Text="[ExemptEI]" Font="Courier New, 8pt"/>
+        <LineObject Name="Line1" Left="254.6" Top="166.4" Width="7.68"/>
+        <LineObject Name="Line2" Left="282.4" Top="166.4" Width="9.6"/>
+        <TextObject Name="Text46" Left="342.6" Top="165.2" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Textbox16" Left="346.89" Top="170.59" Width="29.5" Height="13.5" Text="[EmploymentCode]" Font="Courier New, 8pt"/>
+        <TextObject Name="Text47" Left="342.6" Top="119.2" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Textbox14" Left="356.89" Top="237.07" Width="16.5" Height="13.5" Text="[EmployeeMiddleName]" Font="Courier New, 8pt"/>
+        <LineObject Name="Line3" Left="298.8" Top="49.6" Width="436.8" Border.Width="2"/>
+        <TextObject Name="Text50" Left="108.2" Top="399.6" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text51" Left="108.2" Top="446.6" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Textbox12" Left="41.23" Top="237.47" Width="157.5" Height="13.5" Text="[EmployeeLastName]" Font="Courier New, 8pt"/>
+        <TextObject Name="Text53" Left="155.2" Top="399.6" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text54" Left="155.2" Top="446.6" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text55" Left="321.4" Top="399.6" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text56" Left="321.4" Top="446.6" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text57" Left="534.6" Top="399.6" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text58" Left="534.6" Top="446.6" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Text59" Left="367.8" Top="399.6" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Text60" Left="367.8" Top="446.6" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <TextObject Name="Textbox38" Left="111.33" Top="453.49" Width="30.5" Height="13.5" Text="[OtherBox4Code]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox37" Left="111.33" Top="405.99" Width="30.5" Height="13.5" Text="[OtherBox1Code]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox31" Left="206.44" Top="405.99" Width="79.68" Height="13.5" Text="[OtherBox1Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox32" Left="206.44" Top="453.49" Width="79.68" Height="13.5" Text="[OtherBox4Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox39" Left="325.48" Top="405.99" Width="30.5" Height="13.5" Text="[OtherBox2Code]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox40" Left="325.48" Top="453.49" Width="30.5" Height="13.5" Text="[OtherBox5Code]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox33" Left="419.23" Top="405.99" Width="79.68" Height="13.5" Text="[OtherBox2Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox34" Left="419.23" Top="453.49" Width="79.68" Height="13.5" Text="[OtherBox5Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox41" Left="539.18" Top="405.99" Width="30.5" Height="13.5" Text="[OtherBox3Code]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox42" Left="540.18" Top="453.49" Width="30.5" Height="13.5" Text="[OtherBox6Code]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox35" Left="631.68" Top="405.99" Width="79.68" Height="13.5" Text="[OtherBox3Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox36" Left="631.68" Top="453.49" Width="79.68" Height="13.5" Text="[OtherBox6Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+        <TextObject Name="Text63" Left="63.2" Top="135.4" Width="115.2" Height="19.2" Text="Social insurance number&#13;&#10;Numéro d'assurance sociale" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text64" Left="39" Top="220.2" Width="211.2" Height="19.2" Text="Last name (in capital letters) – Nom de famille (en lettres moulées)" Padding="0, 1, 0, 0" Font="Arial, 5pt"/>
+        <TextObject Name="Text65" Left="257.6" Top="220.2" Width="71.04" Height="19.2" Text="First name –Prénom" Padding="0, 1, 0, 0" Font="Arial, 5.5pt"/>
+        <TextObject Name="Text66" Left="330.8" Top="220.2" Width="57.6" Height="19.2" Text="Initial – Initiale" Padding="0, 1, 0, 0" Font="Arial, 5pt"/>
+        <TextObject Name="Text67" Left="404.8" Top="52" Width="124.8" Height="19.2" Text="Employment income - line 101&#13;&#10;Revenus d'emploi - ligne 101" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text68" Left="558.4" Top="52" Width="176.8" Height="19.2" Text="Income tax deducted - line 437&#13;&#10;Impôt sur le revenu retenu - ligne 437" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Textbox15" Left="346.89" Top="125.69" Width="29.5" Height="13.5" Text="[ProvinceOfEmployment]" Font="Courier New, 8pt"/>
+        <TextObject Name="Text69" Left="313.8" Top="98" Width="96" Height="19.2" Text="Province of employment&#13;&#10;Province d'emploi" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text70" Left="226.2" Top="178.6" Width="96" Height="12.48" Text="RPC/RRQ   AE      RPAP" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text71" Left="230.4" Top="132.4" Width="96" Height="12.48" Text="Exempt – Exemption" Padding="0, 0, 0, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text72" Left="225.8" Top="142.8" Width="96" Height="12.48" Text="CPP/QPP    EI        PPIP" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text73" Left="405.4" Top="100" Width="172.8" Height="19.2" Text="Employee's CPP contributions – line 308&#13;&#10;Cotisations de l'employé au RPC – ligne 308" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 5.7pt"/>
+        <TextObject Name="Text74" Left="618.8" Top="99" Width="96" Height="19.2" Text="EI insurable earnings&#13;&#10;Gains assurables d'AE" HorzAlign="Center" Font="Arial, 6.3pt"/>
+        <TextObject Name="Text75" Left="314.4" Top="146" Width="96" Height="19.2" Text="Employment code&#13;&#10;Code d'emploi" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 5.7pt"/>
+        <TextObject Name="Text76" Left="393.8" Top="146" Width="192" Height="19.2" Text="Employee's QPP contributions – line 308&#13;&#10;Cotisations de l'employé au RRQ – ligne 308" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text77" Left="579.8" Top="148" Width="153.6" Height="19.2" Text="CPP/QPP pensionable earnings&#13;&#10;Gains ouvrant droit à pension – RPC/RRQ" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 5.7pt"/>
+        <TextObject Name="Text78" Left="395.2" Top="194" Width="172.8" Height="19.2" Text="Employee's El premiums - line 312&#13;&#10;Cotisations de l'employe à l'AE - ligne 312" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text79" Left="572.4" Top="193.4" Width="162.8" Height="19.2" Text="Union dues - line 212&#13;&#10;Cotisations syndicales - ligne 212" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text80" Left="413.2" Top="239.4" Width="144" Height="19.2" Text="RPP contrtbutions - line 207&#13;&#10;Cotisations à un RPA - ligne 207" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text81" Left="573.4" Top="240" Width="161.8" Height="19.2" Text="Charitable donations - line 349&#13;&#10;Dons de bienfaisance - ligne 349&#13;&#10;" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text82" Left="413.4" Top="287" Width="134.4" Height="19.2" Text="Pension adjustment - line 206&#13;&#10;Facteur d'équivalence - ligne 206" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text83" Left="575.4" Top="287.4" Width="158.4" Height="19.2" Text="RPP or DPSP registration number&#13;&#10;N° d'agrément d'un RPA ou d'un RPDB" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text84" Left="392" Top="334.4" Width="192" Height="19.2" Text="Employee's PPIP premiums – see over&#13;&#10;Cotisations de l'employé au RPAP – voir au verso" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text85" Left="610.8" Top="333.4" Width="105.6" Height="19.2" Text="PPIP insurable earnings&#13;&#10;Gains assurables du RPAP" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Text86" Left="21.8" Top="400.2" Width="86.4" Height="28.8" Text="Other information&#13;&#10;(see over)" Font="Arial, 7pt"/>
+        <TextObject Name="Text87" Left="21.8" Top="438.6" Width="76.8" Height="38.4" Text="Autres&#13;&#10;renseignements&#13;&#10;(voir au verso) " Font="Arial, 7pt"/>
+        <TextObject Name="Text88" Left="106.2" Top="389" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text89" Left="106.2" Top="436" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text90" Left="318.8" Top="388" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text91" Left="318.8" Top="435" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text92" Left="531.6" Top="388" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text93" Left="532" Top="435" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text94" Left="195" Top="388" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+        <TextObject Name="Text95" Left="194.6" Top="435" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+        <TextObject Name="Text96" Left="408.8" Top="389" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+        <TextObject Name="Text97" Left="408.8" Top="436" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+        <TextObject Name="Text98" Left="622" Top="388.4" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+        <TextObject Name="Text99" Left="621" Top="435" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+        <TextObject Name="Textbox13" Left="208.06" Top="237.47" Width="157.5" Height="13.5" Text="[EmployeeFirstName]" Font="Courier New, 8pt"/>
+        <TextObject Name="Textbox90" Left="296.09" Top="157.89" Width="12" Height="13.5" Text="[ExemptPPIP]" Font="Courier New, 8pt"/>
+        <TextObject Name="Text9" Left="577" Top="1.4" Width="67.2" Height="19.2" Text="T4" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+        <ContainerObject Name="Container2" Top="486.6" Width="739.2" Height="487.68">
+          <TextObject Name="Text122" Left="595.03" Top="313.4" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text146" Left="342.75" Top="126.4" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text145" Left="342.75" Top="172.8" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text107" Left="22.15" Top="208.8" Width="372.48" Height="174.72" Border.Lines="All" Border.Width="2" Text="Employee's name and address – Nom et adresse de l'employé" Padding="7, 1, 0, 0" Font="Arial, 7pt, style=Bold"/>
+          <TextObject Name="Text148" Left="40.55" Top="240.6" Width="336.96" Height="22.08" Border.Lines="All" Border.Width="2" Font="Arial, 7pt, style=Bold"/>
+          <TextObject Name="Text177" Left="534" Top="454" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text175" Left="320.8" Top="454" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text176" Left="534" Top="407" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text174" Left="320.8" Top="407" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text171" Left="107.6" Top="454" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text170" Left="107.6" Top="407" Width="38.4" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+          <ShapeObject Name="Shape34" Left="475.68" Top="454" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape33" Left="475.68" Top="407" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape36" Left="263.08" Top="454" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape35" Left="263.08" Top="407" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <TextObject Name="Text123" Left="422.35" Top="360.4" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text147" Left="22.15" Top="391.2" Width="713.28" Height="92.16" Border.Lines="All" Border.Width="2" Font="Arial, 7pt, style=Bold"/>
+          <TextObject Name="Text181" Left="580.84" Top="454" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <ShapeObject Name="Shape32" Left="688.36" Top="454" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape31" Left="688.36" Top="407" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape30" Left="689.11" Top="360.4" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape28" Left="689.11" Top="267.4" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape27" Left="689.11" Top="220.44" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape26" Left="689.11" Top="174" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape25" Left="689.11" Top="125.8" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape24" Left="689.43" Top="80.4" Width="42.24" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape22" Left="517.39" Top="360.4" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape21" Left="517.39" Top="313.4" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape20" Left="517.39" Top="267.4" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape19" Left="517.39" Top="220.44" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape18" Left="517.39" Top="174" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape17" Left="517.39" Top="125.8" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <ShapeObject Name="Shape16" Left="516.47" Top="80.4" Width="41.28" Height="24.96" Fill.Color="WhiteSmoke"/>
+          <TextObject Name="Text173" Left="154.6" Top="454" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text172" Left="154.6" Top="407" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text179" Left="367.2" Top="454" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text178" Left="367.2" Top="407" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text180" Left="580.84" Top="407" Width="149.76" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text124" Left="595.03" Top="360.4" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text120" Left="595.03" Top="267.4" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text118" Left="595.03" Top="220.44" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text116" Left="595.03" Top="174" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text114" Left="595.03" Top="125.8" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text112" Left="580.95" Top="80.4" Width="150.72" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text121" Left="422.35" Top="313.4" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text119" Left="422.35" Top="267.4" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text117" Left="422.35" Top="220.44" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text113" Left="422.35" Top="125.8" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text111" Left="389.75" Top="80.4" Width="168" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text115" Left="422.35" Top="174" Width="136.32" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Textbox43" Left="22.2" Top="27.01" Width="280" Height="13.5" Text="[EmployerAddressLine1]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox44" Left="22.2" Top="41.91" Width="280" Height="13.5" Text="[EmployerAddressLine2]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox45" Left="22.2" Top="56.01" Width="280" Height="13.5" Text="[EmployerAddressLine3]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox46" Left="22.2" Top="68.91" Width="280" Height="13.5" Text="[EmployerAddressLine4]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox47" Left="22.2" Top="82.01" Width="280" Height="13.5" Text="[EmployerAddressLine5]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox92" Left="436.74" Top="36.71" Width="69" Height="13.5" Text="[Amended]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox52" Left="460.35" Top="85.07" Width="79.68" Height="13.5" Text="[EmploymentIncome]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox53" Left="631.68" Top="85.07" Width="79.68" Height="13.5" Text="[IncomeTaxDeducted]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox49" Left="41.23" Top="168.57" Width="157.5" Height="13.5" Text="[SocialInsuranceNumber]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox55" Left="460.35" Top="132.36" Width="79.68" Height="13.5" Text="[EmployeesCPPContributions]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox56" Left="460.35" Top="177.66" Width="79.68" Height="13.5" Text="[EmployeesQPPContributions]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox59" Left="460.35" Top="224.82" Width="79.68" Height="13.5" Text="[EmployeesEIPremiums]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox60" Left="460.35" Top="274.92" Width="79.68" Height="13.5" Text="[RPPContributions]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox63" Left="460.35" Top="322.71" Width="79.68" Height="13.5" Text="[PensionAdjustment]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox64" Left="460.35" Top="365.62" Width="79.68" Height="13.5" Text="[EmployeesPPIPPremiums]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox54" Left="631.68" Top="132.36" Width="79.68" Height="13.5" Text="[EIInsurableEarnings]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox57" Left="631.68" Top="177.66" Width="79.68" Height="13.5" Text="[CPPQPPPensionableEarnings]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox58" Left="631.68" Top="224.82" Width="79.68" Height="13.5" Text="[UnionDues]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox61" Left="631.68" Top="274.92" Width="79.68" Height="13.5" Text="[CharitableDonations]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox62" Left="631.68" Top="322.71" Width="79.68" Height="13.5" Text="[RPPorDPSPRegistrationNumber]" HorzAlign="Center" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox65" Left="631.68" Top="365.62" Width="79.68" Height="13.5" Text="[PPIPInsurableEarnings]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox73" Left="113.33" Top="412.36" Width="30.5" Height="15.3" Text="[OtherBox1Code]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox84" Left="113.33" Top="459.97" Width="30.5" Height="13.5" Text="[OtherBox4Code]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox74" Left="205.44" Top="412.36" Width="79.68" Height="13.5" Text="[OtherBox1Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox83" Left="205.44" Top="459.97" Width="79.68" Height="13.5" Text="[OtherBox4Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox75" Left="328.48" Top="412.36" Width="30.5" Height="13.5" Text="[OtherBox2Code]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox82" Left="329.48" Top="459.97" Width="30.5" Height="13.5" Text="[OtherBox5Code]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox76" Left="418.23" Top="412.36" Width="79.68" Height="13.5" Text="[OtherBox2Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox81" Left="418.23" Top="459.97" Width="79.68" Height="13.5" Text="[OtherBox5Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox77" Left="542.18" Top="412.36" Width="30.5" Height="13.5" Text="[OtherBox3Code]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox80" Left="545.18" Top="459.97" Width="30.5" Height="13.5" Text="[OtherBox6Code]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox78" Left="631.68" Top="412.36" Width="79.68" Height="13.5" Text="[OtherBox3Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox79" Left="631.68" Top="459.97" Width="79.68" Height="13.5" Text="[OtherBox6Amount]" HorzAlign="Right" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox50" Left="346.89" Top="132.16" Width="29.5" Height="13.5" Text="[ProvinceOfEmployment]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox51" Left="346.89" Top="177.86" Width="29.5" Height="13.5" Text="[EmploymentCode]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox68" Left="41.23" Top="245.55" Width="157.5" Height="13.5" Text="[EmployeeLastName]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox67" Left="204.06" Top="245.55" Width="157.5" Height="13.5" Text="[EmployeeFirstName]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox66" Left="358.89" Top="245.55" Width="16.5" Height="13.5" Text="[EmployeeMiddleName]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox69" Left="22.2" Top="272.72" Width="380.5" Height="13.5" Text="[EmployeeAddressLine1]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox70" Left="22.2" Top="288.22" Width="380.5" Height="13.5" Text="[EmployeeAddressLine2]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox71" Left="22.2" Top="304.11" Width="380.5" Height="13.5" Text="[EmployeeAddressLine3]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox72" Left="22.2" Top="319.21" Width="380.5" Height="13.5" Text="[EmployeeAddressLine4]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox85" Left="236.56" Top="167.57" Width="12" Height="13.5" Text="[ExemptCPPQPP]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox86" Left="266.14" Top="167.57" Width="12" Height="13.5" Text="[ExemptEI]" Font="Courier New, 8pt"/>
+          <TextObject Name="Textbox87" Left="297.09" Top="167.57" Width="12" Height="13.5" Text="[ExemptPPIP]" Font="Courier New, 8pt"/>
+          <TextObject Name="Text100" Left="22.2" Top="11" Width="275.52" Height="91.2" Border.Lines="All" Text="Employer's name – Nom de l'employeur" Padding="7, 0, 0, 0" Font="Arial, 6pt"/>
+          <TextObject Name="Text101" Left="303.35" Top="26.2" Width="38.4" Height="24" Text="Year&#13;&#10;Année" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+          <TextObject Name="Text102" Left="347.35" Top="7" Width="72" Height="19.2" Text="Canada Revenue&#13;&#10;Agency" Padding="1, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+          <PictureObject Name="Picture4" Left="308.35" Top="6" Width="28.8" Height="19.2" ImageFormat="Png" Image="iVBORw0KGgoAAAANSUhEUgAAADsAAAAeCAYAAACSRGY2AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAScQAAEnEB89x6jgAAAUBJREFUWEftkwEOgzAMA/kkn+STbEaylFUG3FAKaFg6TYOkza3dMH8zjmOK3lEzOEzTtPQvssMwpOgdNYMDhJf+I4tkwl85EzWDw2Wy8VrVRs3gcJks+rh5bcr9XbrJ4hR5kvhkbxR2TzvuXUNXWdVb4kT1OXSTRVRvJJ7yVlSvwytby1bifxCbqX7yOFnIRUG85yZ7suxjHRPXQ8o+l+ayWFBJ4RmGLp9H1t5zSEbVODSXxcB7UrXc9mTPkC2jahyay2JBoOqycEhG1Tg84mRve42ZVsKlKKLqHE6TRY5e5/L6MqrW4VRZJHvCa6KIqnc4XRapFVZXN0b1ONxSdutUEdXj0EUWmwBI89T4HeFzwNqtqBkcuO4r65JJlK2NmsHhla0lk1fWjJrB4TLZrCiiZnC4TPZI1AwOP7L/kXn+AHToIrFhIeSAAAAAAElFTkSuQmCC"/>
+          <TextObject Name="Text103" Left="423.75" Top="6" Width="76.8" Height="19.2" Text="Agence du revenu &#13;&#10;du Canada" Padding="1, 1, 0, 0" Font="Arial, 6pt, style=Bold"/>
+          <TextObject Name="Text104" Left="347.75" Top="30.4" Width="75.84" Height="21.12" Border.Lines="All" Padding="4, 4, 4, 4" HorzAlign="Center" Font="Arial, 9pt"/>
+          <TextObject Name="Text105" Left="500.35" Top="27.2" Width="220.8" Height="30.72" Text="Statement of Remuneration Paid &#13;&#10;État de la rémunération payée " Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          <LineObject Name="Line4" Left="299.95" Top="55.6" Width="437.76" Border.Width="2"/>
+          <TextObject Name="Text106" Left="578.15" Top="6.4" Width="67.2" Height="19.2" Text="T4" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text108" Left="40.39" Top="106.6" Width="257.28" Height="30.72" Border.Lines="All" Fill.Color="Gainsboro" Text="Employer's account number / Numéro de compte de l'employeur" Font="Arial, 6pt"/>
+          <TextObject Name="Text109" Left="22.15" Top="106.6" Width="18.24" Height="18.24" Border.Lines="All" Text="54" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text110" Left="40.39" Top="161.8" Width="158.4" Height="24.96" Border.Lines="All" HorzAlign="Center" Font="Arial, 14pt, style=Bold"/>
+          <TextObject Name="Text125" Left="217.11" Top="161.8" Width="18.24" Height="18.24" Border.Lines="All" Text="28" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text126" Left="371.55" Top="80.4" Width="18.24" Height="18.24" Border.Lines="All" Text="14" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text127" Left="562.55" Top="80.4" Width="18.24" Height="18.24" Border.Lines="All" Text="22" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text128" Left="324.55" Top="126.4" Width="18.24" Height="18.24" Border.Lines="All" Text="10" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text129" Left="324.55" Top="172.8" Width="18.24" Height="18.24" Border.Lines="All" Text="29" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text130" Left="404.31" Top="125.8" Width="18.24" Height="18.24" Border.Lines="All" Text="16" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text131" Left="577.15" Top="125.8" Width="18.24" Height="18.24" Border.Lines="All" Text="24" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text132" Left="404.31" Top="174" Width="18.24" Height="18.24" Border.Lines="All" Text="17" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text133" Left="577.15" Top="174" Width="18.24" Height="18.24" Border.Lines="All" Text="26" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text134" Left="404.31" Top="220.44" Width="18.24" Height="18.24" Border.Lines="All" Text="18" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text135" Left="577.15" Top="220.44" Width="18.24" Height="18.24" Border.Lines="All" Text="44" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text136" Left="404.31" Top="267.4" Width="18.24" Height="18.24" Border.Lines="All" Text="20" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text137" Left="577.15" Top="267.4" Width="18.24" Height="18.24" Border.Lines="All" Text="46" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text138" Left="404.31" Top="313.4" Width="18.24" Height="18.24" Border.Lines="All" Text="52" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text139" Left="577.15" Top="313.4" Width="18.24" Height="18.24" Border.Lines="All" Text="50" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text140" Left="404.31" Top="360.4" Width="18.24" Height="18.24" Border.Lines="All" Text="55" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text141" Left="577.15" Top="360.4" Width="18.24" Height="18.24" Border.Lines="All" Text="56" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text142" Left="262.35" Top="161.8" Width="19.2" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text143" Left="291.75" Top="161.8" Width="19.2" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text144" Left="235.15" Top="161.8" Width="19.2" Height="23.04" Border.Lines="All" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text149" Left="63.35" Top="143" Width="115.2" Height="19.2" Text="Social insurance number&#13;&#10;Numéro d'assurance sociale" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text150" Left="39.15" Top="227.4" Width="211.2" Height="19.2" Text="Last name (in capital letters) – Nom de famille (en lettres moulées)" Padding="0, 1, 0, 0" Font="Arial, 5pt"/>
+          <TextObject Name="Text151" Left="257.75" Top="227.4" Width="71.04" Height="19.2" Text="First name –Prénom" Padding="0, 1, 0, 0" Font="Arial, 5.5pt"/>
+          <TextObject Name="Text152" Left="330.95" Top="227.4" Width="57.6" Height="19.2" Text="Initial – Initiale" Padding="0, 1, 0, 0" Font="Arial, 5pt"/>
+          <TextObject Name="Text153" Left="423.15" Top="58.6" Width="124.8" Height="19.2" Text="Employment income - line 101&#13;&#10;Revenus d'emploi - ligne 101" Padding="0, 1, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text154" Left="570.55" Top="60.2" Width="157.45" Height="19.2" Text="Income tax deducted - line 437&#13;&#10;Impôt sur le revenu retenu - ligne 437" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text155" Left="313.95" Top="105.6" Width="96" Height="19.2" Text="Province of employment&#13;&#10;Province d'emploi" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text156" Left="226.35" Top="186.8" Width="96" Height="12.48" Text="RPC/RRQ   AE      RPAP" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+          <TextObject Name="Text157" Left="231.55" Top="139.6" Width="96" Height="12.48" Text="Exempt – Exemption" Padding="0, 0, 0, 0" Font="Arial, 6pt, style=Bold"/>
+          <TextObject Name="Text158" Left="225.95" Top="150" Width="96" Height="12.48" Text="CPP/QPP    EI        PPIP" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+          <TextObject Name="Text159" Left="392.95" Top="153.6" Width="192" Height="19.2" Text="Employee's QPP contributions – line 308&#13;&#10;Cotisations de l'employé au RRQ – ligne 308" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text160" Left="579.95" Top="153.6" Width="153.6" Height="19.2" Text="CPP/QPP pensionable earnings&#13;&#10;Gains ouvrant droit à pension – RPC/RRQ" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 5.7pt"/>
+          <TextObject Name="Text161" Left="395.35" Top="201.6" Width="172.8" Height="19.2" Text="Employee's EI premiums - line 312&#13;&#10;Cotisations de l'employé à l'AE - ligne 312" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text162" Left="583.4" Top="201" Width="134.4" Height="19.2" Text="Union dues - line 212&#13;&#10;Cotisations syndicales - ligne 212" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text163" Left="422.95" Top="247.6" Width="134.4" Height="19.2" Text="RPP contributions - line 207&#13;&#10;Cotisations à un RPA - ligne 207" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text164" Left="591.6" Top="247.2" Width="134.4" Height="19.2" Text="Charitable donations - line 349&#13;&#10;Dons de bienfaisance - ligne 349" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text165" Left="414.55" Top="293.2" Width="144" Height="19.2" Text="Pension adjustment - line 206&#13;&#10;Facteur d'équivalence - ligne 206" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text166" Left="580.5" Top="294.6" Width="157.44" Height="19.2" Text="RPP or DPSP registration number&#13;&#10;N° d'agrément d'un RPA ou d'un RPDB" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text167" Left="392.15" Top="341.6" Width="192" Height="19.2" Text="Employee's PPIP premiums – see over&#13;&#10;Cotisations de l'employé au RPAP – voir au verso" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text168" Left="610.95" Top="340.6" Width="105.6" Height="19.2" Text="PPIP insurable earnings&#13;&#10;Gains assurables du RPAP" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text169" Left="22.08" Top="161.8" Width="18.24" Height="18.24" Border.Lines="All" Text="12" Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 7pt"/>
+          <TextObject Name="Text182" Left="21.2" Top="407.6" Width="86.4" Height="28.8" Text="Other information&#13;&#10;(see over)" Font="Arial, 7pt"/>
+          <TextObject Name="Text183" Left="105.6" Top="396.4" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+          <TextObject Name="Text184" Left="105.6" Top="443.4" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+          <TextObject Name="Text185" Left="318.2" Top="395.4" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+          <TextObject Name="Text186" Left="318.2" Top="442.8" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+          <TextObject Name="Text187" Left="531" Top="395.4" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+          <TextObject Name="Text188" Left="531.4" Top="442.8" Width="48" Height="9.6" Text="Box – Case" Padding="0, 0, 0, 0" Font="Arial, 6pt"/>
+          <TextObject Name="Text189" Left="194.4" Top="395.4" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+          <TextObject Name="Text190" Left="195" Top="442.8" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+          <TextObject Name="Text191" Left="408.2" Top="396.4" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+          <TextObject Name="Text192" Left="408.2" Top="443.4" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+          <TextObject Name="Text193" Left="621.4" Top="395.8" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+          <TextObject Name="Text194" Left="620.4" Top="442.8" Width="76.8" Height="9.6" Text="Amount – Montant" Font="Arial, 6pt"/>
+          <TextObject Name="Text195" Left="21.2" Top="445.6" Width="76.8" Height="38.4" Text="Autres&#13;&#10;renseignements&#13;&#10;(voir au verso) " Font="Arial, 7pt"/>
+          <TextObject Name="Text196" Left="614.8" Top="106" Width="96" Height="19.2" Text="EI insurable earnings&#13;&#10;Gains assurables d'AE" HorzAlign="Center" Font="Arial, 6pt"/>
+          <TextObject Name="Text197" Left="402.8" Top="107" Width="172.8" Height="19.2" Text="Employee's CPP contributions – line 308&#13;&#10;Cotisations de l'employé au RPC – ligne 308" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 5.7pt"/>
+          <TextObject Name="Text198" Left="313.4" Top="155" Width="96" Height="19.2" Text="Employment code&#13;&#10;Code d'emploi" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 5.7pt"/>
+          <LineObject Name="Line24" Left="254.6" Top="173.2" Width="7.68"/>
+          <LineObject Name="Line25" Left="281.4" Top="173.2" Width="10.56"/>
+          <TextObject Name="Text253" Left="7.55" Top="412.6" Width="14.4" Height="57.6" Text="T4 (16)" Padding="0, 0, 0, 0" Angle="270" Font="Arial, 7pt"/>
+          <TextObject Name="Text255" Left="2.75" Top="346.8" Width="19.2" Height="86.4" Text="Protected B" Angle="270" Font="Arial, 10pt, style=Bold"/>
+          <TextObject Name="Text254" Left="2.75" Top="225" Width="19.2" Height="124.8" Text="when completed / " Angle="270" Font="Arial, 10pt"/>
+          <TextObject Name="Text251" Left="2.75" Top="178" Width="19.2" Height="57.6" Text="Protégé B" Angle="270" Font="Arial, 10pt, style=Bold"/>
+          <TextObject Name="Text252" Left="2.75" Top="65.8" Width="19.2" Height="115.2" Text="une fois rempli" Angle="270" Font="Arial, 10pt"/>
+          <TextObject Name="Text258" Left="370.4" Top="34.5" Width="60.48" Height="13.5" Anchor="Top, Right" CanBreak="false" Text="[TaxYear]" Font="Courier New, 8pt"/>
+        </ContainerObject>
+        <TextObject Name="Text246" Left="6.4" Top="412.8" Width="14.4" Height="57.6" Text="T4 (16)" Padding="0, 0, 0, 0" Angle="270" Font="Arial, 7pt"/>
+        <TextObject Name="Text247" Left="3.6" Top="347" Width="19.2" Height="86.4" Text="Protected B" Angle="270" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text248" Left="1.6" Top="225.2" Width="19.2" Height="124.8" Text="when completed / " Angle="270" Font="Arial, 10pt"/>
+        <TextObject Name="Text249" Left="1.6" Top="178.2" Width="19.2" Height="57.6" Text="Protégé B" Angle="270" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text250" Left="1.6" Top="65" Width="19.2" Height="115.2" Text="une fois rempli" Angle="270" Font="Arial, 10pt"/>
+        <TextObject Name="Text257" Left="369.6" Top="27.2" Width="60.48" Height="13.5" Anchor="Top, Right" CanBreak="false" Text="[TaxYear]" Font="Courier New, 8pt"/>
+      </ContainerObject>
+    </DataBand>
+  </ReportPage>
+  <ReportPage Name="Page2" PaperWidth="215.9" PaperHeight="279.4" RawPaperSize="1" LeftMargin="10.01" TopMargin="10.01" RightMargin="10.01" BottomMargin="10.01" FirstPageSource="15" OtherPagesSource="15" LastPageSource="15" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data2" Top="20" Width="740.43" Height="978.24">
+      <ContainerObject Name="Container5" Left="9.8" Top="274.2" Width="720" Height="163.2" Border.Lines="All" Border.Width="0.5">
+        <TextObject Name="Text243" Left="2" Top="3" Width="624" Height="28.8" Text="Do not report these amounts on your tax return. For Canada Revenue Agency use only. &#13;&#10;(Amounts in boxes 30, 32, 34, 36, 38, 40 and 86 are already included in box 14.)" Font="Arial, 8pt, style=Bold"/>
+        <TextObject Name="Text244" Left="4" Top="31" Width="336" Height="134.4" Text="30 – Board and lodging&#13;&#10;&#13;&#10;31 – Special work site&#13;&#10;&#13;&#10;32 – Travel in a prescribed zone &#13;&#10;&#13;&#10;33 – Medical travel assistance&#13;&#10;&#13;&#10;34 – Personal use of employer's automobile or motor vehicle &#13;&#10;&#13;&#10;36 – Interest-free and low-interest loans&#13;&#10;&#13;&#10;38 – Security options benefits " Font="Arial, 6.5pt, style=Bold" ParagraphFormat.LineSpacing="192"/>
+        <TextObject Name="Text245" Left="379.2" Top="29" Width="336" Height="134.4" Text="40 – Other taxable allowances and benefits &#13;&#10;&#13;&#10;68 – Indian (exempt income) – Eligible retiring allowances&#13;&#10;&#13;&#10;69 – Indian (exempt income) – Non-eligible retiring allowances&#13;&#10;&#13;&#10;70 – Municipal officer's expense allowance&#13;&#10;&#13;&#10;71 – Indian (exempt income) – Employment&#13;&#10;&#13;&#10;86 – Security options election &#13;&#10;&#13;&#10;88 – Indian (exempt income) – Self employed" Font="Arial, 6.5pt, style=Bold"/>
+      </ContainerObject>
+      <ContainerObject Name="Container14" Top="766.8" Width="739.2" Height="209.28">
+        <TextObject Name="Text242" Left="266.4" Top="197" Width="470.4" Height="9.6" Text="Loi sur la protection des renseignements personnels, fichiers de renseignements personnels ARC PPU 005 et ARC PPU 047" Font="Arial, 6pt"/>
+        <ContainerObject Name="Container12" Left="9" Top="9.6" Width="720" Height="182.4" Border.Lines="All">
+          <TextObject Name="Text239" Left="3.6" Top="35.4" Width="364.8" Height="144" Text="30 – Pension et logement&#13;&#10;&#13;&#10;31 – Chantier particulier&#13;&#10;&#13;&#10;32 – Voyages dans une zone visée par règlement&#13;&#10;&#13;&#10;33 – Aide accordée pour les voyages pour soins médicaux&#13;&#10;&#13;&#10;34 – Usage personnel de l'automobile ou du véhicule à moteur de l'employeur &#13;&#10;&#13;&#10;36 – Prêts sans intérêt ou à faible intérêt  &#13;&#10;&#13;&#10;38 – Avantages liés aux options d'achat de titres " Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+          <TextObject Name="Text238" Left="0.6" Top="3.6" Width="691.2" Height="38.4" Text="Ne déclarez pas ces montants à votre déclaration d'impôt. À l'usage de l'Agence du revenu du Canada seulement.&#13;&#10;(Les montants des cases 30, 32, 34, 36, 38, 40 et 86 sont déjà inclus à la case 14.)" Font="Arial, 9pt, style=Bold"/>
+          <TextObject Name="Text240" Left="355" Top="32.8" Width="364.8" Height="144" Text="40 – Autres allocations et avantages imposables&#13;&#10;&#13;&#10;68 – Indien ayant un revenu exonéré – Allocations de retraite admissibles&#13;&#10;&#13;&#10;69 – Indien ayant un revenu exonéré – Allocations de retraite non admissibles&#13;&#10;&#13;&#10;70 – Allocation de dépense versée à un conseiller municipal&#13;&#10;&#13;&#10;71 – lndien ayant un revenu exonéré -emploi &#13;&#10;&#13;&#10;86 – Choix liés aux options d'achat de titres &#13;&#10;&#13;&#10;88 – lndien ayant un revenu exonéré -travail independant " Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+        </ContainerObject>
+      </ContainerObject>
+      <ContainerObject Name="Container7" Left="336" Top="125.8" Width="393.6" Height="57.6" Border.Lines="All" Border.Width="0.5">
+        <TextObject Name="Text208" Left="2.6" Top="6" Width="316.8" Height="48" Text="81 – Placement or employment agency &#13;&#10;        workers&#13;&#10;82 – Taxi drivers and drivers of other&#13;&#10;        passenger-carrying vehicles&#13;&#10;83 – Barbers or hairdressers" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text212" Left="220.8" Top="12" Width="96" Height="9.6" Text="Gross income" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text213" Left="220.8" Top="21.6" Width="96" Height="9.6" Text="See Form T2125." Font="Arial, 6pt"/>
+        <TextObject Name="Text214" Left="220.8" Top="31.2" Width="33.6" Height="9.6" Text="Do not" Padding="2, 0, 0, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text215" Left="249.6" Top="31.2" Width="96" Height="9.6" Text="enter on line 101." Padding="0, 0, 2, 0" Font="Arial, 6pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container6" Left="336" Top="80.8" Width="393.6" Height="38.4" Border.Lines="All" Border.Width="0.5">
+        <TextObject Name="Text207" Left="2.6" Top="4.2" Width="163.2" Height="28.8" Text="78 – Fishers – Gross income&#13;&#10;79 – Fishers – Net partnership amount&#13;&#10;80 – Fishers – Shareperson amount" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text209" Left="220.8" Top="8" Width="96" Height="9.6" Text="See Form T2121." Font="Arial, 6pt"/>
+        <TextObject Name="Text210" Left="220.8" Top="17.6" Width="33.6" Height="9.6" Text="Do not" Padding="2, 0, 0, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text211" Left="249.6" Top="17.6" Width="96" Height="9.6" Text="enter on line 101." Padding="0, 0, 2, 0" Font="Arial, 6pt"/>
+      </ContainerObject>
+      <LineObject Name="Line46" Top="472.2" Width="739.2" Border.Style="Dash" Border.Width="2"/>
+      <RichObject Name="Rich14" Left="4.6" Top="489.4" Width="356.16" Height="249.6" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}&#13;&#10;{\colortbl ;\red10\green10\blue10;}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\cf1\b\fs14 Veuillez d\'e9clarer ces montants dans votre d\'e9claration de revenus.\fs16\par&#13;&#10;\par&#13;&#10;\fs12 14 \f1\endash\f0  Revenus d'emploi \b0\f1\endash\f0  Inscrivez \'e0 la ligne 101.\par&#13;&#10;\b 16 \f1\endash\f0  Cotisations de l'employ\'e9 au RPC \b0\f1\endash\f0  Lisez les lignes 308 de votre guide d'imp\'f4t.\par&#13;&#10;\b 17 \f1\endash\f0  Cotisations de l'employ\'e9 au RRQ \b0\f1\endash\f0  Lisez les lignes 308 de votre guide d'imp\'f4t.\par&#13;&#10;\b 18 \f1\endash\f0  Cotisations de l'employ\'e9 \'e0 l'AE \b0\f1\endash\f0  Lisez la ligne 312 de votre guide d'imp\'f4t.\par&#13;&#10;\b 20 \f1\endash\f0  Cotisations \'e0 un RPA \b0\f1\endash\f0  Comprend les cotisations pour services pass\'e9s.\par&#13;&#10;         Lisez la ligne 207 de votre guide d'imp\'f4t.\par&#13;&#10;\b 22 \f1\endash\f0  Imp\'f4t sur le revenu retenu \b0\f1\endash\f0  Inscrivez \'e0 la ligne 437.\line\b 37 \f1\endash\f0  D\'e9duction pour pr\'eats \'e0 la r\'e9installation d'employ\'e9s\b0\f1\endash\f0  Inscrivez \'e0 la ligne 248.\b\par&#13;&#10;39 \f1\endash\f0  D\'e9duction pour options d'achat de titres 110(1)d) \b0\f1\endash\f0  Inscrivez \'e0 la ligne 249.\par&#13;&#10;\b 41 \f1\endash\f0  D\'e9duction pour options d'achat de titres 110(1)d.1) \b0\f1\endash\f0  Inscrivez \'e0 la \par&#13;&#10;        ligne 249.\par&#13;&#10;\b 42 \f1\endash\f0  Commissions d'emploi \b0\f1\endash\f0  Inscrivez \'e0 la ligne 102. Ce montant est d\'e9j\'e0 \par&#13;&#10;        compris dans la case 14.\par&#13;&#10;\b 43 \f1\endash\f0  D\'e9duction pour le personnel des Forces arm\'e9es canadiennes et des forces polici\'e8res \f1\endash\f0  \par&#13;&#10;\b0         Inscrivez \'e0 la ligne 244. Ce montant est d\'e9j\'e0 compris dans la case 14.\par&#13;&#10;\b 44 \f1\endash\f0  Cotisations syndicales \b0\f1\endash\f0  Inscrivez \'e0 la ligne 212.\par&#13;&#10;\b 46 \f1\endash\f0  Dons de bienfaisance\b0  \f1\endash\f0  Lisez les lignes 349 de votre guide d'imp\'f4t.\par&#13;&#10;\b 52 \f1\endash\f0  Facteur d'\'e9quivalence \b0\f1\endash\f0  Inscrivez \'e0 la ligne 206.\par&#13;&#10;\b 55 \f1\endash\f0  R\'e9gime provincial d'assurance parentale (RPAP) \b0\f1\endash\f0  R\'e9sidents du Qu\'e9bec,\par&#13;&#10;         lisez la ligne 375 de votre guide d'imp\'f4t. R\'e9sidents des autres provinces ou\par&#13;&#10;         territoires, lisez la ligne 312 de votre guide d'imp\'f4t.\par&#13;&#10;\b 66 \f1\endash\f0  Allocations de retraite admissibles \b0\f1\endash\f0  Lisez la ligne 130 de votre guide d'imp\'f4t.\b\par&#13;&#10;}&#13;&#10;" Padding="0, 0, 0, 0"/>
+      <RichObject Name="Rich15" Left="359" Top="508.6" Width="393.6" Height="72" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}&#13;&#10;{\colortbl ;\red10\green10\blue10;}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\cf1\b\fs12 67 \f1\endash\f0  Allocations de retraite non admissibles \b0\f1\endash\f0  Lisez la ligne 130 de votre guide d'imp\'f4t.\par&#13;&#10;\b 72 \f1\endash\f0  Revenu selon l'article 122.3-Emploi hors du Canada \f1\endash\f0  \b0 Consultez le formulaire T626. \b\par&#13;&#10;73 \f1\endash\f0  Nombre de jours hors du Canada \f1\endash\b0\f0  Consultez le formulaire T626. \b\par&#13;&#10;74 \f1\endash\f0  Services pass\'e9s pour 1989 et les ann\'e9es pr\'e9c\'e9dentes pendant que l'employ\'e9 cotisait\par&#13;&#10;75 \f1\endash\f0  Services pass\'e9s pour 1989 et les ann\'e9es pr\'e9c\'e9dentes pendant que l'employ\'e9\par&#13;&#10;        ne cotisait pas \b0\f1\endash\f0  Lisez la ligne 207 de votre guide d'imp\'f4t.\par&#13;&#10;\b 77 \f1\endash\f0  Indemnit\'e9s pour accidents du travail rembours\'e9es \'e0 l'employeur \b0\f1\endash\f0  Inscrivez \'e0 la ligne 229.\cf0\par&#13;&#10;}&#13;&#10;" Padding="4, 0, 0, 0"/>
+      <RichObject Name="Rich36" Left="335.6" Top="8" Width="393.6" Height="67.2" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}&#13;&#10;{\colortbl ;\red10\green10\blue10;}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\cf1\b\fs12 67 \f1\endash\f0  Non-eligible retiring allowances \f1\endash\f0  \b0 See line 130 in your tax guide.\par&#13;&#10;\b 72 \f1\endash\f0  Section 122.3 income \f1\endash\f0  Employement outside Canada \b0\f1\endash\f0  See Form T626.\par&#13;&#10;\b 73 \f1\endash\f0  Number of days outside Canada \b0\f1\endash\f0  See Form T626.\par&#13;&#10;\b 74 \f1\endash\f0  Past service contributions for 1989 or earlier years while a contributor\par&#13;&#10;75 \f1\endash\f0  Past service contributions for 1989 or earlier years while not a \par&#13;&#10;        contributor \b0\f1\endash\f0  See line 207 in your tax guide.\par&#13;&#10;\b 77 \f1\endash\f0  Workers' compensation benefits repaid to the employer \b0\f1\endash\f0  Enter on line 229.\par&#13;&#10;}&#13;&#10;" Padding="5, 0, 0, 0"/>
+      <RichObject Name="Rich37" Left="339.4" Top="189.4" Width="393.6" Height="62.4" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}&#13;&#10;{\colortbl ;\red10\green10\blue10;}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\cf1\b\fs12 84 \b0\f1\endash\f0  \b Public transit pass \f1\endash\b0\f0  See line 364 in your tax guide.\b\par&#13;&#10;85 \f1\endash\f0  Employee-paid premiums for private health services plans \b0\f1\endash\f0  See line 330\line         in your tax guide.\par&#13;&#10;\b 87 \f1\endash\f0  Emergency services volunteer exempt amount \b0\f1\endash\f0  See &quot;Emergency \par&#13;&#10;        services volunteers&quot; at line 101, and the information at lines 362 and 395 in\par&#13;&#10;        your tax guide.\cf0\par&#13;&#10;}&#13;&#10;"/>
+      <ContainerObject Name="Container9" Left="358" Top="585.6" Width="364.8" Height="43.2" Border.Lines="All">
+        <TextObject Name="Text222" Left="2" Top="3" Width="182.4" Height="38.4" Text="78 – Pêcheurs – Revenus bruts&#13;&#10;79 – Pêcheurs – Montant net d'un associé&#13;&#10;        de la société de personnes&#13;&#10;80 – Pêcheurs – Montant du pêcheur à part" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text223" Left="221.2" Top="4" Width="144" Height="9.6" Text="Consultez le formulaire T2121." Font="Arial, 6pt"/>
+        <TextObject Name="Text224" Left="221.2" Top="13.6" Width="67.2" Height="9.6" Text="N'inscrivez pas" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text225" Left="279" Top="13.6" Width="57.6" Height="9.6" Text="ce montant à" Font="Arial, 6pt"/>
+        <TextObject Name="Text226" Left="222.2" Top="22.6" Width="96" Height="9.6" Text="la ligne 101." Font="Arial, 6pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container10" Left="358" Top="635.2" Width="364.8" Height="52.8" Border.Lines="All">
+        <TextObject Name="Text227" Left="2" Top="2.6" Width="172.8" Height="48" Text="81 – Travailleurs d'agences ou de&#13;&#10;        bureaux de placement&#13;&#10;82 – Chauffeurs de taxi ou d'un autre&#13;&#10;        véhicule de transport de passagers&#13;&#10;83 – Coiffeurs pour hommes ou dames" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text228" Left="220.8" Top="10.6" Width="96" Height="9.6" Text="Revenus bruts" Font="Arial, 6pt"/>
+        <TextObject Name="Text229" Left="220.8" Top="20.2" Width="124.8" Height="9.6" Text="Consultez le formulaire T2125." Font="Arial, 6pt"/>
+        <TextObject Name="Text232" Left="221.2" Top="34.8" Width="96" Height="9.6" Text="la ligne 101." Font="Arial, 6pt"/>
+        <TextObject Name="Text230" Left="221.2" Top="26.8" Width="67.2" Height="9.6" Text="N'inscrivez pas" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text231" Left="279" Top="26.8" Width="57.6" Height="9.6" Text="ce montant à" Font="Arial, 6pt"/>
+      </ContainerObject>
+      <RichObject Name="Rich1" Left="12.6" Top="2.2" Width="316.8" Height="230.4" CanBreak="false" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\fnil\fcharset0 Arial;}{\f2\fnil Arial;}}&#13;&#10;{\colortbl ;\red10\green10\blue10;}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\cf1\b\f0\fs16 Report these amounts on your tax return.\par&#13;&#10;\par&#13;&#10;\f1\fs12 14 \f2\endash\f1  Employment income \b0\f2\endash\f1  Enter on line 101.\par&#13;&#10;\b 16 \f2\endash\f1  Employee's CPP contributions \b0\f2\endash\f1  See lines 308 in your tax guide.\par&#13;&#10;\b 17 \f2\endash\f1  Employee's QPP contributions \b0\f2\endash\f1  See lines 308 in your tax guide.\par&#13;&#10;\b 18 \f2\endash\f1  Employee's EI premiums \b0\f2\endash\f1  See line 312 in your tax guide.\par&#13;&#10;\b 20 \f2\endash\f1  RPP contributions \b0\f2\endash\f1  Includes past service contributions.\par&#13;&#10;         See line 207 in your tax guide.\par&#13;&#10;\b 22 \f2\endash\f1  Income tax deducted \b0\f2\endash\f1  Enter on line 437.\par&#13;&#10;\b 37 \f2\endash\f1  Employee home-relocation loan deduction \f2\endash\f1  \b0 Enter on line 248.\par&#13;&#10;\b 39 \f2\endash\f1  Security options deduction 110(1)(d) \b0\f2\endash\f1  Enter on line 249.\par&#13;&#10;\b 41 \f2\endash\f1  Security options deduction 110(1)(d.1) \b0\f2\endash\f1  Enter on line 249.\par&#13;&#10;\b 42 \f2\endash\f1  Employment commissions \b0\f2\endash\f1  Enter on line 102.\par&#13;&#10;         This amount is already included in box 14.\par&#13;&#10;\b 43 \f2\endash\f1  Canadian Forces personnel &amp; police deduction \b0\f2\endash\f1  Enter on line 244. \line         This amount is already included in box 14.\par&#13;&#10;\b 44 \f2\endash\f1  Union dues \b0\f2\endash\f1  Enter on line 212.\par&#13;&#10;\b 46 \f2\endash\f1  Charitable donations\b0  \f2\endash\f1  See line 349 in your tax guide.\par&#13;&#10;\b 52 \f2\endash\f1  Pension adjustment \b0\f2\endash\f1  Enter on line 206.\par&#13;&#10;\b 55 \f2\endash\f1  Provincial parental insurance plan (PPIP) \b0\f2\endash\f1  Residents of Quebec, see \par&#13;&#10;         line 375 in your tax guide. Residents of provinces or territories other than\par&#13;&#10;         Quebec, see line 312 in your tax guide.\par&#13;&#10;\b 66 \f2\endash\f1  Eligible retiring allowances \b0\f2\endash\f1  See line 130 in your tax guide.\cf0\par&#13;&#10;}&#13;&#10;"/>
+      <TextObject Name="Text206" Left="375.8" Top="440" Width="355.2" Height="9.6" Text="Privacy Act, personal information bank numbers CRA PPU 005 and CRA PPU 047" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+      <RichObject Name="Rich20" Left="360.2" Top="690.4" Width="364.8" Height="57.6" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}&#13;&#10;{\colortbl ;\red10\green10\blue10;}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\cf1\b\fs12 84 - Titres de transport en commun - Lisez la ligne 364 de votre guide d'imp\'f4t. \par&#13;&#10;85 \f1\endash\f0  Primes vers\'e9es par l'employ\'e9 \'e0 un r\'e9gime priv\'e9 d'assurance-maladie \b0\f1\endash\f0  Lisez la\par&#13;&#10;        ligne 330 de votre guide d'imp\'f4t.\par&#13;&#10;\b 87 \f1\endash\f0  Montant exempt d'imp\'f4t vers\'e9 \'e0 un volontaire des services d'urgence \b0\f1\endash\f0\par&#13;&#10;         Lisez \'ab Volontaires des services d\rquote urgence \'bb \'e0 la ligne 101, et les renseignements\par&#13;&#10;         aux lignes 362 et 395 de votre guide d'imp\'f4t.\cf0\par&#13;&#10;}&#13;&#10;"/>
+    </DataBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,24 @@
+﻿@model Ellucian.Colleague.Api.Areas.Planning.Models.Tests.TestEvaluationResult
+
+@{
+    ViewBag.Title = "Evaluation Results";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">Evaluation for @Model.PersonId @Model.ProgramId</h2>
+    <a href="@Url.Action("", "Test")" class="esg-page-header__subtitle esg-page-header__subtitle--backlink">
+        <span class="esg-icon__container esg-page-header__icon" aria-hidden="true">
+            <svg class="esg-icon esg-icon--left">
+                <use xlink:href="#icon-arrow"></use>
+            </svg>
+        </span>Back to List
+    </a>
+</div>
+<div class="base">
+    <h3>Evaluation:</h3>
+<pre>@Model.Evaluation</pre>
+
+    <h3>Log:</h3>
+<pre>@Model.Log</pre>
+</div>

@@ -1,0 +1,10 @@
+{
+  "Benefits_ConfirmationText": "Thank you for completing your open enrollment elections!",
+  "ReportHeader_Title": "Open Enrollment Benefits",
+  "Report_Header_TitleDescription": "You have elected the following benefits. You may make changes until the enrollment period ends on",
+  "TableHeader_Benefit": "Benefit",
+  "TableHeader_BenefitPlan": "Benefit Plan",
+  "TableHeader_CoverageOrParticipation": "Coverage/Participation",
+  "TableHeader_DependentsOrBeneficiaries": "Dependents/Beneficiaries",
+  "TableHeader_HealthCareProvider": "Health Care Provider Information"
+}

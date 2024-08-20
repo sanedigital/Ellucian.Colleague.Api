@@ -1,0 +1,67 @@
+﻿@model Ellucian.Colleague.Api.Models.ApiTests
+
+@{
+    ViewBag.Title = "Colleague Web API Student Utilities";
+    bool loggedIn = Ellucian.Web.Http.Configuration.LocalUserUtilities.IsLoggedIn(this.Context.Request);
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+    <a href="@Url.Action("Index", new { Area = "", Controller = "Utilities" })" class="esg-page-header__subtitle esg-page-header__subtitle--backlink">
+        <span class="esg-icon__container esg-page-header__icon" aria-hidden="true">
+            <svg class="esg-icon esg-icon--left">
+                <use xlink:href="#icon-arrow"></use>
+            </svg>
+        </span>Back to Utilities List
+    </a>
+</div>
+
+<div id="StudentUtilitiesTestbody">
+    <section class="content-wrapper main-content clear-fix"><br/>
+        <div class="base">
+            <h3>Any Web API Host</h3>
+            @if (!loggedIn)
+            {
+                <p>These tests require you to @Html.ActionLink("Login", "login", new { Area = "", Controller = "Admin" }) first.</p>
+            }
+            <br/>
+            <p>These tests use the .NET API client against <strong>any</strong> Web API host.</p>
+        </div>
+        <table class="Utilities">
+            <tr>
+                <td>Academic history for current user</td>
+                <td>GET &nbsp;&nbsp;&nbsp; @Html.ActionLink("students/{id}/academiccredits", "Credits", "Test", null, null)</td>
+               
+            </tr>
+            <tr>
+                <td>Search courses</td>
+                <td>POST&nbsp;&nbsp;@Html.ActionLink("courses", "CourseSearch", "Test", null, null)</td>
+            </tr>
+            <tr>
+                <td>Search courses (multiple at once)</td>
+                <td>POST&nbsp;&nbsp;@Html.ActionLink("courses", "CourseSearchParallel", "Test", null, null)</td>
+            </tr>
+            <tr>
+                <td>Get courses by ID(s)</td>
+                <td>GET&nbsp;&nbsp;&nbsp; @Html.ActionLink("courses/{id1,id2,...}", "Courses", "Test", null, null)</td>
+            </tr>
+            <tr>
+                <td>Get sections by ID(s)</td>
+                <td>GET&nbsp;&nbsp;&nbsp; @Html.ActionLink("sections?sectionIds={id1,id2,...}", "Sections", "Test", null, null)</td>
+            </tr>
+            <tr>
+                <td>Get sections by course ID(s)</td>
+                <td >GET&nbsp;&nbsp;&nbsp; @Html.ActionLink("courses/sections?courseIds={id1,id2,...}", "SectionsForCourses", "Test", null, null)</td>
+            </tr>
+            <tr>
+                <td>Get subjects</td>
+                <td>GET&nbsp;&nbsp;&nbsp; @Html.ActionLink("subjects", "Subjects", "Test", null, null)</td>
+            </tr>
+            <tr>
+                <td>Get faculty by ID(s)</td>
+                <td>POST&nbsp;&nbsp;@Html.ActionLink("faculty", "Faculty", "Test", null, null)</td>
+            </tr>
+        </table>
+    </section>
+</div>

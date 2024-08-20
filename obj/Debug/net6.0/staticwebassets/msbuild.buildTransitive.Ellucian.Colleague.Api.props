@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Ellucian.Colleague.Api.props" />
+</Project>

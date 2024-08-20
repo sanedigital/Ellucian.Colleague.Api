@@ -1,0 +1,134 @@
+﻿@* Copyright 2017-2023 Ellucian Company L.P. and its affiliates. *@
+
+@*Get User Infomration*@
+@inject IWebHostEnvironment webHost
+
+@using Ellucian.Web.Security
+@using Microsoft.AspNetCore.Hosting;
+@{
+    string userName = null;
+    string apiURL = "";
+    string token = "";
+    var cookie = Ellucian.Web.Http.Configuration.LocalUserUtilities.GetCookie(this.Context.Request);
+    Ellucian.Web.Http.Configuration.LocalUserUtilities.ParseCookie(cookie, out apiURL, out token);
+    if (!string.IsNullOrEmpty(token))
+    {
+        var principal = JwtHelper.CreatePrincipal(token);
+        if (principal != null)
+        {
+            userName = principal.Identity.Name ?? string.Empty;
+        }
+    }
+}
+
+@*Layout*@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <!-- Ellucian Design System -->
+    @Html.Partial("_EllucianDesignSystem")
+    <link href="@Url.Content("~/themes/base/ellucianStyle.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/themes/base/Site.css")" rel="stylesheet" type="text/css" />
+
+   <script src="/bundles/jquery"></script>
+   <script src="/bundles/jqueryui"></script>
+   <script src="/bundles/globalscripts" ></script>
+
+    @Html.Partial("_RequireConfig")
+    <script type="text/javascript">
+        // Register the ESG modal spinner component
+        ko.components.register('modal-spinner', {
+            require: 'ModalSpinner/_ModalSpinner'
+        });
+
+        // Register the icon component
+        ko.components.register('icon', {
+            require: 'Icon/_Icon'
+        });
+    </script>
+
+    @RenderSection("scripts", required: false)
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body id="@ViewBag.BodyId" class="clear-group">
+    @Html.AntiForgeryToken()
+
+    @* Inject the Ellucian Style Guide SVG sprite *@
+    @Html.Raw(System.IO.File.ReadAllText(System.IO.Path.Combine(webHost.WebRootPath, "content/icons/ellucian-icon-sprite.svg")))
+    @* End sprite injection *@
+
+    <header id="headerTop">
+        <nav id="header-bar" class="esg-header-bar">
+            <div id="headerLogo" class="esg-header-bar__logo">
+                <h3 style="margin: 2rem">@Html.ActionLink("Colleague Web API", "Index", new { Area = "", Controller = "Home" }, new { @style = "text-decoration:none; color: white; background-color:transparent;" })</h3>
+            </div>
+            @if (this.Context.Request.IsLocal())
+            {
+                <div id="headerToolbar">
+                    <ul class="esg-header-bar__menu">
+                        <li class="esg-header-bar__menu-item">
+                            @Html.ActionLink("API Administration ", "Index", new { Area = "", Controller = "Admin" }, new { @class = "esg-header-bar__menu-link", @style = "text-decoration:none; color: white;" })
+                        </li>
+                        <li class="esg-header-bar__menu-item">
+                            @Html.ActionLink("Utilities", "Index", new { Area = "", Controller = "Utilities" }, new { @class = "esg-header-bar__menu-link", @style = "text-decoration:none; color: white;" })
+                        </li>
+                        @if (userName != null)
+                        {
+                            <li class="esg-header-bar__menu-item">
+                                <a id="User" class="esg-header-bar__menu-link" href="" style="color:white;">
+                                    <span class="esg-header-bar__icon esg-icon__container" aria-hidden="True">
+                                        <svg class="esg-icon esg-icon--white">
+                                            <use xlink:href="#icon-avatar" />
+                                        </svg>
+                                    </span>
+                                    <span class="esg-header-bar__icon-label">@userName</span>
+                                </a>
+                            </li>
+                            <li class="esg-header-bar__menu-item">
+                                <a id="logout" class="esg-header-bar__menu-link" href="@Url.Action("logout","Admin")" style="color:white;">
+                                    <span class="esg-header-bar__icon esg-icon__container" aria-hidden="True">
+                                        <svg class="esg-icon esg-icon--white">
+                                            <use xlink:href="#icon-clear" />
+                                        </svg>
+                                    </span>
+                                    <span class="esg-header-bar__icon-label">Logout</span>
+
+                                </a>
+
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="esg-header-bar__menu-item">
+                                @Html.ActionLink("Login", "login", new { Area = "", Controller = "Admin" }, new { @class = "esg-header-bar__menu-link", @style = "text-decoration:none; color: white;" })
+                            </li>
+                        }
+                    </ul>
+                </div>
+            }
+        </nav>
+    </header>
+    <div style=" text-align:right; padding-right:2rem;">
+        @if (apiURL != null)
+        {
+            <br /><span>Logged in to: @apiURL<br /></span>
+        }
+    </div>
+    <div id="body">
+        <section id="main-content" class="content-wrapper clear-group" role="main">
+            @RenderBody()
+        </section>
+        <!--Footer here-->
+        <div class="esg-footer">
+            <div class="esg-footer__text">© 2013-@(DateTime.Now.Year) Ellucian Company L.P. and its affiliates. </div>
+            <div class="esg-footer__text">All rights reserved.</div>
+        </div>
+    </div>
+</body>
+</html>

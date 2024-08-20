@@ -1,0 +1,978 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/16/2023 15:39:56" ReportInfo.Modified="04/05/2024 15:39:33" ReportInfo.CreatorVersion="2023.1.12.0">
+  <Dictionary>
+    <Parameter Name="Year" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Corrected" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeName" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeSsn" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeAddress" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeCity" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeState" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeZipCountry" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerName" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerEin" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerAddress" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerPhone" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerCity" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerState" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployerZip" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverage12Month" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageJanuary" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageFebruary" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageMarch" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageApril" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageMay" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageJune" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageJuly" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageAugust" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageSeptember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageOctober" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageNovember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="OfferOfCoverageDecember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmount12Month" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountJanuary" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountFebruary" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountMarch" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountApril" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountMay" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountJune" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountJuly" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountAugust" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountSeptember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountOctober" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountNovember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="LowestCostAmountDecember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCode12Month" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeJanuary" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeFebruary" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeMarch" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeApril" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeMay" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeJune" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeJuly" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeAugust" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeSeptember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeOctober" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeNovember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="SafeHarborCodeDecember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCode12Month" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeJanuary" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeFebruary" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeMarch" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeApril" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeMay" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeJune" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeJuly" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeAugust" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeSeptember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeOctober" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeNovember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="ZipCodeDecember" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeIsSelfInsured" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="PlanStartMonthCode" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Void" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box18Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box19Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box20Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box21Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box22Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box23Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box24Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box25Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box26Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box27Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box28Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box29Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30Name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30SSN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30DOB" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30All" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30Jan" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30Feb" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30Mar" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30Apr" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30May" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30June" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30July" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30Aug" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30Sept" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30Oct" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30Nov" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box30Dec" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="EmployeeAge" DataType="System.String" AsString="" Description="ReportParameter1"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="279.4" PaperHeight="215.9" RawPaperSize="1" LeftMargin="10.01" TopMargin="10.01" RightMargin="10.01" BottomMargin="10.01" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data1" Width="980.46" Height="737.52">
+      <ContainerObject Name="Container101" Left="462.8" Top="673.6" Width="518.4" Height="48.38" Border.Lines="Bottom">
+        <TextObject Name="Text287" Left="16.2" Top="15.2" Width="17" Height="17" Border.Lines="All" Text="[Box22All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text288" Left="491.16" Top="15.36" Width="17" Height="17" Border.Lines="All" Text="[Box22Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text289" Left="452.09" Top="15.36" Width="17" Height="17" Border.Lines="All" Text="[Box22Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text290" Left="412.09" Top="15.36" Width="17" Height="17" Border.Lines="All" Text="[Box22Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text291" Left="372.91" Top="15.36" Width="17" Height="17" Border.Lines="All" Text="[Box22Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text292" Left="334.72" Top="15.36" Width="17" Height="17" Border.Lines="All" Text="[Box22Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text293" Left="295.59" Top="15.36" Width="17" Height="17" Border.Lines="All" Text="[Box22July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text294" Left="256.94" Top="15.6" Width="17" Height="17" Border.Lines="All" Text="[Box22June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text295" Left="217.88" Top="15.6" Width="17" Height="17" Border.Lines="All" Text="[Box22May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text296" Left="178.6" Top="15.6" Width="17" Height="17" Border.Lines="All" Text="[Box22Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text297" Left="139.32" Top="15.6" Width="17" Height="17" Border.Lines="All" Text="[Box22Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text298" Left="101" Top="15.6" Width="17" Height="17" Border.Lines="All" Text="[Box22Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text299" Left="61.6" Top="15.6" Width="17" Height="17" Border.Lines="All" Text="[Box22Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <TextObject Name="Text10" Left="734.88" Top="5.45" Width="47.25" Height="18.9" Text="VOID" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text11" Left="735.33" Top="36.28" Width="91.48" Height="18.9" Text="CORRECTED" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <RichObject Name="Rich2" Left="147.2" Top="53.68" Width="684.18" Height="14.36" Border.Lines="Left, Right, Bottom" Border.BottomLine.Width="1.5" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}&#13;&#10;{\colortbl ;\red0\green0\blue0;}&#13;&#10;{\*\generator Riched20 10.0.22621}\viewkind4\uc1 &#13;&#10;\pard\cf1\b\fs16 Go to \i www.irs.gov/Form1095C \i0 for instructions and the latest information.\cf0\fs14\par&#13;&#10;}&#13;&#10;" Padding="100, 0, 0, 0"/>
+      <TextObject Name="Text15" Left="184.55" Top="18.9" Width="481.95" Height="18.9" Text="Employer-Provided Health Insurance Offer and Coverage" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt, style=Bold"/>
+      <ContainerObject Name="Container1" Top="18.9" Width="147.04" Height="49.14" Border.Lines="Right, Bottom" Border.LeftLine.Width="1.5" Border.RightLine.Width="1.5" Border.BottomLine.Width="1.5">
+        <TextObject Name="Text12" Top="23.44" Width="128.29" Height="24.95" Text="Department of the Treasury&#13;&#10;Internal Revenue Service" Padding="0, 4, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text13" Width="26.46" Height="24.95" Text="Form" Padding="0, 4, 0, 0" VertAlign="Bottom" Font="Arial, 7pt"/>
+        <TextObject Name="Text14" Left="22.35" Width="115.59" Height="24.95" Text="1095-C" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial Black, 20.25pt, style=Bold"/>
+        <ContainerObject Name="Container86" Top="49.15" Width="489.51" Height="15.88" Border.Lines="Right, Bottom" Border.RightLine.Width="1.5">
+          <TextObject Name="Text135" Left="58.56" Width="73.71" Height="15.88" Text="Employee" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+          <TextObject Name="Text136" Top="0.84" Width="49.14" Height="14.01" Fill.Color="Black" Text="Part I" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+          <ContainerObject Name="Container87" Left="489.6" Width="491.4" Height="15.88" Border.Lines="Bottom">
+            <TextObject Name="Text137" Left="57.7" Width="340.2" Height="15.88" Text="Applicable Large Employer Member (Employer)" Padding="0, 0, 0, 0" Font="Arial, 10pt, style=Bold"/>
+          </ContainerObject>
+          <ContainerObject Name="Container88" Top="16.32" Width="313.36" Height="32.13" Border.Lines="Right, Bottom">
+            <TextObject Name="Text138" Top="1.13" Width="9.45" Text="1" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+            <TextObject Name="Text139" Left="9.45" Top="1.13" Width="245.7" Text="Name of employee (first name, middle initial, last name) " Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+            <TextObject Name="Text140" Width="9.45" Height="11.34" Text="1" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+            <TextObject Name="Text141" Left="9.45" Width="245.7" Height="11.34" Text="Name of employee (first name, middle initial, last name) " Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+            <TextObject Name="Text142" Left="9.45" Top="14.45" Width="300.51" Height="14.55" Text="[EmployeeName]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+            <ContainerObject Name="Container89" Left="313.34" Width="176.15" Height="32.13" Border.Lines="Right, Bottom" Border.RightLine.Width="1.5">
+              <TextObject Name="Text143" Left="9.45" Width="132.3" Height="11.34" Text="Social security number (SSN) " Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+              <TextObject Name="Text144" Width="9.45" Height="11.34" Text="2" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+              <TextObject Name="Text145" Left="9.45" Top="14.36" Width="162.54" Height="14.55" Text="[EmployeeSsn]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+              <ContainerObject Name="Container90" Left="176.16" Width="312.61" Height="32.13" Border.Lines="Right, Bottom">
+                <TextObject Name="Text146" Top="1.13" Width="9.45" Text="1" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                <TextObject Name="Text147" Left="9.45" Top="1.13" Width="245.7" Text="Name of employee (first name, middle initial, last name) " Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                <TextObject Name="Text148" Left="9.45" Width="94.5" Height="11.34" Text="Name of employer" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                <TextObject Name="Text149" Width="9.45" Height="11.34" Text="7" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                <TextObject Name="Text150" Left="20.79" Top="14.36" Width="287.28" Height="14.55" Text="[EmployerName]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+                <ContainerObject Name="Container91" Left="312.96" Width="178.42" Height="32.13" Border.Lines="Bottom" Border.RightLine.Width="2">
+                  <TextObject Name="Text151" Left="9.45" Width="160.65" Height="11.34" Text="Employer identification number (EIN)" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                  <TextObject Name="Text152" Width="9.45" Height="11.34" Text="8" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                  <TextObject Name="Text153" Left="9.45" Top="14.36" Width="166.32" Height="14.55" Text="[EmployerEin]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+                </ContainerObject>
+              </ContainerObject>
+            </ContainerObject>
+            <ContainerObject Name="Container92" Top="31.87" Width="489.51" Height="32.13" Border.Lines="Right, Bottom" Border.RightLine.Width="1.5">
+              <TextObject Name="Text154" Width="9.45" Height="11.34" Text="3" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+              <TextObject Name="Text155" Left="9.45" Width="179.55" Height="11.34" Text="Street address (including apartment no.) " Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+              <TextObject Name="Text156" Left="9.45" Top="14.45" Width="476.28" Height="14.36" Text="[EmployeeAddress]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+              <ContainerObject Name="Container93" Left="489.6" Width="312.58" Height="32.13" Border.Lines="Right, Bottom">
+                <TextObject Name="Text157" Top="1.13" Width="9.45" Text="1" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                <TextObject Name="Text158" Left="9.45" Top="1.13" Width="245.7" Text="Name of employee (first name, middle initial, last name) " Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                <TextObject Name="Text159" Left="9.45" Width="198.45" Height="11.34" Text="Street address (including room or suite no.)" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                <TextObject Name="Text160" Width="9.45" Height="11.34" Text="9" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                <TextObject Name="Text161" Left="9.45" Top="14.36" Width="298.62" Height="14.36" Text="[EmployerAddress]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+                <ContainerObject Name="Container94" Left="312.58" Width="178.42" Height="32.13" Border.Lines="Bottom" Border.RightLine.Width="2">
+                  <TextObject Name="Text162" Left="15.12" Width="141.75" Height="11.34" Text="Contact telephone number" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                  <TextObject Name="Text163" Width="15.12" Height="11.34" Text="10" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                  <TextObject Name="Text164" Left="9.45" Top="14.36" Width="166.32" Height="14.36" Text="[EmployerPhone]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+                </ContainerObject>
+              </ContainerObject>
+              <ContainerObject Name="Container95" Top="32.26" Width="147.42" Height="32.13" Border.Lines="Right, Bottom" Border.BottomLine.Width="1.5">
+                <TextObject Name="Text165" Width="9.45" Height="11.34" Text="4" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                <TextObject Name="Text166" Left="9.45" Width="85.05" Height="11.34" Text="City or town" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                <ContainerObject Name="Container96" Left="148.13" Width="165.12" Height="32.13" Border.Lines="Right, Bottom" Border.BottomLine.Width="1.5">
+                  <TextObject Name="Text167" Width="9.45" Height="11.34" Text="5" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                  <TextObject Name="Text168" Left="9.45" Width="85.05" Height="11.34" Text="State or province" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                  <TextObject Name="Text169" Left="9.59" Top="14.45" Width="153.09" Height="14.36" Text="[EmployeeState]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+                  <ContainerObject Name="Container97" Left="165.22" Width="176.15" Height="32.13" Border.Lines="Right, Bottom" Border.RightLine.Width="1.5" Border.BottomLine.Width="1.5">
+                    <TextObject Name="Text170" Width="9.45" Height="11.34" Text="6" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                    <TextObject Name="Text171" Left="9.45" Width="167.83" Height="11.34" Text="Country and ZIP or foreign postal code" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                    <TextObject Name="Text172" Left="9.45" Top="14.36" Width="162.54" Height="14.36" Text="[EmployeeZipCountry]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+                    <ContainerObject Name="Container98" Left="176.06" Width="147.17" Height="32.13" Border.Lines="Right, Bottom" Border.BottomLine.Width="1.5">
+                      <TextObject Name="Text173" Left="15.12" Width="122.85" Height="11.34" Text="City or town" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                      <TextObject Name="Text174" Width="15.12" Height="11.34" Text="11" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                      <TextObject Name="Text175" Left="9.45" Top="14.27" Width="134.19" Height="14.36" Text="[EmployerCity]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+                      <ContainerObject Name="Container99" Left="147.26" Width="165.56" Height="32.13" Border.Lines="Right, Bottom" Border.BottomLine.Width="1.5">
+                        <TextObject Name="Text176" Left="15.12" Width="141.75" Height="11.34" Text="State or province" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                        <TextObject Name="Text177" Width="15.12" Height="11.34" Text="12" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                        <TextObject Name="Text178" Left="9.45" Top="14.27" Width="153.09" Height="14.36" Text="[EmployerState]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+                        <ContainerObject Name="Container100" Left="166.08" Width="178.42" Height="32.13" Border.Lines="Bottom" Border.BottomLine.Width="1.5">
+                          <TextObject Name="Text179" Left="14.36" Width="168.21" Height="11.34" Text="Country and ZIP or foreign postal code" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+                          <TextObject Name="Text180" Width="14.36" Height="11.34" Text="13" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+                          <TextObject Name="Text181" Left="9.45" Top="14.36" Width="163.88" Height="14.36" Text="[EmployerZip]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+                        </ContainerObject>
+                      </ContainerObject>
+                    </ContainerObject>
+                  </ContainerObject>
+                </ContainerObject>
+                <TextObject Name="Text182" Left="9.45" Top="14.36" Width="134.19" Height="14.36" Text="[EmployeeCity]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 10pt"/>
+              </ContainerObject>
+            </ContainerObject>
+          </ContainerObject>
+        </ContainerObject>
+      </ContainerObject>
+      <ContainerObject Name="Container2" Left="831.6" Top="18.9" Height="47.25" Border.Lines="Left, Bottom" Border.BottomLine.Width="2"/>
+      <ContainerObject Name="Container3" Left="831.6" Top="18.9" Width="149.31" Height="49.14" Border.Lines="Left, Bottom" Border.LeftLine.Width="1.5" Border.BottomLine.Width="1.5">
+        <TextObject Name="Text17" Width="149.31" Height="15.5" Border.Lines="Left, Bottom" Text="OMB No. 1545-2251" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt, style=Bold"/>
+        <TextObject Name="Textbox162" Left="23.38" Top="15.18" Width="96.1" Height="34.71" Text="[Year]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 22pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container24" Top="180.96" Width="489.96" Height="32.13" Border.Lines="Right, Bottom">
+        <TextObject Name="Text54" Left="53.66" Top="8.32" Width="211.68" Height="16.63" Text="Employee Offer of Coverage" Padding="6, 0, 2, 0" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text58" Top="8.32" Width="49.14" Height="15.5" Fill.Color="Black" Text="Part II" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <ContainerObject Name="Container33" Top="33.6" Width="89.28" Height="48" Border.Lines="Bottom">
+          <TextObject Name="Text60" Top="14.6" Width="14.4" Height="11.34" Text="14" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+          <TextObject Name="Text61" Left="14.4" Top="14.6" Width="56.25" Height="11.34" Text="Offer of" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+          <TextObject Name="Text62" Top="25.2" Width="75.45" Height="22.08" Text="Coverage (enter required code)" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+          <ContainerObject Name="Container48" Top="47.52" Width="89.28" Height="65.28" Border.Lines="Bottom">
+            <TextObject Name="Text78" Top="13.6" Width="85.05" Height="31.68" Text="Required Contribution (see instrtuctions)" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+            <TextObject Name="Text77" Left="14.4" Top="3" Width="65.85" Height="11.34" Text="Employee" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+            <TextObject Name="Text76" Top="3" Width="14.4" Height="11.34" Text="15" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+            <ContainerObject Name="Container57" Top="65.28" Width="89.28" Height="48.96" Border.Lines="Right, Top, Bottom" Border.BottomLine.Width="1.5">
+              <TextObject Name="Text92" Top="11.6" Width="85.05" Height="31.68" Text="Safe Harbor and Other Relief (enter code, if applicable) " Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+              <TextObject Name="Text93" Left="14.4" Top="1" Width="75.45" Height="11.34" Text="Section 4980H" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+              <TextObject Name="Text94" Top="1" Width="14.4" Height="11.34" Text="16" Padding="0, 0, 0, 0" Font="Arial, 7pt, style=Bold"/>
+              <TextObject Name="Text184" Top="49.61" Width="50.88" Height="16.35" Fill.Color="Black" Text="Part III" Padding="0, 0, 0, 0" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+            </ContainerObject>
+          </ContainerObject>
+        </ContainerObject>
+      </ContainerObject>
+      <TextObject Name="Textbox52" Left="716.2" Top="4" Width="16.63" Height="16.63" Border.Lines="All" Text="[Void]" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox53" Left="716.39" Top="33.66" Width="16.63" Height="16.63" Border.Lines="All" Text="[Corrected]" VertAlign="Center" Font="Arial, 10pt"/>
+      <ContainerObject Name="Container26" Left="491.64" Top="180.96" Width="489.32" Height="32.13" Border.Lines="Bottom">
+        <TextObject Name="Text57" Left="1" Top="8.32" Width="117.56" Height="16.63" Text="Plan Start Month" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text59" Left="113.4" Top="8.32" Width="145.91" Height="16.63" Text="(Enter 2-digit number):" VertAlign="Bottom" Font="Arial, 10pt"/>
+        <TextObject Name="Textbox160" Left="269.08" Top="9.6" Width="148.21" Height="15" Text="[PlanStartMonthCode]" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container28" Left="89.38" Top="213.12" Width="67.49" Height="49.44" Border.Lines="All">
+        <TextObject Name="Text63" Width="67.49" Height="17.09" Border.Lines="Bottom" Text="All 12 Months" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt"/>
+        <TextObject Name="Textbox39" Left="4" Top="19.45" Width="57.98" Height="24" Text="[OfferOfCoverage12Month]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container29" Left="156.77" Top="213.12" Width="68.64" Height="49.44" Border.Lines="All">
+        <TextObject Name="Text64" Width="68.35" Height="17.09" Border.Lines="Bottom" Text="Jan" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox48" Left="3.84" Top="19.45" Width="60.86" Height="24" Text="[OfferOfCoverageJanuary]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container30" Left="225.22" Top="213.12" Width="68.64" Height="49.44" Border.Lines="All">
+        <TextObject Name="Text65" Width="68.35" Height="17.09" Border.Lines="Bottom" Text="Feb" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox47" Left="3.84" Top="19.45" Width="60.86" Height="24" Text="[OfferOfCoverageFebruary]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Textbox46" Left="71.65" Top="19.45" Width="60.86" Height="24" Text="[OfferOfCoverageMarch]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container31" Left="293.76" Top="213.12" Width="68.26" Height="49.44" Border.Lines="All">
+        <TextObject Name="Text66" Width="68.35" Height="17.09" Border.Lines="Bottom" Text="Mar" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container32" Left="361.92" Top="213.12" Width="68.64" Height="49.44" Border.Lines="All">
+        <TextObject Name="Text67" Width="68.35" Height="17.09" Border.Lines="Bottom" Text="Apr" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox45" Left="3.84" Top="19.2" Width="60.86" Height="24" Text="[OfferOfCoverageApril]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container34" Left="430.37" Top="213.12" Width="68.64" Height="49.44" Border.Lines="All">
+        <TextObject Name="Text68" Width="68.35" Height="17.09" Border.Lines="Bottom" Text="May" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox44" Left="3.84" Top="19.2" Width="60.86" Height="24" Text="[OfferOfCoverageMay]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container35" Left="499.2" Top="213.12" Width="68.64" Height="49.44" Border.Lines="All">
+        <TextObject Name="Text69" Width="68.35" Height="17.09" Border.Lines="Bottom" Text="June" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox43" Left="3.84" Top="19.45" Width="59.36" Height="24" Text="[OfferOfCoverageJune]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container36" Left="568" Top="213.12" Width="68.26" Height="49.44" Border.Lines="All">
+        <TextObject Name="Text70" Width="67.78" Height="17.09" Border.Lines="Bottom" Text="July" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox42" Left="4.21" Top="19.45" Width="59.36" Height="24" Text="[OfferOfCoverageJuly]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container37" Left="636.1" Top="213.12" Width="68.26" Height="49.44" Border.Lines="All">
+        <TextObject Name="Text71" Width="67.78" Height="17.09" Border.Lines="Bottom" Text="Aug" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox41" Left="3.84" Top="19.45" Width="59.36" Height="24" Text="[OfferOfCoverageAugust]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container38" Left="704.26" Top="213.12" Width="68.26" Height="49.44" Border.Lines="All">
+        <TextObject Name="Text72" Width="67.78" Height="17.09" Border.Lines="Bottom" Text="Sept" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox40" Left="3.84" Top="19.45" Width="59.36" Height="24" Text="[OfferOfCoverageSeptember]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container39" Left="772.8" Top="213.12" Width="68.26" Height="49.44" Border.Lines="All">
+        <TextObject Name="Text73" Width="67.78" Height="17.09" Border.Lines="Bottom" Text="Oct" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <ContainerObject Name="Container41" Left="68.26" Width="68.26" Height="49.44" Border.Lines="All">
+          <TextObject Name="Text75" Width="67.78" Height="17.09" Border.Lines="Bottom" Text="Nov" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+          <ContainerObject Name="Container40" Left="68.16" Width="71.04" Height="49.44" Border.Lines="Left, Top, Bottom">
+            <TextObject Name="Text74" Width="71.04" Height="17.09" Border.Lines="Bottom" Text="Dec" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+            <TextObject Name="Textbox49" Left="3.84" Top="19.45" Width="59.36" Height="24" Text="[OfferOfCoverageDecember]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+          </ContainerObject>
+          <TextObject Name="Textbox50" Left="3.84" Top="19.2" Width="59.36" Height="24" Text="[OfferOfCoverageNovember]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+        </ContainerObject>
+        <TextObject Name="Textbox51" Left="3.84" Top="19.45" Width="59.36" Height="24" Text="[OfferOfCoverageOctober]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container43" Left="89.28" Top="262.46" Width="67.49" Height="65.05" Border.Lines="All">
+        <TextObject Name="Text79" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox54" Left="10" Top="39.46" Width="56.08" Height="24" Text="[LowestCostAmount12Month]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container44" Left="156.86" Top="262.46" Width="68.64" Height="65.05" Border.Lines="All">
+        <TextObject Name="Text80" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox64" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountJanuary]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container45" Left="225.6" Top="262.46" Width="68.16" Height="65.05" Border.Lines="All">
+        <TextObject Name="Text81" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox63" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountFebruary]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container46" Left="293.76" Top="262.46" Width="68.35" Height="65.05" Border.Lines="All">
+        <TextObject Name="Text82" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox62" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountMarch]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container47" Left="361.92" Top="262.46" Width="68.64" Height="65.05" Border.Lines="All">
+        <TextObject Name="Text83" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox61" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountApril]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container49" Left="430.46" Top="262.46" Width="68.64" Height="65.05" Border.Lines="All">
+        <TextObject Name="Text84" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox60" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountMay]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container50" Left="499.2" Top="262.46" Width="68.64" Height="65.05" Border.Lines="All">
+        <TextObject Name="Text85" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox59" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountJune]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container51" Left="567.74" Top="262.46" Width="68.45" Height="65.05" Border.Lines="All">
+        <TextObject Name="Text86" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox58" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountJuly]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container52" Left="636.2" Top="262.46" Width="67.97" Height="65.05" Border.Lines="All">
+        <TextObject Name="Text87" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox57" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountAugust]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container53" Left="704.16" Top="262.46" Width="68.45" Height="65.05" Border.Lines="All">
+        <TextObject Name="Text88" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox56" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountSeptember]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container54" Left="772.8" Top="262.46" Width="68.26" Height="65.05" Border.Lines="All">
+        <TextObject Name="Text89" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+        <ContainerObject Name="Container55" Left="68.26" Width="68.26" Height="65.05" Border.Lines="All">
+          <TextObject Name="Text90" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+          <ContainerObject Name="Container56" Left="68.26" Width="71.04" Height="65.05" Border.Lines="Left, Top, Bottom">
+            <TextObject Name="Text91" Top="46" Width="9.89" Height="17.09" Text="$" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+            <TextObject Name="Textbox65" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountDecember]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+          </ContainerObject>
+          <TextObject Name="Textbox66" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountNovember]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+        </ContainerObject>
+        <TextObject Name="Textbox67" Left="9.6" Top="39.36" Width="53.58" Height="24" Text="[LowestCostAmountOctober]" Padding="0, 0, 0, 0" VertAlign="Bottom" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container58" Left="89.28" Top="327.36" Width="67.49" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+        <TextObject Name="Textbox55" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCode12Month]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container59" Left="156.77" Top="327.36" Width="68.64" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+        <TextObject Name="Textbox79" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeJanuary]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container60" Left="225.6" Top="327.36" Width="68.16" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+        <TextObject Name="Textbox78" Left="3.91" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeFebruary]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container61" Left="293.76" Top="327.36" Width="68.35" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+        <TextObject Name="Textbox77" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeMarch]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container62" Left="361.92" Top="327.36" Width="68.64" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+        <TextObject Name="Textbox76" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeApril]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container63" Left="430.56" Top="327.36" Width="68.64" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+        <TextObject Name="Textbox75" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeMay]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container64" Left="499.2" Top="327.36" Width="68.64" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+        <TextObject Name="Textbox68" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeJune]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container65" Left="567.65" Top="327.36" Width="68.45" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+        <TextObject Name="Textbox71" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeJuly]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container66" Left="636.29" Top="327.36" Width="67.97" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+        <TextObject Name="Textbox72" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeAugust]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container67" Left="704.16" Top="327.36" Width="68.45" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+        <TextObject Name="Textbox73" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeSeptember]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container68" Left="772.8" Top="327.36" Width="68.26" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+        <ContainerObject Name="Container69" Left="68.26" Width="68.26" Height="48.96" Border.Lines="All" Border.BottomLine.Width="1.5">
+          <ContainerObject Name="Container70" Left="68.26" Width="71.04" Height="48.96" Border.Lines="Left, Top, Bottom" Border.BottomLine.Width="1.5">
+            <TextObject Name="Textbox69" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeDecember]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+          </ContainerObject>
+          <TextObject Name="Textbox70" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeNovember]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+        </ContainerObject>
+        <TextObject Name="Textbox74" Left="3.84" Top="19.2" Width="57.98" Height="24" Text="[SafeHarborCodeOctober]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      </ContainerObject>
+      <TextObject Name="Text98" Left="3" Top="722" Width="422.4" Height="12.48" Text="For Privacy Act and Paperwork Reduction Act Notice, see separate instructions. " Padding="0, 0, 0, 0" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Text99" Left="605.8" Top="722" Width="86.4" Height="9.6" Text="Cat. No. 60705M " Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 7pt"/>
+      <RichObject Name="Rich50" Left="876.2" Top="721.2" Width="103.95" Height="16.32" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}&#13;&#10;{\colortbl ;\red0\green0\blue0;}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\cf1\fs14 Form \b\fs20 1095-C \b0\fs14 ([Year])\cf0\fs16\par&#13;&#10;}&#13;&#10;" Padding="0, 0, 0, 0"/>
+      <RichObject Name="Rich64" Left="285" Top="38.4" Width="290.58" Height="14.36" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}&#13;&#10;{\colortbl ;\red0\green0\blue0;}&#13;&#10;{\*\generator Riched20 10.0.22621}\viewkind4\uc1 &#13;&#10;\pard\qc\cf1\b\fs16 Do not attach to your tax return. Keep for your records.\cf0\fs14\par&#13;&#10;}&#13;&#10;" Padding="0, 0, 0, 0"/>
+      <TextObject Name="Text183" Left="58.3" Top="377" Width="141.12" Height="12.93" Text="Covered Individuals" Padding="0, 0, 0, 0" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text185" Left="58.03" Top="390.59" Width="827.06" Height="13.25" Text="If Employer provided self-insured coverage, check the box and enter the information for each individual enrolled in coverage, including the employee." Padding="0, 0, 0, 0" Font="Arial, 9pt"/>
+      <TextObject Name="Text186" Left="888.73" Top="385.44" Width="17.32" Height="16.65" Border.Lines="All" Text="[EmployeeIsSelfInsured]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text187" Left="4" Top="404.8" Width="244" Height="26.5" Border.Lines="Top, Bottom" Text="(a) Name of covered individual(s)&#13;&#10;First name, middle initial, last name" Padding="0, 2, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text188" Left="248.59" Top="404.8" Width="117" Height="26.5" Border.Lines="Left, Top, Bottom" Text="(b) SSN or other TIN" Padding="0, 2, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text189" Left="366.31" Top="404.8" Width="97" Height="26.5" Border.Lines="All" Text="(c) DOB (if SSN or other&#13;&#10;TIN is not available)" Padding="0, 3, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+      <TextObject Name="Text190" Left="463.29" Top="404.8" Width="49" Height="26.5" Border.Lines="Top, Bottom" Text="(d) Covered&#13;&#10;all 12 months" Padding="0, 4, 0, 0" HorzAlign="Center" Font="Arial, 5.6pt"/>
+      <TextObject Name="Text191" Left="512.48" Top="404.8" Width="468" Height="14" Border.Lines="Left, Top" Text="(e) Months of coverage" Padding="0, 2, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text192" Left="512.48" Top="419.38" Width="39" Height="12" Border.Lines="All" Text="Jan" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text193" Left="551.48" Top="419.38" Width="39" Height="12" Border.Lines="All" Text="Feb" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text194" Left="590.48" Top="419.38" Width="39" Height="12" Border.Lines="All" Text="Mar" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text195" Left="629.48" Top="419.38" Width="39" Height="12" Border.Lines="All" Text="Apr" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text196" Left="668.48" Top="419.38" Width="39" Height="12" Border.Lines="All" Text="May" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text197" Left="707.48" Top="419.38" Width="39" Height="12" Border.Lines="All" Text="June" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text198" Left="746.48" Top="419.38" Width="39" Height="12" Border.Lines="All" Text="July" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text199" Left="785.48" Top="419.38" Width="39" Height="12" Border.Lines="All" Text="Aug" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text200" Left="824.48" Top="419.38" Width="39" Height="12" Border.Lines="All" Text="Sept" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text201" Left="863.48" Top="419.38" Width="39" Height="12" Border.Lines="All" Text="Oct" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text202" Left="902.48" Top="419.38" Width="39" Height="12" Border.Lines="All" Text="Nov" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text203" Left="941.48" Top="419.38" Width="39" Height="12" Border.Lines="Left, Top, Bottom" Text="Dec" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text204" Left="13.01" Top="430.77" Width="235.67" Height="48" Border.Lines="Right, Bottom" Text="17" Padding="0, 36, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text205" Left="13.01" Top="478.77" Width="235.67" Height="48" Border.Lines="Right, Bottom" Text="18" Padding="0, 35, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text206" Left="13.13" Top="527.76" Width="235.51" Height="48" Border.Lines="Right, Bottom" Text="19" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text207" Left="13.12" Top="576.64" Width="235.51" Height="48" Border.Lines="Right, Bottom" Text="20" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text208" Left="13.12" Top="625.5" Width="235.51" Height="48" Border.Lines="Right, Bottom" Text="21" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text209" Left="13" Top="673.34" Width="235.67" Height="48.58" Border.Lines="Right, Bottom" Text="22" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text210" Left="248.67" Top="430.99" Width="117.73" Height="47.78" Border.Lines="All" Text="[Box17SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text211" Left="366.39" Top="431.09" Width="97" Height="47.68" Border.Lines="All" Text="[Box17DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text212" Left="478.56" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17All]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text213" Left="953.72" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text214" Left="914.65" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text215" Left="875.65" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text216" Left="836.47" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17Sept]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text217" Left="797.28" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text218" Left="758.15" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text219" Left="719.5" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text220" Left="680.44" Top="446.61" Width="17" Height="17" Border.Lines="All" Text="[Box17May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text221" Left="641.16" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text222" Left="601.88" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text223" Left="563.56" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text224" Left="523.56" Top="446.37" Width="17" Height="17" Border.Lines="All" Text="[Box17Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text225" Left="479.45" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text226" Left="366.39" Top="478.77" Width="97" Height="48" Border.Lines="All" Text="[Box18DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text227" Left="248.67" Top="478.77" Width="117.72" Height="48" Border.Lines="All" Text="[Box18SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text228" Left="953.72" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text229" Left="914.65" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text230" Left="875.65" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text231" Left="836.47" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text232" Left="797.28" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text233" Left="758.15" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text234" Left="719.5" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text235" Left="680.44" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text236" Left="641.16" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text237" Left="601.88" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text238" Left="563.56" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text239" Left="523.56" Top="495.32" Width="17" Height="17" Border.Lines="All" Text="[Box18Jan]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text240" Left="479.26" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text241" Left="366.31" Top="526.77" Width="97" Height="48.86" Border.Lines="All" Text="[Box19DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text242" Left="248.57" Top="526.66" Width="117.72" Height="49.02" Border.Lines="All" Text="[Box19SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text243" Left="953.72" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text244" Left="914.65" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text245" Left="875.65" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text246" Left="836.47" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text247" Left="797.28" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text248" Left="758.15" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text249" Left="719.5" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text250" Left="680.44" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text251" Left="641.16" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text252" Left="601.88" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text253" Left="563.56" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text254" Left="523.56" Top="544.37" Width="17" Height="17" Border.Lines="All" Text="[Box19Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text255" Left="248.62" Top="575.76" Width="117.82" Height="48.88" Border.Lines="All" Text="[Box20SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text256" Left="366.32" Top="575.72" Width="96.94" Height="49" Border.Lines="All" Text="[Box20DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text257" Left="479.29" Top="592.79" Width="17" Height="17" Border.Lines="All" Text="[Box20All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text258" Left="953.72" Top="592.79" Width="17" Height="17" Border.Lines="All" Text="[Box20Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text259" Left="914.65" Top="592.79" Width="17" Height="17" Border.Lines="All" Text="[Box20Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text260" Left="875.65" Top="592.79" Width="17" Height="17" Border.Lines="All" Text="[Box20Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text261" Left="836.47" Top="592.79" Width="17" Height="17" Border.Lines="All" Text="[Box20Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text262" Left="797.28" Top="592.79" Width="17" Height="17" Border.Lines="All" Text="[Box20Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text263" Left="758.15" Top="592.79" Width="17" Height="17" Border.Lines="All" Text="[Box20July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text264" Left="719.5" Top="592.79" Width="17" Height="17" Border.Lines="All" Text="[Box20June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text265" Left="680.44" Top="592.79" Width="17" Height="17" Border.Lines="All" Text="[Box20May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text266" Left="641.16" Top="592.79" Width="17" Height="17" Border.Lines="All" Text="[Box20Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text267" Left="601.88" Top="592.79" Width="17" Height="17" Border.Lines="All" Text="[Box20Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text268" Left="563.56" Top="592.92" Width="17" Height="17" Border.Lines="All" Text="[Box20Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text269" Left="523.56" Top="592.92" Width="17" Height="17" Border.Lines="All" Text="[Box20Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text270" Left="953.72" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text271" Left="914.65" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text272" Left="875.65" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text273" Left="836.47" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text274" Left="797.28" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text275" Left="758.15" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text276" Left="719.5" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text277" Left="680.44" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text278" Left="641.16" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text279" Left="601.88" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text280" Left="563.56" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text281" Left="523.56" Top="641.88" Width="17" Height="17" Border.Lines="All" Text="[Box21Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text282" Left="248.57" Top="624.7" Width="117.8" Height="48.8" Border.Lines="All" Text="[Box21SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text283" Left="366.3" Top="624.61" Width="97" Height="48.8" Border.Lines="All" Text="[Box21DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text284" Left="479.28" Top="641.88" Width="16.72" Height="17.14" Border.Lines="All" Text="[Box21All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text285" Left="248.65" Top="673.5" Width="117.64" Height="48.38" Border.Lines="All" Text="[Box22SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text286" Left="366.33" Top="673.5" Width="97" Height="48.38" Border.Lines="All" Text="[Box22DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text300" Left="28.19" Top="677.1" Width="215.19" Height="43.5" Text="[Box22Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text301" Left="28.19" Top="481.26" Width="215.19" Height="43.5" Text="[Box18Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text302" Left="28.19" Top="433.1" Width="215.19" Height="43.5" Text="[Box17Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text303" Left="28.47" Top="627.73" Width="214.79" Height="43.5" Text="[Box21Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text304" Left="28.19" Top="530.73" Width="215.19" Height="43.5" Text="[Box19Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text305" Left="28.19" Top="579.7" Width="215.19" Height="43.5" Text="[Box20Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <LineObject Name="Line27" Left="512.64" Top="431.6" Height="290.88"/>
+      <LineObject Name="Line28" Left="551.42" Top="431.1" Height="290.88"/>
+      <LineObject Name="Line29" Left="590.58" Top="431.68" Height="290.88"/>
+      <LineObject Name="Line30" Left="629.49" Top="431.08" Height="290.88"/>
+      <LineObject Name="Line31" Left="668.55" Top="431.24" Height="290.88"/>
+      <LineObject Name="Line32" Left="707.72" Top="431.36" Height="290.88"/>
+      <LineObject Name="Line33" Left="746.61" Top="431.46" Height="290.88"/>
+      <LineObject Name="Line34" Left="785.64" Top="431.49" Height="290.88"/>
+      <LineObject Name="Line35" Left="824.67" Top="431.35" Height="290.88"/>
+      <LineObject Name="Line36" Left="863.71" Top="431.04" Height="290.88"/>
+      <LineObject Name="Line37" Left="902.4" Top="431.47" Height="290.88"/>
+      <LineObject Name="Line38" Left="941.51" Top="431.06" Height="290.88"/>
+      <LineObject Name="Line39" Left="463.83" Top="478.68" Width="517.27"/>
+      <LineObject Name="Line40" Left="463.24" Top="526.81" Width="517.27"/>
+      <LineObject Name="Line41" Left="463.56" Top="575.77" Width="517.27"/>
+      <LineObject Name="Line42" Left="463.56" Top="624.73" Width="517.27"/>
+      <LineObject Name="Line43" Left="463.56" Top="673.53" Width="517.27"/>
+    </DataBand>
+  </ReportPage>
+  <ReportPage Name="Page2" Landscape="true" PaperWidth="279.4" PaperHeight="215.9" RawPaperSize="1" LeftMargin="10.01" TopMargin="10.01" RightMargin="10.01" BottomMargin="10.01" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data2" Width="980.46" Height="723.11">
+      <TextObject Name="Text2" Width="982.8" Height="18.9" Border.Lines="Bottom" Border.BottomLine.Width="1.5" Text="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text1" Width="81.27" Height="18.9" Border.Lines="Bottom" Text="Form 1095-C ([Year]) " Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 6pt"/>
+      <TextObject Name="Text3" Left="939.55" Width="28.35" Height="18.9" Border.Lines="Bottom" Border.BottomLine.Width="1.5" Text="Page" HorzAlign="Right" VertAlign="Center" Font="Arial, 6pt"/>
+      <RichObject Name="Rich57" Top="21.35" Width="236.25" Height="22.68" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}&#13;&#10;{\colortbl ;\red0\green0\blue0;}&#13;&#10;{\*\generator Riched20 10.0.22621}\viewkind4\uc1 &#13;&#10;\pard\cf1\b\fs28 Instructions for Recipient \cf0\b0\par&#13;&#10;}&#13;&#10;" Padding="0, 0, 0, 0"/>
+      <RichObject Name="Rich61" Top="373.01" Width="482.55" Height="186.9" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}&#13;&#10;{\colortbl ;\red0\green0\blue0;}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\cf1\b\fs14 Additional information. \b0 For additional information about the tax provisions of the Affordable Care Act (ACA), the premium tax credit, and the employer shared responsibility provisions, visit \i www.irs.gov/ACA \i0 or call the IRS Healthcare Hotline for ACA questions (800-919-0452). \par&#13;&#10;\b Part I. Employee \par&#13;&#10;Lines 1\endash 6. \b0 Part I, lines 1 through 6, reports information about you, the employee. \par&#13;&#10;\b Line 2. \b0 This is your social security number (SSN). For your protection, this form may show only the last four digits of your SSN. However, the employer is required to report your complete SSN to the IRS. \par&#13;&#10;\b Part I. Applicable Large Employer Member (Employer) \par&#13;&#10;Lines 7\endash 13. \b0 Part I, lines 7 through 13, reports information about your employer. \par&#13;&#10;\b Line 10. \b0 This line includes a telephone number for the person whom you may call if you have questions about the information reported on the form or to report errors in the information on the form and ask that they be corrected. \par&#13;&#10;\b Part II. Employer Offer of Coverage, Lines 14\endash 17 \par&#13;&#10;Line 14. \b0 The codes listed below for line 14 describe the coverage that your employer offered to you and your spouse and dependent(s), if any. (If you received an offer of coverage through a multiemployer plan due to your membership in a union, that offer may not be shown on line 14.) The information on line 14 relates to eligibility for coverage subsidized by the premium tax credit for you, your spouse, and dependent(s). For more information about the premium tax credit, see Pub. 974. \cf0\fs12\par&#13;&#10;}&#13;&#10;" Padding="0, 0, 0, 0"/>
+      <RichObject Name="Rich62" Left="496" Top="44.03" Width="482.55" Height="519" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}&#13;&#10;{\colortbl ;\red0\green0\blue0;}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\cf1\b\fs14 1A. \b0 Minimum essential coverage providing minimum value offered to you with an employee required contribution for self-only coverage equal to or less than 9.5% (as adjusted) of the 48 contiguous states single federal poverty line and minimum essential coverage offered to your spouse and dependent(s) (referred to here as a Qualifying Offer). This code may be used to report for specific months for which a Qualifying Offer was made, even if you did not receive a Qualifying Offer for all 12 months of the calendar year. For information on the adjustment of the 9.5%, see IRS.gov.\b\par&#13;&#10;1B. \b0 Minimum essential coverage providing minimum value offered to you and minimum essential coverage NOT offered to your spouse or dependent(s).\par&#13;&#10;\b 1C. \b0 Minimum essential coverage providing minimum value offered to you and minimum essential coverage offered to your dependent(s) but NOT your spouse.\par&#13;&#10;\b 1D. \b0 Minimum essential coverage providing minimum value offered to you and minimum essential coverage offered to your spouse but NOT your dependent(s).\par&#13;&#10;\b 1E. \b0 Minimum essential coverage providing minimum value offered to you and minimum essential coverage offered to your dependent(s) and spouse.\par&#13;&#10;\b 1F. \b0 Minimum essential coverage NOT providing minimum value offered to you, or you and your spouse or dependent(s), or you, your spouse, and dependent(s).\par&#13;&#10;\b 1G. \b0 You were NOT a full-time employee for any month of the calendar year but were enrolled in self-insured employer-sponsored coverage for one or more months of the calendar year. This code will be entered in the All 12 Months box or in the separate monthly boxes for all 12 calendar months on line 14.\par&#13;&#10;\b 1H. \b0 No offer of coverage (you were NOT offered any health coverage or you were offered coverage that is NOT minimum essential coverage).\par&#13;&#10;\b 1I. \b0 Reserved.\par&#13;&#10;\b 1J. \b0 Minimum essential coverage providing minimum value offered to you; minimum essential coverage conditionally offered to your spouse; and minimum essential coverage NOT offered to your dependent(s).\par&#13;&#10;\b 1K. \b0 Minimum essential coverage providing minimum value offered to you; minimum essential coverage conditionally offered to your spouse; and minimum essential coverage offered to your dependent(s).\par&#13;&#10;\b Line 15. \b0 This line reports the employee required contribution, which is the monthly cost to you for the lowest-cost self-only minimum essential coverage providing minimum value that your employer offered you. The amount reported on line 15 may not be the amount you paid for coverage if, for example, you chose to enroll in more expensive coverage such as family coverage. Line 15 will show an amount only if code 1B, 1C, 1D, 1E, 1J, or 1K is entered on line 14. If you were offered coverage but there is no cost to you for the coverage, this line will report a \ldblquote 0.00\rdblquote  for the amount. For more information, including on\par&#13;&#10;how your eligibility for other healthcare arrangements might affect the amount reported on line 15, see IRS.gov.\par&#13;&#10;\b Line 16. \b0 This code provides the IRS information to administer the employer shared responsibility provisions. Other than a code 2C which reflects your enrollment in your employer\rquote s coverage, none of this information affects your eligibility for the premium tax credit. For more information about the employer shared responsibility provisions, see IRS.gov.\par&#13;&#10;\b Part III. Covered Individuals, Lines 17\f1\endash\f0 22\b0\par&#13;&#10;Part III reports the name, SSN (or TIN for covered individuals other than the employee listed in Part I), and coverage information about each individual (including any full-time employee and non-full-time employee, and any employee\f1\rquote\f0 s family members) covered under the employer\f1\rquote\f0 s health plan, if the plan is \f1\ldblquote\f0 self-insured.\f1\rdblquote\f0  A date of birth will be entered in column (c) only if an SSN (or TIN for covered individuals other than the employee listed in Part I) is not entered in column (b). Column (d) will be checked if the individual was covered for at least one day in every month of the year. For individuals who were covered for some but not all months, information will be entered in column (e) indicating the months for which these individuals were covered. If there are more than 6 covered individuals, see the additional covered individuals on Part III, Continuation Sheet(s).\par&#13;&#10;}&#13;&#10;" Padding="0, 0, 0, 0"/>
+      <RichObject Name="Rich58" Top="44" Width="482.55" Height="274.35" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}&#13;&#10;{\colortbl ;\red0\green0\blue0;}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\cf1\fs14 You are receiving this Form 1095-C because your employer is an Applicable Large Employer subject to the employer shared responsibility provisions in the Affordable Care Act. This Form 1095-C includes information about the health insurance coverage offered to you by your employer. Form 1095-C, Part II, includes information about the coverage, if any, your employer offered to you and your spouse and dependent(s). If you purchased health insurance coverage through the Health Insurance Marketplace and wish to claim the premium tax credit, this information will assist you in determining whether you are eligible. For more information about the premium tax credit, see Pub. 974, Premium Tax Credit (PTC). You may receive multiple Forms 1095-C if you had multiple employers during the year that were Applicable Large Employers (for example, you left employment with one Applicable Large Employer and began a new position of employment with another Applicable Large Employer). In that situation, each Form 1095-C would have information only about the health insurance coverage offered to you by the employer identified on the form. If your employer is not an Applicable Large Employer, it is not required to furnish you a Form 1095-C providing information about the health coverage it offered.\par&#13;&#10;  In addition, if you, or any other individual who is offered health coverage because of their relationship to you (referred to here as family members), enrolled in your employer\rquote s health plan and that plan is a type of plan referred to as a \ldblquote self-insured\rdblquote  plan, Form 1095-C, Part III, provides information about you and your family members who had certain health coverage (referred to as \ldblquote minimum essential coverage\rdblquote ) for some or all months during the year. If you or your family members are eligible for certain types of minimum essential coverage, you may not be eligible for the premium tax credit.\par&#13;&#10;  If your employer provided you or a family member health coverage through an insured health plan or in another manner, you may receive information about the coverage separately on Form 1095-B, Health Coverage. Similarly, if you or a family member obtained minimum essential coverage from another source, such as a government-sponsored program, an individual market plan, or miscellaneous coverage designated by the Department of Health and Human Services, you may receive information about that coverage on Form 1095-B. If you or a family member enrolled in a qualified health plan through a Health Insurance Marketplace, the Health Insurance Marketplace will report information about that coverage on Form 1095-A, Health Insurance Marketplace Statement.\par&#13;&#10;}&#13;&#10;" Padding="0, 0, 0, 0"/>
+      <ContainerObject Name="Container85" Top="318.8" Width="451.2" Height="48">
+        <ShapeObject Name="Shape1" Width="47.25" Height="47.25" Border.Style="Double" Border.Width="1.5" Fill.Color="Black" Shape="RoundRectangle"/>
+        <ShapeObject Name="Shape2" Left="1.89" Top="1.89" Width="43.47" Height="43.47" Border.Style="Double" Border.Width="1.5" Fill.Color="White" Shape="Ellipse"/>
+        <TextObject Name="Text133" Left="2.92" Top="14.02" Width="43.2" Height="19.2" Text="TIP" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial Black, 14pt"/>
+        <TextObject Name="Text134" Left="51" Top="4.6" Width="393.6" Height="38.4" Text="Employers are required to furnish Form 1095-C only to the employee. As the recipient of this Form 1095-C, you should provide a copy to any family members covered under a self-insured employer-sponsored plan listed in Part III if they request it for their records." VertAlign="Center" Font="Arial, 7pt, style=Italic"/>
+      </ContainerObject>
+    </DataBand>
+  </ReportPage>
+  <ReportPage Name="Page3" Landscape="true" PaperWidth="279.4" PaperHeight="215.9" RawPaperSize="1" LeftMargin="10.01" TopMargin="10.01" RightMargin="10.01" BottomMargin="10.01" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data3" Width="980.46" Height="726.72">
+      <TextObject Name="Text100" Left="1.87" Top="1.86" Width="98.76" Height="11.22" Text="Form 1095-C ([Year])" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+      <TextObject Name="Text101" Left="62.46" Top="50.1" Width="131.52" Height="12.93" Text="Covered Individuals" Padding="0, 0, 0, 0" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text102" Left="4.16" Top="50.11" Width="50.88" Height="16.35" Fill.Color="Black" Text="Part III" Padding="0, 0, 0, 0" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+      <TextObject Name="Text103" Left="65.19" Top="66.69" Width="817.46" Height="13.25" Text="If Employer provided self-insured coverage, check the box and enter the information for each individual enrolled in coverage, including the employee." Padding="0, 0, 0, 0" Font="Arial, 9pt"/>
+      <TextObject Name="Text18" Left="3.52" Top="81.75" Width="244" Height="26.5" Border.Lines="Top, Bottom" Text="(a) Name of covered individual(s)&#13;&#10;First name, middle initial, last name" Padding="0, 2, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text104" Left="248.11" Top="81.75" Width="117" Height="26.5" Border.Lines="Left, Top, Bottom" Text="(b) SSN or other TIN" Padding="0, 2, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text105" Left="365.83" Top="81.75" Width="97" Height="26.5" Border.Lines="All" Text="(c) DOB (if SSN or other&#13;&#10;TIN is not available)" Padding="0, 3, 0, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+      <TextObject Name="Text106" Left="462.81" Top="81.75" Width="49" Height="26.5" Border.Lines="Top, Bottom" Text="(d) Covered&#13;&#10;all 12 months" Padding="0, 4, 0, 0" HorzAlign="Center" Font="Arial, 5.6pt"/>
+      <TextObject Name="Text107" Left="512" Top="81.75" Width="468" Height="14" Border.Lines="Left, Top" Text="(e) Months of coverage" Padding="0, 2, 0, 0" HorzAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text108" Left="512" Top="96.33" Width="39" Height="12" Border.Lines="All" Text="Jan" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text109" Left="551" Top="96.33" Width="39" Height="12" Border.Lines="All" Text="Feb" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text110" Left="590" Top="96.33" Width="39" Height="12" Border.Lines="All" Text="Mar" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text28" Left="629" Top="96.33" Width="39" Height="12" Border.Lines="All" Text="Apr" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text29" Left="668" Top="96.33" Width="39" Height="12" Border.Lines="All" Text="May" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text111" Left="707" Top="96.33" Width="39" Height="12" Border.Lines="All" Text="June" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text112" Left="746" Top="96.33" Width="39" Height="12" Border.Lines="All" Text="July" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text113" Left="785" Top="96.33" Width="39" Height="12" Border.Lines="All" Text="Aug" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text114" Left="824" Top="96.33" Width="39" Height="12" Border.Lines="All" Text="Sept" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text115" Left="863" Top="96.33" Width="39" Height="12" Border.Lines="All" Text="Oct" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text116" Left="902" Top="96.33" Width="39" Height="12" Border.Lines="All" Text="Nov" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text117" Left="941" Top="96.33" Width="39" Height="12" Border.Lines="Left, Top, Bottom" Text="Dec" Padding="0, 2, 0, 0" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/>
+      <TextObject Name="Text118" Left="947.02" Top="2.99" Width="26.17" Height="10.41" Text="Page" Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+      <TextObject Name="Text119" Left="970.97" Top="-0.49" Width="9.33" Height="12.29" Text="3" Padding="0, 0, 0, 0" Font="Arial, 10pt, style=Bold"/>
+      <LineObject Name="Line1" Left="3.61" Top="49.87" Width="976.93" Border.Width="1.5"/>
+      <TextObject Name="Text120" Left="12.45" Top="107.95" Width="235.67" Height="48" Border.Lines="Right, Bottom" Text="23" Padding="0, 36, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text121" Left="12.45" Top="155.95" Width="235.67" Height="48" Border.Lines="Right, Bottom" Text="24" Padding="0, 35, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text122" Left="12.57" Top="204.94" Width="235.51" Height="48" Border.Lines="Right, Bottom" Text="25" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text123" Left="12.56" Top="253.82" Width="235.51" Height="48" Border.Lines="Right, Bottom" Text="26" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text124" Left="12.56" Top="302.68" Width="235.51" Height="48" Border.Lines="Right, Bottom" Text="27" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text125" Left="12.44" Top="351.52" Width="235.67" Height="48" Border.Lines="Right, Bottom" Text="28" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text126" Left="12.44" Top="400.52" Width="235.67" Height="48" Border.Lines="Right, Bottom" Text="29" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text127" Left="12.44" Top="449.47" Width="235.67" Height="48" Border.Lines="Right, Bottom" Text="30" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text128" Left="12.44" Top="498.47" Width="235.67" Height="48" Border.Lines="Right, Bottom" Text="31" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text129" Left="12.44" Top="547.48" Width="235.67" Height="48" Border.Lines="Right, Bottom" Text="32" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text130" Left="12.45" Top="596.22" Width="235.67" Height="48" Border.Lines="Right, Bottom" Text="33" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text131" Left="12.45" Top="644.76" Width="235.67" Height="48" Border.Lines="Right, Bottom" Text="34" Padding="0, 34, 0, 0" Font="Arial, 7pt, style=Bold"/>
+      <LineObject Name="Line2" Left="8.77" Top="693.36" Width="972.08" Border.Width="1.5"/>
+      <TextObject Name="Textbox27" Left="248.11" Top="108.17" Width="117.73" Height="47.78" Border.Lines="All" Text="[Box23SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox28" Left="365.83" Top="108.27" Width="97" Height="47.68" Border.Lines="All" Text="[Box23DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox93" Left="478" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23All]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox94" Left="953.16" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox95" Left="914.09" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox96" Left="875.09" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox97" Left="835.91" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23Sept]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox98" Left="796.72" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox99" Left="757.59" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox100" Left="718.94" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox101" Left="679.88" Top="123.79" Width="17" Height="17" Border.Lines="All" Text="[Box23May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox102" Left="640.6" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox103" Left="601.32" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox104" Left="563" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox105" Left="523" Top="123.55" Width="17" Height="17" Border.Lines="All" Text="[Box23Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox106" Left="478.89" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox29" Left="365.83" Top="155.95" Width="97" Height="48" Border.Lines="All" Text="[Box24DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox30" Left="248.11" Top="155.95" Width="117.72" Height="48" Border.Lines="All" Text="[Box24SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox107" Left="953.16" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox108" Left="914.09" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox109" Left="875.09" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox110" Left="835.91" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox111" Left="796.72" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox112" Left="757.59" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox113" Left="718.94" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox114" Left="679.88" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox115" Left="640.6" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox116" Left="601.32" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox117" Left="563" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox118" Left="523" Top="172.5" Width="17" Height="17" Border.Lines="All" Text="[Box24Jan]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox119" Left="478.7" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox32" Left="365.75" Top="203.95" Width="97" Height="48.86" Border.Lines="All" Text="[Box25DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox33" Left="248.01" Top="203.84" Width="117.72" Height="49.02" Border.Lines="All" Text="[Box25SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox120" Left="953.16" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox121" Left="914.09" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox122" Left="875.09" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox123" Left="835.91" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox124" Left="796.72" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox125" Left="757.59" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox126" Left="718.94" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox127" Left="679.88" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox128" Left="640.6" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox129" Left="601.32" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox130" Left="563" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox131" Left="523" Top="221.55" Width="17" Height="17" Border.Lines="All" Text="[Box25Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox36" Left="248.06" Top="252.94" Width="117.82" Height="48.88" Border.Lines="All" Text="[Box26SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox37" Left="365.76" Top="252.9" Width="96.94" Height="49" Border.Lines="All" Text="[Box26DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox132" Left="478.73" Top="269.97" Width="17" Height="17" Border.Lines="All" Text="[Box26All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox133" Left="953.16" Top="269.97" Width="17" Height="17" Border.Lines="All" Text="[Box26Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox134" Left="914.09" Top="269.97" Width="17" Height="17" Border.Lines="All" Text="[Box26Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox135" Left="875.09" Top="269.97" Width="17" Height="17" Border.Lines="All" Text="[Box26Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox136" Left="835.91" Top="269.97" Width="17" Height="17" Border.Lines="All" Text="[Box26Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox137" Left="796.72" Top="269.97" Width="17" Height="17" Border.Lines="All" Text="[Box26Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox138" Left="757.59" Top="269.97" Width="17" Height="17" Border.Lines="All" Text="[Box26July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox139" Left="718.94" Top="269.97" Width="17" Height="17" Border.Lines="All" Text="[Box26June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox140" Left="679.88" Top="269.97" Width="17" Height="17" Border.Lines="All" Text="[Box26May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox141" Left="640.6" Top="269.97" Width="17" Height="17" Border.Lines="All" Text="[Box26Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox142" Left="601.32" Top="269.97" Width="17" Height="17" Border.Lines="All" Text="[Box26Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox143" Left="563" Top="270.1" Width="17" Height="17" Border.Lines="All" Text="[Box26Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox144" Left="523" Top="270.1" Width="17" Height="17" Border.Lines="All" Text="[Box26Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox145" Left="953.16" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox146" Left="914.09" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox147" Left="875.09" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox148" Left="835.91" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox149" Left="796.72" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox150" Left="757.59" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox151" Left="718.94" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox152" Left="679.88" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox153" Left="640.6" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox154" Left="601.32" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox155" Left="563" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox156" Left="523" Top="319.06" Width="17" Height="17" Border.Lines="All" Text="[Box27Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox157" Left="248.01" Top="301.88" Width="117.8" Height="48.8" Border.Lines="All" Text="[Box27SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox158" Left="365.74" Top="301.79" Width="97" Height="48.8" Border.Lines="All" Text="[Box27DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox159" Left="478.72" Top="319.06" Width="16.72" Height="17.14" Border.Lines="All" Text="[Box27All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox161" Left="889.89" Top="61.14" Width="17.32" Height="16.65" Border.Lines="All" Text="[EmployeeIsSelfInsured]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox163" Left="248.09" Top="350.68" Width="117.64" Height="48.96" Border.Lines="All" Text="[Box28SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox164" Left="365.77" Top="350.68" Width="97" Height="48.96" Border.Lines="All" Text="[Box28DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox165" Left="478.2" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox166" Left="478.92" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox167" Left="365.77" Top="399.65" Width="97" Height="48.96" Border.Lines="All" Text="[Box29DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox168" Left="248.09" Top="399.65" Width="117.64" Height="48.96" Border.Lines="All" Text="[Box29SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox170" Left="953.16" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox171" Left="914.09" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox172" Left="875.09" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox173" Left="835.91" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox174" Left="796.72" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox175" Left="757.59" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox176" Left="718.94" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox177" Left="679.88" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox178" Left="640.6" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox179" Left="601.32" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox180" Left="563" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox181" Left="523" Top="417.12" Width="17" Height="17" Border.Lines="All" Text="[Box29Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox182" Left="953.16" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox183" Left="914.09" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox184" Left="875.09" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox185" Left="835.91" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox186" Left="796.72" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox187" Left="757.59" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox188" Left="718.94" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox189" Left="679.88" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox190" Left="640.6" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox191" Left="601.32" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox192" Left="563" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox193" Left="523" Top="367.75" Width="17" Height="17" Border.Lines="All" Text="[Box28Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox198" Left="478.58" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox199" Left="365.77" Top="448.53" Width="97" Height="48.96" Border.Lines="All" Text="[Box30DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox200" Left="248.09" Top="448.53" Width="117.64" Height="48.96" Border.Lines="All" Text="[Box30SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox202" Left="478.57" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox203" Left="365.77" Top="497.5" Width="97" Height="48.96" Border.Lines="All" Text="[Box31DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox204" Left="247.93" Top="497.5" Width="117.8" Height="48.96" Border.Lines="All" Text="[Box31SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox206" Left="953.16" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox207" Left="914.09" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox208" Left="875.09" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox209" Left="835.91" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox210" Left="796.72" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox211" Left="757.59" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox212" Left="718.94" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox213" Left="679.88" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox214" Left="640.6" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox215" Left="601.32" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox216" Left="563" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox217" Left="523" Top="465.65" Width="17" Height="17" Border.Lines="All" Text="[Box30Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox218" Left="953.16" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox219" Left="914.09" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox220" Left="875.09" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox221" Left="835.91" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox222" Left="796.72" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31Aug]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox223" Left="757.59" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox224" Left="718.94" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox225" Left="679.88" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox226" Left="640.6" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox227" Left="601.32" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox228" Left="563" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox229" Left="523" Top="514.34" Width="17" Height="17" Border.Lines="All" Text="[Box31Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox230" Left="953.16" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox231" Left="914.09" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox232" Left="875.09" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox233" Left="835.91" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox234" Left="796.72" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox235" Left="757.59" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox236" Left="718.94" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox237" Left="679.88" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox238" Left="640.6" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox239" Left="601.32" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox240" Left="563" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox241" Left="523" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox242" Left="478.56" Top="563.34" Width="17" Height="17" Border.Lines="All" Text="[Box32All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox243" Left="365.77" Top="546.42" Width="97" Height="48.96" Border.Lines="All" Text="[Box32DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox244" Left="247.93" Top="546.42" Width="117.8" Height="48.96" Border.Lines="All" Text="[Box32SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox246" Left="953.16" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox247" Left="914.09" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox248" Left="875.09" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox249" Left="835.91" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox250" Left="796.72" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox251" Left="757.59" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox252" Left="718.94" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox253" Left="679.88" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox254" Left="640.6" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox255" Left="601.32" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox256" Left="563" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox257" Left="523" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox258" Left="478.93" Top="611.75" Width="17" Height="17" Border.Lines="All" Text="[Box33All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox259" Left="365.77" Top="595.42" Width="97" Height="48.8" Border.Lines="All" Text="[Box33DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox260" Left="248.09" Top="595.42" Width="117.64" Height="48.8" Border.Lines="All" Text="[Box33SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox262" Left="953.16" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34Dec]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox263" Left="914.09" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34Nov]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox264" Left="875.09" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34Oct]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox265" Left="835.91" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34Sept]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox266" Left="796.72" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34Aug]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox267" Left="757.59" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34July]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox268" Left="718.94" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34June]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox269" Left="679.88" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34May]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox270" Left="640.6" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34Apr]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox271" Left="601.32" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34Mar]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox272" Left="563" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34Feb]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox273" Left="523" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34Jan]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox274" Left="478.93" Top="661.41" Width="17" Height="17" Border.Lines="All" Text="[Box34All]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox275" Left="365.77" Top="644.26" Width="97" Height="48.48" Border.Lines="All" Text="[Box34DOB]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox276" Left="248.09" Top="644.26" Width="117.64" Height="48.48" Border.Lines="All" Text="[Box34SSN]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox277" Left="27.63" Top="647.64" Width="215.19" Height="43.5" Text="[Box34Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox293" Left="27.63" Top="450.93" Width="215.19" Height="43.5" Text="[Box30Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox309" Left="27.63" Top="501.23" Width="215.19" Height="43.5" Text="[Box31Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox359" Left="27.63" Top="550.06" Width="215.19" Height="43.5" Text="[Box32Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox360" Left="27.63" Top="598.23" Width="215.19" Height="43.5" Text="[Box33Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox361" Left="27.63" Top="402.21" Width="215.19" Height="43.5" Text="[Box29Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox362" Left="27.63" Top="354.28" Width="215.19" Height="43.5" Text="[Box28Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox365" Left="27.63" Top="158.44" Width="215.19" Height="43.5" Text="[Box24Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox366" Left="27.63" Top="110.28" Width="215.19" Height="43.5" Text="[Box23Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox367" Left="27.91" Top="304.91" Width="214.79" Height="43.5" Text="[Box27Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox368" Left="27.63" Top="207.91" Width="215.19" Height="43.5" Text="[Box25Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox369" Left="27.63" Top="256.88" Width="215.19" Height="43.5" Text="[Box26Name]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <LineObject Name="Line3" Left="511.84" Top="108.28" Height="583.68"/>
+      <LineObject Name="Line4" Left="550.86" Top="108.28" Height="584.64"/>
+      <LineObject Name="Line5" Left="590.02" Top="108.28" Height="584.64"/>
+      <LineObject Name="Line6" Left="628.93" Top="108.28" Height="584.64"/>
+      <LineObject Name="Line7" Left="667.99" Top="108.28" Height="584.64"/>
+      <LineObject Name="Line8" Left="707.16" Top="108.28" Height="584.64"/>
+      <LineObject Name="Line9" Left="746.05" Top="108.28" Height="584.64"/>
+      <LineObject Name="Line10" Left="785.08" Top="108.28" Height="584.64"/>
+      <LineObject Name="Line11" Left="824.11" Top="108.28" Height="584.64"/>
+      <LineObject Name="Line12" Left="863.15" Top="108.28" Height="584.64"/>
+      <LineObject Name="Line13" Left="902.16" Top="108.28" Height="584.64"/>
+      <LineObject Name="Line14" Left="940.95" Top="108.28" Height="584.64"/>
+      <LineObject Name="Line15" Left="463.27" Top="155.86" Width="517.27"/>
+      <LineObject Name="Line16" Left="462.68" Top="203.99" Width="517.27"/>
+      <LineObject Name="Line17" Left="463" Top="252.95" Width="517.27"/>
+      <LineObject Name="Line18" Left="463" Top="301.91" Width="517.27"/>
+      <LineObject Name="Line19" Left="463" Top="350.71" Width="517.27"/>
+      <LineObject Name="Line20" Left="463" Top="399.83" Width="517.27"/>
+      <LineObject Name="Line21" Left="463" Top="448.63" Width="517.27"/>
+      <LineObject Name="Line22" Left="463" Top="497.59" Width="517.27"/>
+      <LineObject Name="Line23" Left="463" Top="546.55" Width="517.27"/>
+      <LineObject Name="Line24" Left="463" Top="595.51" Width="517.27"/>
+      <LineObject Name="Line25" Left="463" Top="644.31" Width="517.27"/>
+      <LineObject Name="Line26" Left="463" Top="692.79" Width="517.27"/>
+      <RichObject Name="Rich63" Left="876.6" Top="694.8" Width="103.95" Height="16.32" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}&#13;&#10;{\colortbl ;\red0\green0\blue0;}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\cf1\fs14 Form \b\fs20 1095-C \b0\fs14 ([Year])\cf0\fs16\par&#13;&#10;}&#13;&#10;" Padding="0, 0, 0, 0"/>
+      <TextObject Name="Text306" Left="194" Top="50.6" Width="131.52" Height="12.93" Text="— Continuation Sheet" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text353" Left="1.45" Top="20.2" Width="245.7" Height="11.34" Text="Name of employee (first name, middle initial, last name) " Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+      <TextObject Name="Text354" Left="9.45" Top="34.65" Width="665.31" Height="14.55" Text="[EmployeeName]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Arial, 10pt"/>
+      <LineObject Name="Line44" Left="4" Top="16.6" Width="976.93" Border.Width="1.5"/>
+      <TextObject Name="Text355" Left="758.4" Top="19.8" Width="132.3" Height="11.34" Text="Social security number (SSN) " Padding="0, 0, 0, 0" Font="Arial, 7pt"/>
+      <TextObject Name="Text356" Left="758.4" Top="34.16" Width="220.14" Height="14.55" Text="[EmployeeSsn]" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <LineObject Name="Line45" Left="746.2" Top="16.2" Height="33.6"/>
+    </DataBand>
+  </ReportPage>
+</Report>

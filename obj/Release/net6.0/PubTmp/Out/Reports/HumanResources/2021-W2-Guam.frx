@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/14/2023 13:29:45" ReportInfo.Modified="02/21/2023 16:11:06" ReportInfo.CreatorVersion="2023.1.12.0">
+  <Dictionary>
+    <Parameter Name="Tax_Year" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_c_name" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_c_addr_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_c_addr_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_c_addr_3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_c_addr_4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_e" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_f_addr_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_f_addr_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_f_addr_3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_f_addr_4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_5" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_6" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_7" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_8" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_9" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_10" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_11" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_12a_Code" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_12a_Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_12b_Code" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_12b_Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_12c_Code" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_12c_Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_12d_Code" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_12d_Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_13_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_13_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_13_3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_a" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_b" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_14_line_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_14_line_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_14_line_3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_14_line_4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_15_1_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_15_1_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_15_2_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_15_2_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_16_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_16_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_17_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_17_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_18_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_18_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_19_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_19_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_20_1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box_20_2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" RawPaperSize="1" LeftMargin="10.01" TopMargin="10.01" RightMargin="10.01" BottomMargin="10.01" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data1" Width="740.43" Height="980.09">
+      <TextObject Name="Text941" Left="596.39" Top="327.66" Width="136.38" Height="23.61" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text940" Left="596.39" Top="303.79" Width="136.38" Height="24" Border.Lines="Left, Top, Bottom" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text939" Left="596.52" Top="279.98" Width="136.38" Height="23.81" Border.Lines="Left, Top, Bottom" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text404" Left="596.09" Top="78.59" Width="136.38" Height="23.61" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text401" Left="596.22" Top="30.91" Width="136.38" Height="23.81" Border.Lines="Left, Top, Bottom" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text403" Left="596.09" Top="54.72" Width="136.38" Height="24" Border.Lines="Left, Top, Bottom" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text402" Left="461.14" Top="31.2" Width="134.88" Height="23.52" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text423" Left="460.93" Top="54.82" Width="135.22" Height="23.7" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text424" Left="460.77" Top="78.6" Width="135.39" Height="23.51" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text818" Left="325.4" Top="78.53" Width="135.51" Height="23.62" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text817" Left="325.4" Top="54.72" Width="135.51" Height="23.9" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text400" Left="325.48" Top="30.89" Width="135.51" Height="23.9" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text393" Left="461.33" Top="6.72" Width="134.69" Height="24.28" Border.Lines="All" Border.Width="1.5" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text421" Left="9.99" Top="187.34" Width="206.69" Height="28.35" Border.Lines="Right, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text420" Left="216.88" Top="187.49" Width="108.75" Height="28.22" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text415" Left="325.52" Top="187.38" Width="107.99" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text414" Left="433.61" Top="187.51" Width="108.49" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text413" Left="542.09" Top="187.49" Width="107.99" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text412" Left="650.22" Top="187.38" Width="82.11" Height="28.32" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text407" Left="596.22" Top="152.87" Width="136.38" Height="24.7" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text406" Left="596.03" Top="128.63" Width="136.38" Height="24.2" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text418" Left="325.48" Top="153.01" Width="135.38" Height="26.45" Border.Lines="All" Border.Width="1.5" Font="Arial, 10pt"/>
+      <TextObject Name="Text417" Left="325.39" Top="128.63" Width="135.26" Height="24.45" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text416" Left="325.48" Top="102.05" Width="135.26" Height="26.45" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text394" Left="596.16" Top="6.72" Width="136.3" Height="24.28" Border.Lines="All" Border.Width="1.5" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text392" Left="325.39" Top="6.53" Width="135.49" Height="24.32" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text390" Left="10.53" Top="30.81" Width="314.88" Height="71.39" Border.Lines="Right, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Textbox210" Left="600.01" Top="17.27" Width="128.94" Height="12.5" Text="[Box_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox209" Left="463.73" Top="17.27" Width="130.76" Height="12.5" Text="[Box_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox211" Left="463.4" Top="40.96" Width="131.46" Height="12.5" Text="[Box_3]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox212" Left="600.01" Top="42" Width="130.72" Height="12.5" Text="[Box_4]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox214" Left="598.56" Top="64.21" Width="131.85" Height="12.5" Text="[Box_6]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox213" Left="463.68" Top="64.21" Width="131.48" Height="12.5" Text="[Box_5]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox219" Left="463.37" Top="87.98" Width="131.52" Height="12.5" Text="[Box_11]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox223" Left="602.17" Top="114.88" Width="26.86" Height="12.5" Text="[Box_12b_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox222" Left="631.45" Top="114.9" Width="100.62" Height="12.5" Text="[Box_12b_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox215" Left="328.2" Top="17.27" Width="130.37" Height="12.5" Text="[Box_7]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox255" Left="11.07" Top="169.25" Width="312.77" Height="10.5" Text="[Box_f_addr_4]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Textbox253" Left="11.45" Top="154.79" Width="312.06" Height="10.5" Text="[Box_f_addr_3]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Textbox254" Left="11.14" Top="140.89" Width="312.78" Height="10.5" Text="[Box_f_addr_2]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Textbox252" Left="11.1" Top="125.5" Width="312.79" Height="11.9" Text="[Box_f_addr_1]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Textbox251" Left="11.11" Top="112.06" Width="312.41" Height="10.5" Text="[Box_e]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Textbox260" Left="11.13" Top="89.05" Width="312.78" Height="10.5" Text="[Box_c_addr_4]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Textbox259" Left="11.44" Top="77.49" Width="312.46" Height="10.5" Text="[Box_c_addr_3]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Textbox258" Left="11.45" Top="65.91" Width="312.4" Height="10.5" Text="[Box_c_addr_2]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Textbox257" Left="11.1" Top="54.33" Width="312.8" Height="10.5" Text="[Box_c_addr_1]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Textbox256" Left="11.13" Top="42.76" Width="312.78" Height="10.5" Text="[Box_c_name]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Textbox12" Left="602.55" Top="88.73" Width="26.51" Height="12.5" Text="[Box_12a_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox13" Left="631.54" Top="88.73" Width="100.6" Height="12.5" Text="[Box_12a_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox73" Left="602.16" Top="138.74" Width="27.23" Height="12.5" Text="[Box_12c_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox74" Left="631.54" Top="139.19" Width="100.6" Height="12.5" Text="[Box_12c_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox75" Left="602.21" Top="164" Width="26.52" Height="12.5" Text="[Box_12d_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox76" Left="631.54" Top="164.02" Width="101.13" Height="12.5" Text="[Box_12d_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox82" Left="463.68" Top="114.24" Width="130.56" Height="17.28" Text="[Box_14_line_1]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Textbox83" Left="463.68" Top="132.48" Width="130.56" Height="17.28" Text="[Box_14_line_2]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Textbox84" Left="463.68" Top="150.26" Width="130.56" Height="17.28" Text="[Box_14_line_3]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Textbox85" Left="463.68" Top="168.28" Width="130.56" Height="17.28" Text="[Box_14_line_4]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Textbox22" Left="337.43" Top="114.51" Width="37.82" Height="12.5" Text="[Box_13_1]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox23" Left="378.6" Top="114.87" Width="35.74" Height="12.5" Border.Lines="Left, Right" Text="[Box_13_2]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox24" Left="418.7" Top="114.88" Width="40.75" Height="12.5" Text="[Box_13_3]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox78" Left="327.49" Top="138.74" Width="131.97" Height="12.5" Text="[Box_b]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox77" Left="328.22" Top="163.64" Width="131.24" Height="12.5" Text="[Box_a]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox30" Left="10.93" Top="203.37" Width="34.03" Height="11.48" Text="[Box_15_2_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox32" Left="47.84" Top="204.34" Width="168.2" Height="12.92" Text="[Box_15_2_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox95" Left="218.48" Top="204.41" Width="105.37" Height="13.28" Text="[Box_16_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox36" Left="327.42" Top="203.88" Width="105.21" Height="13.28" Text="[Box_17_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox99" Left="435.53" Top="204.43" Width="105.08" Height="13.28" Text="[Box_18_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox103" Left="543.68" Top="203.43" Width="105.08" Height="13.28" Text="[Box_19_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox102" Left="651.86" Top="204.41" Width="80.16" Height="13.28" Text="[Box_20_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox304" Left="241.19" Top="15.72" Width="54.72" Height="17.01" Text="[Tax_Year]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Courier New, 14pt, style=Bold"/>
+      <TextObject Name="Textbox29" Left="10.92" Top="194.38" Width="34.03" Height="11.31" Text="[Box_15_1_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox31" Left="47.88" Top="195.07" Width="168.56" Height="13.12" Text="[Box_15_1_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox94" Left="218.54" Top="195.08" Width="105.39" Height="12.75" Text="[Box_16_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox35" Left="327.41" Top="194.57" Width="105.18" Height="13.12" Text="[Box_17_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox100" Left="435.53" Top="195.07" Width="105.07" Height="12.76" Text="[Box_18_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox104" Left="543.74" Top="194.33" Width="105.06" Height="12.76" Text="[Box_19_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Textbox101" Left="651.87" Top="194.73" Width="80.16" Height="13.12" Text="[Box_20_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text4" Left="325.44" Top="7.69" Width="76.52" Height="8.46" Text="7 Social security tips" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text6" Left="462.05" Top="7.68" Width="122.95" Height="9.25" Text="1 Wages, tips, other compensation" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text7" Left="597.08" Top="7.71" Width="108.82" Height="8.43" Text="2 Federal income tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text8" Left="462.05" Top="31.61" Width="85.63" Height="8.85" Text="3 Social security wages" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text9" Left="597.12" Top="31.68" Width="107.21" Height="8.85" Text="4 Social security tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text10" Left="462.05" Top="55.79" Width="99.72" Height="8.85" Text="5 Medicare wages and tips" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text11" Left="597.12" Top="55.36" Width="96" Height="9.27" Text="6 Medicare tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text13" Left="461.76" Top="79.03" Width="79.01" Height="8.42" Text="11 Nonqualified plans" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text14" Left="597.12" Top="78.59" Width="110.85" Height="8.01" Text="12a See instructions for box 12" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text15" Left="460.53" Top="103.86" Width="36.3" Height="8.43" Text="14 Other" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text16" Left="595.66" Top="103.97" Width="19.71" Height="8.43" Text="12b" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text17" Left="595.66" Top="129.58" Width="19.71" Height="8.43" Text="12c" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text18" Left="595.71" Top="154.03" Width="19.71" Height="8.43" Text="12d" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text19" Left="595.81" Top="114.29" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text20" Left="595.9" Top="87.8" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text21" Left="596.15" Top="138.36" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text22" Left="596.15" Top="163.01" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text23" Left="323.76" Top="129.67" Width="141.17" Height="7.35" Text="b Employer indentification number (EIN)" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text24" Left="325.87" Top="154.12" Width="132.69" Height="8.33" Text="a Employee's social security number" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text25" Left="324.62" Top="103.89" Width="16.02" Height="9.27" Text="13" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text26" Left="337.42" Top="102.87" Width="27.77" Height="11.67" Text="Statutory&#13;&#10;Employee" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text27" Left="377.28" Top="103.13" Width="29.77" Height="11.67" Text="Retirement&#13;&#10;Plan" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text28" Left="416.74" Top="102.89" Width="29.77" Height="11.67" Text="Third-party&#13;&#10;sick pay" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text29" Left="6.61" Top="102.75" Width="163.97" Height="8.89" Text="e Employee's name, address, and ZIP code" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text30" Left="8.95" Top="188.53" Width="35.58" Height="8.01" Text="15 State" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text31" Left="81.11" Top="187.98" Width="104.96" Height="10.25" Text="Employer's state ID number" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text32" Left="216.48" Top="187.96" Width="96" Height="9.13" Text="16 State wages, tips, etc." Font="Arial, 5.5pt"/>
+      <TextObject Name="Text33" Left="325.01" Top="187.97" Width="74.73" Height="9.69" Text="17 State income tax" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text34" Left="433.56" Top="187.97" Width="93.2" Height="9.12" Text="18 Local wages, tips, etc." Font="Arial, 5.5pt"/>
+      <TextObject Name="Text35" Left="541.52" Top="188.53" Width="74.73" Height="9.68" Text="19 Local income tax" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text36" Left="650.07" Top="188.53" Width="64.67" Height="9.68" Text="20 Locality name" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text3" Left="7.47" Top="32.17" Width="163.97" Height="8.89" Text="c Employer's name, address, and ZIP code" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text37" Left="315.36" Top="216.58" Width="174.2" Height="17.73" Text="This information is being furnished to the Guam Department of Revenue and Taxation" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text38" Left="6.13" Top="216.49" Width="290.84" Height="11.37" Text="Copy B — To Be Filed With Employee's Guam Tax Return" Font="Arial, 7.5pt, style=Bold"/>
+      <TextObject Name="Text2" Left="6.3" Top="22.04" Width="35.8" Height="11.46" Text="Form" Font="Arial, 6pt"/>
+      <TextObject Name="Text1" Left="29.08" Top="18.41" Width="218.88" Height="12.8" Text="W-2GU Guam Wage and Tax Statement" Padding="0, 0, 0, 0" Font="Arial, 8.5pt, style=Bold"/>
+      <TextObject Name="Text39" Left="540.83" Top="216.73" Width="208.24" Height="9.68" Text="Department of the Treasury - Internal Revenue Service" Font="Arial, 5.5pt, style=Bold"/>
+      <TextObject Name="Text40" Left="445.89" Top="226.18" Width="76" Height="7.56" Text="OMB No. 1545-0008" Font="Arial, 4.8pt"/>
+      <TextObject Name="Text43" Left="326.08" Top="55.78" Width="9.31" Height="8.54" Fill.Color="White" Text="9" HorzAlign="Center" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text391" Left="298.11" Top="6.55" Width="27.36" Height="24.29" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text395" Left="596.16" Top="163.87" Width="34.38" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text396" Left="596.22" Top="139.01" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text397" Left="596.03" Top="114.88" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text398" Left="596.09" Top="88.38" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text408" Left="596.34" Top="163.74" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text409" Left="596.28" Top="139.12" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text410" Left="596.34" Top="114.88" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text411" Left="596.22" Top="177.62" Width="136.37" Height="9.81" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text419" Left="325.39" Top="179.49" Width="135.26" Height="7.95" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text422" Left="9.74" Top="197.91" Width="35.66" Height="17.8" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text513" Left="3.88" Top="465.03" Width="255.24" Height="24" Text="Copy C — For EMPLOYEE’S RECORDS&#13;&#10;  (See Notice to Employee)" Font="Arial, 7.5pt, style=Bold"/>
+      <TextObject Name="Text643" Left="5.55" Top="711.98" Width="306.84" Height="11.37" Text="Copy 1 — For Guam Department of Revenue and Taxation" Font="Arial, 7.5pt, style=Bold"/>
+      <TextObject Name="Text647" Left="456.51" Top="712.47" Width="76" Height="7.56" Text="OMB No. 1545-0008" Font="Arial, 4.8pt"/>
+      <TextObject Name="Text815" Left="326.4" Top="31.8" Width="9.31" Height="8.54" Fill.Color="White" Text="8" HorzAlign="Center" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text816" Left="326.4" Top="79.01" Width="10.85" Height="8.54" Fill.Color="White" Text="10" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text405" Left="596.16" Top="102.25" Width="136.38" Height="26.45" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text819" Left="461.44" Top="280.27" Width="134.88" Height="23.52" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text820" Left="461.23" Top="303.89" Width="135.22" Height="23.7" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text821" Left="461.07" Top="327.67" Width="135.39" Height="23.51" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text822" Left="325.7" Top="327.6" Width="135.51" Height="23.62" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text823" Left="325.7" Top="303.79" Width="135.51" Height="23.9" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text824" Left="325.78" Top="279.96" Width="135.51" Height="23.9" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text825" Left="461.63" Top="255.79" Width="134.69" Height="24.28" Border.Lines="All" Border.Width="1.5" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text826" Left="10.29" Top="436.41" Width="206.69" Height="28.35" Border.Lines="Right, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text827" Left="217.18" Top="436.56" Width="108.75" Height="28.22" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text828" Left="325.82" Top="436.45" Width="107.99" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text829" Left="433.91" Top="436.58" Width="108.49" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text830" Left="542.39" Top="436.56" Width="107.99" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text831" Left="650.52" Top="436.45" Width="82.11" Height="28.32" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text832" Left="596.52" Top="401.94" Width="136.38" Height="24.7" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text833" Left="596.33" Top="377.7" Width="136.38" Height="24.2" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text834" Left="325.78" Top="402.08" Width="135.38" Height="26.45" Border.Lines="All" Border.Width="1.5" Font="Arial, 10pt"/>
+      <TextObject Name="Text835" Left="325.69" Top="377.7" Width="135.26" Height="24.45" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text836" Left="325.78" Top="351.12" Width="135.26" Height="26.45" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text837" Left="596.46" Top="255.79" Width="136.3" Height="24.28" Border.Lines="All" Border.Width="1.5" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text838" Left="325.69" Top="255.6" Width="135.49" Height="24.32" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text839" Left="10.83" Top="279.88" Width="314.88" Height="71.39" Border.Lines="Right, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text840" Left="600.31" Top="266.34" Width="128.94" Height="12.5" Text="[Box_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text841" Left="464.03" Top="266.34" Width="130.76" Height="12.5" Text="[Box_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text842" Left="463.7" Top="290.03" Width="131.46" Height="12.5" Text="[Box_3]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text843" Left="600.31" Top="291.07" Width="130.72" Height="12.5" Text="[Box_4]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text844" Left="598.86" Top="313.28" Width="131.85" Height="12.5" Text="[Box_6]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text845" Left="463.98" Top="313.28" Width="131.48" Height="12.5" Text="[Box_5]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text846" Left="463.67" Top="337.05" Width="131.52" Height="12.5" Text="[Box_11]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text847" Left="602.47" Top="363.95" Width="26.86" Height="12.5" Text="[Box_12b_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text848" Left="631.75" Top="363.97" Width="100.62" Height="12.5" Text="[Box_12b_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text849" Left="328.5" Top="266.34" Width="130.37" Height="12.5" Text="[Box_7]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text850" Left="11.37" Top="418.32" Width="312.77" Height="10.5" Text="[Box_f_addr_4]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text851" Left="11.75" Top="403.86" Width="312.06" Height="10.5" Text="[Box_f_addr_3]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text852" Left="11.44" Top="389.96" Width="312.78" Height="10.5" Text="[Box_f_addr_2]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text853" Left="11.4" Top="374.57" Width="312.79" Height="11.9" Text="[Box_f_addr_1]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text854" Left="11.41" Top="361.13" Width="312.41" Height="10.5" Text="[Box_e]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text855" Left="11.43" Top="338.12" Width="312.78" Height="10.5" Text="[Box_c_addr_4]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text856" Left="11.74" Top="326.56" Width="312.46" Height="10.5" Text="[Box_c_addr_3]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text857" Left="11.75" Top="314.98" Width="312.4" Height="10.5" Text="[Box_c_addr_2]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text858" Left="11.4" Top="303.4" Width="312.8" Height="10.5" Text="[Box_c_addr_1]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text859" Left="11.43" Top="291.83" Width="312.78" Height="10.5" Text="[Box_c_name]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text860" Left="602.85" Top="337.8" Width="26.51" Height="12.5" Text="[Box_12a_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text861" Left="631.84" Top="337.8" Width="100.6" Height="12.5" Text="[Box_12a_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text862" Left="602.46" Top="387.81" Width="27.23" Height="12.5" Text="[Box_12c_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text863" Left="631.84" Top="388.26" Width="100.6" Height="12.5" Text="[Box_12c_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text864" Left="602.51" Top="413.07" Width="26.52" Height="12.5" Text="[Box_12d_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text865" Left="631.84" Top="413.09" Width="101.13" Height="12.5" Text="[Box_12d_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text866" Left="463.98" Top="363.31" Width="130.56" Height="17.28" Text="[Box_14_line_1]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text867" Left="463.98" Top="381.55" Width="130.56" Height="17.28" Text="[Box_14_line_2]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text868" Left="463.98" Top="399.33" Width="130.56" Height="17.28" Text="[Box_14_line_3]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text869" Left="463.98" Top="417.35" Width="130.56" Height="17.28" Text="[Box_14_line_4]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text870" Left="337.73" Top="363.58" Width="37.82" Height="12.5" Text="[Box_13_1]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Text871" Left="378.9" Top="363.94" Width="35.74" Height="12.5" Border.Lines="Left, Right" Text="[Box_13_2]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Text872" Left="419" Top="363.95" Width="40.75" Height="12.5" Text="[Box_13_3]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Text873" Left="327.79" Top="387.81" Width="131.97" Height="12.5" Text="[Box_b]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text874" Left="328.52" Top="412.71" Width="131.24" Height="12.5" Text="[Box_a]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text875" Left="11.23" Top="452.44" Width="34.03" Height="11.48" Text="[Box_15_2_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text876" Left="48.14" Top="453.41" Width="168.2" Height="12.92" Text="[Box_15_2_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text877" Left="218.78" Top="453.48" Width="105.37" Height="13.28" Text="[Box_16_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text878" Left="327.72" Top="452.95" Width="105.21" Height="13.28" Text="[Box_17_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text879" Left="435.83" Top="453.5" Width="105.08" Height="13.28" Text="[Box_18_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text880" Left="543.98" Top="452.5" Width="105.08" Height="13.28" Text="[Box_19_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text881" Left="652.16" Top="453.48" Width="80.16" Height="13.28" Text="[Box_20_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text882" Left="241.49" Top="264.79" Width="54.72" Height="17.01" Text="[Tax_Year]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Courier New, 14pt, style=Bold"/>
+      <TextObject Name="Text883" Left="11.22" Top="443.45" Width="34.03" Height="11.31" Text="[Box_15_1_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text884" Left="48.18" Top="444.14" Width="168.56" Height="13.12" Text="[Box_15_1_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text885" Left="218.84" Top="444.15" Width="105.39" Height="12.75" Text="[Box_16_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text886" Left="327.71" Top="443.64" Width="105.18" Height="13.12" Text="[Box_17_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text887" Left="435.83" Top="444.14" Width="105.07" Height="12.76" Text="[Box_18_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text888" Left="544.04" Top="443.4" Width="105.06" Height="12.76" Text="[Box_19_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text889" Left="652.17" Top="443.8" Width="80.16" Height="13.12" Text="[Box_20_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text890" Left="325.74" Top="256.76" Width="76.52" Height="8.46" Text="7 Social security tips" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text891" Left="462.35" Top="256.75" Width="122.95" Height="9.25" Text="1 Wages, tips, other compensation" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text892" Left="597.38" Top="256.78" Width="108.82" Height="8.43" Text="2 Federal income tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text893" Left="462.35" Top="280.68" Width="85.63" Height="8.85" Text="3 Social security wages" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text894" Left="597.42" Top="280.75" Width="107.21" Height="8.85" Text="4 Social security tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text895" Left="462.35" Top="304.86" Width="99.72" Height="8.85" Text="5 Medicare wages and tips" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text896" Left="597.42" Top="304.43" Width="96" Height="9.27" Text="6 Medicare tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text897" Left="462.06" Top="328.1" Width="79.01" Height="8.42" Text="11 Nonqualified plans" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text898" Left="597.42" Top="327.66" Width="110.85" Height="8.01" Text="12a See instructions for box 12" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text899" Left="460.83" Top="352.93" Width="36.3" Height="8.43" Text="14 Other" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text900" Left="595.96" Top="353.04" Width="19.71" Height="8.43" Text="12b" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text901" Left="595.96" Top="378.65" Width="19.71" Height="8.43" Text="12c" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text902" Left="596.01" Top="403.1" Width="19.71" Height="8.43" Text="12d" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text903" Left="596.11" Top="363.36" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text904" Left="596.2" Top="336.87" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text905" Left="596.45" Top="387.43" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text906" Left="596.45" Top="412.08" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text907" Left="324.06" Top="378.74" Width="141.17" Height="7.35" Text="b Employer indentification number (EIN)" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text908" Left="326.17" Top="403.19" Width="132.69" Height="8.33" Text="a Employee's social security number" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text909" Left="324.92" Top="352.96" Width="16.02" Height="9.27" Text="13" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text910" Left="337.72" Top="351.94" Width="27.77" Height="11.67" Text="Statutory&#13;&#10;Employee" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text911" Left="377.58" Top="352.2" Width="29.77" Height="11.67" Text="Retirement&#13;&#10;Plan" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text912" Left="417.04" Top="351.96" Width="29.77" Height="11.67" Text="Third-party&#13;&#10;sick pay" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text913" Left="6.91" Top="351.82" Width="163.97" Height="8.89" Text="e Employee's name, address, and ZIP code" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text914" Left="9.25" Top="437.6" Width="35.58" Height="8.01" Text="15 State" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text915" Left="81.41" Top="437.05" Width="104.96" Height="10.25" Text="Employer's state ID number" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text916" Left="216.78" Top="437.03" Width="96" Height="9.13" Text="16 State wages, tips, etc." Font="Arial, 5.5pt"/>
+      <TextObject Name="Text917" Left="325.31" Top="437.04" Width="74.73" Height="9.69" Text="17 State income tax" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text918" Left="433.86" Top="437.04" Width="93.2" Height="9.12" Text="18 Local wages, tips, etc." Font="Arial, 5.5pt"/>
+      <TextObject Name="Text919" Left="541.82" Top="437.6" Width="74.73" Height="9.68" Text="19 Local income tax" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text920" Left="650.37" Top="437.6" Width="64.67" Height="9.68" Text="20 Locality name" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text921" Left="7.77" Top="281.24" Width="163.97" Height="8.89" Text="c Employer's name, address, and ZIP code" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text922" Left="6.6" Top="271.11" Width="35.8" Height="11.46" Text="Form" Font="Arial, 6pt"/>
+      <TextObject Name="Text923" Left="29.38" Top="267.48" Width="218.88" Height="12.8" Text="W-2GU Guam Wage and Tax Statement" Padding="0, 0, 0, 0" Font="Arial, 8.5pt, style=Bold"/>
+      <TextObject Name="Text924" Left="326.38" Top="304.85" Width="9.31" Height="8.54" Fill.Color="White" Text="9" HorzAlign="Center" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text925" Left="298.41" Top="255.62" Width="27.36" Height="24.29" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text926" Left="596.46" Top="412.94" Width="34.38" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text927" Left="596.52" Top="388.08" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text928" Left="596.33" Top="363.95" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text929" Left="596.39" Top="337.45" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text930" Left="596.64" Top="412.81" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text931" Left="596.58" Top="388.19" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text932" Left="596.64" Top="363.95" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text933" Left="596.52" Top="426.69" Width="136.37" Height="9.81" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text934" Left="325.69" Top="428.56" Width="135.26" Height="7.95" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text935" Left="10.04" Top="446.98" Width="35.66" Height="17.8" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text936" Left="326.7" Top="280.87" Width="9.31" Height="8.54" Fill.Color="White" Text="8" HorzAlign="Center" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text937" Left="326.7" Top="328.08" Width="10.85" Height="8.54" Fill.Color="White" Text="10" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text938" Left="596.46" Top="351.32" Width="136.38" Height="26.45" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text942" Left="596.39" Top="574.26" Width="136.38" Height="23.61" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text943" Left="596.39" Top="550.39" Width="136.38" Height="24" Border.Lines="Left, Top, Bottom" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text944" Left="596.52" Top="526.58" Width="136.38" Height="23.81" Border.Lines="Left, Top, Bottom" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text945" Left="461.44" Top="526.87" Width="134.88" Height="23.52" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text946" Left="461.23" Top="550.49" Width="135.22" Height="23.7" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text947" Left="461.07" Top="574.27" Width="135.39" Height="23.51" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text948" Left="325.7" Top="574.2" Width="135.51" Height="23.62" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text949" Left="325.7" Top="550.39" Width="135.51" Height="23.9" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text950" Left="325.78" Top="526.56" Width="135.51" Height="23.9" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text951" Left="461.63" Top="502.39" Width="134.69" Height="24.28" Border.Lines="All" Border.Width="1.5" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text952" Left="10.29" Top="683.01" Width="206.69" Height="28.35" Border.Lines="Right, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text953" Left="217.18" Top="683.16" Width="108.75" Height="28.22" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text954" Left="325.82" Top="683.05" Width="107.99" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text955" Left="433.91" Top="683.18" Width="108.49" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text956" Left="542.39" Top="683.16" Width="107.99" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text957" Left="650.52" Top="683.05" Width="82.11" Height="28.32" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text958" Left="596.52" Top="648.54" Width="136.38" Height="24.7" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text959" Left="596.33" Top="624.3" Width="136.38" Height="24.2" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text960" Left="325.78" Top="648.68" Width="135.38" Height="26.45" Border.Lines="All" Border.Width="1.5" Font="Arial, 10pt"/>
+      <TextObject Name="Text961" Left="325.69" Top="624.3" Width="135.26" Height="24.45" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text962" Left="325.78" Top="597.72" Width="135.26" Height="26.45" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text963" Left="596.46" Top="502.39" Width="136.3" Height="24.28" Border.Lines="All" Border.Width="1.5" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text964" Left="325.69" Top="502.2" Width="135.49" Height="24.32" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text965" Left="10.83" Top="526.48" Width="314.88" Height="71.39" Border.Lines="Right, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text966" Left="600.31" Top="512.94" Width="128.94" Height="12.5" Text="[Box_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text967" Left="464.03" Top="512.94" Width="130.76" Height="12.5" Text="[Box_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text968" Left="463.7" Top="536.63" Width="131.46" Height="12.5" Text="[Box_3]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text969" Left="600.31" Top="537.67" Width="130.72" Height="12.5" Text="[Box_4]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text970" Left="598.86" Top="559.88" Width="131.85" Height="12.5" Text="[Box_6]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text971" Left="463.98" Top="559.88" Width="131.48" Height="12.5" Text="[Box_5]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text972" Left="463.67" Top="583.65" Width="131.52" Height="12.5" Text="[Box_11]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text973" Left="602.47" Top="610.55" Width="26.86" Height="12.5" Text="[Box_12b_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text974" Left="631.75" Top="610.57" Width="100.62" Height="12.5" Text="[Box_12b_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text975" Left="328.5" Top="512.94" Width="130.37" Height="12.5" Text="[Box_7]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text976" Left="11.37" Top="664.92" Width="312.77" Height="10.5" Text="[Box_f_addr_4]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text977" Left="11.75" Top="650.46" Width="312.06" Height="10.5" Text="[Box_f_addr_3]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text978" Left="11.44" Top="636.56" Width="312.78" Height="10.5" Text="[Box_f_addr_2]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text979" Left="11.4" Top="621.17" Width="312.79" Height="11.9" Text="[Box_f_addr_1]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text980" Left="11.41" Top="607.73" Width="312.41" Height="10.5" Text="[Box_e]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text981" Left="11.43" Top="584.72" Width="312.78" Height="10.5" Text="[Box_c_addr_4]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text982" Left="11.74" Top="573.16" Width="312.46" Height="10.5" Text="[Box_c_addr_3]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text983" Left="11.75" Top="561.58" Width="312.4" Height="10.5" Text="[Box_c_addr_2]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text984" Left="11.4" Top="550" Width="312.8" Height="10.5" Text="[Box_c_addr_1]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text985" Left="11.43" Top="538.43" Width="312.78" Height="10.5" Text="[Box_c_name]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text986" Left="602.85" Top="584.4" Width="26.51" Height="12.5" Text="[Box_12a_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text987" Left="631.84" Top="584.4" Width="100.6" Height="12.5" Text="[Box_12a_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text988" Left="602.46" Top="634.41" Width="27.23" Height="12.5" Text="[Box_12c_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text989" Left="631.84" Top="634.86" Width="100.6" Height="12.5" Text="[Box_12c_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text990" Left="602.51" Top="659.67" Width="26.52" Height="12.5" Text="[Box_12d_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text991" Left="631.84" Top="659.69" Width="101.13" Height="12.5" Text="[Box_12d_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text992" Left="463.98" Top="609.91" Width="130.56" Height="17.28" Text="[Box_14_line_1]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text993" Left="463.98" Top="628.15" Width="130.56" Height="17.28" Text="[Box_14_line_2]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text994" Left="463.98" Top="645.93" Width="130.56" Height="17.28" Text="[Box_14_line_3]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text995" Left="463.98" Top="663.95" Width="130.56" Height="17.28" Text="[Box_14_line_4]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text996" Left="337.73" Top="610.18" Width="37.82" Height="12.5" Text="[Box_13_1]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Text997" Left="378.9" Top="610.54" Width="35.74" Height="12.5" Border.Lines="Left, Right" Text="[Box_13_2]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Text998" Left="419" Top="610.55" Width="40.75" Height="12.5" Text="[Box_13_3]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Text999" Left="327.79" Top="634.41" Width="131.97" Height="12.5" Text="[Box_b]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1000" Left="328.52" Top="659.31" Width="131.24" Height="12.5" Text="[Box_a]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1001" Left="11.23" Top="699.04" Width="34.03" Height="11.48" Text="[Box_15_2_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1002" Left="48.14" Top="700.01" Width="168.2" Height="12.92" Text="[Box_15_2_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1003" Left="218.78" Top="700.08" Width="105.37" Height="13.28" Text="[Box_16_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1004" Left="327.72" Top="699.55" Width="105.21" Height="13.28" Text="[Box_17_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1005" Left="435.83" Top="700.1" Width="105.08" Height="13.28" Text="[Box_18_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1006" Left="543.98" Top="699.1" Width="105.08" Height="13.28" Text="[Box_19_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1007" Left="652.16" Top="700.08" Width="80.16" Height="13.28" Text="[Box_20_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1008" Left="241.49" Top="511.39" Width="54.72" Height="17.01" Text="[Tax_Year]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Courier New, 14pt, style=Bold"/>
+      <TextObject Name="Text1009" Left="11.22" Top="690.05" Width="34.03" Height="11.31" Text="[Box_15_1_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1010" Left="48.18" Top="690.74" Width="168.56" Height="13.12" Text="[Box_15_1_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1011" Left="218.84" Top="690.75" Width="105.39" Height="12.75" Text="[Box_16_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1012" Left="327.71" Top="690.24" Width="105.18" Height="13.12" Text="[Box_17_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1013" Left="435.83" Top="690.74" Width="105.07" Height="12.76" Text="[Box_18_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1014" Left="544.04" Top="690" Width="105.06" Height="12.76" Text="[Box_19_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1015" Left="652.17" Top="690.4" Width="80.16" Height="13.12" Text="[Box_20_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1016" Left="325.74" Top="503.36" Width="76.52" Height="8.46" Text="7 Social security tips" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1017" Left="462.35" Top="503.35" Width="122.95" Height="9.25" Text="1 Wages, tips, other compensation" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1018" Left="597.38" Top="503.38" Width="108.82" Height="8.43" Text="2 Federal income tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1019" Left="462.35" Top="527.28" Width="85.63" Height="8.85" Text="3 Social security wages" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1020" Left="597.42" Top="527.35" Width="107.21" Height="8.85" Text="4 Social security tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1021" Left="462.35" Top="551.46" Width="99.72" Height="8.85" Text="5 Medicare wages and tips" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1022" Left="597.42" Top="551.03" Width="96" Height="9.27" Text="6 Medicare tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1023" Left="462.06" Top="574.7" Width="79.01" Height="8.42" Text="11 Nonqualified plans" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1024" Left="597.42" Top="574.26" Width="110.85" Height="8.01" Text="12a See instructions for box 12" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1025" Left="460.83" Top="599.53" Width="36.3" Height="8.43" Text="14 Other" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1026" Left="595.96" Top="599.64" Width="19.71" Height="8.43" Text="12b" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1027" Left="595.96" Top="625.25" Width="19.71" Height="8.43" Text="12c" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1028" Left="596.01" Top="649.7" Width="19.71" Height="8.43" Text="12d" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1029" Left="596.11" Top="609.96" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text1030" Left="596.2" Top="583.47" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text1031" Left="596.45" Top="634.03" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text1032" Left="596.45" Top="658.68" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text1033" Left="324.06" Top="625.34" Width="141.17" Height="7.35" Text="b Employer indentification number (EIN)" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1034" Left="326.17" Top="649.79" Width="132.69" Height="8.33" Text="a Employee's social security number" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1035" Left="324.92" Top="599.56" Width="16.02" Height="9.27" Text="13" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1036" Left="337.72" Top="598.54" Width="27.77" Height="11.67" Text="Statutory&#13;&#10;Employee" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text1037" Left="377.58" Top="598.8" Width="29.77" Height="11.67" Text="Retirement&#13;&#10;Plan" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text1038" Left="417.04" Top="598.56" Width="29.77" Height="11.67" Text="Third-party&#13;&#10;sick pay" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text1039" Left="6.91" Top="598.42" Width="163.97" Height="8.89" Text="e Employee's name, address, and ZIP code" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1040" Left="9.25" Top="684.2" Width="35.58" Height="8.01" Text="15 State" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1041" Left="81.41" Top="683.65" Width="104.96" Height="10.25" Text="Employer's state ID number" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1042" Left="216.78" Top="683.63" Width="96" Height="9.13" Text="16 State wages, tips, etc." Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1043" Left="325.31" Top="683.64" Width="74.73" Height="9.69" Text="17 State income tax" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1044" Left="433.86" Top="683.64" Width="93.2" Height="9.12" Text="18 Local wages, tips, etc." Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1045" Left="541.82" Top="684.2" Width="74.73" Height="9.68" Text="19 Local income tax" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1046" Left="650.37" Top="684.2" Width="64.67" Height="9.68" Text="20 Locality name" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1047" Left="7.77" Top="527.84" Width="163.97" Height="8.89" Text="c Employer's name, address, and ZIP code" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1048" Left="6.6" Top="517.71" Width="35.8" Height="11.46" Text="Form" Font="Arial, 6pt"/>
+      <TextObject Name="Text1049" Left="29.38" Top="514.08" Width="218.88" Height="12.8" Text="W-2GU Guam Wage and Tax Statement" Padding="0, 0, 0, 0" Font="Arial, 8.5pt, style=Bold"/>
+      <TextObject Name="Text1050" Left="326.38" Top="551.45" Width="9.31" Height="8.54" Fill.Color="White" Text="9" HorzAlign="Center" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1051" Left="298.41" Top="502.22" Width="27.36" Height="24.29" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1052" Left="596.46" Top="659.54" Width="34.38" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1053" Left="596.52" Top="634.68" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1054" Left="596.33" Top="610.55" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1055" Left="596.39" Top="584.05" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1056" Left="596.64" Top="659.41" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1057" Left="596.58" Top="634.79" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1058" Left="596.64" Top="610.55" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1059" Left="596.52" Top="673.29" Width="136.37" Height="9.81" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text1060" Left="325.69" Top="675.16" Width="135.26" Height="7.95" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text1061" Left="10.04" Top="693.58" Width="35.66" Height="17.8" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1062" Left="326.7" Top="527.47" Width="9.31" Height="8.54" Fill.Color="White" Text="8" HorzAlign="Center" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1063" Left="326.7" Top="574.68" Width="10.85" Height="8.54" Fill.Color="White" Text="10" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1064" Left="596.46" Top="597.92" Width="136.38" Height="26.45" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text1065" Left="314.8" Top="465.4" Width="174.2" Height="17.73" Text="This information is being furnished to the Guam Department of Revenue and Taxation" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1066" Left="540.27" Top="465.55" Width="208.24" Height="9.68" Text="Department of the Treasury - Internal Revenue Service" Font="Arial, 5.5pt, style=Bold"/>
+      <TextObject Name="Text1067" Left="445.33" Top="475" Width="76" Height="7.56" Text="OMB No. 1545-0008" Font="Arial, 4.8pt"/>
+      <TextObject Name="Text1068" Left="569.4" Top="712.4" Width="179.44" Height="9.68" Text="Department of the Treasury - Internal Revenue Service" Font="Arial, 5.5pt, style=Bold"/>
+      <TextObject Name="Text1069" Left="5" Top="968.18" Width="297.24" Height="11.37" Text="Copy 1 — For Guam Department of Revenue and Taxation" Font="Arial, 7.5pt, style=Bold"/>
+      <TextObject Name="Text1070" Left="455.96" Top="968.67" Width="76" Height="7.56" Text="OMB No. 1545-0008" Font="Arial, 4.8pt"/>
+      <TextObject Name="Text1071" Left="595.84" Top="830.46" Width="136.38" Height="23.61" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text1072" Left="595.84" Top="806.59" Width="136.38" Height="24" Border.Lines="Left, Top, Bottom" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1073" Left="595.97" Top="782.78" Width="136.38" Height="23.81" Border.Lines="Left, Top, Bottom" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1074" Left="460.89" Top="783.07" Width="134.88" Height="23.52" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1075" Left="460.68" Top="806.69" Width="135.22" Height="23.7" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1076" Left="460.52" Top="830.47" Width="135.39" Height="23.51" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1077" Left="325.15" Top="830.4" Width="135.51" Height="23.62" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1078" Left="325.15" Top="806.59" Width="135.51" Height="23.9" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1079" Left="325.23" Top="782.76" Width="135.51" Height="23.9" Border.Lines="All" Fill.Color="Silver" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1080" Left="461.08" Top="758.59" Width="134.69" Height="24.28" Border.Lines="All" Border.Width="1.5" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1081" Left="9.74" Top="939.21" Width="206.69" Height="28.35" Border.Lines="Right, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text1082" Left="216.63" Top="939.36" Width="108.75" Height="28.22" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text1083" Left="325.27" Top="939.25" Width="107.99" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text1084" Left="433.36" Top="939.38" Width="108.49" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text1085" Left="541.84" Top="939.36" Width="107.99" Height="28.19" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text1086" Left="649.97" Top="939.25" Width="82.11" Height="28.32" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text1087" Left="595.97" Top="904.74" Width="136.38" Height="24.7" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text1088" Left="595.78" Top="880.5" Width="136.38" Height="24.2" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text1089" Left="325.23" Top="904.88" Width="135.38" Height="26.45" Border.Lines="All" Border.Width="1.5" Font="Arial, 10pt"/>
+      <TextObject Name="Text1090" Left="325.14" Top="880.5" Width="135.26" Height="24.45" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text1091" Left="325.23" Top="853.92" Width="135.26" Height="26.45" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1092" Left="595.91" Top="758.59" Width="136.3" Height="24.28" Border.Lines="All" Border.Width="1.5" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1093" Left="325.14" Top="758.4" Width="135.49" Height="24.32" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text1094" Left="10.28" Top="782.68" Width="314.88" Height="71.39" Border.Lines="Right, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text1095" Left="599.76" Top="769.14" Width="128.94" Height="12.5" Text="[Box_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1096" Left="463.48" Top="769.14" Width="130.76" Height="12.5" Text="[Box_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1097" Left="463.15" Top="792.83" Width="131.46" Height="12.5" Text="[Box_3]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1098" Left="599.76" Top="793.87" Width="130.72" Height="12.5" Text="[Box_4]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1099" Left="598.31" Top="816.08" Width="131.85" Height="12.5" Text="[Box_6]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1100" Left="463.43" Top="816.08" Width="131.48" Height="12.5" Text="[Box_5]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1101" Left="463.12" Top="839.85" Width="131.52" Height="12.5" Text="[Box_11]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1102" Left="601.92" Top="866.75" Width="26.86" Height="12.5" Text="[Box_12b_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1103" Left="631.2" Top="866.77" Width="100.62" Height="12.5" Text="[Box_12b_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1104" Left="327.95" Top="769.14" Width="130.37" Height="12.5" Text="[Box_7]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1105" Left="10.82" Top="921.12" Width="312.77" Height="10.5" Text="[Box_f_addr_4]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text1106" Left="11.2" Top="906.66" Width="312.06" Height="10.5" Text="[Box_f_addr_3]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text1107" Left="10.89" Top="892.76" Width="312.78" Height="10.5" Text="[Box_f_addr_2]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text1108" Left="10.85" Top="877.37" Width="312.79" Height="11.9" Text="[Box_f_addr_1]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text1109" Left="10.86" Top="863.93" Width="312.41" Height="10.5" Text="[Box_e]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text1110" Left="10.88" Top="840.92" Width="312.78" Height="10.5" Text="[Box_c_addr_4]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text1111" Left="11.19" Top="829.36" Width="312.46" Height="10.5" Text="[Box_c_addr_3]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text1112" Left="11.2" Top="817.78" Width="312.4" Height="10.5" Text="[Box_c_addr_2]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text1113" Left="10.85" Top="806.2" Width="312.8" Height="10.5" Text="[Box_c_addr_1]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text1114" Left="10.88" Top="794.63" Width="312.78" Height="10.5" Text="[Box_c_name]" Padding="0, 0, 0, 0" Font="Courier New, 7pt"/>
+      <TextObject Name="Text1115" Left="602.3" Top="840.6" Width="26.51" Height="12.5" Text="[Box_12a_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1116" Left="631.29" Top="840.6" Width="100.6" Height="12.5" Text="[Box_12a_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1117" Left="601.91" Top="890.61" Width="27.23" Height="12.5" Text="[Box_12c_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1118" Left="631.29" Top="891.06" Width="100.6" Height="12.5" Text="[Box_12c_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1119" Left="601.96" Top="915.87" Width="26.52" Height="12.5" Text="[Box_12d_Code]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1120" Left="631.29" Top="915.89" Width="101.13" Height="12.5" Text="[Box_12d_Amt]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1121" Left="463.43" Top="866.11" Width="130.56" Height="17.28" Text="[Box_14_line_1]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text1122" Left="463.43" Top="884.35" Width="130.56" Height="17.28" Text="[Box_14_line_2]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text1123" Left="463.43" Top="902.13" Width="130.56" Height="17.28" Text="[Box_14_line_3]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text1124" Left="463.43" Top="920.15" Width="130.56" Height="17.28" Text="[Box_14_line_4]" Padding="0, 0, 0, 0" Font="Courier New, 6pt"/>
+      <TextObject Name="Text1125" Left="337.18" Top="866.38" Width="37.82" Height="12.5" Text="[Box_13_1]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1126" Left="378.35" Top="866.74" Width="35.74" Height="12.5" Border.Lines="Left, Right" Text="[Box_13_2]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1127" Left="418.45" Top="866.75" Width="40.75" Height="12.5" Text="[Box_13_3]" Padding="0, 0, 0, 0" HorzAlign="Center" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1128" Left="327.24" Top="890.61" Width="131.97" Height="12.5" Text="[Box_b]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1129" Left="327.97" Top="915.51" Width="131.24" Height="12.5" Text="[Box_a]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1130" Left="10.68" Top="955.24" Width="34.03" Height="11.48" Text="[Box_15_2_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1131" Left="47.59" Top="956.21" Width="168.2" Height="12.92" Text="[Box_15_2_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1132" Left="218.23" Top="956.28" Width="105.37" Height="13.28" Text="[Box_16_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1133" Left="327.17" Top="955.75" Width="105.21" Height="13.28" Text="[Box_17_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1134" Left="435.28" Top="956.3" Width="105.08" Height="13.28" Text="[Box_18_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1135" Left="543.43" Top="955.3" Width="105.08" Height="13.28" Text="[Box_19_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1136" Left="651.61" Top="956.28" Width="80.16" Height="13.28" Text="[Box_20_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1137" Left="240.94" Top="767.59" Width="54.72" Height="17.01" Text="[Tax_Year]" Padding="0, 0, 0, 0" VertAlign="Center" Font="Courier New, 14pt, style=Bold"/>
+      <TextObject Name="Text1138" Left="10.67" Top="946.25" Width="34.03" Height="11.31" Text="[Box_15_1_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1139" Left="47.63" Top="946.94" Width="168.56" Height="13.12" Text="[Box_15_1_2]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1140" Left="218.29" Top="946.95" Width="105.39" Height="12.75" Text="[Box_16_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1141" Left="327.16" Top="946.44" Width="105.18" Height="13.12" Text="[Box_17_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1142" Left="435.28" Top="946.94" Width="105.07" Height="12.76" Text="[Box_18_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1143" Left="543.49" Top="946.2" Width="105.06" Height="12.76" Text="[Box_19_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1144" Left="651.62" Top="946.6" Width="80.16" Height="13.12" Text="[Box_20_1]" Padding="0, 0, 0, 0" Font="Courier New, 9pt"/>
+      <TextObject Name="Text1145" Left="325.19" Top="759.56" Width="76.52" Height="8.46" Text="7 Social security tips" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1146" Left="461.8" Top="759.55" Width="122.95" Height="9.25" Text="1 Wages, tips, other compensation" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1147" Left="596.83" Top="759.58" Width="108.82" Height="8.43" Text="2 Federal income tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1148" Left="461.8" Top="783.48" Width="85.63" Height="8.85" Text="3 Social security wages" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1149" Left="596.87" Top="783.55" Width="107.21" Height="8.85" Text="4 Social security tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1150" Left="461.8" Top="807.66" Width="99.72" Height="8.85" Text="5 Medicare wages and tips" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1151" Left="596.87" Top="807.23" Width="96" Height="9.27" Text="6 Medicare tax withheld" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1152" Left="461.51" Top="830.9" Width="79.01" Height="8.42" Text="11 Nonqualified plans" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1153" Left="596.87" Top="830.46" Width="110.85" Height="8.01" Text="12a See instructions for box 12" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1154" Left="460.28" Top="855.73" Width="36.3" Height="8.43" Text="14 Other" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1155" Left="595.41" Top="855.84" Width="19.71" Height="8.43" Text="12b" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1156" Left="595.41" Top="881.45" Width="19.71" Height="8.43" Text="12c" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1157" Left="595.46" Top="905.9" Width="19.71" Height="8.43" Text="12d" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1158" Left="595.56" Top="866.16" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text1159" Left="595.65" Top="839.67" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text1160" Left="595.9" Top="890.23" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text1161" Left="595.9" Top="914.88" Width="7.32" Height="16.29" Text="C&#13;&#10;O&#13;&#10;D&#13;&#10;E" Font="Arial, 2.3pt"/>
+      <TextObject Name="Text1162" Left="323.51" Top="881.54" Width="141.17" Height="7.35" Text="b Employer indentification number (EIN)" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1163" Left="325.62" Top="905.99" Width="132.69" Height="8.33" Text="a Employee's social security number" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1164" Left="324.37" Top="855.76" Width="16.02" Height="9.27" Text="13" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1165" Left="337.17" Top="854.74" Width="27.77" Height="11.67" Text="Statutory&#13;&#10;Employee" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text1166" Left="377.03" Top="855" Width="29.77" Height="11.67" Text="Retirement&#13;&#10;Plan" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text1167" Left="416.49" Top="854.76" Width="29.77" Height="11.67" Text="Third-party&#13;&#10;sick pay" Font="Arial, 3.5pt"/>
+      <TextObject Name="Text1168" Left="6.36" Top="854.62" Width="163.97" Height="8.89" Text="e Employee's name, address, and ZIP code" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1169" Left="8.7" Top="940.4" Width="35.58" Height="8.01" Text="15 State" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1170" Left="80.86" Top="939.85" Width="104.96" Height="10.25" Text="Employer's state ID number" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1171" Left="216.23" Top="939.83" Width="96" Height="9.13" Text="16 State wages, tips, etc." Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1172" Left="324.76" Top="939.84" Width="74.73" Height="9.69" Text="17 State income tax" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1173" Left="433.31" Top="939.84" Width="93.2" Height="9.12" Text="18 Local wages, tips, etc." Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1174" Left="541.27" Top="940.4" Width="74.73" Height="9.68" Text="19 Local income tax" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1175" Left="649.82" Top="940.4" Width="64.67" Height="9.68" Text="20 Locality name" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1176" Left="7.22" Top="784.04" Width="163.97" Height="8.89" Text="c Employer's name, address, and ZIP code" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1177" Left="6.05" Top="773.91" Width="35.8" Height="11.46" Text="Form" Font="Arial, 6pt"/>
+      <TextObject Name="Text1178" Left="28.83" Top="770.28" Width="218.88" Height="12.8" Text="W-2GU Guam Wage and Tax Statement" Padding="0, 0, 0, 0" Font="Arial, 8.5pt, style=Bold"/>
+      <TextObject Name="Text1179" Left="325.83" Top="807.65" Width="9.31" Height="8.54" Fill.Color="White" Text="9" HorzAlign="Center" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1180" Left="297.86" Top="758.42" Width="27.36" Height="24.29" Border.Lines="All" Padding="0, 0, 0, 0" Font="Arial, 10pt"/>
+      <TextObject Name="Text1181" Left="595.91" Top="915.74" Width="34.38" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1182" Left="595.97" Top="890.88" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1183" Left="595.78" Top="866.75" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1184" Left="595.84" Top="840.25" Width="34.38" Height="13.81" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1185" Left="596.09" Top="915.61" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1186" Left="596.03" Top="890.99" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1187" Left="596.09" Top="866.75" Width="34.13" Height="13.69" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1188" Left="595.97" Top="929.49" Width="136.37" Height="9.81" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text1189" Left="325.14" Top="931.36" Width="135.26" Height="7.95" Border.Lines="All" Font="Arial, 10pt"/>
+      <TextObject Name="Text1190" Left="9.49" Top="949.78" Width="35.66" Height="17.8" Border.Lines="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text1191" Left="326.15" Top="783.67" Width="9.31" Height="8.54" Fill.Color="White" Text="8" HorzAlign="Center" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1192" Left="326.15" Top="830.88" Width="10.85" Height="8.54" Fill.Color="White" Text="10" Padding="0, 0, 0, 0" Font="Arial, 5.5pt"/>
+      <TextObject Name="Text1193" Left="595.91" Top="854.12" Width="136.38" Height="26.45" Border.Lines="Left, Top, Bottom" Font="Arial, 10pt"/>
+      <TextObject Name="Text1194" Left="568.85" Top="968.6" Width="179.44" Height="9.68" Text="Department of the Treasury - Internal Revenue Service" Font="Arial, 5.5pt, style=Bold"/>
+    </DataBand>
+  </ReportPage>
+  <ReportPage Name="Page2" PaperWidth="215.9" PaperHeight="279.4" RawPaperSize="1" LeftMargin="10.01" TopMargin="10.01" RightMargin="10.01" BottomMargin="10.01" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data2" Width="740.43" Height="614.48">
+      <RichObject Name="Rich3" Left="18.68" Top="10.68" Width="329.87" Height="287" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\b\fs14\lang1033 Notice to Employee\par&#13;&#10;\fs10 Do you have to file? \b0 Refer to the Instructions for Forms 1040 and 1040-SR to determine if you are required to file a tax return. Even if you don\rquote t have to file a tax return, you may be eligible for a refund if box 2 shows an amount or if you are eligible for any credit.\par&#13;&#10;\b Copies B and C; corrections. \b0 File Copy B of this form with your 2021 Guam income tax return. Keep Copy C for your records. If your name, social security number (SSN), or address is incorrect, correct Copies B and C and ask your employer to correct your employment record. Be sure to ask your employer to file Form W-2c, Corrected Wage and Tax Statement, with the Social Security Administration (SSA) to correct any name, amount, or SSN error reported to the SSA.\par&#13;&#10;\b\lang1033 Estimated tax. \b0 If you expect to owe $1,000 or more in tax (including self-employment tax) for 2022, you may have to make estimated tax payments to the U.S. Internal Revenue Service. Use Form 1040-ES, Estimated Tax for Individuals.\par&#13;&#10;\b Employee\rquote s social security number (SSN). \b0 For your protection, this form may show only the last four digits of your SSN. However, your employer has reported your complete SSN to the Guam Department of Revenue and Taxation and the SSA.\par&#13;&#10;\b Clergy and religious workers. \b0 If you aren\rquote t subject to social security and Medicare taxes, see Pub. 517, Social Security and Other Information for Members of the Clergy and Religious Workers.\par&#13;&#10;\b Cost of employer-sponsored health coverage (if such cost is provided by the employer). \b0 The reporting in box 12, using code DD, of the cost of employer-sponsored health coverage is for your information only. \b The amount reported with code DD is not taxable.\par&#13;&#10;Credit for Guam income tax withheld. \b0 If you are required to file your return with the United States or the Commonwealth of the Northern Mariana Islands instead of with Guam, add the Guam income tax withheld to the other withholding tax credits on your income tax return.\par&#13;&#10;\b Credit for excess social security tax. \b0 If you had more than one employer in 2021 and more than $8,853.60 in social security tax was withheld, you can have the excess refunded by filing Form 843, Claim for Refund and Request for Abatement, with the Department of the Treasury, Internal Revenue Service Center, Austin, TX 73301-0215, USA. However, if you are required to file Form 1040 or 1040-SR with the United States, you must claim the excess tax as a credit on Form 1040 or 1040-SR.\par&#13;&#10;\b Unreported tip income. \b0 You must file Form 4137, Social Security and Medicare Tax on Unreported Tip Income, with your income tax return to report at least the allocated tip amount unless you can prove with adequate records that you received a smaller amount. If you have records that show the actual amount of tips you received, report that amount even if it is more or less than the allocated tips.\par&#13;&#10;Use Form 4137 to figure the social security and Medicare tax owed on tips you didn\rquote t report to your employer. Enter this amount on the wages line of your tax return. (Form 1040-SS filers, see the instructions for Form 1040-SS, Part I, line 6.) By filing this form, your social security tips will be credited to your social security record (used to figure your benefits).\par&#13;&#10;(Also see the \i Instructions for Employee \i0 on this page)\par&#13;&#10;}&#13;&#10;"/>
+      <RichObject Name="Rich5" Left="393.6" Top="10.6" Width="329.87" Height="248.6" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\b\fs14\lang1033 Instructions for Employee\par&#13;&#10;\b0\fs10 (Also see \i Notice to Employee \i0 on this page.)\b\par&#13;&#10;Box 5. \b0 You may be required to report this amount on Form 8959, Additional Medicare Tax. See the Instructions for Forms 1040 and 1040-SR to determine if you are required to complete Form 8959.\par&#13;&#10;\b Box 6. \b0 This amount includes the 1.45% Medicare Tax withheld on all Medicare wages and tips shown in box 5, as well as the 0.9% Additional Medicare Tax on any of those Medicare wages and tips above $200,000.\par&#13;&#10;\b Box 11. \b0 This amount is (a) reported in box 1 if it is a distribution made to you from a nonqualified deferred compensation or nongovernmental section 457(b) plan, or (b) included in box 3 and/or box 5 if it is a prior year deferral under a nonqualified or section 457(b) plan that became taxable for social security and Medicare taxes this year because there is no longer a substantial risk of forfeiture of your right to the deferred amount. This box shouldn\rquote t be used if you had a deferral and a distribution in the same calendar year. If you made a deferral and received a distribution in the same calendar year, and you are or will be age 62 by the end of the calendar year, your employer should file Form SSA-131, Employer Report of Special Wage Payments, with the Social Security Administration and give you a copy.\par&#13;&#10;\b Box 12. \b0 The following list explains the codes shown in box 12. You may need this information to complete your tax return. Elective deferrals (codes D, E, F, and S) and designated Roth contributions (codes AA, BB, and EE) under all plans are generally limited to a total of $19,500 ($13,500 if you have only SIMPLE plans; $22,500 for section 403(b) plans if you qualify for the 15-year rule explained in Pub. 571). Deferrals under code G are limited to $19,500. Deferrals under code H are limited to $7,000.\par&#13;&#10;  However, if you were at least age 50 in 2021, your employer may have allowed an additional deferral of up to $6,500 ($3,000 for section 401(k)(11) and 408(p) SIMPLE plans). This additional deferral amount is not subject to the overall limit on elective deferrals. For code G, the limit on elective deferrals may be higher for the last 3 years before you reach retirement age. Contact your plan administrator for more information. Amounts in excess of the overall elective deferral limit must be included in income. See the \ldblquote Wages, Salaries, Tips, etc.\rdblquote  line instructions for your tax return.\par&#13;&#10;\b Note: \b0 If a year follows code D through H, S, Y, AA, BB, or EE, you made a make-up pension contribution for a prior year(s) when you were in military service. To figure whether you made excess deferrals, consider these amounts for the year shown, not the current year. If no year is shown, the contributions are for the current year.\par&#13;&#10;}&#13;&#10;"/>
+      <RichObject Name="Rich6" Left="19.2" Top="316.8" Width="329.87" Height="219.8" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\b\fs14\lang1033 Instructions for Employee \b0\i (continued)\i0\fs10\par&#13;&#10;\b A\f1\emdash\b0 Uncollected social security tax on tips. Report on U.S. Form 1040 or 1040-SR.\f0\lang2058  \f1\lang1033 Report on Form 1040-SS if not required to file Form 1040 or 1040-SR.\par&#13;&#10;\b B\emdash\b0 Uncollected Medicare tax on tips. Report on U.S. Form 1040 or 1040-SR.\f0\lang2058  \f1\lang1033 Report on Form 1040-SS if not required to file Form 1040 or 1040-SR.\par&#13;&#10;\b C\emdash\b0 Taxable cost of group-term life insurance over $50,000 (included in boxes 1, 3\f0\lang2058  \f1\lang1033 (up to the social security wage base), and 5)\par&#13;&#10;\b D\emdash\b0 Elective deferrals to a section 401(k) cash or deferred arrangement. Also\f0\lang2058  \f1\lang1033 includes deferrals under a SIMPLE retirement account that is part of a section\f0\lang2058  \f1\lang1033 401(k) arrangement.\par&#13;&#10;\b E\emdash\b0 Elective deferrals under a section 403(b) salary reduction agreement\par&#13;&#10;\b F\emdash\b0 Elective deferrals under a section 408(k)(6) salary reduction SEP\par&#13;&#10;\b G\emdash\b0 Elective deferrals and employer contributions (including nonelective deferrals)\f0\lang2058  \f1\lang1033 to a section 457(b) deferred compensation plan\par&#13;&#10;\b H\emdash\b0 Elective deferrals to a section 501(c)(18)(D) tax-exempt organization plan. (You\f0\lang2058  \f1\lang1033 may be able to deduct.)\par&#13;&#10;\b J\emdash\b0 Nontaxable sick pay (information only, not included in box 1, 3, or 5)\par&#13;&#10;\b M\emdash\b0 Uncollected social security tax on taxable cost of group-term life insurance\f0\lang2058  \f1\lang1033 over $50,000 (former employees only). Report on U.S. Form 1040 or 1040-SR.\f0\lang2058  \f1\lang1033 Report on Form 1040-SS if not required to file Form 1040 or 1040-SR.\par&#13;&#10;\b N\emdash\b0 Uncollected Medicare tax on taxable cost of group-term life insurance over\f0\lang2058  \f1\lang1033 $50,000 (former employees only). Report on U.S. Form 1040 or 1040-SR. Report\f0\lang2058  \f1\lang1033 on Form 1040-SS if not required to file Form 1040 or 1040-SR.\par&#13;&#10;\b P\emdash\b0 Excludable moving expense reimbursements paid directly to a member of the\f0\lang2058  \f1\lang1033 U.S. Armed Forces (not included in box 1, 3, or 5)\par&#13;&#10;\b Q\emdash\b0 Nontaxable combat pay. See your tax return instructions for details on\f0\lang2058  \f1\lang1033 reporting this amount.\par&#13;&#10;\b R\emdash\b0 Employer contributions to your Archer MSA. Report on Form 8853, Archer\f0\lang2058  \f1\lang1033 MSAs and Long-Term Care Insurance Contracts.\f0\par&#13;&#10;}&#13;&#10;"/>
+      <RichObject Name="Rich7" Left="393.6" Top="316.8" Width="329.87" Height="219.8" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Arial;}{\f1\fnil\fcharset0 Arial;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\b\f0\fs10\lang1033 S\emdash\b0 Employee salary reduction contributions under a section 408(p) SIMPLE plan\f1\lang2058  \f0\lang1033 (not included in box 1)\par&#13;&#10;\b T\emdash\b0 Adoption benefits (not included in box 1). Complete Form 8839, Qualified\f1\lang2058  \f0\lang1033 Adoption Expenses, to figure taxable and nontaxable amounts.\par&#13;&#10;\b V\emdash\b0 Income from exercise of nonstatutory stock option(s) (included in boxes 1, 3\f1\lang2058  \f0\lang1033 (up to the social security wage base), and 5). See Pub. 525, Taxable and\f1\lang2058  \f0\lang1033 Nontaxable Income, for reporting requirements.\par&#13;&#10;\b W\emdash\b0 Employer contributions (including amounts the employee elected to contribute\f1\lang2058  \f0\lang1033 using a section 125 (cafeteria) plan) to your health savings account (HSA). Report\f1\lang2058  \f0\lang1033 on Form 8889, Health Savings Accounts (HSAs).\par&#13;&#10;\b Y\emdash\b0 Deferrals under a section 409A nonqualified deferred compensation plan\f1\lang2058 .\f0\lang1033\par&#13;&#10;\b Z\emdash\b0 Income under a nonqualified deferred compensation plan that fails to satisfy\f1\lang2058  \f0\lang1033 section 409A. This amount is also included in box 1. It is subject to an additional\f1\lang2058  \f0\lang1033 20% tax plus interest. See \ldblquote Other Taxes\rdblquote  in the instructions for your tax return.\par&#13;&#10;\b AA\emdash\b0 Designated Roth contributions under a section 401(k) plan\par&#13;&#10;\b BB\emdash\b0 Designated Roth contributions under a section 403(b) plan\par&#13;&#10;\b DD\emdash\b0 Cost of employer-sponsored health coverage. \b The amount reported with\f1\lang2058  \f0\lang1033 code DD is not taxable.\par&#13;&#10;EE\emdash\b0 Designated Roth contributions under a governmental section 457(b) plan.\f1\lang2058  \f0\lang1033 This amount does not apply to contributions under a tax-exempt organization\f1\lang2058  \f0\lang1033 section 457(b) plan.\par&#13;&#10;\b FF\emdash\b0 Permitted benefits under a qualified small employer health reimbursement\f1\lang2058  \f0\lang1033 arrangement\par&#13;&#10;\b GG\emdash\b0 Income from qualified equity grants under section 83(i)\par&#13;&#10;\b HH\emdash\b0 Aggregate deferrals under section 83(i) elections as of the close of the\f1\lang2058  \f0\lang1033 calendar year\par&#13;&#10;\b Box 13. \b0 If the \ldblquote Retirement plan\rdblquote  box is checked, special limits may apply to the\f1\lang2058  \f0\lang1033 amount of traditional IRA contributions that you may deduct. See Pub. 590-A,\f1\lang2058  \f0\lang1033 Contributions to Individual Retirement Arrangements (IRAs).\par&#13;&#10;\b Note: \b0 Keep \b Copy C \b0 of Form W-2GU for at least 3 years after the due date for filing\f1\lang2058  \f0\lang1033 your income tax return. However, to help \b protect your social security benefits\b0 ,\f1\lang2058  \f0\lang1033 keep Copy C until you begin receiving social security benefits, just in case there is\f1\lang2058  \f0\lang1033 a question about your work record and/or earnings in a particular year.\f1\par&#13;&#10;}&#13;&#10;"/>
+    </DataBand>
+  </ReportPage>
+</Report>

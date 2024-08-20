@@ -1,0 +1,4264 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ellucian.Colleague.Dtos.Finance</name>
+    </assembly>
+    <members>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityPeriodArguments">
+            <summary>
+            Input to determine account activity for a specific period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityPeriodArguments.AssociatedPeriods">
+            <summary>
+            List of terms in desired period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityPeriodArguments.StartDate">
+            <summary>
+            Start date of desired period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityPeriodArguments.EndDate">
+            <summary>
+            End date of desired period
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityPeriods">
+            <summary>
+            Account activity
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityPeriods.NonTermActivity">
+            <summary>
+            Non-term account activity
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityPeriods.Periods">
+            <summary>
+            List of term-based account activity
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityPeriods.#ctor">
+            <summary>
+            AccountActivityPeriods constructor
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityTerm">
+            <summary>
+            Term information for which a student has activity.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityTerm.Id">
+            <summary>
+            Term ID.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityTerm.Description">
+            <summary>
+            Term Description
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityTerms">
+            <summary>
+            Student terms.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityTerms.Terms">
+            <summary>
+            List of terms 
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountActivityTerms.#ctor">
+            <summary>
+            AccountActivityTerms constructor.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountPeriod">
+            <summary>
+            Account information for a term/period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountPeriod.AssociatedPeriods">
+            <summary>
+            List of terms in the period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountPeriod.Balance">
+            <summary>
+            Balance for the period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountPeriod.Description">
+            <summary>
+            Period description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountPeriod.Id">
+            <summary>
+            Period ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountPeriod.StartDate">
+            <summary>
+            Period start date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountPeriod.EndDate">
+            <summary>
+            Period end date
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.AccountActivity.AccountPeriod.#ctor">
+            <summary>
+            AccountPeriod constructor
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityDateTermItem">
+            <summary>
+            A transaction with a date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityDateTermItem.Date">
+            <summary>
+            Transaction date
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityDepositItem">
+            <summary>
+            Represents activity on a deposit item.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityDepositItem.Type">
+            <summary>
+            Deposit type code - not currently used
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem">
+            <summary>
+            A financial aid award
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.#ctor">
+            <summary>
+            ActivityFinancialAidItem constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.AwardAmount">
+            <summary>
+            Amount of the award
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.AwardDescription">
+            <summary>
+            Award description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.Comments">
+            <summary>
+            Comments on the award
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.IneligibleAmount">
+            <summary>
+            Amount of the award for which the student is not eligible
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.LoanFee">
+            <summary>
+            Amount of loan fees deducted from the award
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.OtherTermAmount">
+            <summary>
+            Amount paid on this award in other terms
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.PeriodAward">
+            <summary>
+            Award code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.AwardTerms">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidTerm">financial aid payments</see>
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.StudentStatementAwardTerms">
+            <summary>
+            Concatenation of newline-delimited award terms for the award for use with student statements
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.StudentStatementDisbursedAmounts">
+            <summary>
+            Concatenation of newline-delimited disbursed amounts for the award for use with student statements
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.StudentStatementAnticipatedAmounts">
+            <summary>
+            Concatenation of newline-delimited anticipated amounts for the award for use with student statements
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.IneligibilityReasons">
+            <summary>
+            List of reasons this account holder is not eligible for aid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem.TransmitAwardExcess">
+            <summary>
+            Indicates whether excess award amounts should be transmitted
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidTerm">
+            <summary>
+            A financial aid award for a term
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidTerm.AwardTerm">
+            <summary>
+            Award term ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidTerm.DisbursedAmount">
+            <summary>
+            Amount paid to the student
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidTerm.AnticipatedAmount">
+            <summary>
+            Amount anticipated to be paid
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentMethodItem">
+            <summary>
+            A refund transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentMethodItem.Method">
+            <summary>
+            Method of payment for the refund
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentMethodItem.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentMethodItem.StatusDate">
+            <summary>
+            Date associated with this item's status
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentMethodItem.TransactionNumber">
+            <summary>
+            E-Commerce transaction number 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentMethodItem.CreditCardLastFourDigits">
+            <summary>
+            Last 4 digits of the credit card for the original payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentMethodItem.CheckNumber">
+            <summary>
+            Number of the check for the original payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentMethodItem.CheckDate">
+            <summary>
+            Date of the check for the original payment
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPaidItem">
+            <summary>
+            A paid transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPaidItem.ReferenceNumber">
+            <summary>
+            Transactional reference number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPaidItem.ReceiptNumber">
+            <summary>
+            Cash receipt number
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanDetailsItem">
+            <summary>
+            A payment plan summary
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanDetailsItem.#ctor">
+            <summary>
+            ActivityPaymentPlanDetailsItem constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanDetailsItem.Type">
+            <summary>
+            Plan type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanDetailsItem.OriginalAmount">
+            <summary>
+            Original plan amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanDetailsItem.CurrentBalance">
+            <summary>
+            Current plan balance
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanDetailsItem.PaymentPlanApproval">
+            <summary>
+            Payment Plan Approval record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanDetailsItem.PaymentPlanSchedules">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanScheduleItem">scheduled payments</see> on a plan
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanScheduleItem">
+            <summary>
+            A scheduled plan payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanScheduleItem.SetupCharge">
+            <summary>
+            Setup charge included in payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanScheduleItem.LateCharge">
+            <summary>
+            Late charge included in payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanScheduleItem.AmountPaid">
+            <summary>
+            Amount paid toward payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanScheduleItem.NetAmountDue">
+            <summary>
+            Amount currently due on payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanScheduleItem.DatePaid">
+            <summary>
+            Date the scheduled payment was completely paid
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityRemainingAmountItem">
+            <summary>
+            A deposit on an account
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityRemainingAmountItem.PaidAmount">
+            <summary>
+            Amount of deposit originally paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityRemainingAmountItem.RemainingAmount">
+            <summary>
+            Amount of deposit remaining to be paid on the account
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityRemainingAmountItem.RefundAmount">
+            <summary>
+            Amount of deposit refunded
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityRemainingAmountItem.OtherAmount">
+            <summary>
+            Amount of deposit currently unavailable to be used
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityRemainingAmountItem.ReceiptId">
+            <summary>
+            Deposit's associated cash receipt ID
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityRoomAndBoardItem">
+            <summary>
+            A room or meal charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityRoomAndBoardItem.Room">
+            <summary>
+            Room identifier
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivitySponsorPaymentItem">
+            <summary>
+            A sponsored payment transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivitySponsorPaymentItem.Sponsorship">
+            <summary>
+            Sponsorship ID
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTermItem">
+            <summary>
+            A term-based transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTermItem.Amount">
+            <summary>
+            Charge amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTermItem.Description">
+            <summary>
+            Charge description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTermItem.Id">
+            <summary>
+            Charge ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTermItem.TermId">
+            <summary>
+            Charge term code
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem">
+            <summary>
+            Schedule information for a tuition charge item
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem.Classroom">
+            <summary>
+            Building and room of class
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem.Credits">
+            <summary>
+            Academic credits
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem.BillingCredits">
+            <summary>
+            Billing credits
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem.Ceus">
+            <summary>
+            Continuing Education Units (CEUs)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem.Days">
+            <summary>
+            List of days the class meets
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem.Instructor">
+            <summary>
+            Class instructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem.Status">
+            <summary>
+            Class status
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem.StartTime">
+            <summary>
+            Start time of class (HH:MM format)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem.EndTime">
+            <summary>
+            End time of class (HH:MM format)
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ChargesCategory">
+            <summary>
+            Charges on an account
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.AccountActivity.ChargesCategory.#ctor">
+            <summary>
+            ChargesCategory constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ChargesCategory.FeeGroups">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.FeeType">Fee</see> charges
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ChargesCategory.Miscellaneous">
+            <summary>
+            Miscellaneous <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.OtherType">Other</see> charges
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ChargesCategory.OtherGroups">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.OtherType">Other</see> charges
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ChargesCategory.RoomAndBoardGroups">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.RoomAndBoardType">Room and board</see> charges
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ChargesCategory.TuitionBySectionGroups">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.TuitionBySectionType">Tuition by Section</see> charges
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.ChargesCategory.TuitionByTotalGroups">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.TuitionByTotalType">Tuition by Total</see> charges
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.DepositCategory">
+            <summary>
+            Deposits on account
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DepositCategory.Deposits">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityRemainingAmountItem">deposits</see> on account
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod">
+            <summary>
+            Account activity information for a period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.AmountDue">
+            <summary>
+            Total amount due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.Charges">
+            <summary>
+            Period charges
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.Deposits">
+            <summary>
+            Period deposits
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.DueDate">
+            <summary>
+            Period due date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.FinancialAid">
+            <summary>
+            Period FA awards
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.PaymentPlans">
+            <summary>
+            Period payment plans
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.Refunds">
+            <summary>
+            Refunds in period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.Sponsorships">
+            <summary>
+            Period sponsorships payments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.StudentPayments">
+            <summary>
+            Period payments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.FeeGroupsAmount">
+            <summary>
+            FeeGroupsAmount 
+            The sum of all amount properties from all feeCharges in all charges.feeGroups
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.RoomAndBoardAmount">
+            <summary>
+            RoomAndBoardAmount 
+            The sum of all amount properties from all roomAndBoardCharges in all charges.roomAndBoardGroups
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.TuitionTotalAmount">
+            <summary>
+            TuitionTotalAmount   
+            The sum of TuitionByTotalAmount and TuitionBySectionAmount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.OtherCharges">
+            <summary>
+            OtherCharges   
+            The sum of OtherGroupsAmount + MiscellaneousAmount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.FinancialAidAmount">
+            <summary>
+            FinancialAidAmount   
+            The sum of all awardAmount properties within the financialAid.anticipatedAid minus all the ineligibleAmount properties of the corresponding financialAid.anticipatedAid element (if there's no ineligibleAmount, it should be treated as 0)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.StudentPaymentsAmount">
+            <summary>
+            StudentPaymentsAmount   
+            The sum of all amount values for each element in the studentPayments.studentPayments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.SponsorshipsAmount">
+            <summary>
+            SponsorshipsAmount   
+            The sum of all amount values for each element in the sponsorships.sponsorItems
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.DepositsAmount">
+            <summary>
+            DepositsAmount   
+            The amount values for each element in the deposits.deposits
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.TotalCharges">
+            <summary>
+            Charge amounts totaled or 0.
+            The sum of TuitionByTotalAmount, TuitionBySectionAmount, RoomAndBoardAmount,
+            FeeGroupsAmount, OtherGroupsAmount, and MiscellaneousAmount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.TotalPayments">
+            <summary>
+            Payment amounts totaled or 0.
+            The sum of FinancialAidAmount, StudentPaymentsAmount, and DepositsAmount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.TotalRefunds">
+            <summary>
+            Refund amounts totaled or 0.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.DetailedAccountPeriod.AccountBalance">
+            <summary>
+            A total amount or 0.
+            AccountBalance = TotalCharges - TotalPayments + TotalRefunds
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.FeeType">
+            <summary>
+            Charges with the "Fee" type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.FeeType.FeeCharges">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityDateTermItem">fee charges</see>
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.FinancialAidCategory">
+            <summary>
+            Financial aid awarded and anticipated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.FinancialAidCategory.AnticipatedAid">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityFinancialAidItem">anticipated aid</see>
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.FinancialAidCategory.DisbursedAid">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityDateTermItem">disbursed aid</see>
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.NamedType">
+            <summary>
+            A charge group
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.NamedType.DisplayOrder">
+            <summary>
+            Order in which the charge group is displayed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.NamedType.Name">
+            <summary>
+            Description of the charge group
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.OtherType">
+            <summary>
+            Charges with the "Other" type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.OtherType.OtherCharges">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityDateTermItem">other charges</see>
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.PaymentPlanCategory">
+            <summary>
+            Payment plans
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.AccountActivity.PaymentPlanCategory.#ctor">
+            <summary>
+            PaymentPlanCategory constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.PaymentPlanCategory.PaymentPlans">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPlanDetailsItem">payment plans</see>
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.PotentialD7FinancialAid">
+            <summary>
+            A token representing an award period and a D7 Financial Aid award concatenated together with an asterisk,
+            a description of the award, and a potentially transmittable amount for the award.
+            The award and amount have not been transmitted.  This is an estimate only, based
+            on current charges and payments. 
+            </summary>
+            
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.PotentialD7FinancialAid.AwardPeriodAward">
+            <summary>
+            The award period and award code of the D7 award, concatenated together with an asterisk
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.PotentialD7FinancialAid.AwardDescription">
+            <summary>
+            The description of the award code comprising the AwardPeriodAward
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.PotentialD7FinancialAid.AwardAmount">
+            <summary>
+            The potential amount of the award
+            </summary>
+            
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.RefundCategory">
+            <summary>
+            Refund transactions
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.RefundCategory.Refunds">
+            <summary>
+            A list of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentMethodItem">refunds</see>
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.RoomAndBoardType">
+            <summary>
+            Charges with the "Room/Board" type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.RoomAndBoardType.RoomAndBoardCharges">
+            <summary>
+            A list of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityRoomAndBoardItem">room and meal charges</see>
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.SponsorshipCategory">
+            <summary>
+            Sponsorship payments on an account
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.SponsorshipCategory.SponsorItems">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivitySponsorPaymentItem">sponsor payments</see>
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentAwardDisbursement">
+            <summary>
+            Object holding information about a disbursement such as
+            disbursement date, last transmit amount, last transmit date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentAwardDisbursement.AwardPeriodCode">
+            <summary>
+            Award period code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentAwardDisbursement.AnticipatedDisbursementDate">
+            <summary>
+            The date of anticipated disbursement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentAwardDisbursement.LastTransmitAmount">
+            <summary>
+            Last transmitted amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentAwardDisbursement.LastTransmitDate">
+            <summary>
+            Last trasmittal date
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentAwardDisbursementInfo">
+            <summary>
+            Object holding information about student award disbursements
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentAwardDisbursementInfo.StudentId">
+            <summary>
+            Student id
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentAwardDisbursementInfo.AwardCode">
+            <summary>
+            Award Code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentAwardDisbursementInfo.AwardDescription">
+            <summary>
+            Award Description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentAwardDisbursementInfo.AwardYearCode">
+            <summary>
+            Award Year Code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentAwardDisbursementInfo.AwardDisbursements">
+            <summary>
+            List of Award Disbursements
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentPaymentCategory">
+            <summary>
+            Payments on an account
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.StudentPaymentCategory.StudentPayments">
+            <summary>
+            A list of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityPaymentPaidItem">payments</see>
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.TuitionBySectionType">
+            <summary>
+            Charges with the "Tuition by Section" type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.TuitionBySectionType.SectionCharges">
+            <summary>
+            A list of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem">tuition</see> items
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.TuitionByTotalType">
+            <summary>
+            Charges with the "Tuition by Total" type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountActivity.TuitionByTotalType.TotalCharges">
+            <summary>
+            A list of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountActivity.ActivityTuitionItem">tuition</see> items
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDue">
+            <summary>
+            Account due information broken down by term
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDue.#ctor">
+            <summary>
+            AccountDue constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDue.AccountTerms">
+            <summary>
+            A list of <see cref="T:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountTerm">AccountTerm</see> items
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDue.StartDate">
+            <summary>
+            Start date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDue.EndDate">
+            <summary>
+            End date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDue.PersonName">
+            <summary>
+            Account holder name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDue.Balance">
+            <summary>
+            Balance due
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDuePeriod">
+            <summary>
+            Account due information broken down by period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDuePeriod.Past">
+            <summary>
+            Past period due items
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDuePeriod.Current">
+            <summary>
+            Current period due items
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDuePeriod.Future">
+            <summary>
+            Future period due items
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDuePeriod.PersonName">
+            <summary>
+            Account holder name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountDuePeriod.Balance">
+            <summary>
+            Balance due
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem">
+            <summary>
+            An item due on an AR account
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.AmountDue">
+            <summary>
+            Amount due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.DueDate">
+            <summary>
+            Date due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.DueDateOffset">
+            <summary>
+            Date due offset to CTZS timezone setting
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.Description">
+            <summary>
+            Item description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.Overdue">
+            <summary>
+            Indicates whether the item is overdue
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.Term">
+            <summary>
+            Code of term for which item is due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.TermDescription">
+            <summary>
+            Term description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.Period">
+            <summary>
+            Code of period for which item is due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.PeriodDescription">
+            <summary>
+            Period description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.AccountType">
+            <summary>
+            AR type code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.AccountDescription">
+            <summary>
+            AR type description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountsReceivableDueItem.Distribution">
+            <summary>
+            Distribution against which the item will be paid
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountTerm">
+            <summary>
+            Items due for a given term
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountTerm.#ctor">
+            <summary>
+            AccountTerm constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountTerm.Amount">
+            <summary>
+            Total amount due for the term
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountTerm.TermId">
+            <summary>
+            Term ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountTerm.Description">
+            <summary>
+            Term Description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountTerm.GeneralItems">
+            <summary>
+            General AR account items due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountTerm.InvoiceItems">
+            <summary>
+            Invoice items due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountTerm.PaymentPlanItems">
+            <summary>
+            Plan payments due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.AccountTerm.DepositDueItems">
+            <summary>
+            Deposits due
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountDue.InvoiceDueItem">
+            <summary>
+            An invoice due to be paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.InvoiceDueItem.InvoiceId">
+            <summary>
+            Invoice ID number
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountDue.PaymentPlanDueItem">
+            <summary>
+            A plan payment that is due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.PaymentPlanDueItem.PaymentPlanId">
+            <summary>
+            Payment plan ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.PaymentPlanDueItem.PaymentPlanCurrent">
+            <summary>
+            Indicates whether the plan payment is currently due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountDue.PaymentPlanDueItem.UnpaidAmount">
+            <summary>
+            Amount due on the plan payment
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountHolder">
+            <summary>
+            An accountholder - inherits from <see cref="T:Ellucian.Colleague.Dtos.Base.Person">Person</see>
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountHolder.DepositsDue">
+            <summary>
+            A list of <see cref="T:Ellucian.Colleague.Dtos.Finance.DepositDue">Deposits Due</see> for the accountholder
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AccountHolderQueryCriteria">
+            <summary>
+            Used to pass query criteria to retrieve account holder data
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountHolderQueryCriteria.Ids">
+            <summary>
+            List of account holder ids to retrieve data for
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AccountHolderQueryCriteria.QueryKeyword">
+            <summary>
+            Used when requesting a search of account holders by name or Id. 
+            Either a Person ID or a first and last name is required. A middle name is optional.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.AwardPeriodAwardTransmitExcessStatus">
+            <summary>
+            A pairing of an award period+financial award combination, and the corresponding indication
+            as to whether the award can transmit excess award amounts.  
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AwardPeriodAwardTransmitExcessStatus.AwardPeriodAward">
+            <summary>
+            A combination of award periods and awards to evaluate.  The award periods and awards
+            are represented by their identifiers.  The identifiers are concatenated together with a separating
+            asterisk; e.g., AWDP1*AWARD1.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.AwardPeriodAwardTransmitExcessStatus.TransmitExcessIndicator">
+            <summary>
+            False if the award component of AwardPeriodAward is a D7 award with its
+            'Transmit Excess' flag set to No.  True in all other conditions.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.BillingTermPaymentPlanInformation">
+            <summary>
+            Payment plan information for a person for a billing term and receivable type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.BillingTermPaymentPlanInformation.PersonId">
+            <summary>
+            ID of the person for whom the payment plan information applies
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.BillingTermPaymentPlanInformation.TermId">
+            <summary>
+            ID of the billing term for which the payment plan information applies
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.BillingTermPaymentPlanInformation.ReceivableTypeCode">
+            <summary>
+            Receivable type for charges to which the payment plan information applies
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.BillingTermPaymentPlanInformation.PaymentPlanAmount">
+            <summary>
+            Amount of the payment plan for the billing term
+            <remarks>Inbound objects will hold the proposed payment plan amount</remarks>
+            <remarks>Outbound objects will hold the amount for which a payment plan can be created, which could be different</remarks>
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.BillingTermPaymentPlanInformation.PaymentPlanTemplateId">
+            <summary>
+            ID of the payment plan template to be used in creating a payment plan from the associated person, term, receivable type, and amount information.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.BillingTermPaymentPlanInformation.IneligibilityReason">
+            <summary>
+            The reasoning for an individual's ineligibility to sign up for a payment plan
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Charge">
+            <summary>
+            A charge, roughly equivalent to an AR invoice item
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Charge.Id">
+            <summary>
+            ID of the charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Charge.InvoiceId">
+            <summary>
+            ID of the invoice to which the charge belongs
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Charge.Code">
+            <summary>
+            AR Code associated with the charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Charge.Description">
+            <summary>
+            Description of the charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Charge.PaymentPlanIds">
+            <summary>
+            List of payment plans this charge is on
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Charge.BaseAmount">
+            <summary>
+            Base amount of the charge, without taxes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Charge.TaxAmount">
+            <summary>
+            Amount of taxes associated with the charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Charge.Amount">
+            <summary>
+            Total amount of the charge
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.ChargeCode">
+            <summary>
+            An AR Code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ChargeCode.Code">
+            <summary>
+            The nominal ID of the AR Code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ChargeCode.Description">
+            <summary>
+            Description of the AR Code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ChargeCode.Priority">
+            <summary>
+            Payment priority for the AR Code - an AR Code with lower priority will be paid before an AR Code with higher priority
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ChargeCode.ChargeGroup">
+            <summary>
+            The Charge Group in which the AR Code will appear in Colleague Student Self-Service
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Configuration.ActivityDisplay">
+            <summary>
+            Options for display on Account Activity
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.Configuration.ActivityDisplay.DisplayByTerm">
+            <summary>
+            Display account activity by term
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.Configuration.ActivityDisplay.DisplayByPeriod">
+            <summary>
+            Display account activity by period
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Configuration.AvailablePaymentMethod">
+            <summary>
+            A payment method available for use on Make a Payment
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.Configuration.AvailablePaymentMethod.#ctor">
+            <summary>
+            AvailablePaymentMethod constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.AvailablePaymentMethod.InternalCode">
+            <summary>
+            Payment method code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.AvailablePaymentMethod.Description">
+            <summary>
+            Payment method description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.AvailablePaymentMethod.Type">
+            <summary>
+            Type of payment method
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration">
+            <summary>
+            Configuration for Student Finance
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.#ctor">
+            <summary>
+            FinanceConfiguration constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.SelfServicePaymentsAllowed">
+            <summary>
+            Indicates whether payments from self-service are allowed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.ECommercePaymentsAllowed">
+            <summary>
+            Indicates whether e-commerce payments are allowed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.PartialAccountPaymentsAllowed">
+            <summary>
+            Indicates whether partial payments are allowed on accounts
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.PartialPlanPaymentsAllowed">
+            <summary>
+            Indicates what <see cref="T:Ellucian.Colleague.Dtos.Finance.Configuration.PartialPlanPayments">PartialPlanPayments</see> option is chosen for plan payments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.PartialDepositPaymentsAllowed">
+            <summary>
+            Indicates whether partial payments are allowed on deposits due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.UseGuaranteedChecks">
+            <summary>
+            Indicates whether the institution is using guaranteed checks
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.PaymentMethods">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.Configuration.AvailablePaymentMethod">available payment methods</see> for Make a Payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.ActivityDisplay">
+            <summary>
+            Indicates the display option for Account Activity
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.PaymentDisplay">
+            <summary>
+            Indicates the display option for Make a Payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.SupportEmailAddress">
+            <summary>
+            Email address to get support for Student Finance
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.ShowCreditAmounts">
+            <summary>
+            Indicates whether credit amounts are shown on Make a Payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.NotificationText">
+            <summary>
+            Notification text to display on Make a Payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.IncludeSchedule">
+            <summary>
+            Indicates whether the student's schedule is displayed on the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.IncludeDetail">
+            <summary>
+            Indicates whether the detail section is displayed on the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.IncludeHistory">
+            <summary>
+            Indicates whether the history section is displayed on the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.InstitutionName">
+            <summary>
+            The institution's name as displayed on the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.RemittanceAddress">
+            <summary>
+            The remittance address to include on the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.StatementTitle">
+            <summary>
+            The title of the student statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.PaymentReviewMessage">
+            <summary>
+            The message to display when the student is reviewing payment information
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.Periods">
+            <summary>
+            The list of current <see cref="T:Ellucian.Colleague.Dtos.Finance.FinancialPeriod">financial periods</see> for Student Finance
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.StatementMessage">
+            <summary>
+            A message to display on all student statements
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.Links">
+            <summary>
+            The list of <see cref="T:Ellucian.Colleague.Dtos.Finance.StudentFinanceLink">student finance links</see>
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.DisplayedReceivableTypes">
+            <summary>
+            Collection of <see cref="T:Ellucian.Colleague.Dtos.Finance.PayableReceivableType">receivable types with payment permissions</see>
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.UserPaymentPlanCreationEnabled">
+            <summary>
+            Flag indicating whether or not users may sign up for payment plans when eligible
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.PaymentPlanEligibilityRuleIds">
+            <summary>
+            Collection of eligibility rule IDs for determining whether a user is eligible to sign up for a payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.TermPaymentPlanRequirements">
+            <summary>
+            Collection of <see cref="T:Ellucian.Colleague.Dtos.Finance.PaymentRequirement">term payment plan requirements</see>
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.PaymentPlanEligibilityText">
+            <summary>
+            Text for communicating institution-defined messages regarding invoice and charge eligibility for payment plans
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.EcommerceProviderLink">
+            <summary>
+            Ecommerce provider url
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.DisplayPotentialD7Amounts">
+            <summary>
+            Flag indicating whether or not to display potential D7 award amounts
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Configuration.FinanceConfiguration.DisplayDueDates">
+            <summary>
+            Flag that controls whether to display due dates on Make A Payment page
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Configuration.PartialPlanPayments">
+            <summary>
+            Options for processing partial payments on payment plans
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.Configuration.PartialPlanPayments.Allowed">
+            <summary>
+            Partial payments on payment plans are allowed
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.Configuration.PartialPlanPayments.Denied">
+            <summary>
+            No partial payments on payment plans are allowed
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.Configuration.PartialPlanPayments.AllowedWhenNotOverdue">
+            <summary>
+            Partial payments on payment plans are allowed unless overdue
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Configuration.PaymentDisplay">
+            <summary>
+            Options for display on Make a Payment
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.Configuration.PaymentDisplay.DisplayByTerm">
+            <summary>
+            Display payments due by term
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.Configuration.PaymentDisplay.DisplayByPeriod">
+            <summary>
+            Display payments due by period
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Deposit">
+            <summary>
+            A deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Deposit.Id">
+            <summary>
+            ID of the deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Deposit.PersonId">
+            <summary>
+            ID of the deposit holder
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Deposit.Date">
+            <summary>
+            Date on which the deposit payment was made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Deposit.DepositType">
+            <summary>
+            Type of deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Deposit.Amount">
+            <summary>
+            Deposit amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Deposit.TermId">
+            <summary>
+            Term of the deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Deposit.ReceiptId">
+            <summary>
+            Receipt used when creating the deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Deposit.ExternalSystem">
+            <summary>
+            External system
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Deposit.ExternalIdentifier">
+            <summary>
+            External identifier
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.DepositDue">
+            <summary>
+            A deposit due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.Id">
+            <summary>
+            ID of a deposit due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.PersonId">
+            <summary>
+            ID of the student who owes the deposit due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.Amount">
+            <summary>
+            Amount of the deposit due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.DepositType">
+            <summary>
+            Type of deposit that is due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.DueDate">
+            <summary>
+            Date by which the deposit is due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.DueDateOffsetCTZS">
+            <summary>
+            DueDate offset to timezone defined on CTZS
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.TermId">
+            <summary>
+            (Optional) Term for which the deposit is due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.Deposits">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.Deposit">Deposits</see> paid against this deposit due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.Distribution">
+            <summary>
+            Distribution against which the deposit due is paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.Balance">
+            <summary>
+            Balance owed on the deposit due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.Overdue">
+            <summary>
+            Indicates whether the deposit due is overdue
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.AmountDue">
+            <summary>
+            Amount still due on the deposit due (same as Balance)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.AmountPaid">
+            <summary>
+            Amount paid towards the deposit due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.DepositTypeDescription">
+            <summary>
+            The description of the type of deposit due.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.TermDescription">
+            <summary>
+            The description of the term to which a deposit made would apply.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositDue.SortOrder">
+            <summary>
+            Get the sort order for a deposit due:
+            By due date, then by deposit type, then by ID
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.DepositType">
+            <summary>
+            A deposit type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositType.Code">
+            <summary>
+            Deposit type code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.DepositType.Description">
+            <summary>
+            Deposit type description
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.FinancialPeriod">
+            <summary>
+            A financial period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.FinancialPeriod.Type">
+            <summary>
+            Period type - Past, Current, or Future
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.FinancialPeriod.Start">
+            <summary>
+            Optional start date of the financial period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.FinancialPeriod.End">
+            <summary>
+            Optional end date of the financial period
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentControl">
+            <summary>
+            Parameters controlling immediate payment functionality
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentControl.IsEnabled">
+            <summary>
+            Indicates whether Immediate Payment Control has been enabled
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentControl.RegistrationAcknowledgementDocumentId">
+            <summary>
+            Document template for the registration acknowledgement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentControl.TermsAndConditionsDocumentId">
+            <summary>
+            Document template for the registration terms and conditions
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentControl.DeferralAcknowledgementDocumentId">
+            <summary>
+            Document template for display upon payment deferral
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentOptions">
+            <summary>
+            Payment options for immediate payment control
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentOptions.ChargesOnPaymentPlan">
+            <summary>
+            Specifies whether related charges are associated with any payment plans
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentOptions.RegistrationBalance">
+            <summary>
+            The balance of the registration charges
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentOptions.MinimumPayment">
+            <summary>
+            Minimum payment to be made by the student
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentOptions.DeferralPercentage">
+            <summary>
+            Percentage of charges that the student can elect to pay at a later date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentOptions.PaymentPlanTemplateId">
+            <summary>
+            ID of the payment plan template used in creating a payment plan for the student
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentOptions.PaymentPlanFirstDueDate">
+            <summary>
+            Date on which first payment plan scheduled payment is due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentOptions.PaymentPlanAmount">
+            <summary>
+            Amount of the payment plan to be created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentOptions.PaymentPlanReceivableTypeCode">
+            <summary>
+            Receivable Type Code of the payment plan to be created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentOptions.DownPaymentAmount">
+            <summary>
+            Amount of the payment plan down payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ImmediatePaymentOptions.DownPaymentDate">
+            <summary>
+            Date on which down payment is due
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Invoice">
+            <summary>
+            An AR Invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.Id">
+            <summary>
+            Invoice ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.PersonId">
+            <summary>
+            ID of the person for whom the invoice was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.ReceivableTypeCode">
+            <summary>
+            Code of the type of receivable account for which the invoice was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.TermId">
+            <summary>
+            ID of the Term in which the invoice resides
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.ReferenceNumber">
+            <summary>
+            Invoice reference number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.Date">
+            <summary>
+            Invoice date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.BillingStart">
+            <summary>
+            Billing Period Start Date for the invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.BillingEnd">
+            <summary>
+            Billing Period End Date for the invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.Description">
+            <summary>
+            Description of the invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.DueDate">
+            <summary>
+            The date on which payment for this invoice is due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.DueDateOffset">
+            <summary>
+            The due date offset by CTZS
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.Charges">
+            <summary>
+            List of Charges associated with the invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.BaseAmount">
+            <summary>
+            Sum of all of the charges on the invoice, prior to any tax calculations
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.TaxAmount">
+            <summary>
+            The amount of taxes assessed to the invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Invoice.Amount">
+            <summary>
+            Total amount of the invoice
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.InvoicePayment">
+            <summary>
+            An invoice payment - inherits from <see cref="T:Ellucian.Colleague.Dtos.Finance.Invoice">Invoice</see> and also include amount paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.InvoicePayment.AmountPaid">
+            <summary>
+            Amount of paid on the invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.InvoicePayment.BalanceAmount">
+            <summary>
+            Amount of balance remaining to be paid. This balance is adjusted after applying all the adjusted invoices. 
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.InvoiceQueryCriteria">
+            <summary>
+            Invoice query input criteria.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.InvoiceQueryCriteria.InvoiceIds">
+            <summary>
+            List of invoice Ids to use as query criteria
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.NonCashPayment">
+            <summary>
+            A non-cash payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.NonCashPayment.PaymentMethodCode">
+            <summary>
+            Payment method of the non-cash payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.NonCashPayment.Amount">
+            <summary>
+            Amount of the non-cash payment
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PayableReceivableType">
+            <summary>
+            A receivable type and flag indicating whether or not the type is payable
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PayableReceivableType.Code">
+            <summary>
+            Receivable type code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PayableReceivableType.IsPayable">
+            <summary>
+            Flag indicating whether or not the receivable type may be paid against by account holders
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentAllocation">
+            <summary>
+            A payment allocated to a payable item
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentAllocation.Id">
+            <summary>
+            ID of allocation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentAllocation.PaymentId">
+            <summary>
+            ID of payment for which allocation is made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentAllocation.Source">
+            <summary>
+            Source of allocation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentAllocation.Amount">
+            <summary>
+            Allocation amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentAllocation.ChargeId">
+            <summary>
+            ID of charge to which allocation is made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentAllocation.IsInvoiceAllocated">
+            <summary>
+            Indicator for whether allocation is invoice-specific
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentAllocation.ScheduledPaymentId">
+            <summary>
+            ID of scheduled payment associated with allocation
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentAllocation.UnallocatedAmount">
+            <summary>
+            Amount that is unallocated
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentAllocationSource">
+            <summary>
+            Source of a payment's allocation
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PaymentAllocationSource.User">
+            <summary>
+            User-allocated payment
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PaymentAllocationSource.SponsoredBilling">
+            <summary>
+            Payment made by a sponsor
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PaymentAllocationSource.FinancialAid">
+            <summary>
+            Payment made by financial aid
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PaymentAllocationSource.System">
+            <summary>
+            System-allocated payment
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentDeferralOption">
+            <summary>
+            Option for deferring a percentage of charges in the Immediate Payment workflow
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentDeferralOption.EffectiveStart">
+            <summary>
+            The date on which this deferral option takes effect
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentDeferralOption.EffectiveEnd">
+            <summary>
+            The date on which this deferral option is no longer effective
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentDeferralOption.DeferralPercent">
+            <summary>
+            The percentage of charges that are deferrable for this deferral option
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentPlan">
+            <summary>
+            Plan established for a student to pay for a set of charges on their account in installments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.Id">
+            <summary>
+            ID of the payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.TemplateId">
+            <summary>
+            ID of the payment plan template used to create the payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.PersonId">
+            <summary>
+            ID of the person for whom the payment plan was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.ReceivableTypeCode">
+            <summary>
+            Code of the AR Type for the charges on the payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.TermId">
+            <summary>
+            ID of the term for which the payment plan was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.OriginalAmount">
+            <summary>
+            Amount of the payment plan at the time it was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.FirstDueDate">
+            <summary>
+            Due Date of the first scheduled payment (installment) for the payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.CurrentAmount">
+            <summary>
+            Current amount of the payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.Frequency">
+            <summary>
+            Interval at which the payment plan's scheduled payments are spaced
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.NumberOfPayments">
+            <summary>
+            The number of scheduled payments for the payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.SetupAmount">
+            <summary>
+            Flat amount of setup fee for the payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.SetupPercentage">
+            <summary>
+            Percentage used to calculate variable amount of setup fee for the payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.DownPaymentPercentage">
+            <summary>
+            Percentage of the plan amount required to be paid at the time the plan was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.GraceDays">
+            <summary>
+            Number of days past a scheduled payment's due date that payments can be made before late fees are generated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.LateChargeAmount">
+            <summary>
+            Flat amount of late fee assessed to past due scheduled payments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.LateChargePercentage">
+            <summary>
+            Percentage used to calculate variable amount of late fee assessed to past due scheduled payments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.Statuses">
+            <summary>
+            List of a payment plan's statuses from the time it was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.ScheduledPayments">
+            <summary>
+            List of IDs of scheduled payments associated with the payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.PlanCharges">
+            <summary>
+            List of IDs of charges included on the payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.CurrentStatus">
+            <summary>
+            The current status of the payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.CurrentStatusDate">
+            <summary>
+            Date on which the payment plan was given it's current status
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.TotalSetupChargeAmount">
+            <summary>
+            The total amount of the setup charge for the plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.DownPaymentAmount">
+            <summary>
+            Amount of the down payment for the plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.DownPaymentAmountPaid">
+            <summary>
+            Amount of the payment made towards the down payment for the plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlan.DownPaymentDate">
+            <summary>
+            Gets the down payment date for the plan
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval">
+            <summary>
+            Point-in-time snapshot when the user approves a payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.Id">
+            <summary>
+            ID of the payment plan approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.StudentId">
+            <summary>
+            ID of the student for the payment plan approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.StudentName">
+            <summary>
+            Name of the student for the payment plan approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.Timestamp">
+            <summary>
+            Date and time the approval was made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.PaymentControlId">
+            <summary>
+            ID of the registration payment control record to which the payment plan approval corresponds
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.PaymentPlanId">
+            <summary>
+            ID of payment plan to which approval corresponds
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.TermsResponseId">
+            <summary>
+            ID of terms and conditions response
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.TemplateId">
+            <summary>
+            Template used to create original payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.AcknowledgementDocumentId">
+            <summary>
+            ID of Acknowledgement text document
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.PlanAmount">
+            <summary>
+            Original amount of the plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.DownPaymentAmount">
+            <summary>
+            The plan's down payment amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.DownPaymentDate">
+            <summary>
+            The due date for the plan down payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.SetupChargeAmount">
+            <summary>
+            The amount of the plan's setup charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.Frequency">
+            <summary>
+            The frequency of the plan's payments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.NumberOfPayments">
+            <summary>
+            The number of payments on the plan, not including any down payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.GraceDays">
+            <summary>
+            The number of grace days before which a payment is considered past due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.LateChargeAmount">
+            <summary>
+            The flat amount charged when a payment is late
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.LateChargePercentage">
+            <summary>
+            The percentage charged as a late fee for an overdue payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanApproval.PlanSchedules">
+            <summary>
+            The list of scheduled payments on the plan
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentPlanEligibility">
+            <summary>
+            An individual's payment plan eligibility
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanEligibility.EligibleItems">
+            <summary>
+            Collection of payment plan information for a person for a billing term and receivable type.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanEligibility.IneligibilityReason">
+            <summary>
+            The reasoning for an individual's ineligibility to sign up for a payment plan.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentPlanIneligibilityReason">
+            <summary>
+            Reasoning for an individual's ineligibility to sign up for a payment plan
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PaymentPlanIneligibilityReason.PreventedBySystemConfiguration">
+            <summary>
+            System configuration prevents the user from creating a payment plan
+            </summary>
+            <remarks>
+            Reasons may include, but are not limited to:
+            - Corrupted system files pertaining to configuration
+            - User payment plan creation disabled
+            - No default or rule-based payment plan requirements defined for a billing term
+            - Corrupted payment plan template file(s)
+            - Payment Plan template compatibility for payment plan creation (must be active, 
+            Auto Calculate Plan Amount = Yes,
+            Modify Plan Automatically = Yes, 
+            Terms and Conditions document specified)
+            </remarks>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PaymentPlanIneligibilityReason.ChargesAreNotEligible">
+            <summary>
+            Payment items charges are not eligible for inclusion on a payment plan
+            </summary>
+            <remarks>
+            Reasons may include, but are not limited to:
+            - No payment items with a payable receivable type
+            - Payment Plan template compatibility for payment plan creation (payment item amount >= Minimum Plan Amount,
+            Allowed Receivable Types permits payment item's receivable type)
+            </remarks>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentPlanOption">
+            <summary>
+            Option for creating a payment plan in the Immediate Payment workflow
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanOption.EffectiveStart">
+            <summary>
+            The date on which this payment plan option takes effect
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanOption.EffectiveEnd">
+            <summary>
+            The date on which this payment plan option is no longer effective
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanOption.TemplateId">
+            <summary>
+            ID of the payment plan template associated with this payment plan option
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanOption.FirstPaymentDate">
+            <summary>
+            The due date assigned to the first scheduled payment for payment plans created using this payment plan option
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentPlanQueryCriteria">
+            <summary>
+             Used to pass query criteria to retrieve account holder payment plan data
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanQueryCriteria.BillingTerms">
+            <summary>
+            Collection of payment items
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate">
+            <summary>
+            Template for creating a payment plan for an accountholder
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.Id">
+            <summary>
+            ID of the payment plan template
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.Description">
+            <summary>
+            Description of the payment plan template
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.IsActive">
+            <summary>
+            Determines whether the payment plan template may be used to create a payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.Frequency">
+            <summary>
+            Frequency of scheduled payments for payment plans created from the template
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.NumberOfPayments">
+            <summary>
+            Number of scheduled payments for payment plans created from the template
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.MinimumPlanAmount">
+            <summary>
+            Minimum amount for which a payment plan may be created from the template
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.MaximumPlanAmount">
+            <summary>
+            Maximum amount for which a payment plan may be created from the template
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.CustomFrequencySubroutine">
+            <summary>
+            Subroutine used in calculating custom payment plan frequency
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.TermsAndConditionsDocumentId">
+            <summary>
+            ID of document specifying the terms and conditions for a payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.SetupChargeAmount">
+            <summary>
+            Flat amount of setup fee for payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.SetupChargePercentage">
+            <summary>
+            Percentage used in calculating variable amount of setup fee for payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.DownPaymentPercentage">
+            <summary>
+            Percentage used in calculating down payment for payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.DaysUntilDownPaymentIsDue">
+            <summary>
+            Number of days until payment plan down payment is due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.GraceDays">
+            <summary>
+            Number of days that a payment plan payment may be made past its due date before a late fee is assessed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.LateChargeAmount">
+            <summary>
+            Flat amount of late fee for overdue scheduled payments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.LateChargePercentage">
+            <summary>
+            Percentage used in calculating amount of variable late fee for overdue scheduled payments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.IncludeSetupChargeInFirstPayment">
+            <summary>
+            Determines whether the payment plan setup fee is included in the first scheduled payment amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.SubtractAnticipatedFinancialAid">
+            <summary>
+            Determines whether anticipated financial aid is considered in calculating the amount of a payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.CalculatePlanAmountAutomatically">
+            <summary>
+            Determines if payment plan amounts are calculated automatically
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.ModifyPlanAutomatically">
+            <summary>
+            Determines if payment plan is modified automatically when plan charges are adjusted
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.AllowedReceivableTypeCodes">
+            <summary>
+            Collection of receivable type codes for which charges may be assigned to a payment plan created from the template
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.InvoiceExclusionRuleIds">
+            <summary>
+            Collection of IDs of invoice exclusion rules that an invoice must fail in order to be assigned to a payment plan created from the template
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.IncludedChargeCodes">
+            <summary>
+            Collection of IDs of charge codes that may be assigned to a payment plan created from the template
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.ExcludedChargeCodes">
+            <summary>
+            Collection of IDs of charge codes that may not be assigned to a payment plan created from the template
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTemplate.DownPaymentDate">
+            <summary>
+            Gets the down payment date for a plan
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance">
+            <summary>
+            Student's acceptance of the terms &amp; conditions for signing up for a payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.StudentId">
+            <summary>
+            ID of the student for whom the payment plan terms and conditions were accepted
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.PaymentControlId">
+            <summary>
+            ID of the registration payment control record to which the payment plan terms and conditions correspond
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.AcknowledgementDateTime">
+            <summary>
+            Date and time at which the payment plan terms and conditions were displayed to the student
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.StudentName">
+            <summary>
+            Name of the student for whom the payment plan terms and conditions were accepted
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.ProposedPlan">
+            <summary>
+            The proposed payment plan to which the terms and conditions correspond
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.DownPaymentAmount">
+            <summary>
+            Amount of the down payment for the proposed payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.DownPaymentDate">
+            <summary>
+            Date on which the proposed payment plan down payment is due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.TermsText">
+            <summary>
+            The terms and conditions for the proposed payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.ApprovalUserId">
+            <summary>
+            ID of the user who approved the payment plan terms and conditions
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.ApprovalReceived">
+            <summary>
+            Date and time at which the student accepted the payment plan terms and conditions
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.AcknowledgementText">
+            <summary>
+            Message to the student regarding the terms and conditions for the proposed payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentPlanTermsAcceptance.RegistrationApprovalId">
+            <summary>
+            ID of the registration approvals record corresponding to this plan acceptance
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentRequirement">
+            <summary>
+            Controls the payment options available to the student in the Immediate Payment workflow
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentRequirement.Id">
+            <summary>
+            ID of the payment requirement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentRequirement.TermId">
+            <summary>
+            ID of the term to which the payment requirement applies
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentRequirement.EligibilityRuleId">
+            <summary>
+            ID of the eligibility rule that a student must pass for the payment requirement to be applicable
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentRequirement.DeferralOptions">
+            <summary>
+            List of payment deferral options for the payment requirement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentRequirement.PaymentPlanOptions">
+            <summary>
+            List of payment plan options for the payment requirement
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivableDeposit">
+            <summary>
+            An AR deposit payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivableDeposit.PersonId">
+            <summary>
+            Deposit holder ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivableDeposit.PersonName">
+            <summary>
+            Deposit holder name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivableDeposit.Type">
+            <summary>
+            Deposit type code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivableDeposit.Description">
+            <summary>
+            Deposit type description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivableDeposit.Term">
+            <summary>
+            Term code of deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivableDeposit.TermDescription">
+            <summary>
+            Term description of deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivableDeposit.Location">
+            <summary>
+            Location code of deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivableDeposit.LocationDescription">
+            <summary>
+            Location description of deposit
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivableDeposit.NetAmount">
+            <summary>
+            Amount of deposit
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment">
+            <summary>
+            A payment on an AR account
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment.PersonId">
+            <summary>
+            Account holder ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment.PersonName">
+            <summary>
+            Account holder name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment.Type">
+            <summary>
+            AR type code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment.Description">
+            <summary>
+            AR type description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment.Term">
+            <summary>
+            Term code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment.TermDescription">
+            <summary>
+            Term description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment.Location">
+            <summary>
+            Location code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment.LocationDescription">
+            <summary>
+            Location description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment.PaymentDescription">
+            <summary>
+            Payment description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment.NetAmount">
+            <summary>
+            Payment amount
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment.PaymentControlId">
+            <summary>
+            Registration payment control ID
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment">
+            <summary>
+            Payment information for an e-check (going to payment provider)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.AbaRoutingNumber">
+            <summary>
+            ABA routing number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.BankAccountNumber">
+            <summary>
+            Bank account number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.CheckNumber">
+            <summary>
+            Check number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.DriversLicenseNumber">
+            <summary>
+            Driver's license number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.DriversLicenseState">
+            <summary>
+            Driver's license state
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.FirstName">
+            <summary>
+            Payer's first name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.LastName">
+            <summary>
+            Payer's last name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.BillingAddress1">
+            <summary>
+            Payer's billing address, line 1
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.BillingAddress2">
+            <summary>
+            Payer's billing address, line 2
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.City">
+            <summary>
+            Payer's city
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.State">
+            <summary>
+            Payer's state code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.ZipCode">
+            <summary>
+            Payer's ZIP/postal code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.CheckPayment.EmailAddress">
+            <summary>
+            Payer's email address
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.ConvenienceFee">
+            <summary>
+            A convenience fee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ConvenienceFee.Code">
+            <summary>
+            Convenience fee code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ConvenienceFee.Description">
+            <summary>
+            Convenience fee description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ConvenienceFee.Amount">
+            <summary>
+            Convenience fee amount
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckPayer">
+            <summary>
+            Information about an e-check payer (coming from Colleague)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckPayer.FirstName">
+            <summary>
+            Payer's first name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckPayer.MiddleName">
+            <summary>
+            Payer's middle name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckPayer.LastName">
+            <summary>
+            Payer's last name
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckPayer.Street">
+            <summary>
+            Payer's street address
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckPayer.City">
+            <summary>
+            Payer's city
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckPayer.State">
+            <summary>
+            Payer's state code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckPayer.PostalCode">
+            <summary>
+            Payer's postal code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckPayer.Country">
+            <summary>
+            Payer's country code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckPayer.Email">
+            <summary>
+            Payer's email address
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckPayer.Telephone">
+            <summary>
+            Payer's telephone number
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckProcessingResult">
+            <summary>
+            Result of e-check processing
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckProcessingResult.CashReceiptsId">
+            <summary>
+            Cash receipt ID (if payment successful)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.ElectronicCheckProcessingResult.ErrorMessage">
+            <summary>
+            Error message (if payment failed)
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.GeneralPayment">
+            <summary>
+            A general (non-AR) payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.GeneralPayment.Code">
+            <summary>
+            Payment code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.GeneralPayment.Description">
+            <summary>
+            Payment code description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.GeneralPayment.Location">
+            <summary>
+            Payment location code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.GeneralPayment.LocationDescription">
+            <summary>
+            Payment location description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.GeneralPayment.NetAmount">
+            <summary>
+            Payment amount
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.Payment">
+            <summary>
+            A payment to be made
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.Payments.Payment.#ctor">
+            <summary>
+            Payment constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.PersonId">
+            <summary>
+            ID of account for which payment is made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.PayerId">
+            <summary>
+            ID of the user making payment
+            </summary>        
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.ReturnUrl">
+            <summary>
+            URL to return to when payment is complete
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.Distribution">
+            <summary>
+            Distribution code for which payment is made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.PayMethod">
+            <summary>
+            Method of payment code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.AmountToPay">
+            <summary>
+            Amount to pay
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.ProviderAccount">
+            <summary>
+            ID of e-commerce account to use for payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.ConvenienceFee">
+            <summary>
+            Code of convenience fee to charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.ConvenienceFeeAmount">
+            <summary>
+            Amount of convenience fee to charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.ConvenienceFeeGeneralLedgerNumber">
+            <summary>
+            GL number of convenience fee to charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.CheckDetails">
+            <summary>
+            Details needed to process an e-check
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.PaymentItems">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem">payment items</see> to be paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.Payment.ReturnToOriginUrl">
+            <summary>
+            URL to return to after making an IPC payment
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.PaymentConfirmation">
+            <summary>
+            Information needed to complete processing a payment
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.Payments.PaymentConfirmation.#ctor">
+            <summary>
+            PaymentConfirmation constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentConfirmation.ProviderAccount">
+            <summary>
+            ID of payment provider account
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentConfirmation.ConvenienceFeeCode">
+            <summary>
+            Code of convenience fee required on payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentConfirmation.ConvenienceFeeDescription">
+            <summary>
+            Description of convenience fee required on payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentConfirmation.ConvenienceFeeAmount">
+            <summary>
+            Amount of convenience fee required on payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentConfirmation.ConvenienceFeeGeneralLedgerNumber">
+            <summary>
+            GL number of convenience fee required on payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentConfirmation.ConfirmationText">
+            <summary>
+            Text to display with payment confirmation/review page
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentConfirmation.ErrorMessage">
+            <summary>
+            Error message if payment cannot be processed
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem">
+            <summary>
+            An item being paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem.PaymentAmount">
+            <summary>
+            Amount owed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem.Description">
+            <summary>
+            Description of item
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem.AccountType">
+            <summary>
+            AR type of item
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem.Term">
+            <summary>
+            Term of item
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem.InvoiceId">
+            <summary>
+            Invoice ID to be paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem.PaymentPlanId">
+            <summary>
+            Payment plan to be paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem.DepositDueId">
+            <summary>
+            Deposit due to be paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem.Overdue">
+            <summary>
+            Identifies whether amount owed is overdue
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem.PaymentControlId">
+            <summary>
+            ID of the associated payment control record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentItem.PaymentComplete">
+            <summary>
+            Indicator whether payment being made satisfies IPC requirements
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.PaymentMethod">
+            <summary>
+            A payment made on a receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentMethod.PayMethodCode">
+            <summary>
+            Payment method code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentMethod.PayMethodDescription">
+            <summary>
+            Payment method description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentMethod.ControlNumber">
+            <summary>
+            Payment control number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentMethod.ConfirmationNumber">
+            <summary>
+            Payment confirmation number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentMethod.TransactionNumber">
+            <summary>
+            Payment transaction number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentMethod.TransactionDescription">
+            <summary>
+            Payment description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentMethod.TransactionAmount">
+            <summary>
+            Payment amount
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.PaymentProvider">
+            <summary>
+            An e-commerce payment provider's information
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentProvider.RedirectUrl">
+            <summary>
+            URL to payment site
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentProvider.ErrorMessage">
+            <summary>
+            Error message if payment cannot be processed
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt">
+            <summary>
+            A payment receipt
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.#ctor">
+            <summary>
+            PaymentReceipt constructor
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.CashReceiptsId">
+            <summary>
+            ID of the cash receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.ReceiptNo">
+            <summary>
+            Receipt reference number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.ReceiptDate">
+            <summary>
+            Date the receipt was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.ReceiptTime">
+            <summary>
+            Time the receipt was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.ReceiptDateTimeOffset">
+            <summary>
+            Receipt date and time offset to ctzs
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.MerchantNameAddress">
+            <summary>
+            List containing the merchant's name and address
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.MerchantPhone">
+            <summary>
+            Merchant's contact telephone number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.MerchantEmail">
+            <summary>
+            Merchant's contact email address
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.ReceiptPayerId">
+            <summary>
+            Person ID of the receipt payer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.ReceiptPayerName">
+            <summary>
+            Name of the receipt payer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.ReceiptAcknowledgeText">
+            <summary>
+            Acknowledgement text to include on the receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.AcknowledgeFooterImageUrl">
+            <summary>
+            URL of an image to display in the footer of the receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.AcknowledgeFooterText">
+            <summary>
+            Text to display in the footer of the receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.ErrorMessage">
+            <summary>
+            Error message received while processing the payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.Payments">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivablePayment">account payments</see> on this receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.Deposits">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.Payments.AccountsReceivableDeposit">deposit payments</see> on this receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.OtherItems">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.Payments.GeneralPayment">other payments</see> on this receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.ConvenienceFees">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.Payments.ConvenienceFee">convenience fees</see> paid on this receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.PaymentMethods">
+            <summary>
+            List of <see cref="T:Ellucian.Colleague.Dtos.Finance.Payments.PaymentMethod">PaymentMethod</see> on this receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.ReturnUrl">
+            <summary>
+            Return URL for workflow
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Payments.PaymentReceipt.ChangeReturned">
+            <summary>
+            Amount of change returned 
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance">
+            <summary>
+            Data transfer object for accepting the terms of payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance.StudentId">
+            <summary>
+            ID of student accepting the payment terms
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance.PaymentControlId">
+            <summary>
+            Registration payment control ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance.AcknowledgementDateTime">
+            <summary>
+            Date and time of the registration acknowledgement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance.AcknowledgementText">
+            <summary>
+            Acknowledgement text displayed to student
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance.TermsText">
+            <summary>
+            Terms and Conditions text displayed to student
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance.SectionIds">
+            <summary>
+            List of IDs of the sections displayed on the acknowledgement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance.InvoiceIds">
+            <summary>
+            List of invoice IDs summarized on the acknowledgement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance.ApprovalUserId">
+            <summary>
+            Login ID of the user giving the approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance.ApprovalReceived">
+            <summary>
+            Date and time at which the approval was given
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance2">
+            <summary>
+            Data transfer object for accepting the terms of payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance2.StudentId">
+            <summary>
+            ID of student accepting the payment terms
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance2.PaymentControlId">
+            <summary>
+            Registration payment control ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance2.AcknowledgementDateTime">
+            <summary>
+            Date and time of the registration acknowledgement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance2.AcknowledgementText">
+            <summary>
+            Acknowledgement text displayed to student
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance2.TermsText">
+            <summary>
+            Terms and Conditions text displayed to student
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance2.SectionIds">
+            <summary>
+            List of IDs of the sections displayed on the acknowledgement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance2.InvoiceIds">
+            <summary>
+            List of invoice IDs summarized on the acknowledgement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance2.ApprovalUserId">
+            <summary>
+            Login ID of the user giving the approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance2.ApprovalReceived">
+            <summary>
+            Date and time at which the approval was given
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.PaymentTermsAcceptance2.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PlanCharge">
+            <summary>
+            A charge assigned to a payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PlanCharge.Id">
+            <summary>
+            ID of the payment plan charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PlanCharge.PlanId">
+            <summary>
+            ID of the payment plan to which the plan charge belongs
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PlanCharge.Charge">
+            <summary>
+            The ID of the charge component of the plan charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PlanCharge.Amount">
+            <summary>
+            Amount of the plan charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PlanCharge.IsSetupCharge">
+            <summary>
+            Determines whether the plan charge is a setup fee
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PlanCharge.IsAutomaticallyModifiable">
+            <summary>
+            Determines whether the plan charge is fully allocated to a payment plan
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PlanFrequency">
+            <summary>
+            Indicates the frequency by which a payment plan's scheduled payments are calculated
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PlanFrequency.Weekly">
+            <summary>
+            Weekly - scheduled payment due every 7 days / 1 week
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PlanFrequency.Biweekly">
+            <summary>
+            Biweekly - scheduled payment due every 14 days / 2 weeks
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PlanFrequency.Monthly">
+            <summary>
+            Monthly - scheduled payment due once per month
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PlanFrequency.Yearly">
+            <summary>
+            Yearly - scheduled payment due once per year
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PlanFrequency.Custom">
+            <summary>
+            Custom - payment plan schedule determined by a custom frequency subroutine
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PlanSchedule">
+            <summary>
+            The schedule for a single payment on a payment plan
+            </summary>
+            <remarks>Note that this is not the same as a ScheduledPayment.  However, it can be used on the front-end
+            to define the pertinent information for the payment schedule, or it may be used on the back-end
+            for reporting type purposes, such as for reproducing the terms acceptance.</remarks>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PlanSchedule.DueDate">
+            <summary>
+            The date a scheduled payment is due on a payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PlanSchedule.Amount">
+            <summary>
+            The amount that is due on the payment plan on the due date.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PlanStatus">
+            <summary>
+            Status for a payment plan
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PlanStatus.Status">
+            <summary>
+            Plan status
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PlanStatus.Date">
+            <summary>
+            Date as of which the plan had the status
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PlanStatusType">
+            <summary>
+            Status of a payment plan
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PlanStatusType.Open">
+            <summary>
+            Open - some component of the payment plan has not been paid in full
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PlanStatusType.Paid">
+            <summary>
+            Paid - all scheduled payments and plan fees have been paid in full
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.PlanStatusType.Cancelled">
+            <summary>
+            Cancelled - the payment plan has been cancelled
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.PotentialD7FinancialAidCriteria">
+            <summary>
+            Contains the necessary criteria to determine if a student potentially
+            has untransmitted D7 financial aid.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PotentialD7FinancialAidCriteria.StudentId">
+            <summary>
+            The identifier of the student of interest.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PotentialD7FinancialAidCriteria.TermId">
+            <summary>
+            The identifier of the term of interest.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.PotentialD7FinancialAidCriteria.AwardPeriodAwardsToEvaluate">
+            <summary>
+            An enumeration of <see cref="T:Ellucian.Colleague.Dtos.Finance.AwardPeriodAwardTransmitExcessStatus"/> financial aid items 
+            to evaluate for potentially untransmitted financial aid amounts.  Results will be a subset
+            of this enumeration.  The enumeration can be empty, but so to will be the results of this query.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.Receipt">
+            <summary>
+            A receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.Id">
+            <summary>
+            Identifier of the receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.ReferenceNumber">
+            <summary>
+            Receipt Number
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.PayerId">
+            <summary>
+            Payer of the receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.PayerName">
+            <summary>
+            Name of the receipt payer
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.DistributionCode">
+            <summary>
+            Distribution of the receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.Date">
+            <summary>
+            Effective date of the receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.CashierId">
+            <summary>
+            Cashier issuing the receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.DepositIds">
+            <summary>
+            Deposits deriving from the receipt
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.NonCashPayments">
+            <summary>
+            Non-cash payments being receipted
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.ExternalSystem">
+            <summary>
+            External System
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.ExternalIdentifier">
+            <summary>
+            External System ID
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.Receipt.TotalNonCashPaymentAmount">
+            <summary>
+            Total amount of all non-cash payments on the receipt
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.ReceiptPayment">
+            <summary>
+            A Cash Receipt Payment - inherits from <see cref="T:Ellucian.Colleague.Dtos.Finance.ReceivablePayment">ReceivablePayment</see>
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceiptPayment.ReceiptId">
+            <summary>
+            ID of the cash receipt
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.ReceivableCharge">
+            <summary>
+            A charge against a receivable account
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableCharge.Id">
+            <summary>
+            ID of charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableCharge.InvoiceId">
+            <summary>
+            Invoice to which this charge belongs
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableCharge.Description">
+            <summary>
+            Charge description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableCharge.Code">
+            <summary>
+            Charge code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableCharge.AllocationIds">
+            <summary>
+            Collection of IDs to the Allocation objects that pay on this charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableCharge.PaymentPlanIds">
+            <summary>
+            Collection of IDs to the payment plans containing this charge
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableCharge.BaseAmount">
+            <summary>
+            Base amount of charge (pre-tax amount)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableCharge.TaxAmount">
+            <summary>
+            Amount of tax on this charge
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice">
+            <summary>
+            A receivable invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice.DueDate">
+            <summary>
+            Invoice due date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice.BillingStart">
+            <summary>
+            Billing start date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice.BillingEnd">
+            <summary>
+            Billing end date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice.Description">
+            <summary>
+            Invoice description
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice.Charges">
+            <summary>
+            List of charges on this invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice.AdjustmentToInvoice">
+            <summary>
+            ID of invoice adjusted by this invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice.AdjustedByInvoices">
+            <summary>
+            List of IDs that adjust this invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice.BaseAmount">
+            <summary>
+            Base amount of invoice w/o taxes
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice.TaxAmount">
+            <summary>
+            Amount of taxes on invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice.Amount">
+            <summary>
+            Total amount of invoice
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableInvoice.InvoiceType">
+            <summary>
+            The type of the invoice
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.ReceivablePayment">
+            <summary>
+            An AR Payment - inherits from <see cref="T:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction">ReceivableTransaction</see>
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivablePayment.Amount">
+            <summary>
+            Amount of the payment
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction">
+            <summary>
+            A generic receivables transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction.Id">
+            <summary>
+            ID of the receivables transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction.PersonId">
+            <summary>
+            ID of the person for whom the transaction was made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction.ReceivableType">
+            <summary>
+            The receivable type of this transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction.TermId">
+            <summary>
+            ID of the term for which the transaction was made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction.ReferenceNumber">
+            <summary>
+            Reference number of the transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction.Date">
+            <summary>
+            Date the transaction was made
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction.IsArchived">
+            <summary>
+            Indicates whether the transaction has been archived
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction.Location">
+            <summary>
+            Location of the transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction.ExternalSystem">
+            <summary>
+            External system generating the transaction
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableTransaction.ExternalIdentifier">
+            <summary>
+            The identifier of the transaction in the external system
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.ReceivableType">
+            <summary>
+            An account type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableType.Code">
+            <summary>
+            Receivable type code
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ReceivableType.Description">
+            <summary>
+            Receivable type description
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.RefundVoucherStatus">
+            <summary>
+            This enumeration contains all of the status values that are available for vouchers.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RefundVoucherStatus.NotApproved">
+            <summary>
+            NotApproved status means that approvals are required for vouchers, and that the
+            voucher does not have sufficient approval signatures to make it outstanding.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RefundVoucherStatus.Outstanding">
+            <summary>
+            Outstanding status means that the voucher amounts have been reflected in the
+            general ledger.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RefundVoucherStatus.Paid">
+            <summary>
+            Paid status means that the voucher has been paid.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RefundVoucherStatus.Reconciled">
+            <summary>
+            Reconciled status means that the cash disbursement for the voucher has been
+            reconciled with the bank.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RefundVoucherStatus.InProgress">
+            <summary>
+            InProgress status means that the voucher is unfinished.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RefundVoucherStatus.Voided">
+            <summary>
+            Voided status means that the voucher has been voided.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RefundVoucherStatus.Cancelled">
+            <summary>
+            Cancelled status means that the voucher was cancelled.
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RefundVoucherStatus.Unknown">
+            <summary>
+            Unknown status.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.RegistrationBilling">
+            <summary>
+            Billing information tied to a student's registration
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationBilling.AccountTypeCode">
+            <summary>
+            The type of AR account for which the invoice was created - roughly equivalent to AR Type
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationBilling.BillingEnd">
+            <summary>
+            Billing Period End Date for the registration billing
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationBilling.BillingStart">
+            <summary>
+            Billing Period Start Date for the registration billing
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationBilling.Id">
+            <summary>
+            ID of the registration billing
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationBilling.InvoiceId">
+            <summary>
+            ID of the AR invoice associated with the registration billing
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationBilling.Items">
+            <summary>
+            List of registration billing items associated with the registration billing
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationBilling.PersonId">
+            <summary>
+            ID of the person for whom the registration billing was created
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationBilling.AdjustmentId">
+            <summary>
+            ID of an adjustment to the registration billing
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationBilling.TermId">
+            <summary>
+            ID of the term in which the registration billing resides
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.RegistrationBillingItem">
+            <summary>
+            Record of a student's attempted registration for a course section
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationBillingItem.Id">
+            <summary>
+            ID of the course section registration record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationBillingItem.AcademicCredit">
+            <summary>
+            The course section for which the student attempted to register
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl">
+            <summary>
+            Record of a student's registration in the Immediate Payment workflow
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl.Id">
+            <summary>
+            ID of the registration payment control record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl.StudentId">
+            <summary>
+            ID of the student
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl.TermId">
+            <summary>
+            ID of the term for which the registration was submitted
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl.PaymentStatus">
+            <summary>
+            Indicates whether the registration was successfully completed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl.RegisteredSectionIds">
+            <summary>
+            List of sections in which the student was successfully registered
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl.InvoiceIds">
+            <summary>
+            List of associated billing records
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl.AcademicCredits">
+            <summary>
+            List of associated academic credits
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl.Payments">
+            <summary>
+            List of associated payments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl.LastTermsApprovalId">
+            <summary>
+            ID of the student's most recent approval of the Terms &amp; Conditions
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl.LastPlanApprovalId">
+            <summary>
+            ID of the last payment plan approval record
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentControl.PaymentPlanId">
+            <summary>
+            ID of the associated payment plan
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentStatus">
+            <summary>
+            Status of a registration payment
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentStatus.New">
+            <summary>
+            The registration has changes that require payment processing
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentStatus.Accepted">
+            <summary>
+            The registration terms and conditions have been accepted
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentStatus.Complete">
+            <summary>
+            The registration payment requirements have been met
+            </summary>
+        </member>
+        <member name="F:Ellucian.Colleague.Dtos.Finance.RegistrationPaymentStatus.Error">
+            <summary>
+            The registration payment failed
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval">
+            <summary>
+            A registration approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval.Id">
+            <summary>
+            Internal ID of the registration approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval.StudentId">
+            <summary>
+            ID of student for whom approval is needed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval.Timestamp">
+            <summary>
+            Date and Time of the registration approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval.PaymentControlId">
+            <summary>
+            ID of the IPC registration to which the registration approval is tied
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval.SectionIds">
+            <summary>
+            List of sections associated with the registration approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval.InvoiceIds">
+            <summary>
+            List of invoices associated with the registration approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval.TermsDocument">
+            <summary>
+            Associated Terms and Conditions document
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval.TermsResponse">
+            <summary>
+            Associated Terms and Conditions Approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval.AcknowledgementDocument">
+            <summary>
+            Associated approval document
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval.#ctor">
+            <summary>
+            Class constructor - initializes lists
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval2">
+            <summary>
+            A registration approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval2.Id">
+            <summary>
+            Internal ID of the registration approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval2.StudentId">
+            <summary>
+            ID of student for whom approval is needed
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval2.AcknowledgementTimestamp">
+            <summary>
+            Date and Time of the registration approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval2.PaymentControlId">
+            <summary>
+            ID of the IPC registration to which the registration approval is tied
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval2.SectionIds">
+            <summary>
+            List of sections associated with the registration approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval2.InvoiceIds">
+            <summary>
+            List of invoices associated with the registration approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval2.TermsResponseId">
+            <summary>
+            ID of approval response for Terms and Conditions Approval
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval2.AcknowledgementDocumentId">
+            <summary>
+            ID of approval document containing acknowledgement text
+            </summary>
+        </member>
+        <member name="M:Ellucian.Colleague.Dtos.Finance.RegistrationTermsApproval2.#ctor">
+            <summary>
+            Class constructor - initializes lists
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.ScheduledPayment">
+            <summary>
+            A payment to be paid on a certain date as part of a payment plan's schedule of payments
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ScheduledPayment.Id">
+            <summary>
+            ID of the scheduled payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ScheduledPayment.PlanId">
+            <summary>
+            ID of the payment plan to which the scheduled payment belongs
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ScheduledPayment.Amount">
+            <summary>
+            Amount to be paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ScheduledPayment.DueDate">
+            <summary>
+            Date on which the scheduled payment is due to be paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ScheduledPayment.IsPastDue">
+            <summary>
+            Determines whether the scheduled payment is overdue
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ScheduledPayment.AmountPaid">
+            <summary>
+            Amount paid against the scheduled payment
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.ScheduledPayment.LastPaidDate">
+            <summary>
+            Date on which last payment was made against scheduled payment
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.StudentFinanceLink">
+            <summary>
+            A Student Finance Link
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentFinanceLink.Title">
+            <summary>
+            Title displayed to users
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentFinanceLink.Url">
+            <summary>
+            URL to which users are taken when clicking on the link
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.StudentStatement">
+            <summary>
+            Statement of a student's accounts receivable information for a particular timeframe
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.StudentId">
+            <summary>
+            ID of the student for whom the statement was generated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.StudentName">
+            <summary>
+            Name of the student for whom the statement was generated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.StudentAddress">
+            <summary>
+            Mailing address of the student for whom the statement was generated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.TimeframeId">
+            <summary>
+            ID of the timeframe for which the statement was generated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.Title">
+            <summary>
+            Title of the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.InstitutionName">
+            <summary>
+            Name of the institution issuing the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.RemittanceAddress">
+            <summary>
+            Mailing address associated with the issuing institution
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.StatementMessage">
+            <summary>
+            A message to print on the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.CurrentBalance">
+            <summary>
+            Current accounts receivable balance for the student
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.TotalAmountDue">
+            <summary>
+            Total amount that the student must pay on or before the Due Date
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.TotalBalance">
+            <summary>
+            Total outstanding accounts receivable balance for the student
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.Date">
+            <summary>
+            Date on which the statement was generated
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.DueDate">
+            <summary>
+            Date on which the total amount due must be paid
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.AccountSummary">
+            <summary>
+            Summary accounts receivable information for the student for the statement term or period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.AccountDetails">
+            <summary>
+            Detailed accounts receivable information for the student for the statement term or period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.CourseSchedule">
+            <summary>
+            Course section information to be shown on the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.Overdue">
+            <summary>
+            Flag indicating whether or not the student's payment for the statement term or period is past due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.ActivityDisplay">
+            <summary>
+            Enumeration value indicating whether account details are displayed by term or by period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.PreviousBalance">
+            <summary>
+            Accounts receivable balance for the student prior to the statement term or period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.FutureBalance">
+            <summary>
+            Accounts receivable balance for the student beyond the statement term or period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.OtherBalance">
+            <summary>
+            Non-Term Accounts receivable balance for the student (for Term statements),
+            or Term accounts receivable balance for the student (for Non-Term statements)
+            Does not apply to Past/Current/Future statements
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.DepositsDue">
+            <summary>
+            Deposits Due to be shown on the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.PreviousBalanceDescription">
+            <summary>
+            Description of the previous balance
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.FutureBalanceDescription">
+            <summary>
+            Description of the future balance
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.IncludeSchedule">
+            <summary>
+            Flag indicating whether or not to include the student's schedule on the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.IncludeDetail">
+            <summary>
+            Flag indicating whether or not to include the student's account details on the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.IncludeHistory">
+            <summary>
+            Flag indicating whether or not to include the student's account history on the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.DisclosureStatement">
+            <summary>
+            Institution-defined text to be shown on the last page of the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.OverdueAmount">
+            <summary>
+            Amount that is overdue 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.CurrentAmountDue">
+            <summary>
+            Total amount currently due, equal to the total amount due minus any overdue amounts 
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatement.DisplayDueDate">
+            <summary>
+            Adheres to flag on STFP
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.StudentStatementDepositDue">
+            <summary>
+            Student deposit due for display in the Student Statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementDepositDue.Id">
+            <summary>
+            ID of a deposit due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementDepositDue.DueDate">
+            <summary>
+            Date by which the deposit is due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementDepositDue.Balance">
+            <summary>
+            Balance owed on the deposit due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementDepositDue.AmountDue">
+            <summary>
+            Amount still due on the deposit due (same as Balance)
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementDepositDue.AmountPaid">
+            <summary>
+            Amount paid towards the deposit due
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementDepositDue.DepositTypeDescription">
+            <summary>
+            The description of the type of deposit due.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementDepositDue.TermDescription">
+            <summary>
+            The description of the term to which a deposit made would apply.
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.StudentStatementScheduleItem">
+            <summary>
+            Student course information for display in the Student Statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementScheduleItem.SectionId">
+            <summary>
+            ID of the course section, i.e. "MATH-100-01"
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementScheduleItem.SectionTitle">
+            <summary>
+            Title of the course section
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementScheduleItem.SectionTerm">
+            <summary>
+            Term description for the course section
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementScheduleItem.Credits">
+            <summary>
+            Number of credits for the course section
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementScheduleItem.ContinuingEducationUnits">
+            <summary>
+            Number of continuing education units for the course section
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementScheduleItem.MeetingDays">
+            <summary>
+            Meeting days for the course section
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementScheduleItem.MeetingTimes">
+            <summary>
+            Meeting times for the course section
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementScheduleItem.MeetingLocations">
+            <summary>
+            Meeting locations for the course section
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementScheduleItem.SectionDates">
+            <summary>
+            Course section start and end dates
+            </summary>
+        </member>
+        <member name="T:Ellucian.Colleague.Dtos.Finance.StudentStatementSummary">
+            <summary>
+            Summary portion of a student statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementSummary.ChargeInformation">
+            <summary>
+            Collection of accounts receivable charge group descriptions and their overall group type balances
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementSummary.NonChargeInformation">
+            <summary>
+            Collection of accounts receivable non-charge activity descriptions, consolidated by activity type, 
+            and their overall activity type balances
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementSummary.PaymentPlanAdjustmentsAmount">
+            <summary>
+            Total amount of any payment plan adjustments, equal to the amounts of all scheduled payments not currently due 
+            in the statement term or period. Overdue scheduled payments and the next unpaid scheduled payment on each plan are currently due.
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementSummary.CurrentDepositsDueAmount">
+            <summary>
+            Total amount due for all deposits due in the statement term or period
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementSummary.SummaryDateRange">
+            <summary>
+            Range of dates for the summary portion of the statement
+            </summary>
+        </member>
+        <member name="P:Ellucian.Colleague.Dtos.Finance.StudentStatementSummary.TimeframeDescription">
+            <summary>
+            Description of the term or period for a statement
+            </summary>
+        </member>
+    </members>
+</doc>

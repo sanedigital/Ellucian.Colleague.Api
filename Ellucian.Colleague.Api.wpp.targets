@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- This target modifies the MS Deploy Source Manifest to set the permissions
+  on the ColleagueAPI application directory that the InstallShield would set. 
+  This is needed at package build time. -->
+  <Target Name="SetupCustomAcls" AfterTargets="AddIisSettingAndFileContentsToSourceManifest">
+    <ItemGroup>
+      <MsDeploySourceManifest Include="setAcl">
+        <Path>$(_MSDeployDirPath_FullPath)</Path>
+        <setAclUser>NETWORK SERVICE</setAclUser>
+        <setAclAccess>FullControl</setAclAccess>
+        <setAclResourceType>Directory</setAclResourceType>
+        <AdditionalProviderSettings>setAclUser;setAclResourceType;setAclAccess</AdditionalProviderSettings>
+      </MsDeploySourceManifest>
+    </ItemGroup>
+  </Target>
+
+  <!-- This target mirrors the SetupCustomAcls target above in order to set the
+  permissions on the ColleagueAPI application directory that the InstallShield would
+  set. This one is needed at deploy time. -->
+  <Target Name="DeclareCustomParameters" AfterTargets="AddIisAndContentDeclareParametersItems">
+    <ItemGroup>
+      <MsDeployDeclareParameters Include="ColleagueAppSetAclParam">
+        <Kind>ProviderPath</Kind>
+        <Scope>setAcl</Scope>
+        <Match>^$(_EscapeRegEx_MSDeployDirPath)</Match>
+        <Description>Add FullControl permission to the Colleague API application directory.</Description>
+        <DefaultValue>{$(_MsDeployParameterNameForContentPath)}</DefaultValue>
+        <Value>$(_DestinationContentPath)</Value>
+        <Tags>Hidden</Tags>
+        <Priority>$(VsSetAclPriority)</Priority>
+        <ExcludeFromSetParameter>True</ExcludeFromSetParameter>
+      </MsDeployDeclareParameters>
+    </ItemGroup>
+  </Target>
+</Project>

@@ -1,0 +1,960 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ConvertNulls="false" ReportInfo.Created="03/06/2023 15:34:49" ReportInfo.Modified="03/21/2024 09:30:21" ReportInfo.CreatorVersion="2023.1.12.0">
+  <Dictionary>
+    <TableDataSource Name="StatementDto" ReferenceName="Data.StatementDto" DataType="System.Int32" Enabled="true">
+      <Column Name="StudentName" DataType="System.String"/>
+      <Column Name="StudentId" DataType="System.Int32"/>
+      <Column Name="StudentAddress" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Charges" ReferenceName="Data.Charges" DataType="System.Int32" Enabled="true">
+      <Column Name="ChargeDesc" DataType="System.String"/>
+      <Column Name="ChargeAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="Adjustments" ReferenceName="Data.Adjustments" DataType="System.Int32" Enabled="true">
+      <Column Name="Symbol" DataType="System.String"/>
+      <Column Name="AdjustmentDesc" DataType="System.String"/>
+      <Column Name="AdjustmentAmount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="Schedule" ReferenceName="Data.Schedule" DataType="System.Int32" Enabled="true">
+      <Column Name="Section" DataType="System.String"/>
+      <Column Name="Course Title" DataType="System.String"/>
+      <Column Name="Credits" DataType="System.Decimal"/>
+      <Column Name="CEUs" DataType="System.String"/>
+      <Column Name="Days" DataType="System.String"/>
+      <Column Name="Times" DataType="System.String"/>
+      <Column Name="Classroom" DataType="System.String"/>
+      <Column Name="Start/End Dates" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Tuition By Total" ReferenceName="Data.Tuition By Total" DataType="System.Int32" Enabled="true">
+      <Column Name="Section ID" DataType="System.String"/>
+      <Column Name="Description" DataType="System.String"/>
+      <Column Name="Term ID" DataType="System.String"/>
+      <Column Name="Billing Credits" DataType="System.String"/>
+      <Column Name="CEUs" DataType="System.String"/>
+      <Column Name="Status" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Tuition By Section" ReferenceName="Data.Tuition By Section" DataType="System.Int32" Enabled="true">
+      <Column Name="Section ID" DataType="System.String"/>
+      <Column Name="Description" DataType="System.String"/>
+      <Column Name="Term ID" DataType="System.String"/>
+      <Column Name="Billing Credits" DataType="System.String"/>
+      <Column Name="CEUs" DataType="System.String"/>
+      <Column Name="Status" DataType="System.String"/>
+      <Column Name="Amount" DataType="System.Decimal"/>
+    </TableDataSource>
+    <TableDataSource Name="Room and Board" ReferenceName="Data.Room and Board" DataType="System.Int32" Enabled="true">
+      <Column Name="Description" DataType="System.String"/>
+      <Column Name="Amount" DataType="System.Decimal"/>
+      <Column Name="Date" DataType="System.String"/>
+      <Column Name="Room" DataType="System.String"/>
+      <Column Name="Term" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Other" ReferenceName="Data.Other" DataType="System.Int32" Enabled="true">
+      <Column Name="Amount" DataType="System.Decimal"/>
+      <Column Name="Id" DataType="System.String"/>
+      <Column Name="Date" DataType="System.String"/>
+      <Column Name="Description" DataType="System.String"/>
+      <Column Name="Term" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Sponsorships" ReferenceName="Data.Sponsorships" DataType="System.Int32" Enabled="true">
+      <Column Name="Sponsorship ID" DataType="System.String"/>
+      <Column Name="Sponsorship Description" DataType="System.String"/>
+      <Column Name="Amount" DataType="System.Decimal"/>
+      <Column Name="Term" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Deposits" ReferenceName="Data.Deposits" DataType="System.Int32" Enabled="true">
+      <Column Name="Id" DataType="System.String"/>
+      <Column Name="Description" DataType="System.String"/>
+      <Column Name="Date" DataType="System.String"/>
+      <Column Name="Amount" DataType="System.Decimal"/>
+      <Column Name="Applied Amount" DataType="System.Decimal"/>
+      <Column Name="Other Amount" DataType="System.Int32"/>
+      <Column Name="Refund Amount" DataType="System.Decimal"/>
+      <Column Name="Remaining Amount" DataType="System.Decimal"/>
+      <Column Name="Term" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Refunds" ReferenceName="Data.Refunds" DataType="System.Int32" Enabled="true">
+      <Column Name="Id" DataType="System.String"/>
+      <Column Name="Date" DataType="System.String"/>
+      <Column Name="Description" DataType="System.String"/>
+      <Column Name="Amount" DataType="System.Decimal"/>
+      <Column Name="Pay Method" DataType="System.String"/>
+      <Column Name="Reference Number" DataType="System.String"/>
+      <Column Name="Transaction number" DataType="System.String"/>
+      <Column Name="Term" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Deposits Due" ReferenceName="Data.Deposits Due" DataType="System.Int32" Enabled="true">
+      <Column Name="Id" DataType="System.String"/>
+      <Column Name="Type Description" DataType="System.String"/>
+      <Column Name="Date" DataType="System.String"/>
+      <Column Name="Amount" DataType="System.Decimal"/>
+      <Column Name="Paid" DataType="System.Decimal"/>
+      <Column Name="Balance" DataType="System.Decimal"/>
+      <Column Name="Term" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Payment Plans" ReferenceName="Data.Payment Plans" DataType="System.Int32" Enabled="true">
+      <Column Name="Id" DataType="System.String"/>
+      <Column Name="Type" DataType="System.String"/>
+      <Column Name="Original Amount" DataType="System.Decimal"/>
+      <Column Name="Current Balance" DataType="System.Decimal"/>
+      <Column Name="Current Due" DataType="System.Decimal"/>
+      <Column Name="Term" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Payments" ReferenceName="Data.Payments" DataType="System.Int32" Enabled="true">
+      <Column Name="Receipt Number" DataType="System.String"/>
+      <Column Name="Amount" DataType="System.Decimal"/>
+      <Column Name="Payment Method" DataType="System.String"/>
+      <Column Name="Reference Number" DataType="System.String"/>
+      <Column Name="Date" DataType="System.String"/>
+      <Column Name="Term" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Fees" ReferenceName="Data.Fees" DataType="System.Int32" Enabled="true">
+      <Column Name="Description" DataType="System.String"/>
+      <Column Name="Amount" DataType="System.Decimal"/>
+      <Column Name="Term" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Payment Plans2" ReferenceName="Data.Payment Plans2" DataType="System.Int32" Enabled="true">
+      <Column Name="Id" DataType="System.String"/>
+      <Column Name="Due Date" DataType="System.String"/>
+      <Column Name="Amount Due" DataType="System.Decimal"/>
+      <Column Name="Setup Charge" DataType="System.Decimal"/>
+      <Column Name="Late Charge" DataType="System.Decimal"/>
+      <Column Name="Amount Paid" DataType="System.Decimal"/>
+      <Column Name="Net Due" DataType="System.Decimal"/>
+      <Column Name="Date Paid" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Financial Aid" ReferenceName="Data.Financial Aid" DataType="System.Int32" Enabled="true">
+      <Column Name="Awarded Amount" DataType="System.Decimal"/>
+      <Column Name="Term" DataType="System.String"/>
+      <Column Name="Disbursed Amount" DataType="System.String"/>
+      <Column Name="Anticipated Amount" DataType="System.String"/>
+      <Column Name="Other Terms" DataType="System.Decimal"/>
+      <Column Name="Loan Fees" DataType="System.Decimal"/>
+      <Column Name="Ineligible" DataType="System.Decimal"/>
+      <Column Name="AwardDesc" DataType="System.String"/>
+      <Column Name="Comments" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="ReportLogo" ReferenceName="Data.ReportLogo" DataType="System.Int32" Enabled="true">
+      <Column Name="ImageLocation" DataType="System.Byte[]" BindableControl="Picture"/>
+    </TableDataSource>
+    <TableDataSource Name="AllPayPlans" ReferenceName="Data.AllPayPlans" DataType="System.Int32" Enabled="true">
+      <Column Name="PlanId" DataType="System.String"/>
+      <Column Name="PlanTotalDue" DataType="System.Decimal"/>
+      <Column Name="PlanTotalSetup" DataType="System.Decimal"/>
+      <Column Name="PlanTotalLate" DataType="System.Decimal"/>
+      <Column Name="PlanTotalPaid" DataType="System.Decimal"/>
+      <Column Name="PlanTotalNet" DataType="System.Decimal"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" Guides="-18.9,28.35,9.45,9.45,9.45,0,0,18.9,9.45,708.75,434.7" Watermark.Font="Arial, 60pt">
+    <PageHeaderBand Name="PageHeader1" Width="718.2" Height="122.85" PrintOn="OddPages, EvenPages">
+      <TextObject Name="Text292" Left="434.7" Width="274.05" Height="18.9" Text="Student Statement - [PageN]" HorzAlign="Right" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text293" Left="519.75" Top="18.9" Width="189" Height="18.9" Text="[DateGeneratedText] [Month([Date])]/[Day([Date])]/[Year([Date])]" HorzAlign="Right" Font="Arial, 8pt, style=Bold" TextFill.Color="Silver"/>
+      <ContainerObject Name="Container21" Left="378" Top="44.45" Width="330.75" Height="23.81" Border.Lines="Top" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="WhiteSmoke">
+        <TextObject Name="Text294" Left="170.1" Width="160.65" Height="23.81" Border.Lines="Top" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="WhiteSmoke" Text="[StudentName]" Padding="4, 4, 4, 4" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+        <TextObject Name="Text295" Width="56.7" Height="23.81" Border.Lines="Top" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="WhiteSmoke" Text="[StudentNameLabel]" Padding="4, 4, 4, 4" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      </ContainerObject>
+      <ContainerObject Name="Container22" Left="378" Top="72.8" Width="330.75" Height="23.81" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="White">
+        <TextObject Name="Text296" Left="236.25" Width="94.5" Height="23.81" Fill.Color="White" Text="[StudentId]" Padding="4, 4, 4, 4" HorzAlign="Right" Font="Arial, 9pt"/>
+        <TextObject Name="Text297" Width="160.65" Height="23.81" Text="[StudentIdLabel]" Padding="4, 4, 4, 4" Font="Arial, 9pt, style=Bold"/>
+      </ContainerObject>
+      <PictureObject Name="Logo" Width="226.8" Height="28.35" CanGrow="true" CanShrink="true" PrintOn="OddPages, EvenPages" DataColumn="ReportLogo.ImageLocation" ShowErrorImage="true" ImageAlign="Top_Left"/>
+    </PageHeaderBand>
+    <DataBand Name="Data3" Top="126.05" Width="718.2" Height="56.7">
+      <TextObject Name="Text2" Left="576.45" Width="132.3" Height="28.35" Text="[StatementTitle]" HorzAlign="Right" Font="Arial, 10pt"/>
+      <PictureObject Name="Picture1" Width="226.8" Height="28.35" CanGrow="true" CanShrink="true" PrintOn="FirstPage, LastPage, OddPages, EvenPages, RepeatedBand" DataColumn="ReportLogo.ImageLocation" ShowErrorImage="true" ImageAlign="Top_Left"/>
+    </DataBand>
+    <DataBand Name="Data1" Top="185.95" Width="718.2" Height="226.8">
+      <TextObject Name="Text3" Width="170.1" Height="75.6" Text="[InstitutionName]&#13;&#10;[RemittanceAddress]" Font="Arial, 9pt"/>
+      <TextObject Name="Text5" Left="28.35" Top="122.85" Width="340.2" Height="66.15" Text="[StudentName]&#13;&#10;[StudentAddress]" Font="Arial, 11pt"/>
+      <ContainerObject Name="Container2" Left="378" Top="9.45" Width="330.75" Height="23.81" Border.Lines="Top" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="WhiteSmoke">
+        <TextObject Name="Text12" Left="170.1" Width="160.65" Height="23.81" Border.Lines="Top" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="WhiteSmoke" Text="[StudentName]" Padding="4, 4, 4, 4" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+        <TextObject Name="Text6" Width="56.7" Height="23.81" Border.Lines="Top" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="WhiteSmoke" Text="[StudentNameLabel]" Padding="4, 4, 4, 4" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      </ContainerObject>
+      <ContainerObject Name="Container3" Left="378" Top="37.8" Width="330.75" Height="23.81" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="White">
+        <TextObject Name="Text13" Left="236.25" Width="94.5" Height="23.81" Fill.Color="White" Text="[StudentId]" Padding="4, 4, 4, 4" HorzAlign="Right" Font="Arial, 9pt"/>
+        <TextObject Name="Text7" Width="160.65" Height="23.81" Text="[StudentIdLabel]" Padding="4, 4, 4, 4" Font="Arial, 9pt, style=Bold"/>
+      </ContainerObject>
+      <ContainerObject Name="Container4" Left="378" Top="66.15" Width="330.75" Height="23.81" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="WhiteSmoke">
+        <TextObject Name="Text14" Left="207.9" Width="122.85" Height="23.81" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="WhiteSmoke" Text="[TotalBalance]" Padding="4, 4, 4, 4" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+        <TextObject Name="Text8" Width="151.2" Height="23.81" Text="[TotalBalanceLabel]" Padding="4, 4, 4, 4" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      </ContainerObject>
+      <ContainerObject Name="Container6" Left="378" Top="151.2" Width="330.75" Height="23.81" Fill.Color="White">
+        <TextObject Name="Text18" Left="170.1" Width="160.65" Height="23.81" Border.Lines="Top, Bottom" Fill.Color="White" Text="[TotalDue]" Padding="4, 4, 4, 4" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+        <TextObject Name="Text17" Width="170.1" Height="23.81" Border.Lines="Top, Bottom" Fill.Color="White" Text="[TotalAmountDueLabel]" Padding="4, 4, 4, 4" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      </ContainerObject>
+      <ContainerObject Name="Container7" Left="378" Top="198.45" Width="330.75" Height="18.9" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="White"/>
+      <TextObject Name="StudentNameLabel" Left="1160.79" Top="66.15" Width="72.09" Height="24" Text="=Parameters!Label_StudentName.Value" Padding="4, 4, 4, 4" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="StudentName" Left="1232.87" Top="66.15" Width="276.45" Height="24" Text="=Parameters!StudentName.Value" Padding="4, 4, 4, 4" Font="Arial, 9pt"/>
+      <TextObject Name="StudentIdLabel" Left="1160.79" Top="90.15" Width="158.49" Height="24" Text="=Parameters!Label_StudentId.Value" Padding="4, 4, 4, 4" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="SummaryTotalBalanceLabel" Left="1160.79" Top="114.15" Width="158.49" Height="24" Text="=Parameters!Label_TotalBalance.Value" Padding="4, 4, 4, 4" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="StudentId" Left="1319.27" Top="90.15" Width="190.05" Height="24" Text="=Parameters!StudentId.Value" Padding="4, 4, 4, 4" Font="Arial, 9pt"/>
+      <TextObject Name="SummaryTotalBalance" Left="1319.27" Top="114.15" Width="190.05" Height="24" Text="=CDec(Parameters!PreviousBalance.Value) + CDec(Parameters!Balance.Value) + CDec(Parameters!FutureBalance.Value) + CDec(Parameters!OtherBalance.Value)" Padding="4, 4, 4, 4" Font="Arial, 9pt"/>
+      <TextObject Name="StudentId3" Left="1319.27" Top="138.15" Width="190.05" Height="24" Text="=CDec(Parameters!OverdueAmount.Value)" Padding="4, 4, 4, 4" Font="Arial, 9pt"/>
+      <TextObject Name="StudentIdLabel3" Left="1160.79" Top="138.15" Width="158.49" Height="24" Text="=Parameters!Label_AmountOverdue.Value" Padding="4, 4, 4, 4" Font="Arial, 9pt, style=Bold"/>
+      <ContainerObject Name="Container5" Left="378" Top="94.5" Width="330.75" Height="23.81" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="White" CanGrow="true">
+        <TextObject Name="Text16" Left="189" Width="141.75" Height="23.81" Fill.Color="White" CanGrow="true" Text="[AmountOverdue]" Padding="4, 4, 4, 4" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+        <TextObject Name="Text15" Width="189" Height="23.81" CanGrow="true" Text="[AmountOverdueLabel]" Padding="4, 4, 4, 4" Font="Arial, 9pt, style=Bold"/>
+      </ContainerObject>
+      <TextObject Name="Text19" Left="378" Top="179.55" Width="160.65" Height="23.81" Text="[AmountEnclosedText]" Padding="4, 4, 4, 4" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text20" Left="614.25" Top="179.55" Width="94.5" Height="18.9" Fill.Color="White" HorzAlign="Right" Font="Arial, 10pt"/>
+      <ContainerObject Name="Container20" Left="378" Top="122.85" Width="330.75" Height="23.81" Border.Color="Gainsboro" Border.Width="1.5" Fill.Color="WhiteSmoke" CanGrow="true">
+        <TextObject Name="Text289" Left="189" Width="141.75" Height="23.81" CanGrow="true" Text="[CurrentAmountDue]" Padding="4, 4, 4, 4" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+        <TextObject Name="Text290" Width="189" Height="23.81" CanGrow="true" Text="[AmountDueLabel] [DueDate]" Padding="4, 4, 4, 4" Font="Arial, 9pt, style=Bold"/>
+      </ContainerObject>
+    </DataBand>
+    <DataBand Name="Data4" Top="415.95" Width="718.2" Height="56.7">
+      <TextObject Name="Text21" Left="28.35" Width="680.4" Height="56.7" Fill.Color="White" CanGrow="true" Text="[StatementMessage]" Font="Arial, 9pt"/>
+    </DataBand>
+    <DataBand Name="Data5" Top="475.85" Width="718.2" Height="75.6">
+      <TextObject Name="Text22" Top="9.45" Width="718.96" Height="23.81" Border.Lines="Bottom" Border.Color="LightGray" Border.Style="Dash" Border.Width="3" Fill.Color="White" Text="Please return this portion of the statement to the institution, along with your payment." Padding="2, 2, 2, 2" HorzAlign="Center" Font="Arial, 8pt" TextFill.Color="Silver"/>
+      <TextObject Name="Text23" Left="-10.21" Top="41.58" Width="718.96" Height="23.81" Border.Color="LightGray" Border.Style="Dash" Border.Width="3" Fill.Color="White" Text="Date Generated: [Month([Date])]/[Day([Date])]/[Year([Date])]" Padding="3, 2, 2, 2" HorzAlign="Center" Font="Arial, 8pt" TextFill.Color="Silver"/>
+    </DataBand>
+    <DataBand Name="Data35" Top="554.65" Width="718.2" Height="30.24">
+      <TextObject Name="Text24" Left="9.45" Width="699.3" Height="28.35" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" Text="[SummaryPageHeader] - [Label_SummaryTermId][SummaryDateRange]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="Data6" Top="588.09" Width="718.2" Height="26.46" VisibleExpression="[IIf([PreviousBalanceExists],true,false)]">
+      <TextObject Name="Text25" Left="122.85" Width="453.6" Height="24.57" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" Text="[PreviousBalanceLabel] ([PreviousBalanceDate])" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text26" Left="576.45" Width="132.3" Height="24.57" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" Text="[PreviousBalance]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </DataBand>
+    <DataBand Name="Data7" Top="645.52" Width="718.2" Height="22.68" VisibleExpression="[IIf([ChargesExist],true,false)]" DataSource="Charges">
+      <TextObject Name="Text28" Left="151.2" Width="425.25" Height="22.68" Text="[Charges.ChargeDesc]" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text29" Left="576.45" Width="132.3" Height="22.68" Text="[Charges.ChargeAmount]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt"/>
+      <DataHeaderBand Name="DataHeader2" Top="617.75" Width="718.2" Height="24.57" VisibleExpression="[IIf([ChargesExist],true,false)]">
+        <TextObject Name="Text27" Left="122.85" Width="94.5" Height="24.57" Fill.Color="White" Text="[ChargesLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data22" Top="671.4" Width="718.2" Height="24.57" VisibleExpression="[IIf([ChargesExist],true,false)]">
+      <TextObject Name="Text320" Left="122.85" Width="453.6" Height="24.57" Text="Total Charges" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text321" Left="576.45" Width="132.3" Height="24.57" Text="[TotalCharges]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text322" Left="85.05" Width="37.8" Height="24.57" Text="+" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </DataBand>
+    <DataBand Name="Data8" Top="699.17" Width="718.2" Height="24.57" VisibleExpression="[IIf([AdjustmentsExist],true,false)]" DataSource="Adjustments">
+      <TextObject Name="Text41" Left="85.05" Width="37.8" Height="24.57" Text="[Adjustments.Symbol]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text42" Left="122.85" Width="453.6" Height="24.57" Text="[Adjustments.AdjustmentDesc]" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text43" Left="576.45" Width="132.3" Height="24.57" Text="[Adjustments.AdjustmentAmount]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </DataBand>
+    <DataBand Name="Data9" Top="754.71" Width="718.2" Height="24.57" VisibleExpression="[IIf([PaymentPlanDeferralsExist],true,false)]">
+      <TextObject Name="Text36" Left="151.2" Width="425.25" Height="24.57" Text="[SummaryPayPlanAdjustments]" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text37" Left="576.45" Width="132.3" Height="24.57" Text="[PaymentPlanDeferral]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text44" Left="85.05" Width="37.8" Height="24.57" Text="-" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <DataHeaderBand Name="DataHeader4" Top="726.94" Width="718.2" Height="24.57">
+        <TextObject Name="Text33" Left="85.05" Width="37.8" Height="24.57" Text="=" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text34" Left="122.85" Width="453.6" Height="24.57" Border.Lines="Top, Bottom" Border.Width="1.5" Text="[Label_SummaryTermId] Balance" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text35" Left="576.45" Width="132.3" Height="24.57" Border.Lines="Top, Bottom" Border.Width="1.5" Text="[CurrentBalance]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data63" Top="782.48" Width="718.2" Height="24.57" VisibleExpression="[IIf([AnyDepositsDueExist],true,false)]">
+      <TextObject Name="Text302" Left="151.2" Width="425.25" Height="24.57" Text="[SummaryDepositsDue] ([DepositsDueNote])" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text303" Left="576.45" Width="132.3" Height="24.57" Text="[DepositsDueAmount]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text304" Left="85.05" Width="37.8" Height="24.57" Text="+" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </DataBand>
+    <DataBand Name="Data10" Top="839.91" Width="718.2" Height="26.46" VisibleExpression="[IIf([FutureBalanceExists],true,false)]">
+      <TextObject Name="Text45" Left="122.85" Width="453.6" Height="24.57" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" Text="[FutureBalanceLabel] (Charges after [Label_SummaryTermId])" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text46" Left="576.45" Width="132.3" Height="24.57" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" Text="[FutureBalance]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <DataHeaderBand Name="DataHeader5" Top="810.25" Width="718.2" Height="26.46">
+        <TextObject Name="Text38" Left="85.05" Width="37.8" Height="24.57" Text="=" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text39" Left="122.85" Width="453.6" Height="24.57" Border.Lines="Top, Bottom" Border.Width="1.5" Fill.Color="WhiteSmoke" Text="[TotalAmountDueLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text40" Left="576.45" Width="132.3" Height="24.57" Border.Lines="Top, Bottom" Border.Width="1.5" Fill.Color="WhiteSmoke" Text="[TotalAmountDue]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data33" Top="869.57" Width="718.2" Height="26.46" VisibleExpression="[IIf([OtherBalanceExists],true,false)]">
+      <TextObject Name="Text300" Left="122.85" Width="453.6" Height="24.57" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" Text="[OtherBalanceLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text301" Left="576.45" Width="132.3" Height="24.57" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" Text="[OtherBalance]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </DataBand>
+    <DataBand Name="Data11" Top="899.23" Width="718.2" Height="26.46">
+      <TextObject Name="Text47" Left="122.85" Width="434.7" Height="24.57" Fill.Color="White" Text="[TotalBalanceLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text48" Left="576.45" Width="132.3" Height="24.57" Fill.Color="White" Text="[TotalBalance]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </DataBand>
+    <DataBand Name="Data12" Top="928.89" Width="718.2" Height="37.8" VisibleExpression="[IIf([DisplaySchedule],true,false)]">
+      <TextObject Name="Text49" Left="9.45" Top="9.45" Width="680.4" Height="28.35" Fill.Color="White" Text="[CourseScheduleLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="Data13" Top="991.99" Width="718.2" Height="37.8" VisibleExpression="[IIf([DisplaySchedule],true,false)]" DataSource="Schedule">
+      <TextObject Name="Text58" Left="9.45" Width="94.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" Text="[Schedule.Section]" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text59" Left="103.95" Width="113.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" Text="[Schedule.Course Title]" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text60" Left="217.35" Width="56.7" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" Text="[Schedule.Credits]" Padding="2, 0, 6, 0" Format="Number" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text61" Left="274.05" Width="47.25" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" Text="[Schedule.CEUs]" Padding="2, 0, 6, 0" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text62" Left="321.3" Width="56.7" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" Text="[Schedule.Days]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text63" Left="378" Width="103.95" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" Text="[Schedule.Times]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text64" Left="481.95" Width="94.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" Text="[Schedule.Classroom]" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text65" Left="576.45" Width="132.3" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" Text="[Schedule.Start/End Dates]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+      <DataHeaderBand Name="DataHeader6" Top="969.89" Width="718.2" Height="18.9" VisibleExpression="[IIf([DisplaySchedule],true,false)]">
+        <TextObject Name="Text50" Left="9.45" Width="94.5" Height="18.9" Border.Lines="Left, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[ScheduleCourseLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text51" Left="103.95" Width="113.4" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[ScheduleDescLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text52" Left="217.35" Width="56.7" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[ScheduleCreditsLabel]" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text53" Left="274.05" Width="47.25" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[ScheduleCeuLabel]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text54" Left="321.3" Width="56.7" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[ScheduleDaysLabel]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text55" Left="378" Width="103.95" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[ScheduleTimesLabel]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text56" Left="481.95" Width="94.5" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[ScheduleRoomsLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text57" Left="576.45" Width="132.3" Height="18.9" Border.Lines="Right, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[ScheduleDatesLabel]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data14" Top="1092.89" Width="718.2" Height="28.35" VisibleExpression="[IIf([TuitionByTotalExists],true,false)]" KeepTogether="true">
+      <TextObject Name="Text67" Left="9.45" Width="680.4" Height="28.35" Fill.Color="White" Text="[TuitonByTotalLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+      <DataHeaderBand Name="DataHeader7" Top="1032.99" Width="718.2" Height="56.7" KeepWithData="true">
+        <TextObject Name="Text66" Left="9.45" Top="18.9" Width="699.3" Height="28.35" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" Text="[DetailHeaderLabel] - [Label_SummaryTermId][SummaryDateRange]" VertAlign="Center" Font="Arial, 11.25pt"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="TuitionByTotalDataBand" Top="1150.54" Width="718.2" Height="37.8" VisibleExpression="[IIf([TuitionByTotalExists],true,false)]" DataSource="Tuition By Total" KeepTogether="true" KeepDetail="true">
+      <TextObject Name="Text76" Left="9.45" Width="160.65" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Total.Section ID]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text77" Left="170.1" Width="151.2" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Total.Description]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text80" Left="406.35" Width="122.85" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Total.Billing Credits]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text81" Left="529.2" Width="66.15" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Total.CEUs]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text82" Left="595.35" Width="113.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Total.Status]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text336" Left="321.3" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Total.Term ID]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <DataHeaderBand Name="DataHeader8" Top="1124.44" Width="718.2" Height="22.9" VisibleExpression="[IIf([TuitionByTotalExists],true,false)]" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text68" Left="9.45" Top="3.6" Width="160.65" Height="18.9" Border.Lines="Left, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionByTotalSectionIdLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text69" Left="170.1" Top="3.6" Width="151.2" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionByTotalDescriptionLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text75" Left="595.35" Top="3.6" Width="113.4" Height="18.9" Border.Lines="Right, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionByTotalStatusLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text71" Left="529.2" Top="3.6" Width="66.15" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionByTotalCeuLabel]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text70" Left="406.35" Top="3.6" Width="122.85" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionByTotalCreditsLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text335" Left="321.3" Top="3.78" Width="85.05" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionByTotalTermLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data16" Top="1191.54" Width="718.2" Height="37.8" VisibleExpression="[IIf([TuitionByTotalExists],true,false)]" KeepTogether="true">
+      <ContainerObject Name="Container8" Left="9.45" Width="699.3" Height="37.8" Border.Lines="All" Border.Color="Silver">
+        <TextObject Name="Text83" Width="94.5" Height="37.8" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text84" Left="585.9" Width="113.4" Height="37.8" Text="[TuitionByTotalSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </ContainerObject>
+    </DataBand>
+    <DataBand Name="Data19" Top="1232.54" Width="718.2" Height="30.24" VisibleExpression="[IIf([TuitionBySectionExists],true,false)]">
+      <TextObject Name="Text85" Left="9.45" Width="680.4" Height="28.35" Fill.Color="White" Text="[TuitionBySectionLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="TuitionBySectionDataBand" Top="1288.08" Width="718.2" Height="37.8" VisibleExpression="TuitionBySectionExists" DataSource="Tuition By Section">
+      <TextObject Name="Text93" Left="9.45" Width="132.3" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Section.Section ID]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text94" Left="141.75" Width="151.2" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Section.Description]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text95" Left="378" Width="113.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Section.Billing Credits]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text96" Left="491.4" Width="47.25" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Section.CEUs]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text97" Left="538.65" Width="66.15" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Section.Status]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text338" Left="292.95" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Section.Term ID]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text372" Left="604.8" Width="103.95" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Tuition By Section.Amount]" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Formats>
+          <CurrencyFormat UseLocale="false" NegativePattern="1"/>
+          <GeneralFormat/>
+        </Formats>
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <DataHeaderBand Name="DataHeader9" Top="1265.98" Width="718.2" Height="18.9" VisibleExpression="TuitionBySectionExists" RepeatOnEveryPage="true">
+        <TextObject Name="Text86" Left="9.45" Width="132.3" Height="18.9" Border.Lines="Left, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionBySectionSectionLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text87" Left="141.75" Width="151.2" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionBySectionDescriptionLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text88" Left="538.65" Width="66.15" Height="18.9" Border.Lines="Right, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionBySectionStatusLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text89" Left="491.4" Width="47.25" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionBySectionCeuLabel]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text90" Left="378" Width="113.4" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionBySectionCreditsLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text337" Left="292.95" Width="85.05" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionBySectionTermLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text371" Left="604.8" Width="103.95" Height="18.9" Border.Lines="Right, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[TuitionBySectionAmountLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data18" Top="1329.08" Width="718.2" Height="37.8" VisibleExpression="TuitionBySectionExists">
+      <ContainerObject Name="Container9" Left="9.45" Width="699.3" Height="37.8" Border.Lines="All" Border.Color="Silver">
+        <TextObject Name="Text91" Width="94.5" Height="37.8" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text92" Left="585.9" Width="113.4" Height="37.8" Text="[TuitionBySectionSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </ContainerObject>
+    </DataBand>
+    <DataBand Name="Data21" Top="1370.08" Width="718.2" Height="66.15" VisibleExpression="[IIf([FeesExist],true,false)]">
+      <TextObject Name="Text98" Left="9.45" Top="37.8" Width="680.4" Height="28.35" Fill.Color="White" Text="[FeesLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="FeesDataBand" Top="1461.53" Width="718.2" Height="37.8" VisibleExpression="[IIf([FeesExist],true,false)]" DataSource="Fees">
+      <TextObject Name="Text104" Left="9.45" Width="283.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Fees.Description]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text108" Left="472.5" Width="236.25" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Fees.Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text329" Left="292.95" Width="179.55" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Fees.Term]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <DataHeaderBand Name="DataHeader10" Top="1439.43" Width="718.2" Height="18.9" VisibleExpression="[IIf([FeesExist],true,false)]" RepeatOnEveryPage="true">
+        <TextObject Name="Text99" Left="9.45" Width="283.5" Height="18.9" Border.Lines="Left, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[FeesDescriptionLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text101" Left="472.5" Width="236.25" Height="18.9" Border.Lines="Right, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[FeesAmountLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text328" Left="292.95" Width="181.25" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[FeesTermLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data23" Top="1502.53" Width="718.2" Height="37.8" VisibleExpression="[IIf([FeesExist],true,false)]">
+      <ContainerObject Name="Container10" Left="9.45" Width="699.3" Height="37.8" Border.Lines="All" Border.Color="Silver">
+        <TextObject Name="Text109" Width="94.5" Height="37.8" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text286" Left="585.9" Width="113.4" Height="37.8" Text="[FeesSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </ContainerObject>
+    </DataBand>
+    <DataBand Name="Data24" Top="1543.53" Width="718.2" Height="66.15" VisibleExpression="[IIf([RoomAndBoardExist],true,false)]">
+      <TextObject Name="Text111" Left="9.45" Top="37.8" Width="680.4" Height="28.35" Fill.Color="White" Text="[RoomAndBoardLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="Data2" Top="1634.98" Width="718.2" Height="37.8" VisibleExpression="[IIf([RoomAndBoardExist],true,false)]" DataSource="Room and Board">
+      <TextObject Name="Text116" Left="9.45" Width="198.45" Height="37.8" Border.Lines="All" Border.LeftLine.Color="Silver" Border.LeftLine.Width="0.5" Border.TopLine.Color="Silver" Border.RightLine.Color="Silver" Border.BottomLine.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Room and Board.Description]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text117" Left="208.9" Width="113.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Room and Board.Date]" Padding="2, 0, 6, 0" Format="Date" Format.Format="d" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text118" Left="434.7" Width="103.95" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Room and Board.Room]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text119" Left="538.65" Width="170.1" Height="37.8" Border.Lines="All" Border.LeftLine.Color="Silver" Border.TopLine.Color="Silver" Border.RightLine.Color="Silver" Border.RightLine.Width="0.5" Border.BottomLine.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Room and Board.Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text340" Left="321.3" Width="113.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Room and Board.Term]" Format="Date" Format.Format="d" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <DataHeaderBand Name="DataHeader11" Top="1612.88" Width="718.2" Height="18.9" VisibleExpression="[IIf([RoomAndBoardExist],true,false)]" RepeatOnEveryPage="true">
+        <TextObject Name="Text112" Left="9.45" Width="198.45" Height="18.9" Border.Lines="Left, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RoomAndMealsDescLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text114" Left="434.7" Width="103.95" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RoomAndMealsRoomLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text115" Left="538.65" Width="170.1" Height="18.9" Border.Lines="Right, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RoomAndMealsAmountLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text339" Left="321.3" Width="113.4" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RoomAndMealsTermLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text113" Left="199.45" Width="122.85" Height="18.9" Border.Lines="Top" Border.LeftLine.Color="DimGray" Border.TopLine.Color="DimGray" Border.RightLine.Color="DimGray" Fill.Color="DimGray" Text="[RoomAndMealsDateLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data25" Top="1675.98" Width="718.2" Height="37.8" VisibleExpression="[IIf([RoomAndBoardExist],true,false)]">
+      <ContainerObject Name="Container11" Left="9.45" Width="699.3" Height="37.8" Border.Lines="All" Border.Color="Silver">
+        <TextObject Name="Text120" Width="94.5" Height="37.8" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text121" Left="604.8" Width="94.5" Height="37.8" Text="[RoomAndBoardSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </ContainerObject>
+    </DataBand>
+    <DataBand Name="Data26" Top="1716.98" Width="718.2" Height="66.15" VisibleExpression="[IIf([OtherChargesExist],true,false)]">
+      <TextObject Name="Text122" Left="9.45" Top="37.8" Width="680.4" Height="28.35" Fill.Color="White" Text="[MiscLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="Data27" Top="1808.43" Width="718.2" Height="37.8" VisibleExpression="[IIf([OtherChargesExist],true,false)]" DataSource="Other">
+      <TextObject Name="Text127" Left="9.45" Width="132.3" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Other.Id]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text128" Left="141.75" Width="113.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Other.Date]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text129" Left="368.55" Width="170.1" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Other.Description]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text130" Left="538.65" Width="170.1" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Other.Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text142" Left="935.55" Width="170.1" Height="18.9" Border.Lines="Right, Top" Fill.Color="Gray" Text="Method" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text341" Left="255.15" Width="113.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Other.Term]" Format="Date" Format.Format="d" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <DataHeaderBand Name="DataHeader12" Top="1786.33" Width="718.2" Height="18.9" VisibleExpression="[IIf([OtherChargesExist],true,false)]" RepeatOnEveryPage="true">
+        <TextObject Name="Text123" Left="9.45" Width="132.3" Height="18.9" Border.Lines="Left, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[OtherInvoiceIdLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text124" Left="368.55" Width="170.1" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[OtherDescriptionLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text125" Left="538.65" Width="170.1" Height="18.9" Border.Lines="Right, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[OtherAmount]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text126" Left="141.75" Width="113.4" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[OtherDateLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text342" Left="255.15" Width="113.4" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[OtherTermLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data28" Top="1849.43" Width="718.2" Height="37.8" VisibleExpression="[IIf([OtherChargesExist],true,false)]">
+      <ContainerObject Name="Container12" Left="9.45" Width="699.3" Height="37.8" Border.Lines="All" Border.Color="Silver">
+        <TextObject Name="Text131" Width="94.5" Height="37.8" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text132" Left="585.9" Width="113.4" Height="37.8" Text="[OtherChargesSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </ContainerObject>
+    </DataBand>
+    <DataBand Name="Data29" Top="1890.43" Width="718.2" Height="66.15" VisibleExpression="[IIf([PaymentsExist],true,false)]">
+      <TextObject Name="Text133" Left="9.45" Top="37.8" Width="680.4" Height="28.35" Fill.Color="White" Text="[PaymentsLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="Data30" Top="1981.88" Width="718.2" Height="37.8" VisibleExpression="[IIf([PaymentsExist],true,false)]" DataSource="Payments">
+      <TextObject Name="Text138" Left="9.45" Width="132.3" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payments.Receipt Number]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text139" Left="141.75" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payments.Date]" Padding="2, 0, 6, 0" Format="Date" Format.Format="d" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text140" Left="330.75" Width="122.85" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payments.Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text141" Left="453.6" Width="113.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payments.Payment Method]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text144" Left="567" Width="141.75" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payments.Reference Number]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text344" Left="226.8" Width="103.95" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payments.Term]" Format="Date" Format.Format="d" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <DataHeaderBand Name="DataHeader13" Top="1959.78" Width="718.2" Height="18.9" VisibleExpression="[IIf([PaymentsExist],true,false)]" RepeatOnEveryPage="true">
+        <TextObject Name="Text134" Left="9.45" Width="132.3" Height="18.9" Border.Lines="Left" Border.Color="DimGray" Fill.Color="DimGray" Text="[PaymentsReceiptNumberLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text135" Left="330.75" Width="122.85" Height="18.9" Fill.Color="DimGray" Text="[PaymentsAmountLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text136" Left="453.6" Width="113.4" Height="18.9" Fill.Color="DimGray" Text="[PaymentsPayMethodLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text137" Left="141.75" Width="85.05" Height="18.9" Fill.Color="DimGray" Text="[PaymentsDateLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text143" Left="567" Width="141.75" Height="18.9" Border.Lines="Right" Border.Color="DimGray" Fill.Color="DimGray" Text="[PaymentsReferenceNumberLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text343" Left="226.8" Width="103.95" Height="18.9" Fill.Color="DimGray" Text="[PaymentsTermLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data31" Top="2022.88" Width="718.2" Height="37.8" VisibleExpression="[IIf([PaymentsExist],true,false)]">
+      <ContainerObject Name="Container13" Left="9.45" Width="699.3" Height="37.8" Border.Lines="All" Border.Color="Silver">
+        <TextObject Name="Text145" Width="94.5" Height="37.8" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text146" Left="585.9" Width="113.4" Height="37.8" Text="[PaymentsSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </ContainerObject>
+    </DataBand>
+    <DataBand Name="Data34" Top="2123.78" Width="718.2" Height="94.5" VisibleExpression="[IIf([FinancialAidExists],true,false)]" DataSource="Financial Aid">
+      <TextObject Name="Text157" Left="9.45" Top="56.7" Width="94.5" Height="37.8" Border.Lines="Left, Top, Bottom" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Financial Aid.Awarded Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text158" Left="103.95" Top="56.7" Width="94.5" Height="37.8" Border.Lines="Left, Top, Bottom" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Financial Aid.Term]" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text159" Left="198.45" Top="56.7" Width="113.4" Height="37.8" Border.Lines="Left, Top, Bottom" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Financial Aid.Disbursed Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text160" Left="311.85" Top="56.7" Width="113.4" Height="37.8" Border.Lines="Left, Top, Bottom" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Financial Aid.Anticipated Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text161" Left="425.25" Top="56.7" Width="85.05" Height="37.8" Border.Lines="Left, Top, Bottom" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Financial Aid.Other Terms]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text162" Left="510.3" Top="56.7" Width="75.6" Height="37.8" Border.Lines="Left, Top, Bottom" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Financial Aid.Loan Fees]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text163" Left="585.9" Top="56.7" Width="122.85" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Financial Aid.Ineligible]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text305" Left="585.9" Top="28.35" Width="122.85" Height="28.35" Border.Lines="Right, Top, Bottom" Border.Color="Silver" Fill.Color="Silver" Text="[FaCurrentlyIneligible]" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text306" Left="9.45" Top="28.35" Width="94.5" Height="28.35" Border.Lines="All" Border.Color="Silver" Fill.Color="Silver" Text="[FaAwardedAmount]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text307" Left="103.95" Top="28.35" Width="94.5" Height="28.35" Border.Lines="All" Border.Color="Silver" Fill.Color="Silver" Text="[FaTerm]" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text308" Left="198.45" Top="28.35" Width="113.4" Height="28.35" Border.Lines="All" Border.Color="Silver" Fill.Color="Silver" Text="[FaDisbursedAmount]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text309" Left="311.85" Top="28.35" Width="113.4" Height="28.35" Border.Lines="All" Border.Color="Silver" Fill.Color="Silver" Text="[AnticipatedFaAmount]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text310" Left="425.25" Top="28.35" Width="85.05" Height="28.35" Border.Lines="All" Border.Color="Silver" Fill.Color="Silver" Text="[FaOtherTerms]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text311" Left="510.3" Top="28.35" Width="75.6" Height="28.35" Border.Lines="All" Border.Color="Silver" Fill.Color="Silver" Text="[FaLoanFee]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text312" Left="311.85" Width="396.9" Height="28.35" Border.LeftLine.Color="White" Fill.Color="DimGray" Text="Comments: [Financial Aid.Comments]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+      <TextObject Name="Text313" Left="9.45" Width="302.4" Height="28.35" Fill.Color="DimGray" Text="[Financial Aid.AwardDesc]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+      <DataHeaderBand Name="DataHeader3" Top="2063.88" Width="718.2" Height="56.7" VisibleExpression="[IIf([FinancialAidExists],true,false)]">
+        <TextObject Name="Text147" Left="9.45" Top="28.35" Width="680.4" Height="28.35" Fill.Color="White" Text="[FaLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+      </DataHeaderBand>
+      <DataFooterBand Name="DataFooter2" Top="2221.48" Width="718.2" Height="56.7" VisibleExpression="[IIf([FinancialAidExists],true,false)]">
+        <TextObject Name="Text164" Left="9.45" Width="699.3" Height="18.9" Border.Lines="All" Border.Color="Silver" Fill.Color="Silver" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text167" Left="425.25" Top="18.9" Width="283.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" VertAlign="Center" Font="Arial, 9pt"/>
+        <TextObject Name="Text165" Left="9.45" Top="18.9" Width="302.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[DisbursedAidTotal]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+        <TextObject Name="Text166" Left="311.85" Top="18.9" Width="113.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[AnticipatedAidTotal]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      </DataFooterBand>
+    </DataBand>
+    <DataBand Name="Data38" Top="2281.38" Width="718.2" Height="9.45" VisibleExpression="[IIf([FinancialAidExists],true,false)]"/>
+    <DataBand Name="Data39" Top="2294.03" Width="718.2" Height="66.15" VisibleExpression="[IIf([SponsorshipsExist],true,false)]">
+      <TextObject Name="Text168" Left="9.45" Top="37.8" Width="680.4" Height="28.35" Fill.Color="White" Text="[SponsorShipLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="SponsorshipsDataBand" Top="2385.48" Width="718.2" Height="37.8" VisibleExpression="[IIf([SponsorshipsExist],true,false)]" DataSource="Sponsorships">
+      <TextObject Name="Text173" Left="9.45" Width="132.3" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Sponsorships.Sponsorship ID]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text175" Left="141.75" Width="226.8" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Sponsorships.Sponsorship Description]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text285" Left="576.45" Width="132.3" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Sponsorships.Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text332" Left="368.55" Width="207.9" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Sponsorships.Term]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <DataHeaderBand Name="DataHeader15" Top="2363.38" Width="718.2" Height="18.9" VisibleExpression="[IIf([SponsorshipsExist],true,false)]" RepeatOnEveryPage="true">
+        <TextObject Name="Text169" Left="9.45" Width="132.3" Height="18.9" Border.Lines="Left, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[SponsorshipsSponsorhipId]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text171" Left="141.75" Width="226.8" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[SponsorshipsSponsorhipId]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text172" Left="576.45" Width="132.3" Height="18.9" Border.Lines="Right, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[SponsorshipsAmountLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text331" Left="368.55" Width="207.9" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[SponsorshipsTermLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data41" Top="2426.48" Width="718.2" Height="37.8" VisibleExpression="[IIf([SponsorshipsExist],true,false)]">
+      <ContainerObject Name="Container14" Left="9.45" Width="699.3" Height="37.8" Border.Lines="All" Border.Color="Silver">
+        <TextObject Name="Text176" Width="94.5" Height="37.8" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text177" Left="557.55" Width="141.75" Height="37.8" Text="[SponsorshipsSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </ContainerObject>
+    </DataBand>
+    <DataBand Name="Data42" Top="2467.48" Width="718.2" Height="9.45" VisibleExpression="[IIf([SponsorshipsExist],true,false)]"/>
+    <DataBand Name="Data43" Top="2480.13" Width="718.2" Height="66.15" VisibleExpression="[IIf([DepositsExist],true,false)]">
+      <TextObject Name="Text178" Left="9.45" Top="37.8" Width="680.4" Height="28.35" Fill.Color="White" Text="[DepositsLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="DepositsDataBand" Top="2590.48" Width="718.2" Height="37.8" VisibleExpression="[IIf([DepositsExist],true,false)]" DataSource="Deposits">
+      <TextObject Name="Text188" Left="9.45" Width="56.7" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits.Id]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text189" Left="66.15" Width="94.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits.Description]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text190" Left="160.65" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits.Date]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text192" Left="321.3" Width="75.6" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits.Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text193" Left="396.9" Width="75.6" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits.Applied Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text194" Left="472.5" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits.Other Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text195" Left="557.55" Width="75.6" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits.Refund Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text196" Left="633.15" Width="75.6" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits.Remaining Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <ContainerObject Name="Container16" Left="954.45" Width="699.3" Height="37.8" Border.Lines="All">
+        <TextObject Name="Text216" Width="94.5" Height="37.8" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text217" Left="567" Width="122.85" Height="37.8" Text="######" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </ContainerObject>
+      <TextObject Name="Text346" Left="245.7" Width="75.6" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits.Term]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <DataHeaderBand Name="DataHeader16" Top="2549.48" Width="718.2" Height="37.8" VisibleExpression="[IIf([DepositsExist],true,false)]" Guides="9.45" RepeatOnEveryPage="true">
+        <TextObject Name="Text179" Left="9.45" Width="56.7" Height="37.8" Border.Lines="Left, Top" Fill.Color="DimGray" Text="[DepositsDepositId]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text180" Left="66.15" Width="94.5" Height="37.8" Border.Lines="Top" Fill.Color="DimGray" Text="[DepositsTypeLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text183" Left="160.65" Width="85.05" Height="37.8" Border.Lines="Top" Fill.Color="DimGray" Text="[DepositsDateLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text182" Left="321.3" Width="75.6" Height="37.8" Border.Lines="Top" Fill.Color="DimGray" Text="[DepositsAmountLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text184" Left="396.9" Width="75.6" Height="37.8" Border.Lines="Top" Fill.Color="DimGray" Text="[DepositsAppliedAmountLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text185" Left="472.5" Width="85.05" Height="37.8" Border.Lines="Top" Fill.Color="DimGray" Text="[DepositsOtherAmountsLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text186" Left="557.55" Width="75.6" Height="37.8" Border.Lines="Top" Fill.Color="DimGray" Text="[DepositsRefundLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text187" Left="633.15" Width="75.6" Height="37.8" Border.Lines="Right, Top" Fill.Color="DimGray" Text="[DepositsRemainingAmountLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text345" Left="245.7" Width="75.6" Height="37.8" Border.Lines="Top" Fill.Color="DimGray" Text="[DepositsTermLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data64" Top="2631.48" Width="718.2" Height="37.8" VisibleExpression="[IIf([DepositsExist],true,false)]">
+      <ContainerObject Name="Container19" Left="9.45" Width="699.3" Height="37.8" Border.Lines="All" Border.Color="Silver">
+        <TextObject Name="Text288" Left="623.7" Width="75.6" Height="37.8" Text="[DepositsSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text314" Left="548.1" Width="75.6" Height="37.8" Text="[DepositsRefundSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text315" Left="311.85" Width="75.6" Height="37.8" Text="[DepositsAmountSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text316" Left="387.45" Width="75.6" Height="37.8" Text="[DepositsAppliedSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text317" Left="463.05" Width="85.05" Height="37.8" Text="[DepositsOtherSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text287" Width="94.5" Height="37.8" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </ContainerObject>
+    </DataBand>
+    <DataBand Name="Data45" Top="2672.48" Width="718.2" Height="9.45" VisibleExpression="[IIf([DepositsExist],true,false)]"/>
+    <DataBand Name="Data46" Top="2685.13" Width="718.2" Height="66.15" VisibleExpression="[IIf([RefundsExist],true,false)]">
+      <TextObject Name="Text197" Left="9.45" Top="37.8" Width="680.4" Height="28.35" Fill.Color="White" Text="[RefundsLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="RefundsDataBand" Top="2782.25" Width="718.2" Height="37.8" VisibleExpression="[IIf([RefundsExist],true,false)]" DataSource="Refunds">
+      <TextObject Name="Text206" Left="9.45" Width="75.6" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Refunds.Id]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text207" Left="85.05" Width="66.15" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Refunds.Date]" Padding="2, 0, 6, 0" Format="Date" Format.Format="d" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text208" Left="151.2" Width="113.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Refunds.Description]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text209" Left="340.2" Width="103.95" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Refunds.Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text210" Left="444.15" Width="94.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Refunds.Pay Method]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text211" Left="538.65" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Refunds.Reference Number]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text212" Left="623.7" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Refunds.Transaction number]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text319" Left="264.6" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Refunds.Term]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <DataHeaderBand Name="DataHeader17" Top="2754.48" Width="718.2" Height="24.57" VisibleExpression="[IIf([RefundsExist],true,false)]" RepeatOnEveryPage="true">
+        <TextObject Name="Text198" Left="9.45" Width="75.6" Height="24.57" Border.Lines="Left, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RefundsVoucherIdLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text199" Left="85.05" Width="66.15" Height="24.57" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RefundsDate]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text200" Left="151.2" Width="113.4" Height="24.57" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RefundsDescriptionLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text202" Left="350.65" Width="94.05" Height="24.57" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RefundsAmountLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text203" Left="444.15" Width="94.5" Height="24.57" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RefundsPaymethodLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text204" Left="538.65" Width="85.05" Height="24.57" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RefundsReferenceNumberLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text205" Left="623.7" Width="85.05" Height="24.57" Border.Lines="Right, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RefundsTransactionNumberLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text318" Left="264.6" Width="85.85" Height="24.57" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[RefundsTermLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data48" Top="2823.25" Width="718.2" Height="37.8" VisibleExpression="[IIf([RefundsExist],true,false)]">
+      <ContainerObject Name="Container15" Left="9.45" Width="699.3" Height="37.8" Border.Lines="All" Border.Color="Silver">
+        <TextObject Name="Text213" Width="94.5" Height="37.8" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text214" Left="576.45" Width="122.85" Height="37.8" Text="[RefundsSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </ContainerObject>
+      <TextObject Name="Text218" Left="765.45" Width="567" Height="28.35" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" Text="Summary Balance" VertAlign="Center" Font="Arial, 11.25pt, style=Bold"/>
+    </DataBand>
+    <DataBand Name="Data49" Top="2864.25" Width="718.2" Height="9.45" VisibleExpression="[IIf([RefundsExist],true,false)]"/>
+    <DataBand Name="Data50" Top="2876.9" Width="718.2" Height="66.15">
+      <TextObject Name="Text215" Left="9.45" Top="37.8" Width="311.85" Height="28.35" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" Text="[[SummaryBalanceLabel]]" VertAlign="Center" Font="Arial, 11.25pt, style=Bold"/>
+      <TextObject Name="Text219" Left="321.3" Top="37.8" Width="387.45" Height="28.35" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" VertAlign="Center" Font="Arial, 11.25pt, style=Bold"/>
+      <TextObject Name="Text298" Left="396.9" Top="37.8" Width="311.85" Height="28.35" Border.Lines="Bottom" Border.Width="1.5" Fill.Color="White" Text="[CurrentBalance]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 11.25pt, style=Bold"/>
+    </DataBand>
+    <DataBand Name="Data51" Top="2946.25" Width="718.2" Height="68.55" VisibleExpression="[IIf([DisplayDisclosureForTransactions],true,false)]">
+      <TextObject Name="Text220" Left="9.45" Top="21.3" Width="699.3" Height="28.35" Fill.Color="White" CanGrow="true" Text="[DisclaimerText]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="Data52" Top="3018" Width="718.2" Height="37.8" VisibleExpression="[IIf([DepositsDueExist],true,false)]">
+      <TextObject Name="Text221" Left="9.45" Top="9.45" Width="699.3" Height="28.35" Fill.Color="White" Text="[DepositsDueLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="DepositsDueDataBand" Top="3081.1" Width="718.2" Height="37.8" VisibleExpression="[IIf([DepositsDueExist],true,false)]" DataSource="Deposits Due">
+      <TextObject Name="Text228" Left="9.45" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits Due.Id]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text229" Left="94.5" Width="160.65" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits Due.Type Description]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text230" Left="255.15" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits Due.Date]" Padding="2, 0, 6, 0" Format="Date" Format.Format="d" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text231" Left="415.8" Width="122.85" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits Due.Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text232" Left="538.65" Width="75.6" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits Due.Paid]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text234" Left="614.25" Width="94.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits Due.Balance]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text324" Left="340.2" Width="75.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Deposits Due.Term]" Format="Date" Format.Format="d" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <DataHeaderBand Name="DataHeader18" Top="3059" Width="718.2" Height="18.9" VisibleExpression="[IIf([DepositsDueExist],true,false)]" RepeatOnEveryPage="true">
+        <TextObject Name="Text222" Left="9.45" Width="85.05" Height="18.9" Border.Lines="Left, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[DepositsDueIdLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text224" Left="94.5" Width="160.65" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[DepositsDueTypeLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text225" Left="415.8" Width="122.85" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[DepositsDueAmountLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text226" Left="538.65" Width="75.6" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[DepositsDuePaidLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text227" Left="614.25" Width="94.5" Height="18.9" Border.Lines="Right, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[DepositsDueBalanceLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text223" Left="255.15" Width="85.05" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[DepositsDueDateLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text323" Left="340.2" Width="75.15" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[DepositsDueTermLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data54" Top="3122.1" Width="718.2" Height="37.8" VisibleExpression="[IIf([DepositsDueExist],true,false)]">
+      <ContainerObject Name="Container17" Left="9.45" Width="699.3" Height="37.8" Border.Lines="All" Border.Color="Silver">
+        <TextObject Name="Text235" Width="94.5" Height="37.8" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text236" Left="604.8" Width="94.5" Height="37.8" Text="[DepositsDueBalanceSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text238" Left="406.35" Width="122.85" Height="37.8" Text="[DepositsDueAmountSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text237" Left="529.2" Width="75.6" Height="37.8" Text="[DepositsDuePaidSum]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      </ContainerObject>
+    </DataBand>
+    <DataBand Name="Data55" Top="3163.1" Width="718.2" Height="37.8" VisibleExpression="[IIf([DepositsDueExist],true,false)]">
+      <TextObject Name="Text256" Left="793.8" Top="18.9" Width="94.5" Height="18.9" Border.Lines="Right, Top" Fill.Color="Gray" Text="Net Amount Due" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+    </DataBand>
+    <DataBand Name="Data56" Top="3204.1" Width="718.2" Height="37.8" VisibleExpression="[IIf([PaymentPlansExist],true,false)]">
+      <TextObject Name="Text369" Left="9.45" Top="9.45" Width="699.3" Height="28.35" Fill.Color="White" Text="[PaymentPlanLabel]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+    <DataBand Name="PaymentPlansSummaryDataBand" Top="3267.2" Width="718.2" Height="37.8" VisibleExpression="[IIf([PaymentPlansExist],true,false)]" DataSource="Payment Plans">
+      <TextObject Name="Text246" Left="9.45" Width="56.7" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans.Id]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text249" Left="255.15" Width="151.2" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans.Original Amount]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text250" Left="406.35" Width="151.2" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans.Current Balance]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text251" Left="557.55" Width="151.2" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans.Current Due]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text253" Left="160.65" Width="94.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans.Term]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text326" Left="66.15" Width="94.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans.Type]" VertAlign="Center" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+        </Highlight>
+      </TextObject>
+      <DataHeaderBand Name="DataHeader19" Top="3245.1" Width="718.2" Height="18.9" VisibleExpression="[IIf([PaymentPlansExist],true,false)]" RepeatOnEveryPage="true">
+        <TextObject Name="Text240" Left="9.45" Width="56.7" Height="18.9" Border.Lines="Left, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[PaymentPlansIdLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text242" Left="255.15" Width="151.2" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[PaymentPlansOriginalAmountLabel]" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text243" Left="406.35" Width="151.2" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[PaymentPlansCurrentBalanceLabel]" Padding="2, 0, 4, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text244" Left="557.55" Width="151.2" Height="18.9" Border.Lines="Right, Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[PaymentPlansCurrentDueLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text252" Left="160.65" Width="94.5" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[PaymentPlansTypeLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+        <TextObject Name="Text325" Left="66.15" Width="94.5" Height="18.9" Border.Lines="Top" Border.Color="DimGray" Fill.Color="DimGray" Text="[PaymentPlansTypeLabel]" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data58" Top="3308.2" Width="718.2" Height="28.35" VisibleExpression="[IIf([PaymentPlansExist],true,false)]"/>
+    <DataBand Name="Data65" Top="3339.75" Width="718.2" Height="28.35" DataSource="AllPayPlans">
+      <DataBand Name="PaymentPlansDetailsDataBand" Top="3393.4" Width="718.2" Height="37.8" DataSource="Payment Plans2" Filter="[Payment Plans2.Id] == [AllPayPlans.PlanId] &amp;&amp; [Payment Plans2.Due Date] != &quot;TOTAL&quot;">
+        <TextObject Name="Text355" Left="9.45" Width="56.7" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans2.Id]" Duplicates="Merge" VertAlign="Center" Font="Arial, 9pt">
+          <Highlight>
+            <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+          </Highlight>
+        </TextObject>
+        <TextObject Name="Text356" Left="151.2" Width="94.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans2.Amount Due]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+          <Highlight>
+            <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+          </Highlight>
+        </TextObject>
+        <TextObject Name="Text357" Left="245.7" Width="94.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans2.Setup Charge]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+          <Highlight>
+            <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+          </Highlight>
+        </TextObject>
+        <TextObject Name="Text358" Left="340.2" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans2.Late Charge]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+          <Highlight>
+            <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+          </Highlight>
+        </TextObject>
+        <TextObject Name="Text359" Left="425.25" Width="94.5" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans2.Amount Paid]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+          <Highlight>
+            <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+          </Highlight>
+        </TextObject>
+        <TextObject Name="Text360" Left="66.15" Width="85.05" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans2.Due Date]" Padding="2, 0, 6, 0" Format="Date" Format.Format="d" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+          <Highlight>
+            <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+          </Highlight>
+        </TextObject>
+        <TextObject Name="Text361" Left="519.75" Width="113.4" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans2.Net Due]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+          <Highlight>
+            <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+          </Highlight>
+        </TextObject>
+        <TextObject Name="Text362" Left="633.15" Width="75.6" Height="37.8" Border.Lines="All" Border.Color="Silver" Fill.Color="White" CanBreak="false" Text="[Payment Plans2.Date Paid]" Padding="2, 0, 6, 0" Format="Date" Format.Format="d" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt">
+          <Highlight>
+            <Condition Expression="[Row#]%2 != 1" Fill.Color="242, 242, 242" Font="Arial, 10pt" ApplyFill="true" ApplyTextFill="false"/>
+          </Highlight>
+        </TextObject>
+        <DataHeaderBand Name="DataHeader1" Top="3371.3" Width="718.2" Height="18.9" RepeatOnEveryPage="true">
+          <TextObject Name="Text347" Left="9.45" Width="56.7" Height="18.9" Fill.Color="DimGray" Text="[PaymentPlansIdLabel]" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+          <TextObject Name="Text348" Left="151.2" Width="94.5" Height="18.9" Fill.Color="DimGray" Text="[PaymentPlansAmountDueLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+          <TextObject Name="Text349" Left="245.7" Width="94.5" Height="18.9" Fill.Color="DimGray" Text="[PaymentPlansSetupChargeLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+          <TextObject Name="Text350" Left="340.2" Width="85.05" Height="18.9" Fill.Color="DimGray" Text="[PaymentPlansLateChargeLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+          <TextObject Name="Text351" Left="425.25" Width="94.5" Height="18.9" Fill.Color="DimGray" Text="[PaymentPlansAmountPaidLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+          <TextObject Name="Text352" Left="66.15" Width="85.05" Height="18.9" Fill.Color="DimGray" Text="[PaymentPlansDueDateLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+          <TextObject Name="Text353" Left="519.75" Width="113.4" Height="18.9" Fill.Color="DimGray" Text="[PaymentPlansNetAmountDueLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+          <TextObject Name="Text354" Left="633.15" Width="75.6" Height="18.9" Fill.Color="DimGray" Text="[PaymentPlansDatePaidLabel]" Padding="2, 0, 6, 0" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" TextFill.Color="White"/>
+        </DataHeaderBand>
+        <DataFooterBand Name="DataFooter1" Top="3434.4" Width="718.2" Height="37.8">
+          <ContainerObject Name="Container23" Left="9.45" Width="699.3" Height="37.8" Border.Lines="Left, Right, Bottom" Border.Color="Silver">
+            <TextObject Name="Text363" Width="94.5" Height="37.8" Border.Color="Gainsboro" Text="Total" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+            <TextObject Name="Text364" Left="510.3" Width="113.4" Height="37.8" Border.Lines="Right" Border.Color="Silver" Text="[AllPayPlans.PlanTotalNet]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+            <TextObject Name="Text365" Left="415.8" Width="94.5" Height="37.8" Text="[AllPayPlans.PlanTotalPaid]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+            <TextObject Name="Text366" Left="330.75" Width="85.05" Height="37.8" Text="[AllPayPlans.PlanTotalLate]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+            <TextObject Name="Text367" Left="141.75" Width="94.5" Height="37.8" Text="[AllPayPlans.PlanTotalDue]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+            <TextObject Name="Text368" Left="236.25" Width="94.5" Height="37.8" Text="[AllPayPlans.PlanTotalSetup]" Padding="2, 0, 6, 0" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+          </ContainerObject>
+        </DataFooterBand>
+      </DataBand>
+    </DataBand>
+    <DataBand Name="Data61" Top="3475.4" Width="718.2" Height="37.8" VisibleExpression="[IIf([DisclosureGapExists],true,false)]"/>
+    <DataBand Name="Data62" Top="3516.4" Width="718.2" Height="37.8" VisibleExpression="[IIf([DisclosureExists],true,false)]" Guides="9.45">
+      <TextObject Name="Text284" Left="9.45" Width="699.3" Height="28.35" Fill.Color="White" CanGrow="true" Text="[DisclosureText]" VertAlign="Center" Font="Arial, 11.25pt"/>
+    </DataBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Colleague OAuth Settings";
+}
+
+@* Header/Title *@
+<div class="esg-page-header">
+    <h2 class="esg-page-header__title header-margin">@ViewBag.Title</h2>
+</div>
+
+@* Validation Summary *@
+<div data-bind="visible: showValidationSummary" class="column-nine">
+    <div class=" esg-alert esg-alert--fluid esg-alert--error" role="alert">
+        <span class="esg-alert__icon-wrapper">
+            <span class="esg-alert__icon esg-icon__container" aria-hidden="True">
+                <svg class="esg-icon esg-icon--error-dark">
+                    <use xlink:href="#icon-error"></use>
+                </svg>
+            </span>
+        </span>
+        <div class="esg-alert__message error-message-format" data-bind="html: validationSummary" style="text-align:left;"></div>
+    </div><br />
+</div>
+
+@* Field Set *@
+<fieldset>
+    <br />
+    <table class="APISettingstable" style="border:none;">
+        <tr>
+            <td>
+                <label class="esg-form__label">OAuth Issuer URL</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': !oauthIssuerUrl.isValid()}">
+                    <input class="esg-form__input" type="text" data-bind="value: oauthIssuerUrl" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: !oauthIssuerUrl.isValid()">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">OAuth Proxy Username</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': (!oauthProxyUsername.isValid())}">
+                    <input class="esg-form__input" type="text" data-bind="value: oauthProxyUsername" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: (!oauthProxyUsername.isValid())">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="esg-form__label">OAuth Proxy Password</label>
+            </td>
+            <td>
+                <div class="esg-form__group esg-has-feedback " data-bind="css: {'esg-has-error': (!oauthProxyPassword.isValid())}">
+                    <input class="esg-form__input" type="password" data-bind="value: oauthProxyPassword" />
+                    <div class="esg-form__feedback-icon esg-icon__container" data-bind="visible: (!oauthProxyPassword.isValid())">
+                        <svg class="esg-icon esg-icon--error">
+                            <use xlink:href="#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+
+    <div class="esg-form__group widerBase">
+        <input type="button" value="Test OAuth Settings" data-bind='click: $root.testOauthConnection_TestBtnClick' class="esg-button esg-button--primary" />
+        <input type="button" value="Save" data-bind="click: $root.saveLocalSettings.bind($data, true)" class="esg-button esg-button--primary" />
+        <input type="button" value="Cancel" data-bind='click: $root.cancelLocalSettings' class="esg-button esg-button--primary" />
+    </div>
+    <br />
+</fieldset>
+
+<modal-spinner id="updating" params="isVisible: isUpdating, message: 'Saving Changes...'"></modal-spinner>
+<input id="isUpdating" type="hidden" value="false" data-bind="value: isUpdating" />
+
+<div class="esg-modal-overlay"></div>
+@* Script *@
+@section Scripts {
+    <script src="~/scripts/Admin.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        var jsonData = @Html.Raw(ViewBag.json);
+        $(document).ready(function () {
+            var viewModel = new admin.configuration.LocalSettingsViewModel(jsonData);
+            viewModel.cancelUrl = '@Url.Action("Index", "Admin")';
+            ko.applyBindings(viewModel);
+        });
+    </script>
+}

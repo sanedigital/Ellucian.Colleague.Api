@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="03/20/2023 11:59:11" ReportInfo.Modified="05/03/2023 13:09:36" ReportInfo.CreatorVersion="2023.1.12.0">
+  <Dictionary>
+    <Parameter Name="Year2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="PayersNameAddr1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="PayersNameAddr2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="PayersNameAddr3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="PayersNameAddr4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="PayersName" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="RecipientAddress1" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="RecipientAddress2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="RecipientAddress3" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="RecipientAddress4" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="RecipientsName" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="CorrectedForm" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="PayersEIN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="RecipientsEIN" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="AccountNumber" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box1Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box4Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box5Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box5bAmt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box6" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box6b" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box7Amt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box7bAmt" DataType="System.String" AsString="" Description="ReportParameter1"/>
+    <Parameter Name="Box2" DataType="System.String" AsString="" Description="ReportParameter1"/>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="215.9" PaperHeight="277.5" RawPaperSize="1" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data1" Width="740.5" Height="973.35">
+      <RichObject Name="Rich1" Left="9.45" Top="349.65" Width="349.65" Height="315.63" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\b\fs16 Instructions for Recipient\b0\par&#13;&#10;You received this form instead of Form W-2 because the payer did not\par&#13;&#10;consider you an employee and did not withhold income tax or social\par&#13;&#10;security and Medicare tax.\par&#13;&#10;  If you believe you are an employee and cannot get the payer to\line correct this form, report this amount on the line for \f1\ldblquote\f0 Wages, salaries,\line tips, etc.\f1\rdblquote\f0  of Form 1040, 1040-SR, or 1040-NR. You must also \line complete Form 8919 and attach it to your return. For more information,\line see Pub. 1779, Independent Contractor or Employee.\par&#13;&#10;  If you are not an employee but the amount in this box is not self\line employment (SE) income (for example, it is income from a sporadic \line activity or a hobby), report this amount on the \f1\ldblquote\f0 Other income\f1\rdblquote\f0  line \line (on Schedule 1 (Form 1040)).\par&#13;&#10;\b Recipient\f1\rquote\f0 s taxpayer identification number (TIN). \b0 For your \line protection, this form may show only the last four digits of your TIN \line (social security number (SSN), individual taxpayer identification \line number (ITIN), adoption taxpayer identification number (ATIN), or \line employer identification number (EIN)). However, the issuer has \line reported your complete TIN to the IRS.\par&#13;&#10;\b Account number. \b0 May show an account or other unique number the \line payer assigned to distinguish your account.\par&#13;&#10;\b Box 1. \b0 Shows nonemployee compensation. If the amount in this box is\line SE income, report it on Schedule C or F (Form 1040) if a sole \line proprietor, or on Form 1065 and Schedule K-1 (Form 1065) if a \line partnership, and the recipient/partner completes Schedule SE (Form \line 1040)\par&#13;&#10;}&#13;&#10;" Padding="6, 0, 2, 0"/>
+      <ContainerObject Name="Container1" Left="9.45" Top="9.45" Width="727.65" Height="311.85">
+        <TextObject Name="Text27" Left="283.5" Width="151.2" Height="18.9" Text="CORRECTED (if checked)" Padding="6, 6, 2, 0" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox3" Left="14.76" Top="23.46" Width="322.02" Height="22.81" Text="[PayersName]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text1" Left="7.56" Top="18.9" Width="330.75" Height="272.16" Border.Lines="All" Font="Arial, 10pt"/>
+        <TextObject Name="Text2" Left="9.45" Top="18.9" Width="328.1" Height="95.26" Border.Lines="Bottom" Text="PAYER'S name, street address, city or town, state or province, country, ZIP or forgein postal code, and telephone no." Padding="1, 3, 2, 0" Font="Arial, 4.5pt"/>
+        <TextObject Name="Text8" Left="336.42" Top="18.9" Width="275.94" Height="272.16" Border.Lines="Right, Top, Bottom" Font="Arial, 5pt"/>
+        <ShapeObject Name="Shape1" Left="338.31" Top="18.9" Width="134.19" Height="64.26" Fill.Color="DarkGray"/>
+        <TextObject Name="Text9" Left="472.5" Top="18.9" Width="132.3" Height="66.15" Text="OMB No. 1545 - 0116" Padding="0, 4, 15, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Textbox5" Left="14.76" Top="37.73" Width="322.02" Height="19.74" Text="[PayersNameAddr1]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text26" Left="604.8" Top="28.35" Width="117.18" Height="37.8" Text="Nonemployee&#13;&#10;Compensation" Padding="6, 2, 0, 0" HorzAlign="Center" Font="Arial, 11pt, style=Bold"/>
+        <TextObject Name="Text10" Left="491.4" Top="37.8" Width="170.1" Height="28.35" Text="20[Year2]" Padding="5, 0, 2, 0" Font="Arial, 18pt, style=Bold"/>
+        <TextObject Name="Textbox7" Left="14.76" Top="55.34" Width="322.02" Height="17.73" Text="[PayersNameAddr2]" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox8" Left="14.76" Top="70.13" Width="322.02" Height="22.18" Text="[PayersNameAddr3]" Font="Courier New, 10pt"/>
+        <TextObject Name="Text11" Left="491.4" Top="66.15" Width="37.8" Height="18.9" Text="Form" Padding="4, 2, 2, 0" Font="Arial, 8pt"/>
+        <TextObject Name="Text12" Left="529.2" Top="66.15" Width="94.5" Height="18.9" Text="1099 - NEC" Padding="0, 2, 2, 0" Font="Arial, 8pt, style=Bold"/>
+        <TextObject Name="Text13" Left="338.31" Top="83.16" Width="274.05" Height="32.13" Border.Lines="Top, Bottom" Text="   Nonemployee compensation" Padding="3, 2, 2, 0" Font="Arial, 6.5pt"/>
+        <TextObject Name="Text23" Left="612.36" Top="83.16" Width="100.17" Height="160.65" Border.Lines="Top" Font="Arial, 6pt"/>
+        <TextObject Name="Textbox9" Left="14.76" Top="90.14" Width="322.02" Height="24" Text="[PayersNameAddr4]" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox33" Left="354.09" Top="96.39" Width="110.5" Height="24" Text="[Box1Amt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text24" Left="623.7" Top="85.05" Width="94.5" Height="37.8" Text="Copy B&#13;&#10;For Recipient" Padding="2, 5, 4, 0" HorzAlign="Right" Font="Arial, 8pt, style=Bold"/>
+        <TextObject Name="Text37" Left="340.2" Top="85.05" Width="9.45" Height="18.9" Text="1&#13;&#10;" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text31" Left="330.75" Top="94.5" Width="18.9" Height="18.9" Text="$" Padding="8, 4, 2, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Textbox25" Left="10.21" Top="124.74" Width="156.51" Height="21" Text="[PayersEIN]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox26" Left="173.88" Top="124.74" Width="153" Height="21" Text="[RecipientsEIN]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text3" Left="7.56" Top="115.29" Width="164.43" Height="24.57" Border.Lines="Right" Text="PAYER'S TIN" Padding="1, 3, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text4" Left="170.1" Top="113.4" Width="168.21" Height="28.35" Text="RECIPIENT'S TIN" Padding="4, 3, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text14" Left="338.31" Top="113.4" Width="274.05" Height="26.46" Text="Payer made direct sales totalling $5,000 or more of &#13;&#10;consumer products to recipient for resale" Padding="12, 4, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text25" Left="623.7" Top="113.4" Width="94.5" Height="132.3" Text="This is important tax&#13;&#10;information and is &#13;&#10;being furnished to &#13;&#10;the IRS. If you are&#13;&#10;required to file a &#13;&#10;return, a negligence&#13;&#10;penalty or other&#13;&#10;sanction may be &#13;&#10;imposed on you if &#13;&#10;this income is taxable&#13;&#10;and the IRS &#13;&#10;determines that it has &#13;&#10;not been reported." Padding="2, 8, 4, 0" HorzAlign="Right" Font="Arial, 6pt"/>
+        <TextObject Name="Text38" Left="340.2" Top="113.4" Width="9.45" Height="18.9" Text="2&#13;&#10;" Padding="2, 4, 2, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Textbox100" Left="593.13" Top="122.09" Width="7.56" Height="7.35" Text="[Box2]" Padding="0, 0, 2, 2" Font="Courier New, 7pt"/>
+        <TextObject Name="Text15" Left="591.57" Top="122.85" Width="15.12" Height="9.45" Border.Lines="All" Font="Arial, 6pt"/>
+        <TextObject Name="Text5" Left="7.56" Top="139.86" Width="330.75" Height="26.46" Border.Lines="Top, Bottom" Text="Account number (see instructions)" Padding="2, 3, 2, 0" Font="Arial, 6pt"/>
+        <ShapeObject Name="Shape2" Left="338.31" Top="139.86" Width="274.05" Height="26.46" Fill.Color="DarkGray"/>
+        <TextObject Name="Text39" Left="338.31" Top="139.86" Width="9.45" Height="9.45" Border.Lines="Left, Top" Fill.Color="White" Text="3&#13;&#10;" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Textbox30" Left="10.21" Top="149.31" Width="157.71" Height="24" Text="[AccountNumber]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text6" Left="9.45" Top="166.32" Width="326.97" Height="90.72" Border.Lines="Bottom" Text="RECIPIENT'S name, street address (including apt no.), city or town, state or province, country, and ZIP or forgein postal code" Padding="2, 3, 2, 0" Font="Arial, 4pt"/>
+        <TextObject Name="Text16" Left="338.31" Top="166.32" Width="274.05" Height="35.91" Border.Lines="All" Border.Width="2" Text="4  Federal income tax withheld" Padding="2, 3, 2, 0" Font="Arial, 6pt, style=Bold" TextOutline.Width="3"/>
+        <TextObject Name="Textbox18" Left="13.32" Top="171.99" Width="312.24" Height="22.81" Text="[RecipientsName]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox19" Left="13.32" Top="184.49" Width="312.24" Height="19.74" Text="[RecipientAddress1]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox45" Left="354.09" Top="183.33" Width="110.5" Height="24" Text="[Box4Amt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text32" Left="340.2" Top="179.55" Width="9.45" Height="28.35" Text="$" Padding="0, 6, 0, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Textbox20" Left="13.32" Top="203.3" Width="312.24" Height="17.73" Text="[RecipientAddress2]" Font="Courier New, 10pt"/>
+        <TextObject Name="Text17" Left="338.31" Top="198.45" Width="274.05" Height="51.03" Border.Lines="Bottom" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Textbox21" Left="13.32" Top="216.89" Width="312.24" Height="22.95" Text="[RecipientAddress3]" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox22" Left="13.32" Top="231.42" Width="312.24" Height="22.54" Text="[RecipientAddress4]" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox40" Left="351.42" Top="256.28" Width="110.5" Height="19.33" Text="[Box5Amt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox48" Left="626.68" Top="256.28" Width="85.74" Height="19.33" Text="[Box7Amt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox50" Left="472.5" Top="256.28" Width="137.85" Height="19.33" Text="[Box6]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text19" Left="340.2" Top="249.48" Width="130.41" Height="41.58" Border.Lines="Right" Text="  State tax withheld" Padding="4, 0, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text20" Left="472.5" Top="245.7" Width="132.3" Height="18.9" Text="   State/Payer's state no." Padding="3, 4, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text22" Left="612.36" Top="249.48" Width="98.28" Height="41.58" Border.Lines="Top, Bottom" Text="  State income" Padding="7, 1, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text40" Left="340.2" Top="245.7" Width="9.45" Height="18.9" Text="5&#13;&#10;" Padding="1, 4, 2, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text41" Left="472.5" Top="245.7" Width="9.45" Height="18.9" Text="6" Padding="1, 4, 2, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text42" Left="614.25" Top="245.7" Width="9.45" Height="18.9" Text="7&#13;&#10;" Padding="0, 4, 2, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text18" Left="338.31" Top="255.15" Width="274.05" Height="35.91" Border.Lines="Bottom" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text33" Left="330.75" Top="255.15" Width="18.9" Height="18.9" Text="$" Padding="8, 4, 2, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Text35" Left="604.8" Top="255.15" Width="18.9" Height="18.9" Text="$" Padding="8, 4, 2, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Textbox39" Left="351.42" Top="272.16" Width="110.5" Height="17.33" Text="[Box5bAmt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox49" Left="472.5" Top="272.16" Width="137.85" Height="17.33" Text="[Box6b]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox56" Left="627.88" Top="272.16" Width="85.74" Height="19.33" Text="[Box7bAmt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text21" Left="338.31" Top="274.05" Width="374.22" Height="9.45" Border.Lines="Top" Border.TopLine.Style="Dash" Font="Arial, 6pt"/>
+        <TextObject Name="Text34" Left="330.75" Top="274.05" Width="18.9" Height="18.9" Text="$" Padding="8, 2, 2, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Text36" Left="604.8" Top="274.05" Width="18.9" Height="18.9" Text="$" Padding="8, 2, 2, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Text29" Top="283.5" Width="718.2" Height="28.35" Text="From                                            (keep for your records)                              www.irs.gov/Form1099NEC               Department of the Treasury - Internal Revenue Service" Padding="6, 10, 0, 0" Font="Arial, 7pt"/>
+        <TextObject Name="Text30" Left="28.35" Top="283.5" Width="75.6" Height="28.35" Text="1099-NEC" Padding="2, 6, 2, 0" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Textbox24" Left="271.91" Top="5.84" Width="13.23" Height="10.55" Text="[CorrectedForm]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Text28" Left="272.16" Top="5.67" Width="11.34" Height="11.34" Border.Lines="All" Font="Arial, 8pt"/>
+      </ContainerObject>
+      <ContainerObject Name="Container2" Left="9.45" Top="661.5" Width="727.65" Height="311.85">
+        <TextObject Name="Textbox4" Left="14.53" Top="31.85" Width="320.82" Height="22.81" Text="[PayersName]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text57" Left="472.5" Top="28.35" Width="132.3" Height="66.15" Text="OMB No. 1545 - 0116" Padding="0, 2, 12, 0" HorzAlign="Center" Font="Arial, 6pt"/>
+        <TextObject Name="Textbox6" Left="14.53" Top="46.12" Width="320.82" Height="19.74" Text="[PayersNameAddr1]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text58" Left="491.4" Top="37.8" Width="132.3" Height="37.8" Text="20[Year2]" Padding="5, 4, 2, 0" Font="Arial, 18pt, style=Bold"/>
+        <TextObject Name="Text61" Left="604.8" Top="37.8" Width="117.18" Height="37.8" Text="Nonemployee&#13;&#10;Compensation" Padding="6, 2, 0, 0" HorzAlign="Center" Font="Arial, 11pt, style=Bold"/>
+        <TextObject Name="Textbox10" Left="14.53" Top="63.73" Width="320.82" Height="17.73" Text="[PayersNameAddr2]" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox11" Left="14.53" Top="78.52" Width="320.82" Height="22.95" Text="[PayersNameAddr3]" Font="Courier New, 10pt"/>
+        <TextObject Name="Text59" Left="487.62" Top="75.6" Width="37.8" Height="18.9" Text="Form" Padding="6, 0, 2, 0" Font="Arial, 8pt"/>
+        <TextObject Name="Text60" Left="525.42" Top="75.6" Width="94.5" Height="18.9" Text="1099 - NEC" Padding="0, 0, 2, 0" Font="Arial, 8pt, style=Bold"/>
+        <TextObject Name="Text50" Left="338.31" Top="90.72" Width="274.05" Height="32.13" Border.Lines="Top, Bottom" Text="   Nonemployee compensation" Padding="3, 2, 2, 0" Font="Arial, 6.5pt"/>
+        <TextObject Name="Textbox12" Left="14.53" Top="99.06" Width="320.82" Height="21.69" Text="[PayersNameAddr4]" Font="Courier New, 10pt"/>
+        <TextObject Name="Text64" Left="340.2" Top="94.5" Width="9.45" Height="18.9" Text="1&#13;&#10;" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text81" Left="652.05" Top="94.5" Width="66.15" Height="18.9" Text="Copy 2" Padding="2, 2, 4, 0" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+        <TextObject Name="Textbox34" Left="351.42" Top="104.96" Width="113.17" Height="24" Text="[Box1Amt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text63" Left="330.75" Top="103.95" Width="18.9" Height="18.9" Text="$" Padding="8, 4, 2, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Textbox27" Left="10.21" Top="132.3" Width="152.8" Height="25.01" Text="[PayersEIN]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox28" Left="173.88" Top="132.3" Width="152.8" Height="25.01" Text="[RecipientsEIN]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox102" Left="595.53" Top="128.24" Width="11.34" Height="11.55" Text="[Box2]" Padding="2, 2, 2, 0" Font="Courier New, 8pt"/>
+        <TextObject Name="Text45" Left="9.45" Top="122.85" Width="164.43" Height="27.59" Border.Lines="Right" Text="PAYER'S TIN" Padding="1, 3, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text46" Left="171.99" Top="122.85" Width="168.21" Height="28.35" Text="RECIPIENT'S TIN" Padding="4, 3, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text51" Left="338.31" Top="122.85" Width="274.05" Height="26.46" Border.Lines="Bottom" Text="Payer made direct sales totalling $5,000 or more of &#13;&#10;consumer products to recipient for resale" Padding="12, 4, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text65" Left="340.2" Top="122.85" Width="9.45" Height="18.9" Text="2&#13;&#10;" Padding="2, 2, 2, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text82" Left="633.15" Top="122.85" Width="94.5" Height="66.15" Text="To be filed with&#13;&#10;recipient’s &#13;&#10;state income tax&#13;&#10;return, when&#13;&#10;required.&#13;&#13;&#10;" Padding="2, 2, 4, 0" HorzAlign="Right" Font="Arial, 7pt, style=Bold"/>
+        <TextObject Name="Text62" Left="595.35" Top="132.3" Width="15.12" Height="9.45" Border.Lines="All" Font="Arial, 6pt"/>
+        <TextObject Name="Text47" Left="9.45" Top="147.42" Width="330.75" Height="26.46" Border.Lines="Top, Bottom" Text="Account number (see instructions)" Padding="2, 3, 2, 0" Font="Arial, 6pt"/>
+        <ShapeObject Name="Shape4" Left="338.31" Top="147.42" Width="274.05" Height="26.46" Fill.Color="DarkGray"/>
+        <TextObject Name="Text66" Left="338.31" Top="147.42" Width="9.45" Height="9.45" Border.Lines="Left, Top" Fill.Color="White" Text="3&#13;&#10;" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Textbox29" Left="10.21" Top="158.36" Width="155.95" Height="23.47" Text="[AccountNumber]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text48" Left="9.45" Top="173.88" Width="326.97" Height="90.72" Border.Lines="Bottom" Text="RECIPIENT'S name, street address (including apt no.), city or town, state or province, country, and ZIP or forgein postal code" Padding="2, 3, 2, 0" Font="Arial, 4pt"/>
+        <TextObject Name="Text52" Left="338.31" Top="173.88" Width="274.05" Height="35.91" Border.Lines="All" Text="4  Federal income tax withheld" Padding="2, 3, 2, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Textbox13" Left="14.53" Top="181.41" Width="320.82" Height="22.81" Text="[RecipientsName]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox14" Left="14.76" Top="195.82" Width="320.58" Height="19.74" Text="[RecipientAddress1]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox96" Left="351.42" Top="194.16" Width="114.5" Height="24" Text="[Box4Amt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text67" Left="330.75" Top="189" Width="18.9" Height="28.35" Text="$" Padding="8, 6, 2, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Text53" Left="338.31" Top="206.01" Width="274.05" Height="51.03" Border.Lines="Bottom" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Textbox15" Left="14.53" Top="210.49" Width="320.82" Height="20.39" Text="[RecipientAddress2]" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox16" Left="14.53" Top="224.62" Width="320.82" Height="22.95" Text="[RecipientAddress3]" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox17" Left="15.84" Top="243.02" Width="320.82" Height="22.54" Text="[RecipientAddress4]" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox52" Left="625.48" Top="264.52" Width="85.74" Height="19.33" Text="[Box7Amt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text54" Left="340.2" Top="257.04" Width="130.41" Height="41.58" Border.Lines="Right" Text="  State tax withheld" Padding="8, 4, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text55" Left="472.5" Top="255.15" Width="132.3" Height="18.9" Text="   State/Payer's state no." Padding="3, 4, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text56" Left="612.36" Top="257.04" Width="98.28" Height="41.58" Border.Lines="Top, Bottom" Text="  State income" Padding="7, 1, 2, 0" Font="Arial, 6pt"/>
+        <TextObject Name="Text68" Left="340.2" Top="255.15" Width="9.45" Height="18.9" Text="5&#13;&#10;" Padding="1, 4, 2, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text71" Left="472.5" Top="255.15" Width="9.45" Height="18.9" Text="6" Padding="1, 4, 2, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Text72" Left="614.25" Top="255.15" Width="9.45" Height="18.9" Text="7&#13;&#10;" Padding="0, 4, 2, 0" Font="Arial, 6pt, style=Bold"/>
+        <TextObject Name="Textbox41" Left="351.42" Top="265.72" Width="110.5" Height="19.33" Text="[Box5Amt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox51" Left="472.5" Top="267.3" Width="137.85" Height="19.33" Text="[Box6]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text49" Left="9.45" Top="264.6" Width="321.3" Height="32.13" Font="Arial, 5pt"/>
+        <TextObject Name="Text69" Left="330.75" Top="264.6" Width="18.9" Height="18.9" Text="$" Padding="8, 4, 2, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Text73" Left="604.8" Top="264.6" Width="18.9" Height="18.9" Text="$" Padding="8, 4, 2, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Textbox42" Left="351.42" Top="281.83" Width="110.5" Height="17.33" Text="[Box5bAmt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox53" Left="472.5" Top="281.83" Width="137.85" Height="17.33" Text="[Box6b]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Textbox57" Left="626.68" Top="281.03" Width="85.74" Height="19.33" Text="[Box7bAmt]" Padding="2, 2, 2, 2" Font="Courier New, 10pt"/>
+        <TextObject Name="Text70" Left="330.75" Top="283.5" Width="18.9" Height="18.9" Text="$" Padding="8, 0, 2, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Text74" Left="604.8" Top="283.5" Width="18.9" Height="18.9" Text="$" Padding="8, 0, 2, 0" Font="Arial, 10pt"/>
+        <TextObject Name="Text76" Left="28.35" Top="283.5" Width="75.6" Height="26.46" Text="1099-NEC" Padding="2, 14, 2, 0" Font="Arial, 10pt, style=Bold"/>
+        <TextObject Name="Text43" Left="7.56" Top="26.46" Width="330.75" Height="272.16" Border.Lines="All" Font="Arial, 10pt"/>
+        <TextObject Name="Text44" Left="9.45" Top="26.46" Width="328.1" Height="95.26" Border.Lines="Bottom" Text="PAYER'S name, street address, city or town, state or province, country, ZIP or forgein postal code, and telephone no." Padding="1, 3, 2, 0" Font="Arial, 4.5pt"/>
+        <ShapeObject Name="Shape3" Left="338.31" Top="26.46" Width="134.19" Height="64.26" Fill.Color="DarkGray"/>
+        <TextObject Name="Text83" Left="338.31" Top="26.46" Width="274.05" Height="272.16" Border.Lines="Right, Top, Bottom" Font="Arial, 5pt"/>
+        <TextObject Name="Text77" Left="245.7" Top="13.23" Width="11.34" Height="11.34" Border.Lines="All" Font="Arial, 8pt"/>
+        <TextObject Name="Text79" Left="175.77" Top="13.23" Width="11.34" Height="11.34" Border.Lines="All" Font="Arial, 8pt"/>
+        <TextObject Name="Textbox23" Left="245.87" Top="11.34" Width="11.34" Height="10.55" Text="[CorrectedForm]" Padding="0, 0, 0, 0" Font="Courier New, 10pt"/>
+        <TextObject Name="Text78" Left="255.15" Width="151.2" Height="37.8" Text="CORRECTED " Padding="8, 12, 2, 0" Font="Arial, 8pt"/>
+        <TextObject Name="Text80" Left="179.55" Width="47.25" Height="37.8" Text="VOID" Padding="10, 12, 2, 0" Font="Arial, 8pt"/>
+        <TextObject Name="Text84" Left="614.25" Top="90.72" Width="100.17" Height="160.65" Border.Lines="Top" Font="Arial, 6pt"/>
+        <TextObject Name="Text85" Left="338.31" Top="283.5" Width="374.22" Height="9.45" Border.Lines="Top" Border.TopLine.Style="Dash" Font="Arial, 6pt"/>
+        <TextObject Name="Text75" Top="292.95" Width="718.2" Height="18.9" Text="From                                                                               www.irs.gov/Form1099NEC                                           Department of the Treasury - Internal Revenue Service " Padding="6, 8, 0, 0" Font="Arial, 7pt"/>
+      </ContainerObject>
+      <RichObject Name="Rich2" Left="368.55" Top="349.65" Width="340.2" Height="311.85" Text="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}&#13;&#10;{\*\generator Riched20 10.0.19041}\viewkind4\uc1 &#13;&#10;\pard\b\fs16 Note: \b0 If you are receiving payments on which no income, social \line security, and Medicare taxes are withheld, you should make \line estimated tax payments. See Form 1040-ES (or Form 1040-ES\line (NR)). Individuals must report these amounts as explained in these \line box 1 instructions. Corporations, fiduciaries, and partnerships must \line report these amounts on the appropriate line of their tax returns.\par&#13;&#10;\b Box 2. \b0 If checked, consumer products totaling $5,000 or more were\line sold to you for resale, on a buy-sell, a deposit-commission, or other \line basis. Generally, report any income from your sale of these products \line on Schedule C (Form 1040).\b\par&#13;&#10;Box 3. \b0 Reserved for future use.\b\par&#13;&#10;Box 4. \b0 Shows backup withholding. A payer must backup withhold on\par&#13;&#10;certain payments if you did not give your TIN to the payer. See Form \line W-9, Request for Taxpayer Identification Number and Certification,\line for information on backup withholding. Include this amount on your \line income tax return as tax withheld.\par&#13;&#10;\b Boxes 5\f1\endash\f0 7. \b0 State income tax withheld reporting boxes.\par&#13;&#10;Future developments. For the latest information about \line developments related to Form 1099-NEC and its instructions, such as\line legislation enacted after they were published, go to\line\i www.irs.gov/Form1099NEC.\i0\par&#13;&#10;\b Free File. \b0 Go to \i www.irs.gov/FreeFile \i0 to see if you qualify for no-cost\par&#13;&#10;online federal tax preparation, e-filing, and direct deposit or payment\par&#13;&#10;options.\par&#13;&#10;}&#13;&#10;" Padding="4, 8, 2, 0"/>
+    </DataBand>
+  </ReportPage>
+</Report>
